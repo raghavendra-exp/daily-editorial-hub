@@ -38,7 +38,7 @@ A sleek, modern, distraction-free web application to read and study daily editor
 You can run and test the website immediately on your computer:
 
 ```bash
-cd C:\Users\ragha\.gemini\antigravity\scratch\daily-editorial-hub
+cd C:\.........\daily-editorial-hub
 
 # Start a local static HTTP server (using Python)
 python -m http.server 8000
