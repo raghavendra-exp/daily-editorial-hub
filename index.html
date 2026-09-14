@@ -51,6 +51,16 @@
       </div>
 
       <div class="header-actions">
+        <button id="refresh-feeds-btn" class="btn btn-primary btn-refresh" title="Fetch & Refresh Latest RSS Feeds Now">
+          <span class="refresh-spinner" id="refresh-spinner-icon">🔄</span>
+          <span class="refresh-label" id="refresh-label">Refresh Feeds</span>
+        </button>
+
+        <button id="rss-manager-btn" class="btn btn-outline" title="Live RSS Feeds Manager & Custom Sources">
+          <span class="icon">📡</span>
+          <span class="label">RSS Feeds</span>
+        </button>
+
         <button id="bookmarks-btn" class="btn btn-outline" title="Saved Bookmarks">
           <span class="icon">⭐</span>
           <span class="label">Saved</span>
@@ -92,6 +102,9 @@
       </div>
 
       <div class="digest-stats-strip" id="stats-strip">
+        <div class="stat-pill live-pill" id="live-status-pill" title="Live RSS sync status">
+          <span class="live-dot"></span> <span id="live-status-text">Feeds Synced</span>
+        </div>
         <div class="stat-pill"><strong id="stat-count">0</strong> Editorials</div>
         <div class="stat-pill"><strong id="stat-vocab">0</strong> Vocab Words</div>
         <div class="stat-pill"><strong id="stat-time">0 min</strong> Total Read</div>
@@ -204,6 +217,70 @@
       <div class="modal-footer">
         <button class="btn btn-outline" id="clear-all-bookmarks-btn">Clear All</button>
         <button class="btn btn-primary" id="close-bookmarks-btn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RSS Feeds Manager & Live Sync Modal -->
+  <div id="rss-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog rss-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>📡 Live RSS Feed Manager & Instant Refresh</h3>
+          <p class="subtitle">Fetch the freshest editorials in real-time or add your own custom newspaper RSS feeds.</p>
+        </div>
+        <button class="modal-close-btn" id="close-rss-modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <!-- Big Action Banner -->
+        <div class="rss-fetch-banner">
+          <div class="rss-banner-info">
+            <h4>⚡ Instant Live RSS Sync</h4>
+            <p>Directly queries current RSS feeds from all monitored newspapers and research archives, extracts vocabulary & key takeaways, and updates your hub in real-time.</p>
+          </div>
+          <button id="modal-fetch-all-btn" class="btn btn-primary btn-fetch-all">
+            <span class="refresh-spinner" id="modal-spinner-icon">🔄</span> Fetch All Live Feeds Now
+          </button>
+        </div>
+
+        <!-- Feed Sources List -->
+        <h4 class="rss-subheading">Monitored Publication Feeds</h4>
+        <div class="rss-feed-list" id="rss-feed-list">
+          <!-- populated dynamically -->
+        </div>
+
+        <!-- Add Custom Feed Section -->
+        <div class="add-feed-box">
+          <h4 class="rss-subheading">➕ Add Custom Newspaper / Blog RSS Feed</h4>
+          <p class="add-feed-hint">Paste any public RSS XML link (e.g. from Project Syndicate, LiveMint, Financial Times, TechCrunch):</p>
+          <div class="add-feed-form">
+            <input type="text" id="custom-feed-name" placeholder="Source Name (e.g. LiveMint)" class="input-feed">
+            <input type="url" id="custom-feed-url" placeholder="RSS Feed URL (https://...)" class="input-feed">
+            <select id="custom-feed-cat" class="select-feed">
+              <option value="Economy & Banking">Economy & Banking</option>
+              <option value="Polity & Governance">Polity & Governance</option>
+              <option value="Global Affairs">Global Affairs</option>
+              <option value="Tech & AI Research">Tech & AI Research</option>
+              <option value="National Affairs">National Affairs</option>
+              <option value="Environment & Climate">Environment & Climate</option>
+            </select>
+            <button id="add-custom-feed-btn" class="btn btn-outline">Add & Fetch</button>
+          </div>
+        </div>
+
+        <!-- GitHub Actions Bot Info -->
+        <div class="gh-actions-card">
+          <div class="gh-actions-info">
+            <strong>🤖 Automated GitHub Actions Cron</strong>
+            <p>In addition to live in-browser fetching, your GitHub Actions workflow runs every day at 6:30 AM IST to commit permanent updates to your repo.</p>
+          </div>
+          <a href="https://github.com/raghavendra-exp/daily-editorial-hub/actions" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+            Open GitHub Actions ↗
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="rss-modal-done">Done</button>
       </div>
     </div>
   </div>

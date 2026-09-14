@@ -495,6 +495,206 @@ body {
   color: var(--text-primary);
 }
 
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: var(--accent-emerald-subtle);
+  color: var(--accent-emerald);
+  font-weight: 600;
+  border-color: rgba(5, 150, 105, 0.2);
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-emerald);
+  border-radius: 50%;
+  animation: pulse-dot 1.8s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.btn-refresh {
+  background-color: var(--accent-emerald);
+  color: #ffffff;
+}
+
+.btn-refresh:hover {
+  background-color: #047857;
+  transform: translateY(-1px);
+}
+
+.refresh-spinner {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.refresh-spinner.spinning {
+  animation: spin 0.8s linear infinite;
+}
+
+/* RSS Manager Modal Styles */
+.rss-modal-dialog {
+  max-width: 720px;
+}
+
+.rss-fetch-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent-emerald);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.rss-banner-info h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+}
+
+.rss-banner-info p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  max-width: 440px;
+}
+
+.btn-fetch-all {
+  background-color: var(--accent-emerald);
+  color: #ffffff;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+}
+
+.btn-fetch-all:hover {
+  background-color: #047857;
+}
+
+.rss-subheading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+}
+
+.rss-feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.rss-feed-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  gap: 0.85rem;
+}
+
+.rss-feed-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.rss-feed-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.rss-feed-url {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  word-break: break-all;
+}
+
+.rss-feed-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-emerald-subtle);
+  color: var(--accent-emerald);
+}
+
+.add-feed-box {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.add-feed-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.add-feed-form {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.input-feed, .select-feed {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.825rem;
+}
+
+.gh-actions-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--bg-surface);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.gh-actions-info p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .add-feed-form {
+    grid-template-columns: 1fr;
+  }
+  .refresh-label {
+    display: none;
+  }
+  .btn-refresh {
+    padding: 0.55rem;
+  }
+}
+
 .btn-action-sm {
   background: var(--brand-subtle);
   color: var(--brand-text);
