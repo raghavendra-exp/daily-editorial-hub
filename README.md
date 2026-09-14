@@ -56,7 +56,7 @@ Now open **http://localhost:8000** in your browser.
 3. In your local terminal, navigate to the project directory and push:
 
 ```bash
-cd C:\Users\ragha\.gemini\antigravity\scratch\daily-editorial-hub
+cd C:\...........\daily-editorial-hub
 
 git init
 git add .
