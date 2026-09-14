@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daily Editorial Hub - Curated daily editorials from The Hindu, Indian Express, The Guardian, and arXiv research papers with key takeaways, vocabulary builder, and audio reader.">
+  <meta name="color-scheme" content="light dark">
+  <title>Daily Editorial Hub | Daily Newspaper & Paper Reader</title>
+  
+  <!-- Prevent FOUC for dark/sepia theme -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('editorial-theme') || 'system';
+      if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else if (savedTheme === 'sepia') {
+        document.documentElement.setAttribute('data-theme', 'sepia');
+      } else if (savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <!-- Google Fonts: Merriweather (Serif for Editorial) & Inter (Sans for UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="app-header">
+    <div class="header-inner container">
+      <div class="brand-group">
+        <a href="#" class="brand-logo" id="home-link">
+          <span class="logo-icon">📰</span>
+          <div class="brand-text">
+            <span class="brand-title">Daily Editorial Hub</span>
+            <span class="brand-subtitle">Newspapers, Research Papers & Daily Vocab</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="search-bar-wrapper">
+        <div class="search-input-group">
+          <span class="search-icon">🔍</span>
+          <input type="search" id="search-input" placeholder="Search editorials, vocab, topics..." autocomplete="off">
+          <button id="clear-search-btn" class="clear-btn" title="Clear search" style="display: none;">✕</button>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="bookmarks-btn" class="btn btn-outline" title="Saved Bookmarks">
+          <span class="icon">⭐</span>
+          <span class="label">Saved</span>
+          <span id="bookmark-badge" class="badge">0</span>
+        </button>
+
+        <div class="theme-dropdown-wrapper">
+          <button id="theme-toggle-btn" class="btn btn-icon" title="Toggle Reading Theme (System / Light / Dark / Sepia)">
+            <span id="theme-icon">🌓</span>
+          </button>
+          <div id="theme-menu" class="dropdown-menu">
+            <button data-theme-val="system" class="dropdown-item active">💻 System Theme</button>
+            <button data-theme-val="light" class="dropdown-item">☀️ Light Mode</button>
+            <button data-theme-val="dark" class="dropdown-item">🌙 Dark Mode</button>
+            <button data-theme-val="sepia" class="dropdown-item">📜 Paper / Sepia</button>
+          </div>
+        </div>
+
+        <button id="reader-settings-btn" class="btn btn-icon" title="Reader Font & Typography Settings">
+          <span>⚙️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Date Navigation & Summary Banner -->
+  <section class="banner-section">
+    <div class="container banner-inner">
+      <div class="date-navigator">
+        <button id="prev-date-btn" class="nav-date-btn" title="Previous Day">◀</button>
+        <div class="date-display-box">
+          <span class="cal-icon">📅</span>
+          <span id="current-date-label" class="current-date-text">Today's Digest</span>
+          <input type="date" id="date-picker-input" class="hidden-date-picker">
+        </div>
+        <button id="next-date-btn" class="nav-date-btn" title="Next Day">▶</button>
+        <button id="today-btn" class="btn-today">Today</button>
+        <button id="all-dates-btn" class="btn-all-dates">All Archive</button>
+      </div>
+
+      <div class="digest-stats-strip" id="stats-strip">
+        <div class="stat-pill"><strong id="stat-count">0</strong> Editorials</div>
+        <div class="stat-pill"><strong id="stat-vocab">0</strong> Vocab Words</div>
+        <div class="stat-pill"><strong id="stat-time">0 min</strong> Total Read</div>
+        <button id="random-pick-btn" class="btn-action-sm" title="Pick a random editorial to read">🎲 Surprise Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Source & Topic Filter Ribbon -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-scroll-wrapper">
+        <div class="filter-group" id="source-filters">
+          <span class="filter-label">Source:</span>
+          <button class="filter-pill active" data-source="all">All Sources</button>
+          <button class="filter-pill" data-source="The Indian Express">📰 Indian Express</button>
+          <button class="filter-pill" data-source="The Hindu">🇮🇳 The Hindu</button>
+          <button class="filter-pill" data-source="The Guardian">🌍 The Guardian</button>
+          <button class="filter-pill" data-source="arXiv AI & CS">🔬 arXiv Research</button>
+        </div>
+      </div>
+
+      <div class="filter-scroll-wrapper topic-wrapper">
+        <div class="filter-group" id="category-filters">
+          <span class="filter-label">Topic:</span>
+          <button class="filter-pill active" data-cat="all">All Topics</button>
+          <button class="filter-pill" data-cat="Polity & Governance">⚖️ Polity & Governance</button>
+          <button class="filter-pill" data-cat="Economy & Banking">📈 Economy & Banking</button>
+          <button class="filter-pill" data-cat="Global Affairs">🌐 Global Affairs</button>
+          <button class="filter-pill" data-cat="National Affairs">🇮🇳 National Affairs</button>
+          <button class="filter-pill" data-cat="Tech & AI Research">🤖 Tech & AI</button>
+          <button class="filter-pill" data-cat="Environment & Climate">🌿 Environment</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Grid Area -->
+  <main class="container main-content">
+    <div class="view-header">
+      <h2 id="view-title" class="section-title">Today's Editorials & Digests</h2>
+      <div class="view-options">
+        <span id="results-count" class="results-meta">Showing 0 articles</span>
+        <button id="vocab-bank-toggle" class="btn-action-sm">📖 Daily Vocab Deck</button>
+      </div>
+    </div>
+
+    <!-- Active Filter Tags Display (if any) -->
+    <div id="active-filters-bar" class="active-filters-bar" style="display: none;">
+      <span class="active-filter-badge" id="active-filter-text">Filtered</span>
+      <button id="reset-filters-btn" class="reset-link">Reset all</button>
+    </div>
+
+    <!-- Loading Skeleton / Empty State -->
+    <div id="loading-spinner" class="loading-state" style="display: none;">
+      <div class="spinner"></div>
+      <p>Loading daily editorials & research papers...</p>
+    </div>
+
+    <!-- Empty State -->
+    <div id="empty-state" class="empty-state" style="display: none;">
+      <div class="empty-icon">📂</div>
+      <h3>No editorials found</h3>
+      <p>Try clearing your search query or selecting a different date/topic filter.</p>
+      <button id="empty-reset-btn" class="btn btn-primary">Reset Filters</button>
+    </div>
+
+    <!-- Editorial Cards Grid -->
+    <div id="editorials-grid" class="editorials-grid">
+      <!-- Dynamically populated by app.js -->
+    </div>
+  </main>
+
+  <!-- Daily Vocab Deck Modal -->
+  <div id="vocab-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog vocab-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>📖 Daily Editorial Vocabulary Deck</h3>
+          <p class="subtitle">High-yield words extracted from today's editorials with definitions, synonyms, and usage.</p>
+        </div>
+        <button class="modal-close-btn" id="close-vocab-modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div id="vocab-deck-container" class="vocab-deck-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="vocab-modal-done">Close Deck</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bookmarks Modal -->
+  <div id="bookmarks-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>⭐ Saved Editorials & Papers</h3>
+          <p class="subtitle">Your bookmarked readings stored locally for revision and offline study.</p>
+        </div>
+        <button class="modal-close-btn" id="close-bookmarks-modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div id="bookmarks-list" class="bookmarks-list">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="clear-all-bookmarks-btn">Clear All</button>
+        <button class="btn btn-primary" id="close-bookmarks-btn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reader Typography Settings Modal -->
+  <div id="settings-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog settings-modal-dialog">
+      <div class="modal-header">
+        <h3>⚙️ Reader & Display Settings</h3>
+        <button class="modal-close-btn" id="close-settings-modal">✕</button>
+      </div>
+      <div class="modal-body settings-body">
+        <div class="setting-item">
+          <label class="setting-label">Font Family</label>
+          <div class="font-toggle-group">
+            <button class="font-opt-btn active" data-font="serif">Merriweather (Serif)</button>
+            <button class="font-opt-btn" data-font="sans">Inter (Modern Sans)</button>
+            <button class="font-opt-btn" data-font="mono">JetBrains (Mono)</button>
+          </div>
+        </div>
+
+        <div class="setting-item">
+          <label class="setting-label">Reading Text Size</label>
+          <div class="size-toggle-group">
+            <button class="size-btn" data-size="sm">A- (Small)</button>
+            <button class="size-btn active" data-size="md">A (Default)</button>
+            <button class="size-btn" data-size="lg">A+ (Large)</button>
+            <button class="size-btn" data-size="xl">A++ (Extra)</button>
+          </div>
+        </div>
+
+        <div class="setting-item">
+          <label class="setting-label">Audio Speech Speed</label>
+          <div class="speech-speed-group">
+            <button class="speed-btn" data-speed="0.8">0.8x</button>
+            <button class="speed-btn active" data-speed="1.0">1.0x</button>
+            <button class="speed-btn" data-speed="1.2">1.2x</button>
+            <button class="speed-btn" data-speed="1.5">1.5x</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="save-settings-btn">Apply Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Immersive Full Editorial Reader View / Modal -->
+  <div id="reader-modal" class="reader-modal-overlay" style="display: none;">
+    <div class="reader-container">
+      <!-- Sticky Reader Top Navigation Bar -->
+      <div class="reader-top-bar">
+        <button id="reader-close-btn" class="reader-back-btn" title="Back to editorials list">
+          <span>← Back to Hub</span>
+        </button>
+
+        <div class="reader-meta-center">
+          <span id="reader-source-badge" class="badge-source">The Hindu</span>
+          <span id="reader-date" class="reader-date-text">2026-09-14</span>
+        </div>
+
+        <div class="reader-actions-right">
+          <!-- Text to Speech Controls -->
+          <div class="tts-controls" id="tts-controls">
+            <button id="tts-play-btn" class="btn-tts" title="Listen to Editorial (Text-to-Speech)">
+              <span id="tts-icon">▶</span>
+              <span id="tts-label">Listen</span>
+            </button>
+            <button id="tts-stop-btn" class="btn-tts-stop" title="Stop Audio" style="display: none;">⏹</button>
+            <span id="tts-speed-badge" class="tts-speed-indicator" title="Audio Speed">1.0x</span>
+          </div>
+
+          <button id="reader-bookmark-btn" class="reader-tool-btn" title="Save / Bookmark">
+            <span class="bm-icon">☆</span>
+          </button>
+          
+          <button id="reader-share-btn" class="reader-tool-btn" title="Copy Link / Share">
+            <span>🔗</span>
+          </button>
+
+          <button id="reader-font-toggle" class="reader-tool-btn" title="Toggle Font Style">
+            <span>Aa</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Reader Scrollable Document Content -->
+      <article class="reader-article-content" id="reader-article-body">
+        <header class="reader-header">
+          <div class="reader-tags-row">
+            <span id="reader-cat-tag" class="cat-pill">Governance & Polity</span>
+            <span id="reader-tone-tag" class="tone-pill">Analytical</span>
+            <span id="reader-time-tag" class="time-pill">⏱ 2 min read</span>
+          </div>
+          <h1 id="reader-title" class="reader-headline">Editorial Headline</h1>
+          <div class="reader-byline">
+            <span>Published by <strong id="reader-source-name">Publication</strong></span>
+            <span class="separator">•</span>
+            <a href="#" id="reader-external-link" target="_blank" rel="noopener noreferrer" class="original-link">
+              Read full text on original website ↗
+            </a>
+          </div>
+        </header>
+
+        <!-- 30-Second Crux Box -->
+        <section class="reader-section crux-box">
+          <div class="section-badge">⚡ 30-Second Crux</div>
+          <p id="reader-crux" class="crux-text">One sentence executive crux summary.</p>
+        </section>
+
+        <!-- Key Takeaways Section -->
+        <section class="reader-section takeaways-box">
+          <h3 class="section-subheading">💡 Key Analytical Takeaways</h3>
+          <ul id="reader-takeaways-list" class="takeaways-list">
+            <!-- Populated dynamically -->
+          </ul>
+        </section>
+
+        <!-- Vocabulary Booster Cards -->
+        <section class="reader-section vocab-section">
+          <div class="section-header-row">
+            <h3 class="section-subheading">📖 Vocabulary Booster (Exam & Editorial Words)</h3>
+            <span class="sub-hint">Click words to study meanings and antonyms</span>
+          </div>
+          <div id="reader-vocab-grid" class="vocab-cards-grid">
+            <!-- Populated dynamically -->
+          </div>
+        </section>
+
+        <!-- Exam / Analytical Relevance & Mains Question -->
+        <section class="reader-section relevance-section">
+          <div class="relevance-box">
+            <div class="relevance-header">
+              <span class="icon">🎯</span>
+              <strong id="reader-relevance-tag">Exam Relevance: GS Paper 2</strong>
+            </div>
+            <div class="practice-question-box">
+              <div class="q-label">✍️ Analytical Practice Question:</div>
+              <p id="reader-question-text" class="question-text">Analytical Mains practice question here...</p>
+              <button id="copy-question-btn" class="btn-copy-sm">📋 Copy Question</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Full Content Body -->
+        <section class="reader-section article-body-section">
+          <h3 class="section-subheading">📄 Editorial Excerpt & Discussion</h3>
+          <div id="reader-body-paragraphs" class="article-paragraphs">
+            <!-- Populated dynamically -->
+          </div>
+        </section>
+
+        <!-- Bottom Actions & External Source Link -->
+        <footer class="reader-footer">
+          <div class="reader-footer-actions">
+            <a href="#" id="reader-bottom-link" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Read Full Article at Source ↗
+            </a>
+            <button id="reader-back-bottom-btn" class="btn btn-outline">
+              ← Back to Editorial Hub
+            </button>
+          </div>
+        </footer>
+      </article>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Daily Editorial Hub</h4>
+        <p>Curated daily newspaper editorials, op-eds, and research paper digests tailored for competitive exams, policy researchers, and avid readers.</p>
+        <p class="updated-time" id="last-updated-text">Dataset: Updated Daily</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sources Covered</h4>
+        <ul class="footer-links">
+          <li><a href="https://indianexpress.com/section/opinion/editorials/" target="_blank" rel="noopener">The Indian Express Editorials</a></li>
+          <li><a href="https://www.thehindu.com/opinion/editorial/" target="_blank" rel="noopener">The Hindu Editorials</a></li>
+          <li><a href="https://www.theguardian.com/tone/editorials" target="_blank" rel="noopener">The Guardian View</a></li>
+          <li><a href="https://arxiv.org/list/cs.AI/recent" target="_blank" rel="noopener">arXiv AI & CS Recent Papers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>GitHub Pages Deployment</h4>
+        <p>This website is 100% static and automated via GitHub Actions cron. Free zero-maintenance hosting on GitHub Pages.</p>
+        <p class="gh-link">
+          <a href="https://github.com" target="_blank" rel="noopener">Deploy your own copy on GitHub ↗</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2026 Daily Editorial Hub. Designed for focused, distraction-free reading.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" style="display: none;"></div>
+
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>
