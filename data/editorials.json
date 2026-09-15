@@ -1,7 +1,663 @@
 {
-  "last_updated": "2026-09-14 17:19:07 UTC",
-  "total_articles": 32,
+  "last_updated": "2026-09-15 05:58:08 UTC",
+  "total_articles": 42,
   "articles": [
+    {
+      "id": "arxiv-ai-cs-zgcm-1-a-fully-open-and-extremely-efficient-foundation-mod",
+      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Global Affairs",
+      "date": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.13356",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "13356v1 Announce Type: new Abstract: In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency.",
+      "takeaways": [
+        "13356v1 Announce Type: new Abstract: In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency.",
+        "On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.",
+        "To facilitate community research, we open-source model weights from the pre-training, mid-training, and post-training stages, intermediate checkpoints, training code, per-stage data and data recipes, and W&B logs."
+      ],
+      "vocabulary": [
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a distinct set of concepts",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture & System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum & MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Extensive evaluations show that ZGCM-1-7B is competitive across 7B model family on general benchmarks."
+        },
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or question",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'ZGCM-1', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "arXiv:2609.13356v1 Announce Type: new Abstract: In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture & System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum & MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes. Furthermore, we establish an AI-native R&D workflow where agent swarms autonomously manage cluster operations, data curation, and rapid diagnostic evaluation. Extensive evaluations show that ZGCM-1-7B is competitive across 7B model family on general benchmarks. On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1. We also show that our pre-training design offers a ~4.2x efficiency improvement in 16K pre-training time-to-loss. Across the full development lifecycle, we distill eight actionable empirical findings-spanning architectural scaling, SFT quality pruning, long-context generalization, and agentic co-training dynamics. To facilitate community research, we open-source model weights from the pre-training, mid-training, and post-training stages, intermediate checkpoints, training code, per-stage data and data recipes, and W&B logs."
+    },
+    {
+      "id": "arxiv-ai-cs-converge-then-diversify-decoupling-convergence-and-diversi",
+      "title": "Converge Then Diversify: Decoupling Convergence and Diversity in Multi-Objective Bayesian Optimisation",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.13396",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "13396v1 Announce Type: new Abstract: Multi-objective Bayesian optimisation (MOBO) is a sample-efficient approach for optimising expensive black-box functions with multiple objectives.",
+      "takeaways": [
+        "13396v1 Announce Type: new Abstract: Multi-objective Bayesian optimisation (MOBO) is a sample-efficient approach for optimising expensive black-box functions with multiple objectives.",
+        "To address this issue, this paper proposes a \\textit{converge-then-diversify} (CTD) approach that decouples convergence and diversity into two stages.",
+        "1\\%, with the advantage being particularly evident in settings with very tight evaluation budgets or in high-dimensional problems."
+      ],
+      "vocabulary": [
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical satisfaction with oneself or achievements",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme power or authority; the authority of a state to govern itself",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'Converge Then Diversify' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.13396v1 Announce Type: new Abstract: Multi-objective Bayesian optimisation (MOBO) is a sample-efficient approach for optimising expensive black-box functions with multiple objectives. In MOBO, the goal is to adequately approximate the Pareto front; that is, to obtain a high-quality solution set with 1) good convergence (closeness to the Pareto front) and 2) good diversity (spread across the Pareto front). Existing MOBO methods typically aim to accomplish these two tasks simultaneously, i.e., driving the search towards the Pareto front while maintaining a diverse set of nondominated solutions, such that the solutions, ideally, can gradually approach the entire front. When sufficient search budgets are available, this approach is effective. However, considering both convergence and diversity throughout the search is not easy and requires careful design. Under very tight budgets, there may not be enough solutions generated to be able to simultaneously approach the entire Pareto front. To address this issue, this paper proposes a \\textit{converge-then-diversify} (CTD) approach that decouples convergence and diversity into two stages. In the first stage, CTD focuses on convergence, aiming to quickly drive the search toward a single point on the Pareto front. In the second stage, CTD focuses on diversity, aiming to spread solutions across the front. We present two simple instantiations of CTD by using widely adopted acquisition functions in the area. Experimental results show that, across all 446 pairwise comparisons, CTD statistically outperforms state-of-the-art methods in 72.9\\% of the cases, performs equivalently in 21.1\\%, and is statistically worse in only 6.1\\%, with the advantage being particularly evident in settings with very tight evaluation budgets or in high-dimensional problems."
+    },
+    {
+      "id": "arxiv-ai-cs-generalized-agent-iteration-one-formal-framework-for-itera",
+      "title": "Generalized Agent Iteration: One Formal Framework for Iterative Policy Improvement and Recursive Self-Improvement",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.13406",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "13406v1 Announce Type: new Abstract: When we speak of recursive self-improvement (RSI), are we speaking of a phenomenon, a mechanism, or a prospect.",
+      "takeaways": [
+        "13406v1 Announce Type: new Abstract: When we speak of recursive self-improvement (RSI), are we speaking of a phenomenon, a mechanism, or a prospect.",
+        "GAI defines the agent as a configuration of modifiable components within a system and models the learning process as a cycle of agent evaluation and agent improvement.",
+        "We see this paper as a first step toward exploring a formal characterization of RSI that rests on the classical account, makes existing systems comparable, and provides a principled basis for analyzing and designing new ones."
+      ],
+      "vocabulary": [
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a distinct set of concepts",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "In this paper, we propose Generalized Agent Iteration (GAI), a formal framework that describes iterative policy improvement and RSI as two cases of a single learning paradigm."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'Generalized Agent Iteration' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.13406v1 Announce Type: new Abstract: When we speak of recursive self-improvement (RSI), are we speaking of a phenomenon, a mechanism, or a prospect? Towards autonomous and evolving intelligence, RSI is being claimed at many scales, while no single framework that formally describes these emerging instances exists. Its counterpart in the classical realm, iterative policy improvement, is characterized by generalized policy iteration (GPI), a framework of broad applicability with well-understood theoretical properties, but only where the update principle and the evaluation base lie outside the agent. In this paper, we propose Generalized Agent Iteration (GAI), a formal framework that describes iterative policy improvement and RSI as two cases of a single learning paradigm. GAI defines the agent as a configuration of modifiable components within a system and models the learning process as a cycle of agent evaluation and agent improvement. Two pivotal dials then distinguish the instances: whether the improving mechanism is part of the agent and whether the standard it is measured against is grounded outside it. The former dial delineates the boundary between GPI and RSI, and the latter determines a system's polarity as anchored, goal drift, or fully self-referential. Moreover, we use these coordinates to place existing systems on the same two axes and make the defects of recursive self-improvement statable one condition at a time. We see this paper as a first step toward exploring a formal characterization of RSI that rests on the classical account, makes existing systems comparable, and provides a principled basis for analyzing and designing new ones."
+    },
+    {
+      "id": "arxiv-ai-cs-vibe-patenting-evaluating-llm-judges-for-professional-pate",
+      "title": "Vibe Patenting: Evaluating LLM Judges for Professional Patent-Drafting Agents",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Polity & Governance",
+      "date": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.13422",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "13422v1 Announce Type: new Abstract: LLM judges are increasingly used to evaluate and improve AI-generated outputs, yet their reliability for complex professional work remains unclear.",
+      "takeaways": [
+        "13422v1 Announce Type: new Abstract: LLM judges are increasingly used to evaluate and improve AI-generated outputs, yet their reliability for complex professional work remains unclear.",
+        "Notably, iterative judge feedback enables a low-reasoning agent to approach the performance of a substantially more expensive high-reasoning agent.",
+        "These results highlight both the utility and limitations of LLM judges as evaluators and optimization signals for complex professional workflows."
+      ],
+      "vocabulary": [
+        {
+          "word": "Deterrence",
+          "pos": "Noun",
+          "definition": "The action of discouraging an action or event through instilling doubt or fear",
+          "synonyms": [
+            "prevention",
+            "discouragement",
+            "disincentive"
+          ],
+          "antonyms": [
+            "encouragement",
+            "incitement"
+          ],
+          "example": "Policymakers must demonstrate deterrence interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Lack of activity, growth, or development",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'Vibe Patenting'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "arXiv:2609.13422v1 Announce Type: new Abstract: LLM judges are increasingly used to evaluate and improve AI-generated outputs, yet their reliability for complex professional work remains unclear. We study this problem through Vibe Patenting, an end-to-end patent-drafting testbed for AI-agent evaluation. A separately-invoked LLM judge evaluates generated patent drafts and provides structured feedback for iterative revision. Across multiple inventions and drafting-agent configurations, judge-guided revision consistently improves judge-assessed quality, while unguided revision tends to saturate. Notably, iterative judge feedback enables a low-reasoning agent to approach the performance of a substantially more expensive high-reasoning agent. Stronger models and increased reasoning generally improve judge-assessed drafting quality, while domain-specific agentic workflows provide further gains. We validate the judge against independent evaluation by a professional patent attorney and find meaningful but strongly metric-dependent agreement and systematic calibration differences. These results highlight both the utility and limitations of LLM judges as evaluators and optimization signals for complex professional workflows."
+    },
+    {
+      "id": "arxiv-ai-cs-toward-self-adaptive-physical-ai-can-llm-agents-manage-lon",
+      "title": "Toward Self-Adaptive Physical AI: Can LLM Agents Manage Long-Horizon Physical Tasks?",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.13436",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "13436v1 Announce Type: new Abstract: Large Language Model (LLM) agents offer a promising path toward autonomously managing long-term physical tasks without human intervention.",
+      "takeaways": [
+        "13436v1 Announce Type: new Abstract: Large Language Model (LLM) agents offer a promising path toward autonomously managing long-term physical tasks without human intervention.",
+        "In this work, we explore the feasibility of building a self-adaptive physical AI agent that manages long-term physical tasks in a zero-shot manner and adapts to environmental changes without human intervention.",
+        "Our results show that zero-shot LLM agents can achieve comparable management outcomes to RL agents under the same weather pattern and adapt more effectively than RL when evaluated under a shifted environment, highlighting a promising path toward self-adaptive physical AI agents."
+      ],
+      "vocabulary": [
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'Toward Self-Adaptive Physical AI' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.13436v1 Announce Type: new Abstract: Large Language Model (LLM) agents offer a promising path toward autonomously managing long-term physical tasks without human intervention. However, physical tasks require agents to continuously observe the environment, make consequential actions, and remain effective as the environment changes. Existing approaches either require substantial data and retraining, or primarily focus on agents operating in the virtual world. In this work, we explore the feasibility of building a self-adaptive physical AI agent that manages long-term physical tasks in a zero-shot manner and adapts to environmental changes without human intervention. We design a multi-agent framework that integrates planning, tool calling, observation, and verification, and evaluate it on agricultural tasks against reinforcement learning (RL) agents under different weather patterns. Our results show that zero-shot LLM agents can achieve comparable management outcomes to RL agents under the same weather pattern and adapt more effectively than RL when evaluated under a shifted environment, highlighting a promising path toward self-adaptive physical AI agents."
+    },
+    {
+      "id": "arxiv-ai-cs-labagent-customize-any-research-hubs-for-scientific-discov",
+      "title": "LabAgent: Customize Any Research Hubs for Scientific Discoveries Using AI Agents",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.13437",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "13437v1 Announce Type: new Abstract: Scientific research is a continuous process that emphasizes inheritance.",
+      "takeaways": [
+        "13437v1 Announce Type: new Abstract: Scientific research is a continuous process that emphasizes inheritance.",
+        "To address these limitations, we propose LabAgent, a reproduce and discovery harness tailored for a lab's continuous work.",
+        "Overall, these results demonstrate that LabAgent can effectively integrate and reasonably expand laboratory knowledge."
+      ],
+      "vocabulary": [
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical satisfaction with oneself or achievements",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme power or authority; the authority of a state to govern itself",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'LabAgent' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.13437v1 Announce Type: new Abstract: Scientific research is a continuous process that emphasizes inheritance. Methods developed by predecessors are often expanded upon by new researchers to explore more novel and in-depth scientific questions. However, the change of lab staff, such as student graduation, leads to a lack of personnel capable of replicating methods. Methods that have been developed with significant effort and resources cannot be continued. To address these limitations, we propose LabAgent, a reproduce and discovery harness tailored for a lab's continuous work. LabAgent employs two mechanisms to guarantee that all skills can be executed and verified and to record the corrective methods and experiences, allowing for direct correction or avoidance of similar errors. We applied LabAgent to drug property prediction, biomedical problem analysis, protein variant effect prediction, and statistical genetics in life science domains. LabAgent ranks first over commercial generalist agents in every domain, and demonstrates accurate reproduction of a published figure. Overall, these results demonstrate that LabAgent can effectively integrate and reasonably expand laboratory knowledge."
+    },
+    {
+      "id": "arxiv-ai-cs-timethink-eliciting-compositional-reasoning-in-timeseries-",
+      "title": "TimeThink: Eliciting Compositional Reasoning in Timeseries Large Language Models",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.13457",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "13457v1 Announce Type: new Abstract: Timeseries multimodal large language models (TS-MLLMs) have recently begun leveraging the reasoning capabilities of large language models (LLMs) for question-answering tasks.",
+      "takeaways": [
+        "13457v1 Announce Type: new Abstract: Timeseries multimodal large language models (TS-MLLMs) have recently begun leveraging the reasoning capabilities of large language models (LLMs) for question-answering tasks.",
+        ", trend, seasonality) are domain-independent and can be deterministically generated.",
+        "Extensive experiments show that TimeThink, trained only on synthetic data, significantly outperforms strong baselines on both synthetic and real-world benchmarks."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Extensive experiments show that TimeThink, trained only on synthetic data, significantly outperforms strong baselines on both synthetic and real-world benchmarks."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'TimeThink' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.13457v1 Announce Type: new Abstract: Timeseries multimodal large language models (TS-MLLMs) have recently begun leveraging the reasoning capabilities of large language models (LLMs) for question-answering tasks. However, these models often fail to capture dynamic temporal patterns, providing only implicit reasoning that lacks the underlying explanations critical for high-stakes applications like healthcare. While reinforcement learning (RL)-based timeseries language models aim to address this, they often fall short because they are trained on narrow, in-distribution data and struggle with out-of-distribution compositional questions. To address these challenges, we present TimeThink, a synthetic framework for eliciting compositional timeseries reasoning. Core timeseries primitives (e.g., trend, seasonality) are domain-independent and can be deterministically generated. Guided by this premise, TimeThink first designs a synthetic data generator that produces atomic and composite question-answer pairs, providing objective ground truth with reasoning traces. Building on this framework, TimeThink employs a reinforcement learning with verifiable rewards (RLVR) training strategy that encourages explicit reasoning. Unlike template-reliant methods, this approach enables the model to learn the underlying logic of composition rather than simply imitating traces. Extensive experiments show that TimeThink, trained only on synthetic data, significantly outperforms strong baselines on both synthetic and real-world benchmarks."
+    },
+    {
+      "id": "arxiv-ai-cs-root-cause-attribution-is-a-search-problem-continual-searc",
+      "title": "Root-Cause Attribution Is a Search Problem: Continual Search for Long-Horizon Agent Failures",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.13463",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "13463v1 Announce Type: new Abstract: The increasing deployment of AI agents in long-horizon tasks yields massive execution logs.",
+      "takeaways": [
+        "13463v1 Announce Type: new Abstract: The increasing deployment of AI agents in long-horizon tasks yields massive execution logs.",
+        "We introduce Continual Search, an iterative framework that nudges the judge, over successive turns, to keep searching for unresolved diagnostic evidence.",
+        "More interestingly, within the same model family, lower-tier models can even surpass their higher-tier counterparts, demonstrating that effective search supersedes raw model scale."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "We evaluate Continual Search across four existing RCA benchmarks."
+        },
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical satisfaction with oneself or achievements",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme power or authority; the authority of a state to govern itself",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'Root-Cause Attribution Is a Search Problem' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.13463v1 Announce Type: new Abstract: The increasing deployment of AI agents in long-horizon tasks yields massive execution logs. Diagnosing failures within these records is crucial for reliability, as it transforms outcome-level signals into actionable interventions. The sheer scale of the data renders human review impractical, driving the need for automated root-cause attribution (RCA). However, automated RCA methods using LLMs suffer from low diagnostic accuracy, especially as execution traces grow larger. They struggle because relevant information is often sparse, distributed across distant actions, and disconnected from the visible failure, reducing root-cause attribution to a massive search problem. Existing RCA methods typically rely on one-shot LLM judgments to diagnose failures from execution traces. While effective for shorter trajectories, these judges tend to settle on a plausible diagnosis early, leaving critical evidence in longer traces unexamined. We introduce Continual Search, an iterative framework that nudges the judge, over successive turns, to keep searching for unresolved diagnostic evidence. We evaluate Continual Search across four existing RCA benchmarks. Recognizing the lack of massive execution traces in current benchmarks, we introduce MegaRCA-Mix to evaluate RCA at scale. MegaRCA-Mix provides a challenging testbed of 50 human-annotated failure trials spanning long-horizon, execution-heavy tasks. Across multiple benchmark suites and model families, Continual Search consistently improves attribution performance. On MegaRCA-Mix, for example, it improves GPT-5.5's F1 score by more than 40\\%, from $0.349$ to $0.498$. More interestingly, within the same model family, lower-tier models can even surpass their higher-tier counterparts, demonstrating that effective search supersedes raw model scale."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-reform-uk-crypto-billionaires-must-b",
+      "title": "The Guardian view on Reform UK: crypto billionaires must be stopped from undermining democracy",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Polity & Governance",
+      "date": "2026-09-14",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/14/the-guardian-view-on-reform-uk-crypto-billionaires-must-be-stopped-from-undermining-democracy",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "The vast sums given to Nigel Farage’s party in recent days must lead to action on political funding The staggering sums gifted to Reform UK over the weekend have transformed the context for the representation of the people bill making its way through parliament.",
+      "takeaways": [
+        "The vast sums given to Nigel Farage’s party in recent days must lead to action on political funding The staggering sums gifted to Reform UK over the weekend have transformed the context for the representation of the people bill making its way through parliament.",
+        "It is unclear whether either man meets the criteria set out in the Rycroft review into foreign influence in politics.",
+        "While ministers will view the prospect of a legal fight over eligibility with trepidation, they must do what it takes to ensure rules are met."
+      ],
+      "vocabulary": [
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Lack of activity, growth, or development",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a distinct set of concepts",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'The Guardian view on Reform UK', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The vast sums given to Nigel Farage’s party in recent days must lead to action on political funding The staggering sums gifted to Reform UK over the weekend have transformed the context for the representation of the people bill making its way through parliament. The announcement of two £36m donations from Ben Delo and Christopher Harborne, both crypto billionaires who have lived abroad, makes Andy Burnham’s decision not to impose a limit on political donations – a move he supported before becoming prime minister – look even more misguided. Fortunately the House of Lords still has the chance to amend the bill. It should take it by imposing meaningful limits on both political donations and party spending. It is unclear whether either man meets the criteria set out in the Rycroft review into foreign influence in politics. It set a maximum of £100,000 per annum for people who have not been in the UK for at least a year. Mr Delo previously lived in Hong Kong while Mr Harborne is based partly in Thailand; Nigel Farage said on Monday that he does not know the details of their movements. While ministers will view the prospect of a legal fight over eligibility with trepidation, they must do what it takes to ensure rules are met. Continue reading..."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-the-united-ireland-debate-shifting-d",
+      "title": "The Guardian view on the united Ireland debate: shifting dynamics need to be treated with caution",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-09-14",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/14/the-guardian-view-on-the-united-ireland-debate-shifting-dynamics-need-to-be-treated-with-caution",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "Donald Trump’s blithe comments at the weekend were characteristically unhelpful.",
+      "takeaways": [
+        "Donald Trump’s blithe comments at the weekend were characteristically unhelpful.",
+        "It would reverse the slow drift towards integration.",
+        "The logic of further economic integration between north and south within the EU’s single market was reinforced."
+      ],
+      "vocabulary": [
+        {
+          "word": "Proactive",
+          "pos": "Adjective",
+          "definition": "Creating or controlling a situation rather than just responding to it after it has happened",
+          "synonyms": [
+            "enterprising",
+            "forward-looking",
+            "preventative"
+          ],
+          "antonyms": [
+            "reactive",
+            "passive"
+          ],
+          "example": "Policymakers must demonstrate proactive interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Consensus",
+          "pos": "Noun",
+          "definition": "A general agreement among a group of people",
+          "synonyms": [
+            "accord",
+            "harmony",
+            "unity"
+          ],
+          "antonyms": [
+            "discord",
+            "disagreement"
+          ],
+          "example": "Policymakers must demonstrate consensus interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'The Guardian view on the united Ireland debate', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "Donald Trump’s blithe comments at the weekend were characteristically unhelpful. A careful and considered discussion on the subject has yet to begin A decade ago, the Democratic Unionist party (DUP) viewed Brexit as a potential gamechanger in the struggle to resist future pressure for a united Ireland. As the author and journalist Fintan O’Toole wrote in an essay published last year, the DUP hoped that the 2016 referendum would deliver “a double exit. Brexit would not simply mean the UK’s departure from the EU. It would also be an act of separation from the Republic. It would reverse the slow drift towards integration.” That proved to be, to put it mildly, a deeply flawed judgment. The direction of travel since 2016 has instead been the opposite. Rather than leading to a hard border between Northern Ireland and Ireland, which would have disastrously undermined the Good Friday agreement, the UK’s divorce agreement from Brussels eventually placed one in the Irish Sea. The logic of further economic integration between north and south within the EU’s single market was reinforced. Continue reading..."
+    },
     {
       "id": "the-indian-express-after-oil-surge-fed-rate-hike-will-shape-challenge",
       "title": "After oil surge, Fed rate hike will shape challenge",
