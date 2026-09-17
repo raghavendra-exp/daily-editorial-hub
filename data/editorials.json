@@ -1,7 +1,812 @@
 {
-  "last_updated": "2026-09-16 05:47:37 UTC",
-  "total_articles": 46,
+  "last_updated": "2026-09-17 05:53:55 UTC",
+  "total_articles": 58,
   "articles": [
+    {
+      "id": "the-hindu-currency-conundrum-on-the-brics-new-delhi-declaration",
+      "title": "Currency conundrum: On the BRICS New Delhi Declaration",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "Global Affairs",
+      "date": "2026-09-17",
+      "url": "https://www.thehindu.com/opinion/editorial/currency-conundrum-on-the-brics-new-delhi-declaration/article71472831.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "Boosting local currency trade in BRICS is not a simple choice for India.",
+      "takeaways": [
+        "Boosting local currency trade in BRICS is not a simple choice for India.",
+        "Emphasizes vital strategic considerations regarding Currency conundrum: On the BRICS New Delhi Declaration.",
+        "Emphasizes vital strategic considerations regarding Currency conundrum: On the BRICS New Delhi Declaration."
+      ],
+      "vocabulary": [
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or question",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Boosting local currency trade in BRICS is not a simple choice for India Currency conundrum: On the BRICS New Delhi Declaration."
+        },
+        {
+          "word": "Imperative",
+          "pos": "Adjective / Noun",
+          "definition": "Of vital importance; crucial or an essential thing",
+          "synonyms": [
+            "vital",
+            "essential",
+            "crucial"
+          ],
+          "antonyms": [
+            "optional",
+            "negligible"
+          ],
+          "example": "Policymakers must demonstrate imperative interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical satisfaction with oneself or achievements",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'Currency conundrum', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "This editorial analysis examines 'Currency conundrum: On the BRICS New Delhi Declaration', published in The Hindu. The piece delves into key structural challenges and emerging trends within the Global Affairs domain. Readers are advised to study the critical takeaways and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "the-hindu-hog-in-the-limelight-on-assam-s-pygmy-hog-programme",
+      "title": "Hog in the limelight: On Assam’s pygmy hog programme",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "National Affairs",
+      "date": "2026-09-17",
+      "url": "https://www.thehindu.com/opinion/editorial/hog-in-the-limelight-on-assams-pygmy-hog-programme/article71472854.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "The survival of the pygmy hog depends on a thriving ecosystem.",
+      "takeaways": [
+        "The survival of the pygmy hog depends on a thriving ecosystem.",
+        "Emphasizes vital strategic considerations regarding Hog in the limelight: On Assam’s pygmy hog programme.",
+        "Emphasizes vital strategic considerations regarding Hog in the limelight: On Assam’s pygmy hog programme."
+      ],
+      "vocabulary": [
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical satisfaction with oneself or achievements",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme power or authority; the authority of a state to govern itself",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'Hog in the limelight'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "This editorial analysis examines 'Hog in the limelight: On Assam’s pygmy hog programme', published in The Hindu. The piece delves into key structural challenges and emerging trends within the National Affairs domain. Readers are advised to study the critical takeaways and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "arxiv-ai-cs-making-ai-assisted-claims-independently-challengeable-publ",
+      "title": "Making AI-Assisted Claims Independently Challengeable: Publication Authority and a Protocol for Falsifiable Publication Records",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-17",
+      "url": "https://arxiv.org/abs/2609.17631",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "17631v1 Announce Type: new Abstract: AI-assisted claims can appear authoritative when evidence, analysis, human authorization, presentation, and correction history refer to different states.",
+      "takeaways": [
+        "17631v1 Announce Type: new Abstract: AI-assisted claims can appear authoritative when evidence, analysis, human authorization, presentation, and correction history refer to different states.",
+        "We use identity vectors, adversarial cases, finite models, and historical implementations.",
+        "Results support internal coherence, bounded safety, fault sensitivity, and limited constructibility, but not factual truth, general refinement, blind interoperability, field efficacy, or standards status."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'Making AI-Assisted Claims Independently Challengeable' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.17631v1 Announce Type: new Abstract: AI-assisted claims can appear authoritative when evidence, analysis, human authorization, presentation, and correction history refer to different states. Provenance, attestation, and transparency expose history but alone do not specify the publication transition examined here. We develop Publication Authority as an exact-state, non-transferable, single-use publication capability and instantiate it in PAC-2026 (Publication-Accountability Calculus), a machine-readable AIJIM Protocol candidate. We evaluate its fourth bounded semantic freeze (SF-4), a fixed-profile specification designed for replaceable bindings. Six obligations govern evidence, runs and artifacts, measurement disclosure, authorization, surface correspondence, and lifecycle continuity. Each yields a target-bound witness, localized counterexample, or localized unverifiability; none can compensate for another. Only a fresh, complete all-pass record derives the permit consumed by one atomic publication transition. We use identity vectors, adversarial cases, finite models, and historical implementations. Ten models explored 110,764 safe reachable states; 76 unsafe configurations produced the expected violation or observer countermodel. A reader surface passing its correspondence check cannot authorize publication unless the accepted record admits that surface. SF-4 separates evidence horizon from verification time and rejects an authentic but causally invalid authorization. A historical predecessor path reproduced 17 frozen authorization-successor outcomes. A later in-house, instance-blind test of known case classes matched all 183 scored expectations; same-host package execution reproduced its 240 archived observations. Results support internal coherence, bounded safety, fault sensitivity, and limited constructibility, but not factual truth, general refinement, blind interoperability, field efficacy, or standards status."
+    },
+    {
+      "id": "arxiv-ai-cs-evolvetrade-experience-driven-policy-refinement-for-self-e",
+      "title": "EvolveTrade: Experience-Driven Policy Refinement for Self-Evolving LLM Trading Agents",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Economy & Banking",
+      "date": "2026-09-17",
+      "url": "https://arxiv.org/abs/2609.17632",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "17632v1 Announce Type: new Abstract: Large language model (LLM) trading agents can combine market data, news, and executable analysis, but their behavior is often controlled by static hand-written tool-use policies that are fixed before deployment.",
+      "takeaways": [
+        "17632v1 Announce Type: new Abstract: Large language model (LLM) trading agents can combine market data, news, and executable analysis, but their behavior is often controlled by static hand-written tool-use policies that are fixed before deployment.",
+        "The updated policy is then used for the next batch of trading decisions, enabling the agent to refine its information-acquisition and portfolio-construction procedure over time.",
+        "These results suggest that adapting the reusable procedure governing tool use is a key direction for building more robust LLM trading agents."
+      ],
+      "vocabulary": [
+        {
+          "word": "Vulnerability",
+          "pos": "Noun",
+          "definition": "The quality or state of being exposed to the possibility of being attacked or harmed",
+          "synonyms": [
+            "susceptibility",
+            "fragility",
+            "weakness"
+          ],
+          "antonyms": [
+            "resilience",
+            "invulnerability"
+          ],
+          "example": "Policymakers must demonstrate vulnerability interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Adversary",
+          "pos": "Noun",
+          "definition": "One's opponent in a contest, conflict, or dispute",
+          "synonyms": [
+            "rival",
+            "opponent",
+            "nemesis"
+          ],
+          "antonyms": [
+            "ally",
+            "supporter"
+          ],
+          "example": "Policymakers must demonstrate adversary interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ameliorate",
+          "pos": "Verb",
+          "definition": "To make something bad or unsatisfactory better",
+          "synonyms": [
+            "improve",
+            "enhance",
+            "better"
+          ],
+          "antonyms": [
+            "worsen",
+            "deteriorate"
+          ],
+          "example": "Policymakers must demonstrate ameliorate interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'EvolveTrade'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "arXiv:2609.17632v1 Announce Type: new Abstract: Large language model (LLM) trading agents can combine market data, news, and executable analysis, but their behavior is often controlled by static hand-written tool-use policies that are fixed before deployment. This limits their ability to adapt how they gather evidence, invoke tools, verify signals, and manage risk under changing market regimes. We introduce EvolveTrade, a self-evolving framework that treats the system prompt of a tool-using trading agent as a text-parameterized policy. After each update interval, a Policy Agent revises this policy using accumulated decision traces and realized portfolio feedback, while keeping the backbone LLM fixed. The updated policy is then used for the next batch of trading decisions, enabling the agent to refine its information-acquisition and portfolio-construction procedure over time. Experiments across multiple market regimes and two LLM backbones show that EvolveTrade often improves Sharpe Ratio and Cumulative Return over fixed-policy LLM baselines, achieving the improved SR and CR in most evaluated settings. Behavioral analyses further show that self-evolved policies increase code-mediated analysis and activate regime-relevant computations; case-level policy-to-return attributions trace how policy-induced allocation changes contribute to realized return differences. These results suggest that adapting the reusable procedure governing tool use is a key direction for building more robust LLM trading agents."
+    },
+    {
+      "id": "arxiv-ai-cs-one-color-preprocessing-improves-dsatur",
+      "title": "One Color Preprocessing Improves DSATUR",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-17",
+      "url": "https://arxiv.org/abs/2609.17633",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "17633v1 Announce Type: new Abstract: The Graph Coloring Problem (GCP) is NP-hard and DSATUR stands as one of the fastest heuristics for it despite producing colorings that typically use more colors than state-of-the-art coloring algorithms.",
+      "takeaways": [
+        "17633v1 Announce Type: new Abstract: The Graph Coloring Problem (GCP) is NP-hard and DSATUR stands as one of the fastest heuristics for it despite producing colorings that typically use more colors than state-of-the-art coloring algorithms.",
+        "To the best of our knowledge, SSLD is the first approach to improve DSATUR by preprocessing through fixed color classes.",
+        "This quality comes at a runtime cost of roughly 195 times slower that DSATUR, but demonstrating that SDP-guided preprocessing of a first color class is a direction for future improvements."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "SSLD matches or beats DSATUR in almost every case across over 1600 benchmark instances, and out performs the naive GISD baseline, allows us to confirm the value brought by the SDP-guided choice of the first color class."
+        },
+        {
+          "word": "Substantive",
+          "pos": "Adjective",
+          "definition": "Having a firm basis in reality and being therefore important, meaningful, or considerable",
+          "synonyms": [
+            "significant",
+            "meaningful",
+            "tangible"
+          ],
+          "antonyms": [
+            "trivial",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate substantive interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, or accurate",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "Policymakers must demonstrate rigorous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'One Color Preprocessing Improves DSATUR' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.17633v1 Announce Type: new Abstract: The Graph Coloring Problem (GCP) is NP-hard and DSATUR stands as one of the fastest heuristics for it despite producing colorings that typically use more colors than state-of-the-art coloring algorithms. We propose SSLD (Semidefinite Spectral Learning with DSATUR), which improves DSATUR by preprocessing a first good color class before letting DSATUR complete coloring the rest of the given graph. We obtain this color class from a Semidefinite Programming (SDP), similar to an SDP used to compute the Lov\\'asz theta number. To the best of our knowledge, SSLD is the first approach to improve DSATUR by preprocessing through fixed color classes. We evaluate SSLD against DSATUR and against a naive 1-color-class preprocessing algorithm on DIMACS instances, random graphs (Erd\\H{o}s--R\\'enyi, Watts-Strogatz, Barab\\'asi--Albert), Frequency Assignment and Job Shop Scheduling instances. SSLD matches or beats DSATUR in almost every case across over 1600 benchmark instances, and out performs the naive GISD baseline, allows us to confirm the value brought by the SDP-guided choice of the first color class. This quality comes at a runtime cost of roughly 195 times slower that DSATUR, but demonstrating that SDP-guided preprocessing of a first color class is a direction for future improvements."
+    },
+    {
+      "id": "arxiv-ai-cs-physics-constrained-digital-twins-for-sensor-integrity-in-",
+      "title": "Physics-Constrained Digital Twins for Sensor Integrity in Urban Pedestrian Flow: Detecting Stealthy False Data Injection with Conformal Guarantees",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-17",
+      "url": "https://arxiv.org/abs/2609.17635",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "17635v1 Announce Type: new Abstract: City pedestrian counting systems now feed economic indicators, planning decisions and safety operations, yet the twins built on top of them treat the incoming stream as ground truth.",
+      "takeaways": [
+        "17635v1 Announce Type: new Abstract: City pedestrian counting systems now feed economic indicators, planning decisions and safety operations, yet the twins built on top of them treat the incoming stream as ground truth.",
+        "On six years of Melbourne data the margin reaches 0.",
+        "09, which shows that the gain comes from the conservation law rather than from locality."
+      ],
+      "vocabulary": [
+        {
+          "word": "Adversary",
+          "pos": "Noun",
+          "definition": "One's opponent in a contest, conflict, or dispute",
+          "synonyms": [
+            "rival",
+            "opponent",
+            "nemesis"
+          ],
+          "antonyms": [
+            "ally",
+            "supporter"
+          ],
+          "example": "To measure what the physics buys, we define the attack margin, the relative reduction in worst-case corruption of the estimated flow field, achieved against a white-box adversary that optimises directly through the twin."
+        },
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair and impartial",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Contentious",
+          "pos": "Adjective",
+          "definition": "Causing or likely to cause an argument; controversial",
+          "synonyms": [
+            "disputed",
+            "controversial",
+            "debated"
+          ],
+          "antonyms": [
+            "uncontroversial",
+            "peaceful"
+          ],
+          "example": "Policymakers must demonstrate contentious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'Physics-Constrained Digital Twins for Sensor Integrity in Urban Pedestrian Flow' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.17635v1 Announce Type: new Abstract: City pedestrian counting systems now feed economic indicators, planning decisions and safety operations, yet the twins built on top of them treat the incoming stream as ground truth. We study what happens when it is not. We formalise stealthy false data injection for city-scale pedestrian sensing, where the map from latent flow to observation is far more rank deficient than in the power and water networks for which stealth has been characterised. Our twin estimates directed flows on the pedestrian street graph, assimilates counts through a learned graph-localised gain, and is trained against a flow conservation residual that couples metered and unmetered segments. Detection combines the innovation with that residual, and the alarm threshold is set by adaptive conformal calibration rather than by hand. To measure what the physics buys, we define the attack margin, the relative reduction in worst-case corruption of the estimated flow field, achieved against a white-box adversary that optimises directly through the twin. On six years of Melbourne data the margin reaches 0.54 against a single compromised device and falls to 0.19 when a third of the fleet is compromised, on a network where only 1.18 per cent of walkable segments are metered. Replacing the street graph by a distance graph collapses it to 0.09, which shows that the gain comes from the conservation law rather than from locality."
+    },
+    {
+      "id": "arxiv-ai-cs-what-you-can-t-see-is-still-what-you-learn-a-preregistered",
+      "title": "What You Can't See Is Still What You Learn: A Preregistered Sixty-Society Confirmation That Evidence Masking Drives Compositional Generalization",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-17",
+      "url": "https://arxiv.org/abs/2609.17637",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "17637v1 Announce Type: new Abstract: Restricting what a module can read may improve what a system learns to compute.",
+      "takeaways": [
+        "17637v1 Announce Type: new Abstract: Restricting what a module can read may improve what a system learns to compute.",
+        "The unmarked replication also passed.",
+        "Protocols, results, and checkpoints are public."
+      ],
+      "vocabulary": [
+        {
+          "word": "Consensus",
+          "pos": "Noun",
+          "definition": "A general agreement among a group of people",
+          "synonyms": [
+            "accord",
+            "harmony",
+            "unity"
+          ],
+          "antonyms": [
+            "discord",
+            "disagreement"
+          ],
+          "example": "Policymakers must demonstrate consensus interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'What You Can't See Is Still What You Learn' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.17637v1 Announce Type: new Abstract: Restricting what a module can read may improve what a system learns to compute. We test this in a preregistered confirmation with sixty four-cell systems sharing a frozen language-model backbone and communicating through learned continuous packets. Five conditions vary evidence masking, ownership markers, and replacement of foreign evidence with neutral filler, across six initialization clusters, each with two data orders, on one fresh task world. With markers available in both regimes, masking improved accuracy on held-out two- and three-operation compositions by median paired differences of 0.846 and 0.859; all twelve pairs cleared the required margins, and the full preregistered behavioral criterion passed. The unmarked replication also passed. No globally visible system passed the marker-following check, so the effect of usable role information remains unresolved. The filler condition yielded seven full generalizers, but its decomposition criteria were inconclusive. Packet interventions in all eighteen audited masked systems followed the predicted intermediate-value changes on eligible cases; these finite, success-conditioned audits do not establish mediation. The results confirm a large advantage of the tested masking regime, while leaving its finer attribution and generality open. Protocols, results, and checkpoints are public."
+    },
+    {
+      "id": "arxiv-ai-cs-capmem-a-benchmark-for-caption-based-episodic-memory-in-eg",
+      "title": "CapMem: A Benchmark for Caption-Based Episodic Memory in Egocentric Video",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-17",
+      "url": "https://arxiv.org/abs/2609.17688",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "17688v1 Announce Type: new Abstract: Wearable assistants require episodic memory over egocentric video, yet current vision-language models face bounded frame budgets, growing visual-token costs, and long-context retrieval failures.",
+      "takeaways": [
+        "17688v1 Announce Type: new Abstract: Wearable assistants require episodic memory over egocentric video, yet current vision-language models face bounded frame budgets, growing visual-token costs, and long-context retrieval failures.",
+        "On long videos (>20 min), full-coverage CaptionQA with 30s and 60s caption windows outperforms direct VideoQA for 10/12 and 8/12 models, respectively.",
+        "These results support the effectiveness of caption memory for episodic reasoning over long egocentric video."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "We define the Episodic Memory Video Caption QA task and introduce CapMem, a human-annotated benchmark with 75 videos totaling 33."
+        },
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical satisfaction with oneself or achievements",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme power or authority; the authority of a state to govern itself",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'CapMem' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.17688v1 Announce Type: new Abstract: Wearable assistants require episodic memory over egocentric video, yet current vision-language models face bounded frame budgets, growing visual-token costs, and long-context retrieval failures. Under these practical constraints, we study whether textual captions can serve as reusable episodic memory. We define the Episodic Memory Video Caption QA task and introduce CapMem, a human-annotated benchmark with 75 videos totaling 33.7 hours, and 1,000 multiple-choice questions across 16 scenarios. On long videos (>20 min), full-coverage CaptionQA with 30s and 60s caption windows outperforms direct VideoQA for 10/12 and 8/12 models, respectively. On the same video subset, a matched-frame control across six Qwen models retains mean accuracy gains of 3.22 and 2.55 points, respectively. Our caption-guided retrieve-and-verify harness further improves accuracy by up to 5.3 points. These results support the effectiveness of caption memory for episodic reasoning over long egocentric video."
+    },
+    {
+      "id": "arxiv-ai-cs-graphecho-structural-redundancy-and-evidence-provenance-in",
+      "title": "GraphEcho: Structural Redundancy and Evidence Provenance in LLM Graph Agents",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Global Affairs",
+      "date": "2026-09-17",
+      "url": "https://arxiv.org/abs/2609.17695",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "17695v1 Announce Type: new Abstract: A large language model (LLM) agent can follow more graph paths without acquiring more independent evidence.",
+      "takeaways": [
+        "17695v1 Announce Type: new Abstract: A large language model (LLM) agent can follow more graph paths without acquiring more independent evidence.",
+        "Provenance-aware post-training (PAPT) reduces revisits and improves synthetic accuracy, yet covers fewer distinct sources.",
+        "GraphEcho provides a controlled way to evaluate both what graph agents conclude and whether their exploration reaches distinct evidential sources."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "The benchmark varies path counts and evidential origins while holding evidence content fixed, and evaluates both judgments and active exploration."
+        },
+        {
+          "word": "Tenuous",
+          "pos": "Adjective",
+          "definition": "Very weak or slight; insubstantial",
+          "synonyms": [
+            "flimsy",
+            "fragile",
+            "shaky"
+          ],
+          "antonyms": [
+            "strong",
+            "robust",
+            "firm"
+          ],
+          "example": "Policymakers must demonstrate tenuous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Disparity",
+          "pos": "Noun",
+          "definition": "A great difference or inequality",
+          "synonyms": [
+            "imbalance",
+            "discrepancy",
+            "gap"
+          ],
+          "antonyms": [
+            "parity",
+            "equality",
+            "similarity"
+          ],
+          "example": "Policymakers must demonstrate disparity interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'GraphEcho', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "arXiv:2609.17695v1 Announce Type: new Abstract: A large language model (LLM) agent can follow more graph paths without acquiring more independent evidence. GraphEcho tests whether agents mistake these repeated encounters for additional corroboration. The benchmark varies path counts and evidential origins while holding evidence content fixed, and evaluates both judgments and active exploration. Controlled synthetic experiments reveal model-dependent judgment shifts, but redundant supporting paths increase the share of repeated walks across all evaluated frozen agents. Provenance-aware post-training (PAPT) reduces revisits and improves synthetic accuracy, yet covers fewer distinct sources. On scientific claims, it continues to reduce repetition while accuracy declines. These findings expose a gap between efficient exploration and effective evidence use: an agent can learn to stop repeating itself while overlooking information it needs. GraphEcho provides a controlled way to evaluate both what graph agents conclude and whether their exploration reaches distinct evidential sources."
+    },
+    {
+      "id": "arxiv-ai-cs-gvd-governed-versioning-and-deduplication-for-document-rep",
+      "title": "GVD: Governed Versioning and Deduplication for Document Repositories",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-17",
+      "url": "https://arxiv.org/abs/2609.17696",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "17696v1 Announce Type: new Abstract: Document repositories evolve continuously.",
+      "takeaways": [
+        "17696v1 Announce Type: new Abstract: Document repositories evolve continuously.",
+        "Relation-specific policies suppress duplicates and escalate only consequential changes for review, retaining version lineage as an audit trail.",
+        "94 for rule-level consistency, with CSP raising rule consistency from 0."
+      ],
+      "vocabulary": [
+        {
+          "word": "Contentious",
+          "pos": "Adjective",
+          "definition": "Causing or likely to cause an argument; controversial",
+          "synonyms": [
+            "disputed",
+            "controversial",
+            "debated"
+          ],
+          "antonyms": [
+            "uncontroversial",
+            "peaceful"
+          ],
+          "example": "Policymakers must demonstrate contentious interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Fiscal",
+          "pos": "Adjective",
+          "definition": "Relating to government revenue, especially taxes and public spending",
+          "synonyms": [
+            "monetary",
+            "financial",
+            "budgetary"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate fiscal interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Mitigate",
+          "pos": "Verb",
+          "definition": "Make less severe, serious, or painful",
+          "synonyms": [
+            "alleviate",
+            "reduce",
+            "diminish"
+          ],
+          "antonyms": [
+            "aggravate",
+            "intensify"
+          ],
+          "example": "Policymakers must demonstrate mitigate interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'GVD' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.17696v1 Announce Type: new Abstract: Document repositories evolve continuously. Guidelines and policies are revised, superseded, and re-uploaded, so the same content recurs in different wording and newer versions refine or contradict earlier ones. These inconsistencies belong to the growing collection rather than to any single document, yet existing work treats versioning, duplicate detection, and contradiction detection as isolated pairwise tasks and stops once a pair is labeled. We present GVD (Governed Versioning and Deduplication), a framework that unifies cross-document version linking with rule-level conflict resolution under an auditable update policy. Incoming documents are assigned to version families through bidirectional rule alignment, and their rules are compared against the family memory to identify duplicates, contradictions, asymmetric refinements, and new knowledge, with Counterfactual Span Probing (CSP) resolving related pairs that inference misclassifies as neutral. Relation-specific policies suppress duplicates and escalate only consequential changes for review, retaining version lineage as an audit trail. The pipeline runs fully locally, with no large language model. On 120 enterprise documents processed as 140 ingestions across 59 version families, GVD reaches an F1 of 0.97 for version-family construction and 0.94 for rule-level consistency, with CSP raising rule consistency from 0.90 to 0.94."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-the-houthi-advance-in-yemen-another-",
+      "title": "The Guardian view on the Houthi advance in Yemen: another vital Middle East artery becomes a battlefield",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-09-16",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/16/the-guardian-view-on-the-houthi-advance-in-yemen-another-vital-middle-east-artery-becomes-a-battlefield",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "The extraordinary success of the rebels, and Saudi counterstrikes, threaten economic havoc.",
+      "takeaways": [
+        "The extraordinary success of the rebels, and Saudi counterstrikes, threaten economic havoc.",
+        "Now drone strikes – blamed on an Iran-backed militia in Iraq – have shut the pipeline: on one estimate , a month-long closure could cut global crude supply by 120m barrels.",
+        "If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here."
+      ],
+      "vocabulary": [
+        {
+          "word": "Hegemony",
+          "pos": "Noun",
+          "definition": "Leadership or dominance, especially by one state or social group over others",
+          "synonyms": [
+            "dominance",
+            "supremacy",
+            "ascendancy"
+          ],
+          "antonyms": [
+            "subordination",
+            "equality"
+          ],
+          "example": "Policymakers must demonstrate hegemony interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Tenuous",
+          "pos": "Adjective",
+          "definition": "Very weak or slight; insubstantial",
+          "synonyms": [
+            "flimsy",
+            "fragile",
+            "shaky"
+          ],
+          "antonyms": [
+            "strong",
+            "robust",
+            "firm"
+          ],
+          "example": "Policymakers must demonstrate tenuous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'The Guardian view on the Houthi advance in Yemen', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The extraordinary success of the rebels, and Saudi counterstrikes, threaten economic havoc. But the country’s civilians are paying the highest price Even in a region beset by turmoil and learning to expect the unexpected, the lightning advance of Yemen’s Houthis along the Red Sea coast has shocked observers. More than 100,000 people have been forced to flee in a country where immiseration and displacement have become routine and half the population depend on humanitarian aid. But outsiders are paying close attention, because by claiming thousands of kilometres in a matter of days, and seizing strategically important islands, the Iran-backed rebels now control the Bab al-Mandab strait – the other major regional energy chokepoint after the Hormuz strait. The Iran war has forced Saudi Arabia to rely on moving oil via its east-west pipeline to Red Sea ports. Now drone strikes – blamed on an Iran-backed militia in Iraq – have shut the pipeline: on one estimate , a month-long closure could cut global crude supply by 120m barrels. The halt to shipping through the Bab al-Mandab strait could be much more protracted. Taking the oil north is a far slower and more expensive route to Asian markets, and does not preclude attacks by the Houthis, who are also targeting oil facilities. Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here . Continue reading..."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-sweden-s-election-result-an-opportun",
+      "title": "The Guardian view on Sweden’s election result: an opportunity that progressive parties must not squander",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Polity & Governance",
+      "date": "2026-09-16",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/16/the-guardian-view-on-swedens-election-result-an-opportunity-that-progressive-parties-must-not-squander",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "After a desperately tight race, voters rejected the prospect of the far right in government.",
+      "takeaways": [
+        "After a desperately tight race, voters rejected the prospect of the far right in government.",
+        "Across mainland Europe, centre-left parties are failing to muster an adequate response to nativist movements that have colonised swathes of the working-class support that they once relied on.",
+        "If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here."
+      ],
+      "vocabulary": [
+        {
+          "word": "Consensus",
+          "pos": "Noun",
+          "definition": "A general agreement among a group of people",
+          "synonyms": [
+            "accord",
+            "harmony",
+            "unity"
+          ],
+          "antonyms": [
+            "discord",
+            "disagreement"
+          ],
+          "example": "Policymakers must demonstrate consensus interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'The Guardian view on Sweden’s election result', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "After a desperately tight race, voters rejected the prospect of the far right in government. A potential centre-left coalition needs to seize the moment European progressives searching for reasons to be cheerful have been finding them hard to come by this autumn. In Germany, the dramatic rise of the Alternative für Deutschland party is threatening the liberal values that underpin the identity of the federal republic. In France, polls continue to point to a likely Marine Le Pen victory in a presidential election , which is months away. Across mainland Europe, centre-left parties are failing to muster an adequate response to nativist movements that have colonised swathes of the working-class support that they once relied on. In such an ominous political landscape, the outcome of a cliffhanger Swedish election provides a much‑needed source of optimism – albeit one that comes with heavy caveats. Prior to last Sunday’s poll, the outgoing prime minister, Ulf Kristersson, was explicit that if his rightwing alliance won the largest number of seats, he would invite members of the far-right Sweden Democrats party (SD) to become ministers in the next government. Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here . Continue reading..."
+    },
     {
       "id": "the-hindu-ai-cooperation-on-artificial-intelligence-at-a-crossroads",
       "title": "AI cooperation: On Artificial Intelligence at a crossroads",
