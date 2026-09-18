@@ -1,7 +1,808 @@
 {
-  "last_updated": "2026-09-17 05:53:55 UTC",
-  "total_articles": 58,
+  "last_updated": "2026-09-18 05:40:28 UTC",
+  "total_articles": 70,
   "articles": [
+    {
+      "id": "the-hindu-complex-priorities-on-upi-transactions-mdr-charges",
+      "title": "Complex priorities: On UPI transactions, MDR charges",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "National Affairs",
+      "date": "2026-09-18",
+      "url": "https://www.thehindu.com/opinion/editorial/complex-priorities-on-upi-transactions-mdr-charges/article71476513.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "A fear of political fallout has led to an overly complex MDR structure on UPI.",
+      "takeaways": [
+        "A fear of political fallout has led to an overly complex MDR structure on UPI.",
+        "Emphasizes vital strategic considerations regarding Complex priorities: On UPI transactions, MDR charges.",
+        "Emphasizes vital strategic considerations regarding Complex priorities: On UPI transactions, MDR charges."
+      ],
+      "vocabulary": [
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a distinct set of concepts",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or question",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Proactive",
+          "pos": "Adjective",
+          "definition": "Creating or controlling a situation rather than just responding to it after it has happened",
+          "synonyms": [
+            "enterprising",
+            "forward-looking",
+            "preventative"
+          ],
+          "antonyms": [
+            "reactive",
+            "passive"
+          ],
+          "example": "Policymakers must demonstrate proactive interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'Complex priorities'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "This editorial analysis examines 'Complex priorities: On UPI transactions, MDR charges', published in The Hindu. The piece delves into key structural challenges and emerging trends within the National Affairs domain. Readers are advised to study the critical takeaways and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "the-hindu-new-fault-lines-on-manipur-s-kuki-zo-naga-conflict",
+      "title": "New fault lines: On Manipur’s Kuki-Zo–Naga conflict",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "National Affairs",
+      "date": "2026-09-18",
+      "url": "https://www.thehindu.com/opinion/editorial/new-fault-lines-on-manipurs-kuki-zonaga-conflict/article71476964.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "Manipur’s new Kuki-Zo–Naga conflict needs firm, even-handed State action.",
+      "takeaways": [
+        "Manipur’s new Kuki-Zo–Naga conflict needs firm, even-handed State action.",
+        "Emphasizes vital strategic considerations regarding New fault lines: On Manipur’s Kuki-Zo–Naga conflict.",
+        "Emphasizes vital strategic considerations regarding New fault lines: On Manipur’s Kuki-Zo–Naga conflict."
+      ],
+      "vocabulary": [
+        {
+          "word": "Disparity",
+          "pos": "Noun",
+          "definition": "A great difference or inequality",
+          "synonyms": [
+            "imbalance",
+            "discrepancy",
+            "gap"
+          ],
+          "antonyms": [
+            "parity",
+            "equality",
+            "similarity"
+          ],
+          "example": "Policymakers must demonstrate disparity interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Vulnerability",
+          "pos": "Noun",
+          "definition": "The quality or state of being exposed to the possibility of being attacked or harmed",
+          "synonyms": [
+            "susceptibility",
+            "fragility",
+            "weakness"
+          ],
+          "antonyms": [
+            "resilience",
+            "invulnerability"
+          ],
+          "example": "Policymakers must demonstrate vulnerability interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Adversary",
+          "pos": "Noun",
+          "definition": "One's opponent in a contest, conflict, or dispute",
+          "synonyms": [
+            "rival",
+            "opponent",
+            "nemesis"
+          ],
+          "antonyms": [
+            "ally",
+            "supporter"
+          ],
+          "example": "Policymakers must demonstrate adversary interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'New fault lines'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "This editorial analysis examines 'New fault lines: On Manipur’s Kuki-Zo–Naga conflict', published in The Hindu. The piece delves into key structural challenges and emerging trends within the National Affairs domain. Readers are advised to study the critical takeaways and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "arxiv-ai-cs-regularized-emphatic-temporal-difference-learning-stabilit",
+      "title": "Regularized Emphatic Temporal-Difference Learning: Stability under Constant Stepsizes",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Global Affairs",
+      "date": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.19170",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "19170v1 Announce Type: new Abstract: Emphatic temporal-difference learning (ETD) stabilizes the expected off-policy TD update and changes its projection geometry, but neither property determines constant-stepsize sampled dynamics.",
+      "takeaways": [
+        "19170v1 Announce Type: new Abstract: Emphatic temporal-difference learning (ETD) stabilizes the expected off-policy TD update and changes its projection geometry, but neither property determines constant-stepsize sampled dynamics.",
+        "RETD's raw equilibrium is an affine shift of the ETD equilibrium; single- and two-regularization readouts recover the ETD fixed point exactly.",
+        "RETD changes post-shock dynamics; it does not reduce the shared follow-on-trace variance."
+      ],
+      "vocabulary": [
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or question",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Proactive",
+          "pos": "Adjective",
+          "definition": "Creating or controlling a situation rather than just responding to it after it has happened",
+          "synonyms": [
+            "enterprising",
+            "forward-looking",
+            "preventative"
+          ],
+          "antonyms": [
+            "reactive",
+            "passive"
+          ],
+          "example": "Policymakers must demonstrate proactive interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Consensus",
+          "pos": "Noun",
+          "definition": "A general agreement among a group of people",
+          "synonyms": [
+            "accord",
+            "harmony",
+            "unity"
+          ],
+          "antonyms": [
+            "discord",
+            "disagreement"
+          ],
+          "example": "Policymakers must demonstrate consensus interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'Regularized Emphatic Temporal-Difference Learning', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "arXiv:2609.19170v1 Announce Type: new Abstract: Emphatic temporal-difference learning (ETD) stabilizes the expected off-policy TD update and changes its projection geometry, but neither property determines constant-stepsize sampled dynamics. We construct an ergodic two-state counterexample in which the ETD mean map contracts while the sampled product has a positive top Lyapunov exponent. Regenerative-cycle analysis separates this sign from the infinite variance of the follow-on trace. We introduce regularized emphatic TD (RETD), a normalized first-order post-shock repair that leaves the trace and importance ratios unchanged, stores the emphatic TD signal in a leaky scalar state, and releases a delayed correction. RETD's raw equilibrium is an affine shift of the ETD equilibrium; single- and two-regularization readouts recover the ETD fixed point exactly. We prove almost-sure convergence for harmonic diminishing stepsizes and a conditional constant-stepsize moment-contraction result from a Markovian random-product bound. RETD has certified negative exponents on the two-state construction and one Baird point, whereas the positive Baird ETD sign remains numerical. Paired 10,000-run experiments validate both separations, fixed-point recovery, a nonmonotone stability region, and task dependence. RETD changes post-shock dynamics; it does not reduce the shared follow-on-trace variance."
+    },
+    {
+      "id": "arxiv-ai-cs-biophys-bridge-a-benchmark-for-interdisciplinary-scientifi",
+      "title": "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Global Affairs",
+      "date": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.19180",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "19180v1 Announce Type: new Abstract: Language models face unique challenges in analyzing interdisciplinary scientific research literature.",
+      "takeaways": [
+        "19180v1 Announce Type: new Abstract: Language models face unique challenges in analyzing interdisciplinary scientific research literature.",
+        "We enforce strict quality gates for all cases in schema, evidence-integrity, quantitative-grounding, source-license, duplicate, unit-normalization, with domain expert review and annotation for 81 cases.",
+        "Code and data are available in the GitHub repository and on Hugging Face."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'BioPhys-Bridge', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "arXiv:2609.19180v1 Announce Type: new Abstract: Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require grounding observed data in source evidence, interpreting it through a quantitative physics model, and linking it to a biological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for question answering (QA) and retrieval-augmented generation (RAG). The initial release contains 500 cases, 1,517 agent-facing tasks, and covers six biological domains and nine physical model families, including three sparse families reserved for future expansion. We enforce strict quality gates for all cases in schema, evidence-integrity, quantitative-grounding, source-license, duplicate, unit-normalization, with domain expert review and annotation for 81 cases. Preliminary evaluations show that DeepSeek-V4-Flash obtain the highest evidence-ID $F_1$ score (0.360), followed by Qwen3.7-Max (0.316) and GPT-4o-mini (0.294). BioPhys-Bridge is an interdisciplinary benchmark for evaluating attribution, faithfulness, hallucination reduction, and biological experiment design with complex, multi-step scientific reasoning. Future works will increase the size and complexity of the dataset and perform comprehensive evaluations. Code and data are available in the GitHub repository and on Hugging Face."
+    },
+    {
+      "id": "arxiv-ai-cs-what-do-we-expect-from-llms-mapping-the-design-of-llm-benc",
+      "title": "What Do We Expect from LLMs? Mapping the Design of LLM Benchmarks",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.19182",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "19182v1 Announce Type: new Abstract: Benchmarks are central to how progress in large language models (LLMs) is assessed and communicated.",
+      "takeaways": [
+        "19182v1 Announce Type: new Abstract: Benchmarks are central to how progress in large language models (LLMs) is assessed and communicated.",
+        "Using staged screening and automated full-text coding, we examine changes in target systems and domains, evaluation materials and conditions, and scoring mechanisms.",
+        "As AI participates in constructing tests, performing tasks, and judging responses, they also raise a question: does expanding evaluation provide more independent evidence, or risk reproducing the preferences and blind spots of its participating models."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "19182v1 Announce Type: new Abstract: Benchmarks are central to how progress in large language models (LLMs) is assessed and communicated."
+        },
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical satisfaction with oneself or achievements",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme power or authority; the authority of a state to govern itself",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'What Do We Expect from LLMs? Mapping the Design of LLM Benchmarks' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.19182v1 Announce Type: new Abstract: Benchmarks are central to how progress in large language models (LLMs) is assessed and communicated. Yet model rankings alone reveal little about how evaluation requirements themselves are changing. The expanding variety of benchmarks offers another perspective: what researchers expect LLMs to do, and what they count as successful performance. We systematically map 14,767 papers introducing or updating evaluation resources from arXiv submissions between January 2022 and August 2026. Using staged screening and automated full-text coding, we examine changes in target systems and domains, evaluation materials and conditions, and scoring mechanisms. The collection shows growing emphasis on action, interaction, and professional applications, while established and newer design elements frequently coexist. Model participation also develops unevenly: LLM-based scoring grows within both agent and non-agent groups, whereas model-generated materials show no comparable sustained increase in recent cohorts. These findings illuminate how public research translates capability expectations into concrete tests and criteria for success. As AI participates in constructing tests, performing tasks, and judging responses, they also raise a question: does expanding evaluation provide more independent evidence, or risk reproducing the preferences and blind spots of its participating models?"
+    },
+    {
+      "id": "arxiv-ai-cs-position-it-is-time-to-virtualize-foundation-models-with-a",
+      "title": "Position: It is Time to Virtualize Foundation Models with a Self-evolving Operating System Layer",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Global Affairs",
+      "date": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.19203",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "19203v1 Announce Type: new Abstract: AI applications have shifted from single, monolithic foundation models (FM) to compound agentic systems.",
+      "takeaways": [
+        "19203v1 Announce Type: new Abstract: AI applications have shifted from single, monolithic foundation models (FM) to compound agentic systems.",
+        "It mirrors computing before operating systems, when every program re-implemented basic services.",
+        "Like the human brain switching between fast intuition and slow deliberation, the FMOS learns when to intervene and when to let inference proceed directly and continuously adapting its policies based on operational experience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a distinct set of concepts",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or question",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Proactive",
+          "pos": "Adjective",
+          "definition": "Creating or controlling a situation rather than just responding to it after it has happened",
+          "synonyms": [
+            "enterprising",
+            "forward-looking",
+            "preventative"
+          ],
+          "antonyms": [
+            "reactive",
+            "passive"
+          ],
+          "example": "Policymakers must demonstrate proactive interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'Position', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "arXiv:2609.19203v1 Announce Type: new Abstract: AI applications have shifted from single, monolithic foundation models (FM) to compound agentic systems. Yet today's stacks remain fragmented: even as protocols (e.g., MCP, A2A) ease tool/agent connectivity, each framework embeds an implicit runtime for state, memory, budgets, and guardrails, making behavior non-portable and governance brittle. It mirrors computing before operating systems, when every program re-implemented basic services. This position paper argues that the field now needs a Foundation Model Operating System (FMOS) -- a system layer that virtualizes FM interactions analogous to how virtual machines abstract physical hardware, giving applications the illusion of dedicated, trustworthy FM instances with effectively unbounded capabilities. Internally, the FMOS orchestrates knowledge across memory tiers, model selection and resource allocation, and verification and policy enforcement. Like the human brain switching between fast intuition and slow deliberation, the FMOS learns when to intervene and when to let inference proceed directly and continuously adapting its policies based on operational experience."
+    },
+    {
+      "id": "arxiv-ai-cs-what-do-current-systematic-generalization-tasks-miss-a-rea",
+      "title": "What Do Current Systematic Generalization Tasks Miss? A Reasoning-Centered Analysis",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.19212",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "19212v1 Announce Type: new Abstract: Systematic generalization, the ability to solve novel problems by recombining known atomic elements, is central to human intelligence but difficult to study rigorously under controlled settings.",
+      "takeaways": [
+        "19212v1 Announce Type: new Abstract: Systematic generalization, the ability to solve novel problems by recombining known atomic elements, is central to human intelligence but difficult to study rigorously under controlled settings.",
+        "6% of the test set, but only 55.",
+        "Together, our results show that existing tasks reduce either or both of the inductive and abductive demands, and that comprehensively measuring systematic generalization requires a task that involves all three forms of reasoning."
+      ],
+      "vocabulary": [
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, or accurate",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "19212v1 Announce Type: new Abstract: Systematic generalization, the ability to solve novel problems by recombining known atomic elements, is central to human intelligence but difficult to study rigorously under controlled settings."
+        },
+        {
+          "word": "Vulnerability",
+          "pos": "Noun",
+          "definition": "The quality or state of being exposed to the possibility of being attacked or harmed",
+          "synonyms": [
+            "susceptibility",
+            "fragility",
+            "weakness"
+          ],
+          "antonyms": [
+            "resilience",
+            "invulnerability"
+          ],
+          "example": "Policymakers must demonstrate vulnerability interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Adversary",
+          "pos": "Noun",
+          "definition": "One's opponent in a contest, conflict, or dispute",
+          "synonyms": [
+            "rival",
+            "opponent",
+            "nemesis"
+          ],
+          "antonyms": [
+            "ally",
+            "supporter"
+          ],
+          "example": "Policymakers must demonstrate adversary interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'What Do Current Systematic Generalization Tasks Miss? A Reasoning-Centered Analysis' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.19212v1 Announce Type: new Abstract: Systematic generalization, the ability to solve novel problems by recombining known atomic elements, is central to human intelligence but difficult to study rigorously under controlled settings. Existing studies therefore rely on simplifications such as approximately linear action composition, productivity-based tests, and action-explicit goals, which make systematic generalization easier to study but omit some essential aspects of this capability. To characterize what these simplifications miss, we adopt a reasoning-centered lens and introduce TranSGrid, a testbed that brings deductive, inductive, and abductive reasoning together within a unified task. Experiments with seven Transformers on 4,800 TranSGrid instances show that all models perform much worse on TranSGrid than on a held-out test set: the largest model solves 79.6% of the test set, but only 55.3% of TranSGrid and 15.8% of the hardest subset. The gap remains within the training length range, showing that productivity alone is not sufficient to evaluate systematic generalization. Additionally, we reintroduce the other two simplifications into TranSGrid: one variant makes actions compose almost linearly (reducing the inductive demand), the other makes goals action-explicit (reducing the abductive one). In both, solve rates return to roughly the test set level, showing that either simplification alone is enough to reduce TranSGrid to an ordinary held-out test set. Together, our results show that existing tasks reduce either or both of the inductive and abductive demands, and that comprehensively measuring systematic generalization requires a task that involves all three forms of reasoning."
+    },
+    {
+      "id": "arxiv-ai-cs-characterizing-web-search-by-conversational-llm-agents-fro",
+      "title": "Characterizing Web Search by Conversational LLM Agents: From Search Decisions and Strategies to Results and Responses",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.19244",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "19244v1 Announce Type: new Abstract: Conversational LLM agents increasingly rely on Web search, yet the end-to-end lifecycle of agentic search remains poorly understood.",
+      "takeaways": [
+        "19244v1 Announce Type: new Abstract: Conversational LLM agents increasingly rely on Web search, yet the end-to-end lifecycle of agentic search remains poorly understood.",
+        "We find that Web-search decisions vary substantially across platforms and models, while more frequent Web-search invocation does not necessarily yield better response quality.",
+        "Our findings have important implications for the design of future AI agents and Web search tools optimized for conversational retrieval."
+      ],
+      "vocabulary": [
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Deterrence",
+          "pos": "Noun",
+          "definition": "The action of discouraging an action or event through instilling doubt or fear",
+          "synonyms": [
+            "prevention",
+            "discouragement",
+            "disincentive"
+          ],
+          "antonyms": [
+            "encouragement",
+            "incitement"
+          ],
+          "example": "Policymakers must demonstrate deterrence interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Lack of activity, growth, or development",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'Characterizing Web Search by Conversational LLM Agents' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.19244v1 Announce Type: new Abstract: Conversational LLM agents increasingly rely on Web search, yet the end-to-end lifecycle of agentic search remains poorly understood. We present the first study of Web search across four major conversational platforms (ChatGPT, Claude, Grok, and DeepSeek), combining real-world user interactions (invivo) with controlled experiments using the same platform's models by their APIs (invitro). We investigate the quality of agentic decisions to invoke Web search, their strategies to formulate queries, the potential domain preferences in the search results they receive, and the choices they make when transforming search results into grounded responses. We find that Web-search decisions vary substantially across platforms and models, while more frequent Web-search invocation does not necessarily yield better response quality. We further show that conversational agents employ different complex querying strategies and that platform specific search engines return search results from their preferred domains. Finally, although responses are largely grounded in search results, some claims rely on uncited search results, raising concerns about attribution and reliability. Our findings have important implications for the design of future AI agents and Web search tools optimized for conversational retrieval."
+    },
+    {
+      "id": "arxiv-ai-cs-do-ai-agents-understand-computer-architecture",
+      "title": "Do AI Agents Understand Computer Architecture?",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.19387",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "19387v1 Announce Type: new Abstract: Agents are increasingly asked to design hardware, and increasingly reported to succeed.",
+      "takeaways": [
+        "19387v1 Announce Type: new Abstract: Agents are increasingly asked to design hardware, and increasingly reported to succeed.",
+        "The gap between the two is the measurement.",
+        "We report these as preliminary findings -- five to six runs per condition on a single modeled accelerator -- and take the comparison itself, not the accelerator, to be the contribution."
+      ],
+      "vocabulary": [
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair and impartial",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Contentious",
+          "pos": "Adjective",
+          "definition": "Causing or likely to cause an argument; controversial",
+          "synonyms": [
+            "disputed",
+            "controversial",
+            "debated"
+          ],
+          "antonyms": [
+            "uncontroversial",
+            "peaceful"
+          ],
+          "example": "Policymakers must demonstrate contentious interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Fiscal",
+          "pos": "Adjective",
+          "definition": "Relating to government revenue, especially taxes and public spending",
+          "synonyms": [
+            "monetary",
+            "financial",
+            "budgetary"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate fiscal interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'Do AI Agents Understand Computer Architecture?' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.19387v1 Announce Type: new Abstract: Agents are increasingly asked to design hardware, and increasingly reported to succeed. Such reports establish that a design improved; they cannot establish why. An agent that improves an accelerator may be reasoning about the machine, or may be searching competently over knobs whose meaning it never recovers -- and only the first transfers to the next architecture. Existing evaluations cannot tell the two apart, because they vary the agent while holding the framing of the problem fixed. We do the opposite. AutoTuring hands the same agent the same 15-dimensional accelerator space twice: once as named architectural knobs with simulator counters, once as anonymous variables on [0,1], with the evaluator, the legal space and the reachable optima held identical, so that the only thing that varies is whether the problem means anything. The gap between the two is the measurement. On a nine-kernel FP16 GEMM basket, meaning pays: the architect beats a modeled H200 by 5.4% and its blind counterpart by 12.3% on average, with 70.1% fewer simulator calls. It does not pay uniquely: a critic loop recovers most of that gap for the blind agent and buys the architect nothing, so architectural knowledge and structured critique behave as substitutes rather than as complements. We report these as preliminary findings -- five to six runs per condition on a single modeled accelerator -- and take the comparison itself, not the accelerator, to be the contribution."
+    },
+    {
+      "id": "arxiv-ai-cs-mags-multi-agent-auto-formalization-guarantees-safety-for-",
+      "title": "MAGS: Multi-agent Auto-formalization Guarantees Safety for Agentic Outputs",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.19391",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "19391v1 Announce Type: new Abstract: LLM coding agents now generate complex programs at a scale that makes thorough human review increasingly difficult, raising the risk of safety and security failures.",
+      "takeaways": [
+        "19391v1 Announce Type: new Abstract: LLM coding agents now generate complex programs at a scale that makes thorough human review increasingly difficult, raising the risk of safety and security failures.",
+        "MAGS formalizes and freezes human-audited APIs and safety requirements, translates generated code into Dafny, repairs violations using verifier feedback, and compiles verified programs back into executable code.",
+        "Independent safety and functional evaluations further show strong performance across all three domains, while revealing failures when the auto-formalized semantics do not fully capture the target behavior."
+      ],
+      "vocabulary": [
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme power or authority; the authority of a state to govern itself",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'MAGS' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2609.19391v1 Announce Type: new Abstract: LLM coding agents now generate complex programs at a scale that makes thorough human review increasingly difficult, raising the risk of safety and security failures. Common approaches, including fuzz testing, static analysis, and LLM-as-a-Verifier, can detect many failures but struggle to cover all possible edge cases. Formal verification addresses this by providing machine-checkable guarantees over specified properties, but traditionally demands substantial manual specification and proof engineering. We introduce a unified multi-agent framework, MAGS, that generates executable programs with formal safety guarantees, using Dafny as a verification-aware intermediate representation where safety properties can be mechanically checked. MAGS formalizes and freezes human-audited APIs and safety requirements, translates generated code into Dafny, repairs violations using verifier feedback, and compiles verified programs back into executable code. We evaluate MAGS on 100 CUDA kernels, 100 terminal scripts, and 20 robotic-arm tasks. Across all 220 examples, it achieves a 100% success rate in producing programs with non-trivial safety guarantees against frozen specifications. Independent safety and functional evaluations further show strong performance across all three domains, while revealing failures when the auto-formalized semantics do not fully capture the target behavior."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-eu-canada-relations-strategic-ambiti",
+      "title": "The Guardian view on EU-Canada relations: strategic ambition with lessons for Britain",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Tech & AI Research",
+      "date": "2026-09-17",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/17/the-guardian-view-on-eu-canada-relations-strategic-ambition-with-lessons-for-britain",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "Mark Carney’s response to the challenges posed by an unreliable US president contains a clarity of vision that is lacking in post-Brexit Britain There is no “associate membership” of the European Union, nor any blueprint for what such a thing might involve.",
+      "takeaways": [
+        "Mark Carney’s response to the challenges posed by an unreliable US president contains a clarity of vision that is lacking in post-Brexit Britain There is no “associate membership” of the European Union, nor any blueprint for what such a thing might involve.",
+        "Mark Carney, the Canadian prime minister, reciprocated the sentiment in a speech on Wednesday.",
+        "If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here."
+      ],
+      "vocabulary": [
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair and impartial",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Contentious",
+          "pos": "Adjective",
+          "definition": "Causing or likely to cause an argument; controversial",
+          "synonyms": [
+            "disputed",
+            "controversial",
+            "debated"
+          ],
+          "antonyms": [
+            "uncontroversial",
+            "peaceful"
+          ],
+          "example": "Policymakers must demonstrate contentious interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Fiscal",
+          "pos": "Adjective",
+          "definition": "Relating to government revenue, especially taxes and public spending",
+          "synonyms": [
+            "monetary",
+            "financial",
+            "budgetary"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate fiscal interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Critically assess how recent advancements in 'The Guardian view on EU-Canada relations' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Mark Carney’s response to the challenges posed by an unreliable US president contains a clarity of vision that is lacking in post-Brexit Britain There is no “associate membership” of the European Union, nor any blueprint for what such a thing might involve. It is a political hypothesis, describing a relationship of intimate strategic alignment with the EU, stopping short of actual membership, in ways that are significant but undefined. This week, Ursula von der Leyen, the European Commission president, invited Canada to be the first country to enjoy this putative status. In her state of the union speech, she spoke of a future relationship elevated “to the highest level possible”, reflecting an affinity of interests and values. Mark Carney, the Canadian prime minister, reciprocated the sentiment in a speech on Wednesday. Addressing the European parliament, he said the two sides should secure “strategic autonomy through deep cooperation” across a broad spectrum of interests: trade, defence, industrial capacity, science, space and AI. He proposed Canadian participation in the EU’s Erasmus student exchange programme and Horizon research scheme. Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here . Continue reading..."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-the-nepal-tibet-floods-a-spur-to-act",
+      "title": "The Guardian view on the Nepal-Tibet floods: a spur to action on climate",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Environment & Climate",
+      "date": "2026-09-17",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/17/the-guardian-view-on-the-nepal-tibet-floods-a-spur-to-action-on-climate",
+      "reading_time": "2 min read",
+      "tone": "Progressive / Critical",
+      "crux": "New research links last month’s disaster to fossil fuel pollution.",
+      "takeaways": [
+        "New research links last month’s disaster to fossil fuel pollution.",
+        "Last week the country’s foreign minister, Shisir Khanal, said that it would ask the UN’s loss and damage fund for $20m (£15m) towards a total rebuilding cost of around $5bn (£3.",
+        "If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here."
+      ],
+      "vocabulary": [
+        {
+          "word": "Disparity",
+          "pos": "Noun",
+          "definition": "A great difference or inequality",
+          "synonyms": [
+            "imbalance",
+            "discrepancy",
+            "gap"
+          ],
+          "antonyms": [
+            "parity",
+            "equality",
+            "similarity"
+          ],
+          "example": "Policymakers must demonstrate disparity interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Vulnerability",
+          "pos": "Noun",
+          "definition": "The quality or state of being exposed to the possibility of being attacked or harmed",
+          "synonyms": [
+            "susceptibility",
+            "fragility",
+            "weakness"
+          ],
+          "antonyms": [
+            "resilience",
+            "invulnerability"
+          ],
+          "example": "Policymakers must demonstrate vulnerability interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Adversary",
+          "pos": "Noun",
+          "definition": "One's opponent in a contest, conflict, or dispute",
+          "synonyms": [
+            "rival",
+            "opponent",
+            "nemesis"
+          ],
+          "antonyms": [
+            "ally",
+            "supporter"
+          ],
+          "example": "Policymakers must demonstrate adversary interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'The Guardian view on the Nepal-Tibet floods'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "New research links last month’s disaster to fossil fuel pollution. Supporting disaster-hit countries must be at the centre of climate politics Following a familiar pattern, coverage of the glacier collapse on the Nepal-Tibet border three weeks ago has subsided with the initial shock. But while the world’s attention has shifted, Nepal remains in the midst of an appalling tragedy. As well as at least 1,300 people who are known to have been killed, more than 5,000 are missing, some of them trapped in tunnels linked to the 13 hydropower plants that were damaged by the floods. On Wednesday four bodies were recovered from one of these tunnels, with searches ongoing. Families of the missing people are desperate for news. Last week the country’s foreign minister, Shisir Khanal, said that it would ask the UN’s loss and damage fund for $20m (£15m) towards a total rebuilding cost of around $5bn (£3.75bn) – including the replacement of up to 20,000 homes. The first academic study linking the disaster to the climate crisis will now be added to that application. Scientists at Imperial College London, along with international collaborators on the World Weather Attribution project, found that a number of drivers of the glacier fall had been made worse by atmospheric heating. While not the sole cause, fossil fuel pollution was judged to have destabilised the geology of the mountain environment. Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here . Continue reading..."
+    },
     {
       "id": "the-hindu-currency-conundrum-on-the-brics-new-delhi-declaration",
       "title": "Currency conundrum: On the BRICS New Delhi Declaration",
