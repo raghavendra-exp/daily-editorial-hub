@@ -1813,3 +1813,773 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   Resource Hub Ribbon Navigation
+   ========================================================================== */
+.resource-hub-nav {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.5rem 0;
+}
+
+.resource-hub-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hub-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  padding: 0.2rem 0;
+  width: 100%;
+}
+
+.hub-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.95rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.hub-tab-btn:hover {
+  background-color: var(--border-subtle);
+  color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.hub-tab-btn.active {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+  border-color: var(--brand-primary);
+  box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2);
+}
+
+.hub-badge {
+  font-size: 0.675rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-purple-subtle);
+  color: var(--accent-purple);
+}
+
+.hub-tab-btn.active .hub-badge {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+.hub-badge-quiz {
+  background-color: var(--accent-amber-subtle);
+  color: var(--accent-amber);
+}
+
+/* ==========================================================================
+   360° Analytical Dimensions Matrix
+   ========================================================================== */
+.dimensions-section {
+  margin-bottom: 2.25rem;
+}
+
+.dimensions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.dim-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dim-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.dim-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.dim-card.dim-economic .dim-card-header { color: #059669; }
+.dim-card.dim-governance .dim-card-header { color: #d97706; }
+.dim-card.dim-social .dim-card-header { color: #7c3aed; }
+.dim-card.dim-global .dim-card-header { color: #0284c7; }
+
+.dim-card-text {
+  font-family: var(--reader-font);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+}
+
+/* ==========================================================================
+   Actionable Way Forward List
+   ========================================================================== */
+.way-forward-section {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent-emerald);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  margin-bottom: 2.25rem;
+}
+
+.way-forward-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.way-forward-list li {
+  position: relative;
+  padding-left: 1.85rem;
+  font-family: var(--reader-font);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.way-forward-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--accent-emerald);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   Personal Study Notes & Aspirant Scratchpad
+   ========================================================================== */
+.notes-section {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  margin-bottom: 2.25rem;
+}
+
+.notes-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.notes-status-badge {
+  font-size: 0.725rem;
+  font-weight: 600;
+  background-color: var(--accent-emerald-subtle);
+  color: var(--accent-emerald);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+}
+
+.reader-notes-textarea {
+  width: 100%;
+  min-height: 120px;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem;
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.reader-notes-textarea:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  background-color: var(--bg-surface);
+  box-shadow: 0 0 0 3px var(--brand-subtle);
+}
+
+/* ==========================================================================
+   Quick Reader Quiz
+   ========================================================================== */
+.reader-quiz-section {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  margin-bottom: 2.25rem;
+}
+
+.reader-quiz-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.reader-q-text {
+  font-family: var(--reader-font);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.reader-opt-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.reader-opt-btn:hover:not(:disabled) {
+  background-color: var(--border-subtle);
+  border-color: var(--brand-primary);
+}
+
+.reader-opt-btn.correct {
+  background-color: var(--accent-emerald-subtle) !important;
+  border-color: var(--accent-emerald) !important;
+  color: var(--accent-emerald) !important;
+  font-weight: 700;
+}
+
+.reader-opt-btn.incorrect {
+  background-color: rgba(239, 68, 68, 0.15) !important;
+  border-color: #ef4444 !important;
+  color: #ef4444 !important;
+}
+
+.reader-q-expl {
+  padding: 0.85rem;
+  background-color: var(--bg-subtle);
+  border-left: 3px solid var(--brand-primary);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   Interactive 3D Flashcard Deck Styles
+   ========================================================================== */
+.flashcard-modal-dialog {
+  max-width: 650px;
+}
+
+.flashcard-control-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.fc-filter-group {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.fc-filter-btn {
+  padding: 0.35rem 0.75rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.fc-filter-btn.active {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+  border-color: var(--brand-primary);
+}
+
+.fc-progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fc-progress-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.fc-progress-track {
+  width: 90px;
+  height: 8px;
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.fc-progress-bar {
+  height: 100%;
+  background-color: var(--accent-emerald);
+  transition: width 0.3s ease;
+}
+
+/* 3D Scene */
+.flashcard-scene {
+  width: 100%;
+  height: 280px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.flashcard-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.flashcard-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+  background-color: var(--bg-surface-elevated);
+}
+
+.fc-badge-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fc-tag {
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-purple);
+  background-color: var(--accent-purple-subtle);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+}
+
+.fc-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.fc-word-title {
+  font-family: var(--font-editorial);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin: auto 0;
+}
+
+.fc-context-box {
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+}
+
+.fc-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.2rem;
+}
+
+.fc-definition {
+  font-family: var(--font-ui);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.fc-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem;
+  font-size: 0.825rem;
+}
+
+.fc-meta-col strong {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.flashcard-footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.fc-action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.fc-btn-review:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.fc-btn-master {
+  background-color: var(--accent-emerald);
+}
+
+.fc-btn-master:hover {
+  background-color: #047857;
+}
+
+.fc-counter-row {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.85rem;
+}
+
+/* ==========================================================================
+   Daily 5-Question MCQ Quiz Modal
+   ========================================================================== */
+.quiz-modal-dialog {
+  max-width: 680px;
+}
+
+.quiz-status-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.quiz-q-index {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+}
+
+.quiz-score-pill {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.65rem;
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-full);
+}
+
+.quiz-question-box {
+  margin-bottom: 1.25rem;
+}
+
+.quiz-question-text {
+  font-family: var(--reader-font);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.quiz-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.quiz-opt-btn {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.quiz-opt-btn:hover:not(:disabled) {
+  border-color: var(--brand-primary);
+  background-color: var(--bg-subtle);
+}
+
+.quiz-opt-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--bg-subtle);
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.quiz-opt-btn.correct {
+  background-color: var(--accent-emerald-subtle) !important;
+  border-color: var(--accent-emerald) !important;
+  color: var(--accent-emerald) !important;
+  font-weight: 700;
+}
+
+.quiz-opt-btn.correct .quiz-opt-letter {
+  background-color: var(--accent-emerald);
+  color: #ffffff;
+}
+
+.quiz-opt-btn.incorrect {
+  background-color: rgba(239, 68, 68, 0.15) !important;
+  border-color: #ef4444 !important;
+  color: #ef4444 !important;
+}
+
+.quiz-opt-btn.incorrect .quiz-opt-letter {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.quiz-explanation-box {
+  padding: 1rem;
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--brand-primary);
+  margin-bottom: 1.25rem;
+  animation: slide-up 0.2s ease;
+}
+
+.expl-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.quiz-explanation-box p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.quiz-footer-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quiz-results-card {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.trophy-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.quiz-results-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.results-score {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  margin-bottom: 0.75rem;
+}
+
+.results-feedback {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 440px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Exam Knowledge Vault Modal
+   ========================================================================== */
+.vault-modal-dialog {
+  max-width: 800px;
+}
+
+.vault-tabs-header {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  overflow-x: auto;
+  padding-bottom: 0.35rem;
+}
+
+.vault-tab-btn {
+  padding: 0.55rem 1rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.vault-tab-btn.active {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+  border-color: var(--brand-primary);
+}
+
+.vault-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.vault-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.vault-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--brand-primary);
+}
+
+.vault-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.vault-card p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   Print / Study Handout Stylesheet
+   ========================================================================== */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .app-header,
+  .resource-hub-nav,
+  .banner-section,
+  .filter-section,
+  .view-header,
+  .active-filters-bar,
+  .reader-top-bar,
+  .reader-footer,
+  .app-footer,
+  .toast,
+  .btn-tts,
+  .btn-tts-stop,
+  .reader-tool-btn,
+  .modal-overlay {
+    display: none !important;
+  }
+
+  .reader-modal-overlay {
+    position: static !important;
+    background: #ffffff !important;
+    display: block !important;
+    padding: 0 !important;
+  }
+
+  .reader-article-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .crux-box, .takeaways-box, .dimensions-section, .way-forward-section, .notes-section {
+    page-break-inside: avoid;
+    border: 1px solid #cccccc !important;
+    box-shadow: none !important;
+  }
+}
+

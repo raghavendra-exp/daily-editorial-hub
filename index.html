@@ -86,6 +86,32 @@
     </div>
   </header>
 
+  <!-- Resource Hub Navigation Ribbon -->
+  <nav class="resource-hub-nav">
+    <div class="container resource-hub-inner">
+      <div class="hub-tabs">
+        <button class="hub-tab-btn active" id="tab-editorials" data-target="editorials">
+          <span class="tab-icon">📰</span>
+          <span class="tab-label">Daily Editorials</span>
+        </button>
+        <button class="hub-tab-btn" id="tab-flashcards" data-target="flashcards">
+          <span class="tab-icon">🗂️</span>
+          <span class="tab-label">Vocab Flashcards</span>
+          <span class="hub-badge" id="flashcards-badge">3D Flip</span>
+        </button>
+        <button class="hub-tab-btn" id="tab-quiz" data-target="quiz">
+          <span class="tab-icon">🎯</span>
+          <span class="tab-label">Daily MCQ Quiz</span>
+          <span class="hub-badge hub-badge-quiz" id="quiz-badge">5 Qs</span>
+        </button>
+        <button class="hub-tab-btn" id="tab-vault" data-target="vault">
+          <span class="tab-icon">🏛️</span>
+          <span class="tab-label">Exam Knowledge Vault</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
   <!-- Date Navigation & Summary Banner -->
   <section class="banner-section">
     <div class="container banner-inner">
@@ -122,8 +148,10 @@
           <button class="filter-pill active" data-source="all">All Sources</button>
           <button class="filter-pill" data-source="The Indian Express">📰 Indian Express</button>
           <button class="filter-pill" data-source="The Hindu">🇮🇳 The Hindu</button>
+          <button class="filter-pill" data-source="LiveMint">📊 LiveMint</button>
           <button class="filter-pill" data-source="The Guardian">🌍 The Guardian</button>
-          <button class="filter-pill" data-source="arXiv AI & CS">🔬 arXiv Research</button>
+          <button class="filter-pill" data-source="Nature Research">🔬 Nature</button>
+          <button class="filter-pill" data-source="arXiv AI & CS">🤖 arXiv Research</button>
         </div>
       </div>
 
@@ -136,6 +164,7 @@
           <button class="filter-pill" data-cat="Global Affairs">🌐 Global Affairs</button>
           <button class="filter-pill" data-cat="National Affairs">🇮🇳 National Affairs</button>
           <button class="filter-pill" data-cat="Tech & AI Research">🤖 Tech & AI</button>
+          <button class="filter-pill" data-cat="Science & Tech Digest">🔬 Science</button>
           <button class="filter-pill" data-cat="Environment & Climate">🌿 Environment</button>
         </div>
       </div>
@@ -321,9 +350,266 @@
             <button class="speed-btn" data-speed="1.5">1.5x</button>
           </div>
         </div>
-      </div>
       <div class="modal-footer">
         <button class="btn btn-primary" id="save-settings-btn">Apply Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Flashcard Deck Modal -->
+  <div id="flashcard-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog flashcard-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>🗂️ Interactive Vocabulary Flashcards</h3>
+          <p class="subtitle">Practice active recall. Flip to test your memory and track your mastered words.</p>
+        </div>
+        <button class="modal-close-btn" id="close-flashcard-modal">✕</button>
+      </div>
+      <div class="modal-body flashcard-modal-body">
+        <!-- Progress & Filter Bar -->
+        <div class="flashcard-control-bar">
+          <div class="fc-filter-group">
+            <button class="fc-filter-btn active" data-fc-filter="all">All (<span id="fc-total-count">0</span>)</button>
+            <button class="fc-filter-btn" data-fc-filter="learning">Needs Review (<span id="fc-learning-count">0</span>)</button>
+            <button class="fc-filter-btn" data-fc-filter="mastered">Mastered (<span id="fc-mastered-count">0</span>)</button>
+          </div>
+          <div class="fc-progress-wrap">
+            <span class="fc-progress-text" id="fc-progress-label">0% Mastered</span>
+            <div class="fc-progress-track">
+              <div class="fc-progress-bar" id="fc-progress-bar" style="width: 0%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Flip Card Container -->
+        <div class="flashcard-scene" id="flashcard-scene" title="Click anywhere on card to flip">
+          <div class="flashcard-card" id="flashcard-card">
+            <!-- Front Face -->
+            <div class="flashcard-face flashcard-front">
+              <div class="fc-badge-top">
+                <span class="fc-tag" id="fc-front-pos">Noun</span>
+                <span class="fc-hint">Tap to reveal meaning ↩</span>
+              </div>
+              <h2 class="fc-word-title" id="fc-front-word">Word</h2>
+              <div class="fc-context-box">
+                <span class="fc-label">Editorial Context:</span>
+                <p id="fc-front-example">"Sentence from editorial demonstrating usage..."</p>
+              </div>
+            </div>
+            <!-- Back Face -->
+            <div class="flashcard-face flashcard-back">
+              <div class="fc-badge-top">
+                <span class="fc-tag" id="fc-back-pos">Definition</span>
+                <span class="fc-hint">Tap to flip back ↪</span>
+              </div>
+              <p class="fc-definition" id="fc-back-def">Definition text goes here.</p>
+              <div class="fc-meta-grid">
+                <div class="fc-meta-col">
+                  <strong>Synonyms:</strong>
+                  <span id="fc-back-synonyms">Word1, Word2</span>
+                </div>
+                <div class="fc-meta-col">
+                  <strong>Antonyms:</strong>
+                  <span id="fc-back-antonyms">Word3, Word4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Index & Bottom Navigation -->
+        <div class="flashcard-footer-nav">
+          <button class="btn btn-outline" id="fc-prev-btn">◀ Previous</button>
+          <div class="fc-action-buttons">
+            <button class="btn btn-outline fc-btn-review" id="fc-mark-review-btn">🔄 Needs Review</button>
+            <button class="btn btn-primary fc-btn-master" id="fc-mark-master-btn">⭐ Mastered</button>
+          </div>
+          <button class="btn btn-outline" id="fc-next-btn">Next ▶</button>
+        </div>
+        <div class="fc-counter-row">
+          <span id="fc-counter-text">Card 1 of 1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Daily 5-Question MCQ Quiz Modal -->
+  <div id="quiz-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog quiz-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>🎯 Daily Editorial & Vocab Mock Quiz</h3>
+          <p class="subtitle">Test your retention, comprehension, and vocabulary from today's readings.</p>
+        </div>
+        <button class="modal-close-btn" id="close-quiz-modal">✕</button>
+      </div>
+      <div class="modal-body quiz-modal-body">
+        <!-- Quiz Ongoing View -->
+        <div id="quiz-active-view">
+          <div class="quiz-status-header">
+            <span class="quiz-q-index" id="quiz-q-num">Question 1 of 5</span>
+            <span class="quiz-score-pill" id="quiz-score-pill">Score: 0 / 0</span>
+          </div>
+
+          <div class="quiz-question-box">
+            <p class="quiz-question-text" id="quiz-question-text">Loading question...</p>
+          </div>
+
+          <div class="quiz-options-list" id="quiz-options-list">
+            <!-- Options populated dynamically -->
+          </div>
+
+          <!-- Explanation Reveal -->
+          <div class="quiz-explanation-box" id="quiz-explanation-box" style="display: none;">
+            <div class="expl-badge" id="quiz-expl-badge">Correct!</div>
+            <p id="quiz-explanation-text">Explanation text here...</p>
+          </div>
+
+          <div class="quiz-footer-actions">
+            <button class="btn btn-primary" id="quiz-next-btn" style="display: none;">Next Question →</button>
+          </div>
+        </div>
+
+        <!-- Quiz Completed View -->
+        <div id="quiz-summary-view" style="display: none;">
+          <div class="quiz-results-card">
+            <span class="trophy-icon">🏆</span>
+            <h3>Quiz Completed!</h3>
+            <p class="results-score" id="results-score-display">You scored 5 out of 5 (100%)</p>
+            <p class="results-feedback" id="results-feedback-text">Excellent comprehension! You've mastered today's core editorial arguments and vocabulary.</p>
+            <button class="btn btn-primary" id="retake-quiz-btn">🔄 Retake Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exam Knowledge Vault Modal -->
+  <div id="knowledge-vault-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog vault-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>🏛️ Exam Knowledge Vault & Static Study Guides</h3>
+          <p class="subtitle">High-yield reference guides for Constitutional Articles, Landmark Judgments, and Economic Terms.</p>
+        </div>
+        <button class="modal-close-btn" id="close-vault-modal">✕</button>
+      </div>
+      <div class="modal-body vault-modal-body">
+        <!-- Vault Tabs -->
+        <div class="vault-tabs-header">
+          <button class="vault-tab-btn active" data-vault-tab="constitution">📜 Constitutional Articles</button>
+          <button class="vault-tab-btn" data-vault-tab="judgments">⚖️ Landmark SC Cases & Acts</button>
+          <button class="vault-tab-btn" data-vault-tab="economy">📈 Economic Terms & RBI Policy</button>
+        </div>
+
+        <!-- Tab 1: Constitution -->
+        <div class="vault-tab-content active" id="vault-tab-constitution">
+          <div class="vault-cards-grid">
+            <div class="vault-card">
+              <span class="vault-badge">Part III: Fundamental Rights</span>
+              <h4>Articles 14, 19, 21 — The Golden Triangle</h4>
+              <p><strong>Article 14:</strong> Equality before law & equal protection.<br>
+              <strong>Article 19:</strong> Six democratic freedoms (speech, assembly, movement).<br>
+              <strong>Article 21:</strong> Right to Life and Personal Liberty (expanded to include privacy, clean environment, speedy trial).</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Constitutional Remedies</span>
+              <h4>Article 32 & Article 226 — Writs</h4>
+              <p>The "Heart and Soul of the Constitution" (Dr. B.R. Ambedkar). Empowering SC and High Courts to issue writs: <em>Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo-Warranto</em>.</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Federalism & Governance</span>
+              <h4>Article 123 & Article 213 — Ordinances</h4>
+              <p>Executive lawmaking power during legislative recess. Subject to judicial review; re-promulgation without legislative debate is a fraud on the Constitution (<em>D.C. Wadhwa case</em>).</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Judicial Powers</span>
+              <h4>Article 142 — Complete Justice</h4>
+              <p>Inherent power of Supreme Court to pass any decree necessary for doing complete justice in any cause or matter pending before it.</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Fiscal Federalism</span>
+              <h4>Article 280 — Finance Commission</h4>
+              <p>Quinquennial body recommending net tax devolution between Centre and States and horizontal distribution principles among States.</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Emergency Provisions</span>
+              <h4>Article 356 — President's Rule</h4>
+              <p>Imposition on breakdown of constitutional machinery in states. Strictly circumscribed by <em>S.R. Bommai v. Union of India (1994)</em>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Judgments & Acts -->
+        <div class="vault-tab-content" id="vault-tab-judgments" style="display: none;">
+          <div class="vault-cards-grid">
+            <div class="vault-card">
+              <span class="vault-badge">Landmark SC Judgment (1973)</span>
+              <h4>Kesavananda Bharati v. State of Kerala</h4>
+              <p>Established the <strong>Basic Structure Doctrine</strong>. Parliament has vast amending powers under Article 368 but cannot alter the basic features (democracy, federalism, judicial review, rule of law).</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Privacy & Fundamental Rights (2017)</span>
+              <h4>K.S. Puttaswamy v. Union of India</h4>
+              <p>Unanimous 9-judge bench ruled that the <strong>Right to Privacy is a Fundamental Right</strong> under Article 21. Led directly to the Digital Personal Data Protection (DPDP) Act.</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Personal Liberty & Procedure (1978)</span>
+              <h4>Maneka Gandhi v. Union of India</h4>
+              <p>Interpreted 'procedure established by law' as equivalent to <strong>'due process of law'</strong>—procedure must be just, fair, and reasonable, not arbitrary.</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Anti-Defection (Tenth Schedule)</span>
+              <h4>Kihoto Hollohan v. Zachillhu (1992)</h4>
+              <p>Upheld the Speaker's power under Tenth Schedule but established that the Speaker acts as a tribunal, making their orders subject to judicial review for mala fides.</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Transparency & Governance</span>
+              <h4>Right to Information (RTI) Act, 2005</h4>
+              <p>Mandatory proactive disclosures under Section 4(1)(b), 30-day response window, and independent Central/State Information Commissions ensuring participatory democracy.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Economy & RBI -->
+        <div class="vault-tab-content" id="vault-tab-economy" style="display: none;">
+          <div class="vault-cards-grid">
+            <div class="vault-card">
+              <span class="vault-badge">Monetary Policy Tool</span>
+              <h4>Policy Repo Rate & Reverse Repo</h4>
+              <p><strong>Repo Rate:</strong> Rate at which RBI lends short-term liquidity to commercial banks against government securities.<br>
+              <strong>Reverse Repo:</strong> Rate at which RBI absorbs liquidity from banks.</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Liquidity Framework</span>
+              <h4>Standing Deposit Facility (SDF) & MSF</h4>
+              <p><strong>SDF:</strong> Floor of the Liquidity Adjustment Facility (LAF) corridor without collateral requirement.<br>
+              <strong>Marginal Standing Facility (MSF):</strong> Penal emergency borrowing rate (ceiling of corridor).</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Reserve Ratios</span>
+              <h4>Cash Reserve Ratio (CRR) & SLR</h4>
+              <p><strong>CRR:</strong> Percentage of Net Demand and Time Liabilities (NDTL) banks must park as cash with RBI (earns no interest).<br>
+              <strong>SLR:</strong> Percentage maintained in liquid assets (gold, approved G-Secs).</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">Inflation Targeting</span>
+              <h4>Headline Inflation vs. Core Inflation</h4>
+              <p><strong>Headline Inflation:</strong> Comprehensive measure (CPI-Combined) including volatile food and fuel prices.<br>
+              <strong>Core Inflation:</strong> CPI excluding food and fuel, indicating underlying demand pressures.</p>
+            </div>
+            <div class="vault-card">
+              <span class="vault-badge">External Sector</span>
+              <h4>Current Account Deficit (CAD) vs. Fiscal Deficit</h4>
+              <p><strong>CAD:</strong> Difference between foreign currency inflows and outflows from trade in goods, services, and transfers.<br>
+              <strong>Fiscal Deficit:</strong> Excess of total government expenditure over non-debt receipts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="vault-modal-done">Close Vault</button>
       </div>
     </div>
   </div>
@@ -357,6 +643,14 @@
             <span class="bm-icon">☆</span>
           </button>
           
+          <button id="reader-export-btn" class="reader-tool-btn" title="Export Study Note to Markdown / Notion">
+            <span>📋</span>
+          </button>
+          
+          <button id="reader-print-btn" class="reader-tool-btn" title="Print Study Handout / Save as PDF">
+            <span>🖨️</span>
+          </button>
+
           <button id="reader-share-btn" class="reader-tool-btn" title="Copy Link / Share">
             <span>🔗</span>
           </button>
@@ -399,6 +693,22 @@
           </ul>
         </section>
 
+        <!-- 360° Analytical Dimensions Matrix -->
+        <section class="reader-section dimensions-section">
+          <h3 class="section-subheading">🌐 360° Multi-Dimensional Analysis</h3>
+          <div class="dimensions-grid" id="reader-dimensions-grid">
+            <!-- Populated dynamically -->
+          </div>
+        </section>
+
+        <!-- Actionable Way Forward & Policy Recommendations -->
+        <section class="reader-section way-forward-section">
+          <h3 class="section-subheading">🟢 Actionable Way Forward & Solutions</h3>
+          <ul class="way-forward-list" id="reader-way-forward-list">
+            <!-- Populated dynamically -->
+          </ul>
+        </section>
+
         <!-- Vocabulary Booster Cards -->
         <section class="reader-section vocab-section">
           <div class="section-header-row">
@@ -425,10 +735,27 @@
           </div>
         </section>
 
+        <!-- Personal Study Notes & Scratchpad -->
+        <section class="reader-section notes-section">
+          <div class="notes-header-row">
+            <h3 class="section-subheading">📝 My Study Notes & Observations</h3>
+            <span class="notes-status-badge" id="notes-status-badge">Auto-saved locally</span>
+          </div>
+          <textarea id="reader-notes-input" class="reader-notes-textarea" placeholder="Jot down your key takeaways, answer writing points, or cross-references for this editorial..."></textarea>
+        </section>
+
         <!-- Full Content Body -->
         <section class="reader-section article-body-section">
           <h3 class="section-subheading">📄 Editorial Excerpt & Discussion</h3>
           <div id="reader-body-paragraphs" class="article-paragraphs">
+            <!-- Populated dynamically -->
+          </div>
+        </section>
+
+        <!-- Quick Comprehension & Vocab Check (MCQ) -->
+        <section class="reader-section reader-quiz-section" id="reader-quiz-section">
+          <h3 class="section-subheading">🎯 Editorial Quick Comprehension Check</h3>
+          <div class="reader-quiz-card" id="reader-quiz-card">
             <!-- Populated dynamically -->
           </div>
         </section>

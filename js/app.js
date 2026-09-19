@@ -1,7 +1,16 @@
 /**
- * Daily Editorial Hub - Main Application Script
- * Features: Live RSS Fetching & Refresh, Feed parsing, reader view, text-to-speech audio,
- * vocabulary booster, bookmarks, live search, date navigator, and theme management.
+ * Daily Editorial Hub - Main Application Script (Resourceful Edition)
+ * Features:
+ * - Multi-source Live RSS Fetching & Instant Refresh (The Indian Express, The Hindu, LiveMint, The Guardian, Nature, arXiv)
+ * - 360° Analytical Dimensions Matrix (Economic, Governance, Social, Global)
+ * - Actionable Way Forward & Policy Solutions
+ * - Interactive 3D Vocabulary Flashcards with Spaced Repetition (Mastered vs. Review)
+ * - Daily 5-Question MCQ Mock Quiz with Instant Scoring & Explanations
+ * - In-App Personal Study Notes (auto-saved per article in localStorage)
+ * - One-Click Markdown / Notion Exporter & Clean PDF/Print Handout
+ * - Exam Knowledge Vault (Constitutional Articles, Landmark Judgments, Economic Terms)
+ * - Web Speech API Text-to-Speech Audio Player with Adjustable Speeds
+ * - Bookmarks, Date Navigator, Reader Modes (System, Light, Dark, Sepia Paper)
  */
 
 // Predefined Monitored RSS Feeds
@@ -21,6 +30,13 @@ const DEFAULT_FEEDS = [
     tone: 'Balanced / Formal'
   },
   {
+    name: 'LiveMint',
+    url: 'https://www.livemint.com/rss/opinion',
+    category: 'Economy & Banking',
+    icon: '📊',
+    tone: 'Economic / Analytical'
+  },
+  {
     name: 'The Guardian',
     url: 'https://www.theguardian.com/tone/editorials/rss',
     category: 'Global Affairs',
@@ -28,17 +44,24 @@ const DEFAULT_FEEDS = [
     tone: 'Progressive / Critical'
   },
   {
+    name: 'Nature Research',
+    url: 'https://www.nature.com/nature.rss',
+    category: 'Science & Tech Digest',
+    icon: '🔬',
+    tone: 'Scientific / Peer-Reviewed'
+  },
+  {
     name: 'arXiv AI & CS',
     url: 'https://rss.arxiv.org/rss/cs.AI',
     category: 'Tech & AI Research',
-    icon: '🔬',
+    icon: '🤖',
     tone: 'Academic / Technical'
   }
 ];
 
 // High-frequency Editorial & Academic Vocabulary Database
 const VOCAB_DATABASE = {
-  "exacerbate": { def: "To make a problem or negative feeling worse", pos: "Verb", synonyms: ["aggravate", "worsen", "inflame"], antonyms: ["alleviate", "ameliorate"] },
+  "exacerbate": { def: "To make a problem, bad situation, or negative feeling worse", pos: "Verb", synonyms: ["aggravate", "worsen", "inflame"], antonyms: ["alleviate", "ameliorate"] },
   "ameliorate": { def: "To make something bad or unsatisfactory better", pos: "Verb", synonyms: ["improve", "enhance", "better"], antonyms: ["worsen", "deteriorate"] },
   "contentious": { def: "Causing or likely to cause an argument; controversial", pos: "Adjective", synonyms: ["disputed", "controversial", "debated"], antonyms: ["uncontroversial", "peaceful"] },
   "pragmatic": { def: "Dealing with things sensibly and realistically based on practical considerations", pos: "Adjective", synonyms: ["practical", "sensible", "hardheaded"], antonyms: ["idealistic", "impractical"] },
@@ -62,7 +85,8 @@ const VOCAB_DATABASE = {
   "benchmark": { def: "A standard or point of reference against which things may be compared", pos: "Noun / Verb", synonyms: ["standard", "criterion", "gauge"], antonyms: [] },
   "equitable": { def: "Fair, impartial, and just to all parties", pos: "Adjective", synonyms: ["fair", "just", "unbiased"], antonyms: ["unfair", "inequitable", "biased"] },
   "stagnation": { def: "Prolonged period of little or no growth or progress", pos: "Noun", synonyms: ["slump", "downturn", "inactivity"], antonyms: ["growth", "boom", "vitality"] },
-  "rigorous": { def: "Extremely thorough, exhaustive, and exacting", pos: "Adjective", synonyms: ["meticulous", "exacting", "stringent"], antonyms: ["lax", "careless", "superficial"] }
+  "rigorous": { def: "Extremely thorough, exhaustive, and exacting", pos: "Adjective", synonyms: ["meticulous", "exacting", "stringent"], antonyms: ["lax", "careless", "superficial"] },
+  "equilibrium": { def: "A state in which opposing forces or influences are balanced", pos: "Noun", synonyms: ["balance", "stability", "symmetry"], antonyms: ["imbalance", "instability"] }
 };
 
 // Application State
@@ -77,7 +101,20 @@ const state = {
   isFetchingLive: false,
   customFeeds: JSON.parse(localStorage.getItem('editorial-custom-feeds') || '[]'),
   bookmarks: new Set(JSON.parse(localStorage.getItem('editorial-bookmarks') || '[]')),
+  masteredWords: new Set(JSON.parse(localStorage.getItem('editorial-mastered-words') || '[]')),
   currentArticle: null,
+  flashcards: {
+    cards: [],
+    filteredCards: [],
+    currentIndex: 0,
+    activeFilter: 'all'
+  },
+  quiz: {
+    questions: [],
+    currentIndex: 0,
+    score: 0,
+    answered: false
+  },
   preferences: {
     theme: localStorage.getItem('editorial-theme') || 'system',
     font: localStorage.getItem('reader-font') || 'serif',
@@ -92,7 +129,7 @@ const state = {
   }
 };
 
-// DOM Element References
+// DOM Elements
 const dom = {
   grid: document.getElementById('editorials-grid'),
   loading: document.getElementById('loading-spinner'),
@@ -138,7 +175,13 @@ const dom = {
   lastUpdatedText: document.getElementById('last-updated-text'),
   toast: document.getElementById('toast'),
 
-  // Refresh & RSS Feeds Manager Elements
+  // Hub Tabs
+  tabEditorials: document.getElementById('tab-editorials'),
+  tabFlashcards: document.getElementById('tab-flashcards'),
+  tabQuiz: document.getElementById('tab-quiz'),
+  tabVault: document.getElementById('tab-vault'),
+
+  // RSS Manager Elements
   refreshFeedsBtn: document.getElementById('refresh-feeds-btn'),
   refreshSpinnerIcon: document.getElementById('refresh-spinner-icon'),
   refreshLabel: document.getElementById('refresh-label'),
@@ -156,7 +199,52 @@ const dom = {
   customFeedCat: document.getElementById('custom-feed-cat'),
   addCustomFeedBtn: document.getElementById('add-custom-feed-btn'),
 
-  // Reader Modal
+  // Flashcards Modal Elements
+  flashcardModal: document.getElementById('flashcard-modal'),
+  closeFlashcardModal: document.getElementById('close-flashcard-modal'),
+  fcTotalCount: document.getElementById('fc-total-count'),
+  fcLearningCount: document.getElementById('fc-learning-count'),
+  fcMasteredCount: document.getElementById('fc-mastered-count'),
+  fcProgressLabel: document.getElementById('fc-progress-label'),
+  fcProgressBar: document.getElementById('fc-progress-bar'),
+  flashcardScene: document.getElementById('flashcard-scene'),
+  flashcardCard: document.getElementById('flashcard-card'),
+  fcFrontWord: document.getElementById('fc-front-word'),
+  fcFrontPos: document.getElementById('fc-front-pos'),
+  fcFrontExample: document.getElementById('fc-front-example'),
+  fcBackPos: document.getElementById('fc-back-pos'),
+  fcBackDef: document.getElementById('fc-back-def'),
+  fcBackSynonyms: document.getElementById('fc-back-synonyms'),
+  fcBackAntonyms: document.getElementById('fc-back-antonyms'),
+  fcPrevBtn: document.getElementById('fc-prev-btn'),
+  fcNextBtn: document.getElementById('fc-next-btn'),
+  fcMarkReviewBtn: document.getElementById('fc-mark-review-btn'),
+  fcMarkMasterBtn: document.getElementById('fc-mark-master-btn'),
+  fcCounterText: document.getElementById('fc-counter-text'),
+
+  // Quiz Modal Elements
+  quizModal: document.getElementById('quiz-modal'),
+  closeQuizModal: document.getElementById('close-quiz-modal'),
+  quizActiveView: document.getElementById('quiz-active-view'),
+  quizSummaryView: document.getElementById('quiz-summary-view'),
+  quizQNum: document.getElementById('quiz-q-num'),
+  quizScorePill: document.getElementById('quiz-score-pill'),
+  quizQuestionText: document.getElementById('quiz-question-text'),
+  quizOptionsList: document.getElementById('quiz-options-list'),
+  quizExplanationBox: document.getElementById('quiz-explanation-box'),
+  quizExplBadge: document.getElementById('quiz-expl-badge'),
+  quizExplanationText: document.getElementById('quiz-explanation-text'),
+  quizNextBtn: document.getElementById('quiz-next-btn'),
+  resultsScoreDisplay: document.getElementById('results-score-display'),
+  resultsFeedbackText: document.getElementById('results-feedback-text'),
+  retakeQuizBtn: document.getElementById('retake-quiz-btn'),
+
+  // Knowledge Vault Elements
+  knowledgeVaultModal: document.getElementById('knowledge-vault-modal'),
+  closeVaultModal: document.getElementById('close-vault-modal'),
+  vaultModalDone: document.getElementById('vault-modal-done'),
+
+  // Reader Modal Elements
   readerModal: document.getElementById('reader-modal'),
   readerCloseBtn: document.getElementById('reader-close-btn'),
   readerBackBottomBtn: document.getElementById('reader-back-bottom-btn'),
@@ -171,11 +259,19 @@ const dom = {
   readerBottomLink: document.getElementById('reader-bottom-link'),
   readerCrux: document.getElementById('reader-crux'),
   readerTakeawaysList: document.getElementById('reader-takeaways-list'),
+  readerDimensionsGrid: document.getElementById('reader-dimensions-grid'),
+  readerWayForwardList: document.getElementById('reader-way-forward-list'),
   readerVocabGrid: document.getElementById('reader-vocab-grid'),
   readerRelevanceTag: document.getElementById('reader-relevance-tag'),
   readerQuestionText: document.getElementById('reader-question-text'),
+  readerNotesInput: document.getElementById('reader-notes-input'),
+  notesStatusBadge: document.getElementById('notes-status-badge'),
   readerBodyParagraphs: document.getElementById('reader-body-paragraphs'),
+  readerQuizSection: document.getElementById('reader-quiz-section'),
+  readerQuizCard: document.getElementById('reader-quiz-card'),
   readerBookmarkBtn: document.getElementById('reader-bookmark-btn'),
+  readerExportBtn: document.getElementById('reader-export-btn'),
+  readerPrintBtn: document.getElementById('reader-print-btn'),
   readerShareBtn: document.getElementById('reader-share-btn'),
   readerFontToggle: document.getElementById('reader-font-toggle'),
   copyQuestionBtn: document.getElementById('copy-question-btn'),
@@ -189,7 +285,7 @@ const dom = {
 };
 
 /**
- * Initialize application
+ * Initialize Application
  */
 async function init() {
   applySavedPreferences();
@@ -218,7 +314,6 @@ async function loadEditorialData() {
       }
     }
 
-    // Merge cached live articles fetched in this browser
     const liveCache = JSON.parse(localStorage.getItem('editorial-live-cache') || '[]');
     const existingIds = new Set(baseArticles.map(a => a.id));
     const existingUrls = new Set(baseArticles.map(a => a.url).filter(Boolean));
@@ -228,6 +323,7 @@ async function loadEditorialData() {
 
     refreshDateList();
     applyFilters();
+    buildFlashcardDeck();
   } catch (err) {
     console.error('Error loading editorials data:', err);
     dom.empty.style.display = 'block';
@@ -236,9 +332,6 @@ async function loadEditorialData() {
   }
 }
 
-/**
- * Recalculate unique dates and default to latest
- */
 function refreshDateList() {
   const dateSet = new Set(state.articles.map(a => a.date).filter(Boolean));
   state.availableDates = Array.from(dateSet).sort().reverse();
@@ -249,13 +342,12 @@ function refreshDateList() {
 }
 
 /**
- * Fetch live RSS feeds directly in the browser via CORS proxy
+ * Live RSS Fetcher: Queries live RSS feeds in real-time
  */
 async function fetchLiveRSSFeeds() {
   if (state.isFetchingLive) return;
   state.isFetchingLive = true;
 
-  // Visual indication: spinners
   if (dom.refreshSpinnerIcon) dom.refreshSpinnerIcon.classList.add('spinning');
   if (dom.modalSpinnerIcon) dom.modalSpinnerIcon.classList.add('spinning');
   if (dom.refreshLabel) dom.refreshLabel.textContent = 'Syncing...';
@@ -279,7 +371,7 @@ async function fetchLiveRSSFeeds() {
 
       data.items.slice(0, 8).forEach(item => {
         const rawTitle = cleanHtml(item.title || '');
-        const cleanTitle = rawTitle.replace(/\s*\|\s*(?:Editorial|The Hindu|Opinion).*$/i, '').trim();
+        const cleanTitle = rawTitle.replace(/\s*\|\s*(?:Editorial|The Hindu|Opinion|LiveMint).*$/i, '').trim();
         const link = (item.link || '').trim();
         if (!cleanTitle || !link) return;
 
@@ -292,12 +384,15 @@ async function fetchLiveRSSFeeds() {
         const readingTime = calculateReadingTime(rawContent.length > 200 ? rawContent : cleanTitle.repeat(10));
         const vocab = extractVocab(rawContent + ' ' + cleanTitle);
         const { takeaways, question, gsTag } = generateTakeaways(cleanTitle, rawContent, category, feed.name);
+        const dimensions = generateDimensions(cleanTitle, category);
+        const wayForward = generateWayForward(cleanTitle, category);
+        const quiz = generateQuizObj(cleanTitle, vocab, category);
 
         const articleObj = {
           id: slug,
           title: cleanTitle,
           source: feed.name,
-          source_type: feed.name.includes('arXiv') ? 'Research Paper Digest' : 'Newspaper Editorial',
+          source_type: feed.name.includes('arXiv') || feed.name.includes('Nature') ? 'Research Paper Digest' : 'Newspaper Editorial',
           icon: feed.icon || '📰',
           category: category,
           date: dateStr,
@@ -306,7 +401,10 @@ async function fetchLiveRSSFeeds() {
           tone: feed.tone || 'Analytical',
           crux: takeaways[0] || (rawContent.slice(0, 140) + '...'),
           takeaways: takeaways,
+          dimensions: dimensions,
+          way_forward: wayForward,
           vocabulary: vocab,
+          quiz: quiz,
           practice_question: question,
           relevance_tag: gsTag,
           content: rawContent.length > 150 ? rawContent : `Analysis of "${cleanTitle}" published in ${feed.name}. Full editorial text and commentary available at original source.`
@@ -328,48 +426,41 @@ async function fetchLiveRSSFeeds() {
     state.articles = [...newItems, ...state.articles];
     state.articles.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
-    // Cache newly discovered live articles in localStorage
     const liveCache = JSON.parse(localStorage.getItem('editorial-live-cache') || '[]');
-    const updatedCache = [...newItems, ...liveCache].slice(0, 50); // keep up to 50
+    const updatedCache = [...newItems, ...liveCache].slice(0, 70);
     localStorage.setItem('editorial-live-cache', JSON.stringify(updatedCache));
 
     refreshDateList();
     applyFilters();
+    buildFlashcardDeck();
     showToast(`✅ Synced ${newArticlesAdded} fresh editorials from live RSS!`);
   } else {
     showToast('✨ All feeds are already up-to-date!');
   }
 
-  // Update live status indicator
   const now = new Date();
   const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   if (dom.liveStatusText) {
     dom.liveStatusText.textContent = `Synced Just Now (${timeStr})`;
   }
 
-  // Cleanup spinners
   state.isFetchingLive = false;
   if (dom.refreshSpinnerIcon) dom.refreshSpinnerIcon.classList.remove('spinning');
   if (dom.modalSpinnerIcon) dom.modalSpinnerIcon.classList.remove('spinning');
   if (dom.refreshLabel) dom.refreshLabel.textContent = 'Refresh Feeds';
 }
 
-/**
- * Helper: Derive category from title
- */
 function deriveCategory(title, defaultCat) {
   const t = title.toLowerCase();
   if (/\b(bank|inflation|gdp|tax|trade|budget|rbi|rupee|fiscal)\b/.test(t)) return 'Economy & Banking';
   if (/\b(court|bill|election|parliament|law|governance|democracy|judge|justice)\b/.test(t)) return 'Polity & Governance';
   if (/\b(climate|green|carbon|water|flood|forest|emission|monsoon)\b/.test(t)) return 'Environment & Climate';
   if (/\b(ai|chip|quantum|tech|digital|cyber|neural|robot|computing)\b/.test(t)) return 'Tech & AI Research';
+  if (/\b(science|biology|physics|cell|protein|genetics|vaccine|space)\b/.test(t)) return 'Science & Tech Digest';
   if (/\b(war|un|treaty|diplomacy|china|us|border|russia|israel|gaza|nato)\b/.test(t)) return 'Global Affairs';
   return defaultCat || 'National Affairs';
 }
 
-/**
- * Helper: Parse ISO or RFC date to YYYY-MM-DD
- */
 function parseItemDate(pubDateStr) {
   if (!pubDateStr) return new Date().toISOString().split('T')[0];
   try {
@@ -381,9 +472,6 @@ function parseItemDate(pubDateStr) {
   return new Date().toISOString().split('T')[0];
 }
 
-/**
- * Helper: Synthesize takeaways and practice questions
- */
 function generateTakeaways(title, content, category, source) {
   const sentences = content.split(/[.!?]+/).map(s => s.trim()).filter(s => s.length > 25);
   let takeaways = [];
@@ -403,8 +491,8 @@ function generateTakeaways(title, content, category, source) {
   let question = '';
   let gsTag = '';
 
-  if (category.includes('Tech') || category.includes('AI')) {
-    question = `Critically analyze how developments in '${cleanT}' transform current technological paradigms. What ethical safeguards and regulatory frameworks are necessary?`;
+  if (category.includes('Tech') || category.includes('AI') || category.includes('Science')) {
+    question = `Critically analyze how developments in '${cleanT}' transform current technological and scientific paradigms. What ethical safeguards and regulatory frameworks are necessary?`;
     gsTag = 'GS Paper 3: Science & Technology, AI Ethics';
   } else if (category.includes('Economy')) {
     question = `Evaluate the macroeconomic stability implications highlighted in '${cleanT}'. Suggest fiscal and policy interventions to foster long-term inclusive growth.`;
@@ -420,9 +508,52 @@ function generateTakeaways(title, content, category, source) {
   return { takeaways, question, gsTag };
 }
 
-/**
- * Helper: Extract vocabulary words
- */
+function generateDimensions(title, category) {
+  const cleanT = title.split(':')[0].trim();
+  return {
+    economic: `Macroeconomic impacts, capital allocation efficiency, and fiscal viability concerning ${cleanT}.`,
+    governance: `Regulatory oversight, institutional accountability, and rule-of-law adherence.`,
+    social: `Distributive equity, citizen empowerment, accessibility, and public trust.`,
+    global: `Multilateral commitments, trade alignments, and global benchmark comparisons.`
+  };
+}
+
+function generateWayForward(title, category) {
+  return [
+    `Institute evidence-based consultations with technical experts and civil society before statutory rollouts.`,
+    `Establish robust digital oversight and audit mechanisms to mitigate implementation bottlenecks.`,
+    `Balance immediate crisis management with long-term institutional resilience.`
+  ];
+}
+
+function generateQuizObj(title, vocab, category) {
+  if (vocab && vocab.length > 0) {
+    const v = vocab[0];
+    return {
+      question: `In the context of the editorial on '${title.split(':')[0]}', what is the meaning of '${v.word}'?`,
+      options: [
+        v.definition,
+        "A formal judicial decree with nationwide authority",
+        "A temporary procedural suspension of operations",
+        "Total uncritical complacency with the status quo"
+      ],
+      answer: 0,
+      explanation: `'${v.word}' (${v.pos}) means: ${v.definition}. Synonyms include ${v.synonyms.join(', ')}.`
+    };
+  }
+  return {
+    question: `What is the primary policy thrust of the editorial on '${title.split(':')[0]}'?`,
+    options: [
+      `Addressing structural bottlenecks and prioritizing institutional reforms`,
+      `Restricting international diplomatic interactions completely`,
+      `Abolishing existing administrative accountability frameworks`,
+      `Halting digital transformation programs indefinitely`
+    ],
+    answer: 0,
+    explanation: `The analysis focuses on resolving core structural challenges and instituting evidence-based reforms.`
+  };
+}
+
 function extractVocab(text) {
   const found = [];
   const textLower = text.toLowerCase();
@@ -435,7 +566,7 @@ function extractVocab(text) {
         definition: details.def,
         synonyms: details.synonyms,
         antonyms: details.antonyms || [],
-        example: `Policymakers must demonstrate ${word} interventions in handling complex structural reforms.`
+        example: `Effective policy intervention is necessary to ${word} systemic bottlenecks.`
       });
       if (found.length >= 4) break;
     }
@@ -453,7 +584,7 @@ function extractVocab(text) {
         definition: d.def,
         synonyms: d.synonyms,
         antonyms: d.antonyms || [],
-        example: `Effective governance requires ${w} approaches to mitigate emerging institutional bottlenecks.`
+        example: `Governance requires ${w} approaches to sustain administrative momentum.`
       });
     }
   }
@@ -470,9 +601,6 @@ function hashCode(str) {
   return hash;
 }
 
-/**
- * Render RSS Feeds List in Modal
- */
 function renderRssFeedsManager() {
   if (!dom.rssFeedList) return;
   dom.rssFeedList.innerHTML = '';
@@ -508,12 +636,11 @@ function renderRssFeedsManager() {
 }
 
 /**
- * Filter articles according to active date, source, category, and search query
+ * Filter and Grid Rendering
  */
 function applyFilters() {
   let filtered = [...state.articles];
 
-  // 1. Date filter
   if (state.selectedDate && state.selectedDate !== 'all') {
     filtered = filtered.filter(a => a.date === state.selectedDate);
     dom.dateLabel.textContent = formatDateHuman(state.selectedDate);
@@ -521,17 +648,14 @@ function applyFilters() {
     dom.dateLabel.textContent = 'All Dates Archive';
   }
 
-  // 2. Source filter
   if (state.selectedSource !== 'all') {
     filtered = filtered.filter(a => a.source === state.selectedSource);
   }
 
-  // 3. Category filter
   if (state.selectedCategory !== 'all') {
     filtered = filtered.filter(a => a.category === state.selectedCategory);
   }
 
-  // 4. Search query
   if (state.searchQuery.trim()) {
     const q = state.searchQuery.toLowerCase().trim();
     filtered = filtered.filter(a => {
@@ -554,9 +678,6 @@ function applyFilters() {
   updateFilterBarUI();
 }
 
-/**
- * Render article cards to the grid
- */
 function renderArticles() {
   dom.grid.innerHTML = '';
   const list = state.filteredArticles;
@@ -640,9 +761,6 @@ function renderArticles() {
   });
 }
 
-/**
- * Update top statistics strip
- */
 function renderStats() {
   const articlesToCount = state.selectedDate && state.selectedDate !== 'all'
     ? state.articles.filter(a => a.date === state.selectedDate)
@@ -656,11 +774,7 @@ function renderStats() {
   articlesToCount.forEach(a => {
     totalVocab += (a.vocabulary || []).length;
     const timeMatch = (a.reading_time || '').match(/(\d+)/);
-    if (timeMatch) {
-      totalMinutes += parseInt(timeMatch[1], 10);
-    } else {
-      totalMinutes += 2;
-    }
+    totalMinutes += timeMatch ? parseInt(timeMatch[1], 10) : 2;
   });
 
   dom.statVocab.textContent = totalVocab;
@@ -668,7 +782,7 @@ function renderStats() {
 }
 
 /**
- * Open Immersive Full Editorial Reader View
+ * Open Immersive Editorial Reader View
  */
 function openReader(articleId, autoPlayAudio = false) {
   const article = state.articles.find(a => a.id === articleId);
@@ -690,10 +804,37 @@ function openReader(articleId, autoPlayAudio = false) {
 
   dom.readerCrux.textContent = article.crux || 'Crux summary not available.';
 
+  // 1. Takeaways
   dom.readerTakeawaysList.innerHTML = (article.takeaways || []).map(t => 
     `<li>${escapeHtml(t)}</li>`
   ).join('');
 
+  // 2. 360° Analytical Dimensions Matrix
+  const dims = article.dimensions || generateDimensions(article.title, article.category);
+  dom.readerDimensionsGrid.innerHTML = `
+    <div class="dim-card dim-economic">
+      <div class="dim-card-header"><span>💰</span> Economic Dimension</div>
+      <p class="dim-card-text">${escapeHtml(dims.economic)}</p>
+    </div>
+    <div class="dim-card dim-governance">
+      <div class="dim-card-header"><span>⚖️</span> Governance & Policy</div>
+      <p class="dim-card-text">${escapeHtml(dims.governance)}</p>
+    </div>
+    <div class="dim-card dim-social">
+      <div class="dim-card-header"><span>👥</span> Social & Equity</div>
+      <p class="dim-card-text">${escapeHtml(dims.social)}</p>
+    </div>
+    <div class="dim-card dim-global">
+      <div class="dim-card-header"><span>🌐</span> Global & Strategic</div>
+      <p class="dim-card-text">${escapeHtml(dims.global)}</p>
+    </div>
+  `;
+
+  // 3. Actionable Way Forward
+  const wayForward = article.way_forward || generateWayForward(article.title, article.category);
+  dom.readerWayForwardList.innerHTML = wayForward.map(wf => `<li>${escapeHtml(wf)}</li>`).join('');
+
+  // 4. Vocabulary Cards
   dom.readerVocabGrid.innerHTML = (article.vocabulary || []).map(v => `
     <div class="vocab-card">
       <div class="vocab-head">
@@ -702,26 +843,27 @@ function openReader(articleId, autoPlayAudio = false) {
       </div>
       <p class="vocab-def">${escapeHtml(v.definition)}</p>
       ${v.synonyms && v.synonyms.length > 0 ? `
-        <div class="vocab-synonyms">
-          <strong>Synonyms:</strong> ${escapeHtml(v.synonyms.join(', '))}
-        </div>
+        <div class="vocab-synonyms"><strong>Synonyms:</strong> ${escapeHtml(v.synonyms.join(', '))}</div>
       ` : ''}
       ${v.antonyms && v.antonyms.length > 0 ? `
-        <div class="vocab-synonyms">
-          <strong>Antonyms:</strong> ${escapeHtml(v.antonyms.join(', '))}
-        </div>
+        <div class="vocab-synonyms"><strong>Antonyms:</strong> ${escapeHtml(v.antonyms.join(', '))}</div>
       ` : ''}
       ${v.example ? `
-        <div class="vocab-example">
-          "${escapeHtml(v.example)}"
-        </div>
+        <div class="vocab-example">"${escapeHtml(v.example)}"</div>
       ` : ''}
     </div>
   `).join('');
 
+  // 5. Relevance & Mains Question
   dom.readerRelevanceTag.textContent = article.relevance_tag || 'GS / Analytical Relevance';
   dom.readerQuestionText.textContent = article.practice_question || 'Evaluate the broader policy implications discussed in this editorial.';
 
+  // 6. Personal Notes
+  const savedNote = localStorage.getItem(`editorial-note-${article.id}`) || '';
+  dom.readerNotesInput.value = savedNote;
+  dom.notesStatusBadge.textContent = savedNote ? 'Saved locally' : 'Ready for notes';
+
+  // 7. Full Article Discussion Body
   const content = article.content || '';
   const paragraphs = content.split('\n\n').filter(p => p.trim());
   if (paragraphs.length > 0) {
@@ -729,6 +871,10 @@ function openReader(articleId, autoPlayAudio = false) {
   } else {
     dom.readerBodyParagraphs.innerHTML = `<p>${escapeHtml(content)}</p>`;
   }
+
+  // 8. Reader Quick Quiz Check
+  const quizObj = article.quiz || generateQuizObj(article.title, article.vocabulary, article.category);
+  renderInlineReaderQuiz(quizObj);
 
   updateReaderBookmarkIcon();
 
@@ -743,12 +889,364 @@ function openReader(articleId, autoPlayAudio = false) {
   }
 }
 
+function renderInlineReaderQuiz(q) {
+  if (!dom.readerQuizCard) return;
+  dom.readerQuizCard.innerHTML = `
+    <p class="reader-q-text">${escapeHtml(q.question)}</p>
+    <div style="display: flex; flex-direction: column; gap: 0.5rem; margin: 0.75rem 0;">
+      ${q.options.map((opt, idx) => `
+        <button class="reader-opt-btn" data-idx="${idx}">${String.fromCharCode(65 + idx)}. ${escapeHtml(opt)}</button>
+      `).join('')}
+    </div>
+    <div class="reader-q-expl" style="display: none;">
+      <strong>${escapeHtml(q.explanation)}</strong>
+    </div>
+  `;
+
+  const btns = dom.readerQuizCard.querySelectorAll('.reader-opt-btn');
+  const explBox = dom.readerQuizCard.querySelector('.reader-q-expl');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedIdx = parseInt(btn.dataset.idx, 10);
+      btns.forEach((b, i) => {
+        b.disabled = true;
+        if (i === q.answer) b.classList.add('correct');
+        else if (i === selectedIdx && selectedIdx !== q.answer) b.classList.add('incorrect');
+      });
+      explBox.style.display = 'block';
+    });
+  });
+}
+
 function closeReader() {
   stopTTS();
   dom.readerModal.style.display = 'none';
   document.body.style.overflow = '';
   state.currentArticle = null;
   history.replaceState(null, null, ' ');
+}
+
+/**
+ * Personal Notes Auto-save
+ */
+function handleNotesInput(e) {
+  if (!state.currentArticle) return;
+  const noteText = e.target.value;
+  localStorage.setItem(`editorial-note-${state.currentArticle.id}`, noteText);
+  dom.notesStatusBadge.textContent = 'Saved locally ✔';
+}
+
+/**
+ * Export Editorial Study Notes to Markdown / Notion
+ */
+function exportArticleToMarkdown() {
+  if (!state.currentArticle) return;
+  const a = state.currentArticle;
+  const note = localStorage.getItem(`editorial-note-${a.id}`) || 'No custom notes added.';
+  const dims = a.dimensions || generateDimensions(a.title, a.category);
+  const wayForward = (a.way_forward || generateWayForward(a.title, a.category)).map((w, i) => `${i + 1}. ${w}`).join('\n');
+  const vocabFormatted = (a.vocabulary || []).map(v => `- **${v.word}** (${v.pos}): ${v.definition} *(Synonyms: ${v.synonyms.join(', ')})*`).join('\n');
+  const takeawaysFormatted = (a.takeaways || []).map(t => `- ${t}`).join('\n');
+
+  const markdown = `# ${a.title}
+**Publication**: ${a.source} | **Date**: ${a.date} | **Category**: ${a.category}
+**Relevance**: ${a.relevance_tag}
+**Source URL**: ${a.url}
+
+---
+
+## ⚡ 30-Second Crux
+> ${a.crux}
+
+## 💡 Key Analytical Takeaways
+${takeawaysFormatted}
+
+## 🌐 360° Multi-Dimensional Analysis Matrix
+- **Economic Dimension**: ${dims.economic}
+- **Governance & Policy**: ${dims.governance}
+- **Social & Equity**: ${dims.social}
+- **Global & Geopolitics**: ${dims.global}
+
+## 🟢 Actionable Way Forward & Policy Solutions
+${wayForward}
+
+## 📖 Daily Vocabulary & Concepts
+${vocabFormatted}
+
+## ✍️ Mains Analytical Question
+*${a.practice_question}*
+
+---
+
+## 📝 My Personal Study Notes
+${note}
+`;
+
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(markdown).then(() => {
+      showToast('📋 Full study note copied to clipboard (Notion / Markdown ready)!');
+    });
+  } else {
+    showToast('Clipboard access unavailable.');
+  }
+}
+
+/**
+ * Print / Save as PDF Handout
+ */
+function printArticleHandout() {
+  window.print();
+}
+
+/**
+ * ==========================================================================
+ * Interactive 3D Vocabulary Flashcards Engine
+ * ==========================================================================
+ */
+function buildFlashcardDeck() {
+  const wordMap = new Map();
+  state.articles.forEach(art => {
+    (art.vocabulary || []).forEach(v => {
+      const key = v.word.toLowerCase();
+      if (!wordMap.has(key)) {
+        wordMap.set(key, { ...v, articleTitle: art.title });
+      }
+    });
+  });
+
+  state.flashcards.cards = Array.from(wordMap.values());
+  filterFlashcards(state.flashcards.activeFilter);
+}
+
+function filterFlashcards(filterType) {
+  state.flashcards.activeFilter = filterType;
+  if (filterType === 'mastered') {
+    state.flashcards.filteredCards = state.flashcards.cards.filter(c => state.masteredWords.has(c.word.toLowerCase()));
+  } else if (filterType === 'learning') {
+    state.flashcards.filteredCards = state.flashcards.cards.filter(c => !state.masteredWords.has(c.word.toLowerCase()));
+  } else {
+    state.flashcards.filteredCards = [...state.flashcards.cards];
+  }
+
+  state.flashcards.currentIndex = 0;
+  updateFlashcardStats();
+  renderCurrentFlashcard();
+}
+
+function updateFlashcardStats() {
+  const total = state.flashcards.cards.length;
+  const mastered = Array.from(state.masteredWords).filter(w => state.flashcards.cards.some(c => c.word.toLowerCase() === w)).length;
+  const learning = Math.max(0, total - mastered);
+  const pct = total > 0 ? Math.round((mastered / total) * 100) : 0;
+
+  if (dom.fcTotalCount) dom.fcTotalCount.textContent = total;
+  if (dom.fcLearningCount) dom.fcLearningCount.textContent = learning;
+  if (dom.fcMasteredCount) dom.fcMasteredCount.textContent = mastered;
+  if (dom.fcProgressLabel) dom.fcProgressLabel.textContent = `${pct}% Mastered`;
+  if (dom.fcProgressBar) dom.fcProgressBar.style.width = `${pct}%`;
+}
+
+function renderCurrentFlashcard() {
+  const list = state.flashcards.filteredCards;
+  if (dom.flashcardCard) dom.flashcardCard.classList.remove('is-flipped');
+
+  if (list.length === 0) {
+    dom.fcFrontWord.textContent = 'No cards found';
+    dom.fcFrontPos.textContent = 'Status';
+    dom.fcFrontExample.textContent = 'Select another filter above or mark words as review.';
+    dom.fcCounterText.textContent = '0 of 0';
+    return;
+  }
+
+  const card = list[state.flashcards.currentIndex];
+  dom.fcFrontWord.textContent = card.word;
+  dom.fcFrontPos.textContent = card.pos || 'Word';
+  dom.fcFrontExample.textContent = card.example ? `"${card.example}"` : `Context: ${card.articleTitle}`;
+
+  dom.fcBackPos.textContent = `${card.pos || ''} • Meaning`;
+  dom.fcBackDef.textContent = card.definition;
+  dom.fcBackSynonyms.textContent = (card.synonyms && card.synonyms.length > 0) ? card.synonyms.join(', ') : 'None listed';
+  dom.fcBackAntonyms.textContent = (card.antonyms && card.antonyms.length > 0) ? card.antonyms.join(', ') : 'None listed';
+
+  dom.fcCounterText.textContent = `Card ${state.flashcards.currentIndex + 1} of ${list.length}`;
+
+  const isMastered = state.masteredWords.has(card.word.toLowerCase());
+  dom.fcMarkMasterBtn.style.opacity = isMastered ? '0.7' : '1';
+  dom.fcMarkMasterBtn.textContent = isMastered ? '✔ Mastered' : '⭐ Mark as Mastered';
+}
+
+function flipFlashcard() {
+  if (dom.flashcardCard) {
+    dom.flashcardCard.classList.toggle('is-flipped');
+  }
+}
+
+function nextFlashcard() {
+  if (state.flashcards.filteredCards.length === 0) return;
+  state.flashcards.currentIndex = (state.flashcards.currentIndex + 1) % state.flashcards.filteredCards.length;
+  renderCurrentFlashcard();
+}
+
+function prevFlashcard() {
+  if (state.flashcards.filteredCards.length === 0) return;
+  state.flashcards.currentIndex = (state.flashcards.currentIndex - 1 + state.flashcards.filteredCards.length) % state.flashcards.filteredCards.length;
+  renderCurrentFlashcard();
+}
+
+function markFlashcardMastered() {
+  const card = state.flashcards.filteredCards[state.flashcards.currentIndex];
+  if (!card) return;
+  state.masteredWords.add(card.word.toLowerCase());
+  localStorage.setItem('editorial-mastered-words', JSON.stringify(Array.from(state.masteredWords)));
+  updateFlashcardStats();
+  showToast(`Marked "${card.word}" as Mastered! ⭐`);
+  nextFlashcard();
+}
+
+function markFlashcardReview() {
+  const card = state.flashcards.filteredCards[state.flashcards.currentIndex];
+  if (!card) return;
+  state.masteredWords.delete(card.word.toLowerCase());
+  localStorage.setItem('editorial-mastered-words', JSON.stringify(Array.from(state.masteredWords)));
+  updateFlashcardStats();
+  showToast(`Marked "${card.word}" for Review 🔄`);
+  nextFlashcard();
+}
+
+/**
+ * ==========================================================================
+ * Daily 5-Question MCQ Mock Quiz Engine
+ * ==========================================================================
+ */
+function startDailyMockQuiz() {
+  const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
+  const questions = [];
+
+  for (const art of pool) {
+    if (art.quiz) {
+      questions.push(art.quiz);
+    } else {
+      questions.push(generateQuizObj(art.title, art.vocabulary, art.category));
+    }
+    if (questions.length >= 5) break;
+  }
+
+  while (questions.length < 5 && state.articles.length > 0) {
+    const randomArt = state.articles[Math.floor(Math.random() * state.articles.length)];
+    questions.push(generateQuizObj(randomArt.title, randomArt.vocabulary, randomArt.category));
+  }
+
+  state.quiz.questions = questions.slice(0, 5);
+  state.quiz.currentIndex = 0;
+  state.quiz.score = 0;
+  state.quiz.answered = false;
+
+  dom.quizActiveView.style.display = 'block';
+  dom.quizSummaryView.style.display = 'none';
+  renderQuizQuestion();
+
+  dom.quizModal.style.display = 'flex';
+}
+
+function renderQuizQuestion() {
+  const q = state.quiz.questions[state.quiz.currentIndex];
+  state.quiz.answered = false;
+
+  dom.quizQNum.textContent = `Question ${state.quiz.currentIndex + 1} of ${state.quiz.questions.length}`;
+  dom.quizScorePill.textContent = `Score: ${state.quiz.score} / ${state.quiz.currentIndex}`;
+  dom.quizQuestionText.textContent = q.question;
+  dom.quizExplanationBox.style.display = 'none';
+  dom.quizNextBtn.style.display = 'none';
+
+  dom.quizOptionsList.innerHTML = q.options.map((opt, idx) => `
+    <button class="quiz-opt-btn" data-opt-idx="${idx}">
+      <span class="quiz-opt-letter">${String.fromCharCode(65 + idx)}</span>
+      <span>${escapeHtml(opt)}</span>
+    </button>
+  `).join('');
+
+  const optBtns = dom.quizOptionsList.querySelectorAll('.quiz-opt-btn');
+  optBtns.forEach(btn => {
+    btn.addEventListener('click', () => handleQuizOptionClick(parseInt(btn.dataset.optIdx, 10)));
+  });
+}
+
+function handleQuizOptionClick(selectedIdx) {
+  if (state.quiz.answered) return;
+  state.quiz.answered = true;
+
+  const q = state.quiz.questions[state.quiz.currentIndex];
+  const optBtns = dom.quizOptionsList.querySelectorAll('.quiz-opt-btn');
+  const isCorrect = (selectedIdx === q.answer);
+
+  if (isCorrect) {
+    state.quiz.score++;
+    dom.quizExplBadge.textContent = '✔ Correct!';
+    dom.quizExplBadge.style.color = 'var(--accent-emerald)';
+  } else {
+    dom.quizExplBadge.textContent = '✖ Incorrect';
+    dom.quizExplBadge.style.color = '#ef4444';
+  }
+
+  optBtns.forEach((btn, idx) => {
+    btn.disabled = true;
+    if (idx === q.answer) {
+      btn.classList.add('correct');
+    } else if (idx === selectedIdx && !isCorrect) {
+      btn.classList.add('incorrect');
+    }
+  });
+
+  dom.quizExplanationText.textContent = q.explanation;
+  dom.quizExplanationBox.style.display = 'block';
+  dom.quizNextBtn.style.display = 'inline-block';
+  dom.quizNextBtn.textContent = (state.quiz.currentIndex + 1 === state.quiz.questions.length) ? 'View Final Results 🏆' : 'Next Question →';
+}
+
+function nextQuizQuestion() {
+  if (state.quiz.currentIndex + 1 < state.quiz.questions.length) {
+    state.quiz.currentIndex++;
+    renderQuizQuestion();
+  } else {
+    showQuizSummary();
+  }
+}
+
+function showQuizSummary() {
+  dom.quizActiveView.style.display = 'none';
+  dom.quizSummaryView.style.display = 'block';
+
+  const total = state.quiz.questions.length;
+  const score = state.quiz.score;
+  const pct = Math.round((score / total) * 100);
+
+  dom.resultsScoreDisplay.textContent = `You scored ${score} out of ${total} (${pct}%)`;
+
+  if (pct === 100) {
+    dom.resultsFeedbackText.textContent = 'Outstanding! You have thoroughly grasped today’s core editorial concepts, policy arguments, and vocabulary!';
+  } else if (pct >= 60) {
+    dom.resultsFeedbackText.textContent = 'Good effort! Review the vocabulary flashcards and 360° dimensions to solidify your conceptual clarity.';
+  } else {
+    dom.resultsFeedbackText.textContent = 'Keep practicing! Revisit the key takeaways and study notes to boost your retention.';
+  }
+}
+
+/**
+ * ==========================================================================
+ * Exam Knowledge Vault Controller
+ * ==========================================================================
+ */
+function openKnowledgeVault() {
+  dom.knowledgeVaultModal.style.display = 'flex';
+}
+
+function switchVaultTab(tabKey) {
+  const tabs = dom.knowledgeVaultModal.querySelectorAll('.vault-tab-btn');
+  const contents = dom.knowledgeVaultModal.querySelectorAll('.vault-tab-content');
+
+  tabs.forEach(t => t.classList.toggle('active', t.dataset.vaultTab === tabKey));
+  contents.forEach(c => c.style.display = (c.id === `vault-tab-${tabKey}`) ? 'block' : 'none');
 }
 
 /**
@@ -863,8 +1361,7 @@ function toggleBookmark(articleId) {
 }
 
 function updateBookmarkBadge() {
-  const count = state.bookmarks.size;
-  dom.bookmarkBadge.textContent = count;
+  dom.bookmarkBadge.textContent = state.bookmarks.size;
 }
 
 function updateReaderBookmarkIcon() {
@@ -916,55 +1413,6 @@ function openBookmarksModal() {
   dom.bookmarksModal.style.display = 'flex';
 }
 
-/**
- * Daily Vocab Deck Modal
- */
-function openVocabDeckModal() {
-  dom.vocabDeckContainer.innerHTML = '';
-  const articlesToUse = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
-
-  const vocabMap = new Map();
-  articlesToUse.forEach(art => {
-    (art.vocabulary || []).forEach(v => {
-      if (!vocabMap.has(v.word.toLowerCase())) {
-        vocabMap.set(v.word.toLowerCase(), { ...v, sourceTitle: art.title });
-      }
-    });
-  });
-
-  const vocabList = Array.from(vocabMap.values());
-  if (vocabList.length === 0) {
-    dom.vocabDeckContainer.innerHTML = '<p>No vocabulary words found for current selection.</p>';
-  } else {
-    vocabList.forEach(v => {
-      const card = document.createElement('div');
-      card.className = 'vocab-card';
-      card.innerHTML = `
-        <div class="vocab-head">
-          <span class="vocab-word">${escapeHtml(v.word)}</span>
-          <span class="vocab-pos">${escapeHtml(v.pos || '')}</span>
-        </div>
-        <p class="vocab-def">${escapeHtml(v.definition)}</p>
-        ${v.synonyms && v.synonyms.length > 0 ? `
-          <div class="vocab-synonyms"><strong>Synonyms:</strong> ${escapeHtml(v.synonyms.join(', '))}</div>
-        ` : ''}
-        ${v.antonyms && v.antonyms.length > 0 ? `
-          <div class="vocab-synonyms"><strong>Antonyms:</strong> ${escapeHtml(v.antonyms.join(', '))}</div>
-        ` : ''}
-        ${v.example ? `
-          <div class="vocab-example">"${escapeHtml(v.example)}"</div>
-        ` : ''}
-      `;
-      dom.vocabDeckContainer.appendChild(card);
-    });
-  }
-
-  dom.vocabModal.style.display = 'flex';
-}
-
-/**
- * Filter Bar UI and Reset logic
- */
 function updateFilterBarUI() {
   const isFiltered = state.selectedSource !== 'all' || 
                      state.selectedCategory !== 'all' || 
@@ -1021,7 +1469,7 @@ function navigateDate(direction) {
 }
 
 /**
- * Theme & Reader Preferences
+ * Theme & Display Preferences
  */
 function applySavedPreferences() {
   setTheme(state.preferences.theme, false);
@@ -1091,13 +1539,85 @@ function applyReaderSize(size) {
  * Setup All Event Listeners
  */
 function setupEventListeners() {
+  // Resource Hub Ribbon Tabs
+  if (dom.tabEditorials) {
+    dom.tabEditorials.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+  if (dom.tabFlashcards) {
+    dom.tabFlashcards.addEventListener('click', () => {
+      buildFlashcardDeck();
+      dom.flashcardModal.style.display = 'flex';
+    });
+  }
+  if (dom.tabQuiz) {
+    dom.tabQuiz.addEventListener('click', startDailyMockQuiz);
+  }
+  if (dom.tabVault) {
+    dom.tabVault.addEventListener('click', openKnowledgeVault);
+  }
+
+  // Flashcards Modal
+  if (dom.closeFlashcardModal) {
+    dom.closeFlashcardModal.addEventListener('click', () => dom.flashcardModal.style.display = 'none');
+  }
+  if (dom.flashcardScene) {
+    dom.flashcardScene.addEventListener('click', flipFlashcard);
+  }
+  if (dom.fcNextBtn) dom.fcNextBtn.addEventListener('click', nextFlashcard);
+  if (dom.fcPrevBtn) dom.fcPrevBtn.addEventListener('click', prevFlashcard);
+  if (dom.fcMarkMasterBtn) dom.fcMarkMasterBtn.addEventListener('click', markFlashcardMastered);
+  if (dom.fcMarkReviewBtn) dom.fcMarkReviewBtn.addEventListener('click', markFlashcardReview);
+
+  const fcFilterBtns = dom.flashcardModal?.querySelectorAll('.fc-filter-btn');
+  fcFilterBtns?.forEach(btn => {
+    btn.addEventListener('click', () => {
+      fcFilterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterFlashcards(btn.dataset.fcFilter);
+    });
+  });
+
+  // Quiz Modal
+  if (dom.closeQuizModal) {
+    dom.closeQuizModal.addEventListener('click', () => dom.quizModal.style.display = 'none');
+  }
+  if (dom.quizNextBtn) {
+    dom.quizNextBtn.addEventListener('click', nextQuizQuestion);
+  }
+  if (dom.retakeQuizBtn) {
+    dom.retakeQuizBtn.addEventListener('click', startDailyMockQuiz);
+  }
+
+  // Knowledge Vault Modal
+  if (dom.closeVaultModal) {
+    dom.closeVaultModal.addEventListener('click', () => dom.knowledgeVaultModal.style.display = 'none');
+  }
+  if (dom.vaultModalDone) {
+    dom.vaultModalDone.addEventListener('click', () => dom.knowledgeVaultModal.style.display = 'none');
+  }
+  const vaultTabBtns = dom.knowledgeVaultModal?.querySelectorAll('.vault-tab-btn');
+  vaultTabBtns?.forEach(btn => {
+    btn.addEventListener('click', () => switchVaultTab(btn.dataset.vaultTab));
+  });
+
+  // Personal Notes auto-save
+  if (dom.readerNotesInput) {
+    dom.readerNotesInput.addEventListener('input', handleNotesInput);
+  }
+
+  // Markdown & Print actions
+  if (dom.readerExportBtn) {
+    dom.readerExportBtn.addEventListener('click', exportArticleToMarkdown);
+  }
+  if (dom.readerPrintBtn) {
+    dom.readerPrintBtn.addEventListener('click', printArticleHandout);
+  }
+
   // Live Refresh Buttons
-  if (dom.refreshFeedsBtn) {
-    dom.refreshFeedsBtn.addEventListener('click', fetchLiveRSSFeeds);
-  }
-  if (dom.modalFetchAllBtn) {
-    dom.modalFetchAllBtn.addEventListener('click', fetchLiveRSSFeeds);
-  }
+  if (dom.refreshFeedsBtn) dom.refreshFeedsBtn.addEventListener('click', fetchLiveRSSFeeds);
+  if (dom.modalFetchAllBtn) dom.modalFetchAllBtn.addEventListener('click', fetchLiveRSSFeeds);
 
   // RSS Manager Modal
   if (dom.rssManagerBtn) {
@@ -1106,12 +1626,8 @@ function setupEventListeners() {
       dom.rssModal.style.display = 'flex';
     });
   }
-  if (dom.closeRssModal) {
-    dom.closeRssModal.addEventListener('click', () => dom.rssModal.style.display = 'none');
-  }
-  if (dom.rssModalDone) {
-    dom.rssModalDone.addEventListener('click', () => dom.rssModal.style.display = 'none');
-  }
+  if (dom.closeRssModal) dom.closeRssModal.addEventListener('click', () => dom.rssModal.style.display = 'none');
+  if (dom.rssModalDone) dom.rssModalDone.addEventListener('click', () => dom.rssModal.style.display = 'none');
 
   // Add Custom Feed
   if (dom.addCustomFeedBtn) {
@@ -1125,13 +1641,7 @@ function setupEventListeners() {
         return;
       }
 
-      state.customFeeds.push({
-        name: name,
-        url: url,
-        category: cat,
-        icon: '📑',
-        tone: 'Analytical'
-      });
+      state.customFeeds.push({ name, url, category: cat, icon: '📑', tone: 'Analytical' });
       localStorage.setItem('editorial-custom-feeds', JSON.stringify(state.customFeeds));
       dom.customFeedName.value = '';
       dom.customFeedUrl.value = '';
@@ -1208,9 +1718,10 @@ function setupEventListeners() {
   });
 
   // Vocab Deck Modal
-  dom.vocabModalToggle.addEventListener('click', openVocabDeckModal);
-  dom.closeVocabModal.addEventListener('click', () => dom.vocabModal.style.display = 'none');
-  dom.vocabModalDone.addEventListener('click', () => dom.vocabModal.style.display = 'none');
+  if (dom.vocabModalToggle) dom.vocabModalToggle.addEventListener('click', () => {
+    buildFlashcardDeck();
+    dom.flashcardModal.style.display = 'flex';
+  });
 
   // Random Pick (Surprise Me)
   dom.randomPickBtn.addEventListener('click', () => {
@@ -1332,17 +1843,28 @@ function setupEventListeners() {
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       if (dom.readerModal.style.display === 'flex') closeReader();
-      dom.bookmarksModal.style.display = 'none';
-      dom.vocabModal.style.display = 'none';
-      dom.settingsModal.style.display = 'none';
+      if (dom.bookmarksModal) dom.bookmarksModal.style.display = 'none';
+      if (dom.vocabModal) dom.vocabModal.style.display = 'none';
+      if (dom.settingsModal) dom.settingsModal.style.display = 'none';
       if (dom.rssModal) dom.rssModal.style.display = 'none';
-    } else if (e.key === '/' && document.activeElement !== dom.searchInput) {
+      if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
+      if (dom.quizModal) dom.quizModal.style.display = 'none';
+      if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
+    } else if (e.key === '/' && document.activeElement !== dom.searchInput && document.activeElement !== dom.readerNotesInput) {
       e.preventDefault();
       dom.searchInput.focus();
+    } else if (dom.flashcardModal && dom.flashcardModal.style.display === 'flex') {
+      if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault();
+        flipFlashcard();
+      } else if (e.key === 'ArrowRight') {
+        nextFlashcard();
+      } else if (e.key === 'ArrowLeft') {
+        prevFlashcard();
+      }
     }
   });
 
-  // URL Hash changes
   window.addEventListener('hashchange', handleUrlHashRouting);
 }
 

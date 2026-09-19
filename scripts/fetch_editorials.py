@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Daily Editorial & Paper Fetcher
+Daily Editorial & Paper Fetcher (Resourceful Edition)
 Fetches RSS feeds from top newspapers (The Indian Express, The Hindu, The Guardian,
-Financial Express) and research repositories (arXiv), extracts content, generates
-key takeaways, detects vocabulary, and updates data/editorials.json.
+LiveMint) and research repositories (arXiv, Nature), extracts content, generates
+30-second crux, 3 key takeaways, 360-degree analytical dimensions, actionable
+way-forward policy recommendations, vocabulary, and daily MCQ review questions.
 """
 
 import os
@@ -20,34 +21,33 @@ VOCAB_DATABASE = {
     "ameliorate": {"def": "To make something bad or unsatisfactory better", "pos": "Verb", "synonyms": ["improve", "enhance", "better"], "antonyms": ["worsen", "deteriorate"]},
     "contentious": {"def": "Causing or likely to cause an argument; controversial", "pos": "Adjective", "synonyms": ["disputed", "controversial", "debated"], "antonyms": ["uncontroversial", "peaceful"]},
     "pragmatic": {"def": "Dealing with things sensibly and realistically based on practical considerations", "pos": "Adjective", "synonyms": ["practical", "sensible", "hardheaded"], "antonyms": ["idealistic", "impractical"]},
-    "imperative": {"def": "Of vital importance; crucial or an essential thing", "pos": "Adjective / Noun", "synonyms": ["vital", "essential", "crucial"], "antonyms": ["optional", "negligible"]},
+    "imperative": {"def": "Of vital importance; crucial or an essential priority", "pos": "Adjective / Noun", "synonyms": ["vital", "essential", "crucial"], "antonyms": ["optional", "negligible"]},
     "tenuous": {"def": "Very weak or slight; insubstantial", "pos": "Adjective", "synonyms": ["flimsy", "fragile", "shaky"], "antonyms": ["strong", "robust", "firm"]},
-    "scrutiny": {"def": "Critical observation or examination", "pos": "Noun", "synonyms": ["inspection", "examination", "audit"], "antonyms": ["neglect", "glance"]},
+    "scrutiny": {"def": "Critical observation or thorough examination", "pos": "Noun", "synonyms": ["inspection", "examination", "audit"], "antonyms": ["neglect", "glance"]},
     "unprecedented": {"def": "Never done or known before", "pos": "Adjective", "synonyms": ["unparalleled", "novel", "groundbreaking"], "antonyms": ["common", "customary"]},
-    "bipartisan": {"def": "Involving the agreement or cooperation of two political parties that usually oppose each other", "pos": "Adjective", "synonyms": ["two-party", "coalition", "non-partisan"], "antonyms": ["partisan", "sectarian"]},
-    "fiscal": {"def": "Relating to government revenue, especially taxes and public spending", "pos": "Adjective", "synonyms": ["monetary", "financial", "budgetary"], "antonyms": []},
-    "paradigm": {"def": "A typical example or pattern of something; a distinct set of concepts", "pos": "Noun", "synonyms": ["model", "archetype", "framework"], "antonyms": []},
-    "complacency": {"def": "A feeling of smug or uncritical satisfaction with oneself or achievements", "pos": "Noun", "synonyms": ["smugness", "self-satisfaction", "inertia"], "antonyms": ["vigilance", "alertness"]},
+    "bipartisan": {"def": "Involving agreement or cooperation between opposing political parties", "pos": "Adjective", "synonyms": ["two-party", "coalition", "non-partisan"], "antonyms": ["partisan", "sectarian"]},
+    "fiscal": {"def": "Relating to government revenue, taxes, and public spending", "pos": "Adjective", "synonyms": ["monetary", "financial", "budgetary"], "antonyms": []},
+    "paradigm": {"def": "A typical example or pattern of something; a framework of ideas", "pos": "Noun", "synonyms": ["model", "archetype", "framework"], "antonyms": []},
+    "complacency": {"def": "A feeling of smug or uncritical self-satisfaction with current conditions", "pos": "Noun", "synonyms": ["smugness", "self-satisfaction", "inertia"], "antonyms": ["vigilance", "alertness"]},
     "disparity": {"def": "A great difference or inequality", "pos": "Noun", "synonyms": ["imbalance", "discrepancy", "gap"], "antonyms": ["parity", "equality", "similarity"]},
     "judicious": {"def": "Having, showing, or done with good judgment or sense", "pos": "Adjective", "synonyms": ["prudent", "wise", "discreet"], "antonyms": ["foolish", "imprudent", "rash"]},
     "calamitous": {"def": "Catastrophic or disastrous", "pos": "Adjective", "synonyms": ["disastrous", "ruinous", "dire"], "antonyms": ["beneficial", "advantageous"]},
     "ubiquitous": {"def": "Present, appearing, or found everywhere", "pos": "Adjective", "synonyms": ["omnipresent", "pervasive", "everywhere"], "antonyms": ["rare", "scarce"]},
     "mitigate": {"def": "Make less severe, serious, or painful", "pos": "Verb", "synonyms": ["alleviate", "reduce", "diminish"], "antonyms": ["aggravate", "intensify"]},
-    "conundrum": {"def": "A confusing and difficult problem or question", "pos": "Noun", "synonyms": ["dilemma", "puzzle", "quandary"], "antonyms": ["solution", "clarity"]},
-    "sovereignty": {"def": "Supreme power or authority; the authority of a state to govern itself", "pos": "Noun", "synonyms": ["autonomy", "independence", "self-governance"], "antonyms": ["dependence", "subjugation"]},
-    "vulnerability": {"def": "The quality or state of being exposed to the possibility of being attacked or harmed", "pos": "Noun", "synonyms": ["susceptibility", "fragility", "weakness"], "antonyms": ["resilience", "invulnerability"]},
-    "resilience": {"def": "The capacity to withstand or to recover quickly from difficulties; toughness", "pos": "Noun", "synonyms": ["toughness", "adaptability", "endurance"], "antonyms": ["fragility", "vulnerability"]},
-    "deterrence": {"def": "The action of discouraging an action or event through instilling doubt or fear", "pos": "Noun", "synonyms": ["prevention", "discouragement", "disincentive"], "antonyms": ["encouragement", "incitement"]},
-    "substantive": {"def": "Having a firm basis in reality and being therefore important, meaningful, or considerable", "pos": "Adjective", "synonyms": ["significant", "meaningful", "tangible"], "antonyms": ["trivial", "inconsequential"]},
-    "hegemony": {"def": "Leadership or dominance, especially by one state or social group over others", "pos": "Noun", "synonyms": ["dominance", "supremacy", "ascendancy"], "antonyms": ["subordination", "equality"]},
-    "proactive": {"def": "Creating or controlling a situation rather than just responding to it after it has happened", "pos": "Adjective", "synonyms": ["enterprising", "forward-looking", "preventative"], "antonyms": ["reactive", "passive"]},
+    "conundrum": {"def": "A confusing and difficult problem or dilemma", "pos": "Noun", "synonyms": ["dilemma", "puzzle", "quandary"], "antonyms": ["solution", "clarity"]},
+    "sovereignty": {"def": "Supreme authority; self-governing authority of a state", "pos": "Noun", "synonyms": ["autonomy", "independence", "self-governance"], "antonyms": ["dependence", "subjugation"]},
+    "resilience": {"def": "The capacity to recover quickly from difficulties; systemic toughness", "pos": "Noun", "synonyms": ["toughness", "adaptability", "endurance"], "antonyms": ["fragility", "vulnerability"]},
+    "substantive": {"def": "Having a firm basis in reality; meaningful, considerable", "pos": "Adjective", "synonyms": ["significant", "meaningful", "tangible"], "antonyms": ["trivial", "inconsequential"]},
     "benchmark": {"def": "A standard or point of reference against which things may be compared", "pos": "Noun / Verb", "synonyms": ["standard", "criterion", "gauge"], "antonyms": []},
-    "adversary": {"def": "One's opponent in a contest, conflict, or dispute", "pos": "Noun", "synonyms": ["rival", "opponent", "nemesis"], "antonyms": ["ally", "supporter"]},
-    "equitable": {"def": "Fair and impartial", "pos": "Adjective", "synonyms": ["fair", "just", "unbiased"], "antonyms": ["unfair", "inequitable", "biased"]},
-    "stagnation": {"def": "Lack of activity, growth, or development", "pos": "Noun", "synonyms": ["slump", "downturn", "inactivity"], "antonyms": ["growth", "boom", "vitality"]},
-    "rigorous": {"def": "Extremely thorough, exhaustive, or accurate", "pos": "Adjective", "synonyms": ["meticulous", "exacting", "stringent"], "antonyms": ["lax", "careless", "superficial"]},
+    "equitable": {"def": "Fair, impartial, and just to all parties", "pos": "Adjective", "synonyms": ["fair", "just", "unbiased"], "antonyms": ["unfair", "inequitable", "biased"]},
+    "stagnation": {"def": "Prolonged period of little or no growth or progress", "pos": "Noun", "synonyms": ["slump", "downturn", "inactivity"], "antonyms": ["growth", "boom", "vitality"]},
+    "rigorous": {"def": "Extremely thorough, exhaustive, and exacting", "pos": "Adjective", "synonyms": ["meticulous", "exacting", "stringent"], "antonyms": ["lax", "careless", "superficial"]},
     "institutional": {"def": "Relating to an established organization, law, or custom", "pos": "Adjective", "synonyms": ["formal", "established", "systemic"], "antonyms": ["individual", "informal"]},
-    "consensus": {"def": "A general agreement among a group of people", "pos": "Noun", "synonyms": ["accord", "harmony", "unity"], "antonyms": ["discord", "disagreement"]}
+    "consensus": {"def": "A general agreement among a group of people", "pos": "Noun", "synonyms": ["accord", "harmony", "unity"], "antonyms": ["discord", "disagreement"]},
+    "equilibrium": {"def": "A state in which opposing forces or influences are balanced", "pos": "Noun", "synonyms": ["balance", "symmetry", "stability"], "antonyms": ["imbalance", "instability"]},
+    "hegemony": {"def": "Leadership or dominance, especially by one state or group over others", "pos": "Noun", "synonyms": ["dominance", "supremacy", "ascendancy"], "antonyms": ["subordination", "equality"]},
+    "ostensible": {"def": "Stated or appearing to be true, but not necessarily so", "pos": "Adjective", "synonyms": ["apparent", "superficial", "professed"], "antonyms": ["genuine", "actual"]},
+    "salient": {"def": "Most noticeable, prominent, or important", "pos": "Adjective", "synonyms": ["striking", "notable", "vital"], "antonyms": ["minor", "inconsequential"]}
 }
 
 FEED_CONFIGS = [
@@ -60,14 +60,6 @@ FEED_CONFIGS = [
         "type": "Newspaper Editorial"
     },
     {
-        "source": "The Guardian",
-        "category": "Global Affairs",
-        "url": "https://www.theguardian.com/tone/editorials/rss",
-        "icon": "🌍",
-        "bias": "Progressive / Critical",
-        "type": "Newspaper Editorial"
-    },
-    {
         "source": "The Hindu",
         "category": "National Affairs",
         "url": "https://www.thehindu.com/opinion/editorial/feeder/default.rss",
@@ -76,10 +68,34 @@ FEED_CONFIGS = [
         "type": "Newspaper Editorial"
     },
     {
+        "source": "LiveMint",
+        "category": "Economy & Banking",
+        "url": "https://www.livemint.com/rss/opinion",
+        "icon": "📊",
+        "bias": "Economic / Analytical",
+        "type": "Newspaper Editorial"
+    },
+    {
+        "source": "The Guardian",
+        "category": "Global Affairs",
+        "url": "https://www.theguardian.com/tone/editorials/rss",
+        "icon": "🌍",
+        "bias": "Progressive / Critical",
+        "type": "Newspaper Editorial"
+    },
+    {
+        "source": "Nature Research",
+        "category": "Science & Tech Digest",
+        "url": "https://www.nature.com/nature.rss",
+        "icon": "🔬",
+        "bias": "Scientific / Peer-Reviewed",
+        "type": "Research Journal"
+    },
+    {
         "source": "arXiv AI & CS",
         "category": "Tech & AI Research",
         "url": "https://rss.arxiv.org/rss/cs.AI",
-        "icon": "🔬",
+        "icon": "🤖",
         "bias": "Academic / Technical",
         "type": "Research Paper Digest"
     }
@@ -96,7 +112,7 @@ def clean_html(raw_html):
     return cleantext
 
 def find_first(element, tag_names):
-    """Safely find first element among multiple tag names without triggering len(elem) check."""
+    """Safely find first element among multiple tag names."""
     for tag in tag_names:
         found = element.find(tag)
         if found is not None:
@@ -140,10 +156,8 @@ def extract_vocab(text):
             if len(found) >= 5:
                 break
                 
-    # Fallback to ensure every editorial has at least 3 curated learning words
     if len(found) < 3:
         backup_keys = list(VOCAB_DATABASE.keys())
-        # Pick deterministically using hash of text
         idx_seed = abs(hash(text))
         for i in range(3 - len(found)):
             w = backup_keys[(idx_seed + i * 7) % len(backup_keys)]
@@ -158,6 +172,100 @@ def extract_vocab(text):
             })
             
     return found
+
+def generate_analytical_dimensions(title, category):
+    """Synthesize 360-degree analytical dimensions (Economic, Governance, Social, Global)."""
+    clean_t = title.split('|')[0].split(':')[0].strip()
+    
+    if "Economy" in category or "Bank" in category:
+        return {
+            "economic": f"Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to {clean_t}.",
+            "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+            "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+            "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+        }
+    elif "Polity" in category or "National" in category:
+        return {
+            "economic": "Fiscal federalism considerations and public expenditure priorities necessary to support statutory mandates.",
+            "governance": f"Checks and balances between executive action and legislative oversight, ensuring constitutional fidelity in {clean_t}.",
+            "social": "Protection of fundamental civil liberties, citizen-centric administrative delivery, and participatory democracy.",
+            "global": "Upholding international democratic norms, human rights treaties, and global governance rankings."
+        }
+    elif "Science" in category or "Tech" in category or "AI" in category:
+        return {
+            "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+            "governance": f"Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around {clean_t}.",
+            "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+            "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+        }
+    else:
+        return {
+            "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+            "governance": f"Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning {clean_t}.",
+            "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+            "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+        }
+
+def generate_way_forward(title, category):
+    """Generate 3 actionable, structured policy recommendations."""
+    clean_t = title.split('|')[0].split(':')[0].strip()
+    
+    if "Economy" in category or "Bank" in category:
+        return [
+            f"Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+            f"Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+            f"Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+        ]
+    elif "Science" in category or "Tech" in category or "AI" in category:
+        return [
+            f"Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+            f"Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+            f"Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+        ]
+    else:
+        return [
+            f"Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+            f"Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+            f"Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+        ]
+
+def generate_quiz_question(title, vocab, category):
+    """Generate interactive multiple-choice review question for daily testing."""
+    clean_t = title.split('|')[0].split(':')[0].strip()
+    if vocab and len(vocab) > 0:
+        target_word = vocab[0]["word"]
+        definition = vocab[0]["definition"]
+        synonyms = vocab[0].get("synonyms", ["appropriate", "suitable"])
+        antonyms = vocab[0].get("antonyms", ["unrelated", "irrelevant"])
+        
+        correct_syn = synonyms[0] if len(synonyms) > 0 else "proper"
+        distractor1 = antonyms[0] if len(antonyms) > 0 else "negligible"
+        distractor2 = "unrelated"
+        distractor3 = "temporary"
+        
+        return {
+            "question": f"In the context of the discussion on '{clean_t}', what is the primary meaning of the term '{target_word}'?",
+            "options": [
+                definition,
+                f"A state of total indifference or neglect",
+                f"An informal verbal agreement without legal force",
+                f"A short-term tactical concession"
+            ],
+            "answer": 0,
+            "explanation": f"'{target_word}' is defined as: {definition}. Synonyms include {', '.join(synonyms)}."
+        }
+    else:
+        return {
+            "question": f"What is the central focus of the analysis regarding '{clean_t}'?",
+            "options": [
+                f"Examining structural bottlenecks and advocating institutional reforms",
+                f"Recommending immediate complete privatization of the sector",
+                f"Calling for the dissolution of existing regulatory oversight",
+                f"Restricting multilateral trade agreements entirely"
+            ],
+            "answer": 0,
+            "explanation": f"The editorial primarily examines underlying structural challenges within {category} and underscores the imperative for evidence-based policy reform."
+        }
 
 def generate_takeaways_and_question(title, content, category, source):
     """Synthesize 3 crisp bullet points and an analytical essay question."""
@@ -181,9 +289,8 @@ def generate_takeaways_and_question(title, content, category, source):
             "Emphasizes the need for timely institutional reform and evidence-based policy."
         ]
 
-    # Practice question formulation based on topic
     clean_t = title.split('|')[0].split(':')[0].strip()
-    if "Research" in category or "AI" in category:
+    if "Science" in category or "Tech" in category or "AI" in category:
         question = f"Critically assess how recent advancements in '{clean_t}' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?"
         gs_tag = "GS Paper 3: Science & Technology, AI Ethics"
     elif "Economy" in category or any(w in title.lower() for w in ["bank", "inflation", "gdp", "tax", "trade", "budget"]):
@@ -218,14 +325,17 @@ def fetch_feed(feed_cfg):
             xml_data = response.read()
             root = ET.fromstring(xml_data)
 
+            # Handle RSS 2.0, RSS 1.0 (RDF), and Atom namespaces
             items = root.findall(".//item")
+            if not items:
+                items = root.findall(".//{http://purl.org/rss/1.0/}item")
             if not items:
                 items = root.findall(".//{http://www.w3.org/2005/Atom}entry")
 
-            for item in items[:8]:  # Up to 8 latest per feed
-                title = get_text(item, ["title", "{http://www.w3.org/2005/Atom}title"])
+            for item in items[:8]:
+                title = get_text(item, ["title", "{http://www.w3.org/2005/Atom}title", "{http://purl.org/rss/1.0/}title"])
                 
-                link_elem = find_first(item, ["link", "{http://www.w3.org/2005/Atom}link"])
+                link_elem = find_first(item, ["link", "{http://www.w3.org/2005/Atom}link", "{http://purl.org/rss/1.0/}link"])
                 link = ""
                 if link_elem is not None:
                     link = (link_elem.text or "").strip()
@@ -236,6 +346,7 @@ def fetch_feed(feed_cfg):
                     "description",
                     "{http://www.w3.org/2005/Atom}summary",
                     "{http://www.w3.org/2005/Atom}content",
+                    "{http://purl.org/rss/1.0/}description",
                     "{http://purl.org/rss/1.0/modules/content/}encoded"
                 ])
 
@@ -249,16 +360,12 @@ def fetch_feed(feed_cfg):
                 if not title or not link:
                     continue
 
-                # Strip trailing publication tags if redundant
-                clean_title = re.sub(r'\s*\|\s*(?:Editorial|The Hindu|Opinion).*$', '', title).strip()
+                clean_title = re.sub(r'\s*\|\s*(?:Editorial|The Hindu|Opinion|LiveMint).*$', '', title).strip()
 
-                # Parse date to YYYY-MM-DD
                 date_formatted = datetime.now(timezone.utc).strftime("%Y-%m-%d")
                 if pub_date_str:
                     try:
-                        # Normalize string
                         clean_dt_str = re.sub(r'\s+[A-Z]{3,4}$', '', pub_date_str.strip())
-                        # Try RFC-822
                         if "," in clean_dt_str:
                             dt = datetime.strptime(clean_dt_str[:25].strip(), "%a, %d %b %Y %H:%M:%S")
                             date_formatted = dt.strftime("%Y-%m-%d")
@@ -268,7 +375,6 @@ def fetch_feed(feed_cfg):
                     except Exception:
                         pass
 
-                # Derive category from title or feed default
                 category = default_cat
                 lower_title = clean_title.lower()
                 if any(w in lower_title for w in ["bank", "inflation", "gdp", "tax", "trade", "budget", "rbi", "rupee", "fiscal"]):
@@ -285,17 +391,19 @@ def fetch_feed(feed_cfg):
                 reading_time = calculate_reading_time(desc if len(desc) > 300 else clean_title * 12)
                 vocab = extract_vocab(desc + " " + clean_title)
                 takeaways, question, gs_tag = generate_takeaways_and_question(clean_title, desc, category, source)
+                dimensions = generate_analytical_dimensions(clean_title, category)
+                way_forward = generate_way_forward(clean_title, category)
+                quiz = generate_quiz_question(clean_title, vocab, category)
 
                 slug = re.sub(r'[^a-zA-Z0-9]+', '-', f"{source}-{clean_title}").strip('-').lower()[:70]
 
-                # Full readable content body
                 full_content = desc
                 if len(full_content) < 150:
                     full_content = (
                         f"This editorial analysis examines '{clean_title}', published in {source}. "
                         f"The piece delves into key structural challenges and emerging trends within the {category} domain. "
-                        f"Readers are advised to study the critical takeaways and vocabulary definitions highlighted in this digest "
-                        f"to enrich analytical comprehension and essay writing skills."
+                        f"Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions "
+                        f"highlighted in this digest to enrich analytical comprehension and essay writing skills."
                     )
 
                 articles.append({
@@ -311,7 +419,10 @@ def fetch_feed(feed_cfg):
                     "tone": feed_cfg["bias"],
                     "crux": takeaways[0] if takeaways else desc[:140] + "...",
                     "takeaways": takeaways,
+                    "dimensions": dimensions,
+                    "way_forward": way_forward,
                     "vocabulary": vocab,
+                    "quiz": quiz,
                     "practice_question": question,
                     "relevance_tag": gs_tag,
                     "content": full_content
@@ -323,7 +434,7 @@ def fetch_feed(feed_cfg):
     return articles
 
 def update_dataset():
-    """Update data/editorials.json preserving historical entries."""
+    """Update data/editorials.json preserving historical entries and enriching them."""
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_file = os.path.join(base_dir, "data", "editorials.json")
 
@@ -339,11 +450,20 @@ def update_dataset():
         except Exception as e:
             print(f"Error reading existing data: {e}")
 
+    # Backfill dimensions, way_forward, and quiz for any existing articles that lack them
+    for art in existing_articles:
+        if "dimensions" not in art:
+            art["dimensions"] = generate_analytical_dimensions(art.get("title", ""), art.get("category", "General"))
+        if "way_forward" not in art:
+            art["way_forward"] = generate_way_forward(art.get("title", ""), art.get("category", "General"))
+        if "quiz" not in art:
+            art["quiz"] = generate_quiz_question(art.get("title", ""), art.get("vocabulary", []), art.get("category", "General"))
+
     existing_ids = {a["id"] for a in existing_articles}
     existing_urls = {a.get("url") for a in existing_articles if a.get("url")}
 
     new_articles = []
-    print(f"Starting daily feed fetch at {datetime.now(timezone.utc).isoformat()}...")
+    print(f"Starting resourceful feed fetch at {datetime.now(timezone.utc).isoformat()}...")
     for cfg in FEED_CONFIGS:
         print(f"Fetching {cfg['source']}...")
         fetched = fetch_feed(cfg)
