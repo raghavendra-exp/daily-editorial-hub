@@ -1,7 +1,278 @@
 {
-  "last_updated": "2026-09-18 05:40:28 UTC",
-  "total_articles": 70,
+  "last_updated": "2026-09-19 05:34:48 UTC",
+  "total_articles": 74,
   "articles": [
+    {
+      "id": "the-hindu-no-hard-ceilings-on-the-revision-to-epfo-wage-ceiling",
+      "title": "No hard ceilings: On the revision to EPFO wage ceiling",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "National Affairs",
+      "date": "2026-09-19",
+      "url": "https://www.thehindu.com/opinion/editorial/no-hard-ceilings-on-the-revision-to-epfo-wage-ceiling/article71480865.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "A rise in minimum PF pension will protect the worse-off among the retired.",
+      "takeaways": [
+        "A rise in minimum PF pension will protect the worse-off among the retired.",
+        "Emphasizes vital strategic considerations regarding No hard ceilings: On the revision to EPFO wage ceiling.",
+        "Emphasizes vital strategic considerations regarding No hard ceilings: On the revision to EPFO wage ceiling."
+      ],
+      "vocabulary": [
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Deterrence",
+          "pos": "Noun",
+          "definition": "The action of discouraging an action or event through instilling doubt or fear",
+          "synonyms": [
+            "prevention",
+            "discouragement",
+            "disincentive"
+          ],
+          "antonyms": [
+            "encouragement",
+            "incitement"
+          ],
+          "example": "Policymakers must demonstrate deterrence interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'No hard ceilings'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "This editorial analysis examines 'No hard ceilings: On the revision to EPFO wage ceiling', published in The Hindu. The piece delves into key structural challenges and emerging trends within the National Affairs domain. Readers are advised to study the critical takeaways and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "the-hindu-continental-glory-on-the-asian-games-2026",
+      "title": "Continental glory: On the Asian Games 2026",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "National Affairs",
+      "date": "2026-09-19",
+      "url": "https://www.thehindu.com/opinion/editorial/continental-glory-on-the-asian-games-2026/article71480936.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "India might get another 100-medal haul from a smaller contingent.",
+      "takeaways": [
+        "India might get another 100-medal haul from a smaller contingent.",
+        "Emphasizes vital strategic considerations regarding Continental glory: On the Asian Games 2026.",
+        "Emphasizes vital strategic considerations regarding Continental glory: On the Asian Games 2026."
+      ],
+      "vocabulary": [
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Lack of activity, growth, or development",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a distinct set of concepts",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'Continental glory'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "This editorial analysis examines 'Continental glory: On the Asian Games 2026', published in The Hindu. The piece delves into key structural challenges and emerging trends within the National Affairs domain. Readers are advised to study the critical takeaways and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-naza-s-persecuted-directors-journali",
+      "title": "The Guardian view on NAZA’s persecuted directors: journalism is not treason",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-09-18",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/18/the-guardian-view-on-nazas-persecuted-directors-journalism-is-not-treason",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "Politicians who threaten filmmakers rather than investigate alleged military crimes expose not strength but a leadership frightened of the evidence Across Israel, politicians, military leaders and much of the media are trying to discredit a documentary that almost none of them have seen.",
+      "takeaways": [
+        "Politicians who threaten filmmakers rather than investigate alleged military crimes expose not strength but a leadership frightened of the evidence Across Israel, politicians, military leaders and much of the media are trying to discredit a documentary that almost none of them have seen.",
+        "NAZA shows how bureaucratic distance and routine can turn extreme violence into ordinary work.",
+        "If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here."
+      ],
+      "vocabulary": [
+        {
+          "word": "Bipartisan",
+          "pos": "Adjective",
+          "definition": "Involving the agreement or cooperation of two political parties that usually oppose each other",
+          "synonyms": [
+            "two-party",
+            "coalition",
+            "non-partisan"
+          ],
+          "antonyms": [
+            "partisan",
+            "sectarian"
+          ],
+          "example": "Policymakers must demonstrate bipartisan interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Substantive",
+          "pos": "Adjective",
+          "definition": "Having a firm basis in reality and being therefore important, meaningful, or considerable",
+          "synonyms": [
+            "significant",
+            "meaningful",
+            "tangible"
+          ],
+          "antonyms": [
+            "trivial",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate substantive interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'The Guardian view on NAZA’s persecuted directors', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "Politicians who threaten filmmakers rather than investigate alleged military crimes expose not strength but a leadership frightened of the evidence Across Israel, politicians, military leaders and much of the media are trying to discredit a documentary that almost none of them have seen. Produced by the Guardian, NAZA examines the AI-powered targeting systems used by the Israel Defense Forces to bombard Gaza after Hamas’s brutal 7 October 2023 attacks. Named after the Israeli military acronym euphemistically used for “collateral damage”, NAZA features interviews with 24 anonymous insiders who reflect on their role in the death-dealing. Israeli leaders have branded the film a “blood libel” and “fiction”. Its Oscar-winning directors, Rachel Szor and Yuval Abraham, face being stripped of their citizenship for treason. This is absurd. NAZA shows how bureaucratic distance and routine can turn extreme violence into ordinary work. More than 73,000 Palestinians, including more than 20,000 children, have been killed in the campaign by Israel’s military. A democracy that values life would at least investigate the film’s claims. Instead Israel’s government, which says it is committed to democratic accountability, is attacking journalists. Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here . Continue reading..."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-youth-unemployment-too-few-jobs-in-t",
+      "title": "The Guardian view on youth unemployment: too few jobs in too many places",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-09-18",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/18/the-guardian-view-on-youth-unemployment-too-few-jobs-in-too-many-places",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "Young people in Britain’s poorer towns have far fewer opportunities.",
+      "takeaways": [
+        "Young people in Britain’s poorer towns have far fewer opportunities.",
+        "This is the finding from an index published last week by the Institute for Public Policy Research (IPPR), which ranked British towns according to the availability of jobs for young people.",
+        "If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here."
+      ],
+      "vocabulary": [
+        {
+          "word": "Disparity",
+          "pos": "Noun",
+          "definition": "A great difference or inequality",
+          "synonyms": [
+            "imbalance",
+            "discrepancy",
+            "gap"
+          ],
+          "antonyms": [
+            "parity",
+            "equality",
+            "similarity"
+          ],
+          "example": "Policymakers must demonstrate disparity interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Vulnerability",
+          "pos": "Noun",
+          "definition": "The quality or state of being exposed to the possibility of being attacked or harmed",
+          "synonyms": [
+            "susceptibility",
+            "fragility",
+            "weakness"
+          ],
+          "antonyms": [
+            "resilience",
+            "invulnerability"
+          ],
+          "example": "Policymakers must demonstrate vulnerability interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Adversary",
+          "pos": "Noun",
+          "definition": "One's opponent in a contest, conflict, or dispute",
+          "synonyms": [
+            "rival",
+            "opponent",
+            "nemesis"
+          ],
+          "antonyms": [
+            "ally",
+            "supporter"
+          ],
+          "example": "Policymakers must demonstrate adversary interventions in dealing with complex structural shifts."
+        }
+      ],
+      "practice_question": "In light of 'The Guardian view on youth unemployment', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "Young people in Britain’s poorer towns have far fewer opportunities. Changing this will require targeted support – and industrial strategy The ideas that Neets (young people not in education, employment or training) simply aren’t trying hard enough to find a job, or don’t want one, are “myths,” Alan Milburn wrote in his interim report on the subject earlier this year – “sometimes cruel ones”. Although 84% of Neets say they want to work, their prospects are unfairly limited by where they live. Rotherham has one suitable vacancy for every 22 young adults. The Cotswolds has one for every four. For too many young people, particularly those in deprived parts of Britain, there simply aren’t enough jobs. This is the finding from an index published last week by the Institute for Public Policy Research (IPPR), which ranked British towns according to the availability of jobs for young people. Like so many features of Britain’s Neet crisis, from poor mental health to school drop-out rates, the index is a map of disadvantage. At the top are affluent towns in southern England that account for nine in 10 of the areas with the highest numbers of vacancies. At the bottom are places such as Inverclyde and East Renfrewshire, where young people might once have followed their parents into manufacturing and industry. Deindustrialisation destroyed those jobs, and such places never recovered. Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here . Continue reading..."
+    },
     {
       "id": "the-hindu-complex-priorities-on-upi-transactions-mdr-charges",
       "title": "Complex priorities: On UPI transactions, MDR charges",
