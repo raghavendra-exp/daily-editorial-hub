@@ -165,6 +165,7 @@ const dom = {
   vocabDeckContainer: document.getElementById('vocab-deck-container'),
   closeVocabModal: document.getElementById('close-vocab-modal'),
   vocabModalDone: document.getElementById('vocab-modal-done'),
+  openFlashcardsFromVocabBtn: document.getElementById('open-flashcards-from-vocab-btn'),
   themeToggleBtn: document.getElementById('theme-toggle-btn'),
   themeMenu: document.getElementById('theme-menu'),
   readerSettingsBtn: document.getElementById('reader-settings-btn'),
@@ -1001,6 +1002,65 @@ function printArticleHandout() {
 
 /**
  * ==========================================================================
+ * Daily Vocabulary Deck Modal Controller
+ * ==========================================================================
+ */
+function openVocabModal() {
+  renderVocabDeck();
+  dom.vocabModal.style.display = 'flex';
+}
+
+function renderVocabDeck() {
+  if (!dom.vocabDeckContainer) return;
+  dom.vocabDeckContainer.innerHTML = '';
+
+  const words = [];
+  const seen = new Set();
+
+  state.articles.forEach(art => {
+    (art.vocabulary || []).forEach(v => {
+      const key = (v.word || '').toLowerCase().trim();
+      if (key && !seen.has(key)) {
+        seen.add(key);
+        words.push({ ...v, articleTitle: art.title });
+      }
+    });
+  });
+
+  // Fallback to VOCAB_DATABASE if no articles or words loaded yet
+  if (words.length === 0) {
+    Object.entries(VOCAB_DATABASE).forEach(([word, info]) => {
+      words.push({
+        word,
+        pos: info.pos,
+        definition: info.def,
+        synonyms: info.synonyms,
+        antonyms: info.antonyms,
+        example: `Frequent editorial usage of ${word}.`,
+        articleTitle: 'Daily Editorial Lexicon'
+      });
+    });
+  }
+
+  dom.vocabDeckContainer.innerHTML = words.map(w => `
+    <div class="vocab-card">
+      <div class="vocab-card-header">
+        <h4 class="vocab-word">${escapeHtml(w.word)}</h4>
+        <span class="vocab-pos">${escapeHtml(w.pos || 'Word')}</span>
+      </div>
+      <p class="vocab-def">${escapeHtml(w.definition || '')}</p>
+      ${w.example ? `<p class="vocab-example"><em>"${escapeHtml(w.example)}"</em></p>` : ''}
+      <div class="vocab-meta">
+        ${w.synonyms && w.synonyms.length > 0 ? `<div><strong>Synonyms:</strong> ${escapeHtml(w.synonyms.join(', '))}</div>` : ''}
+        ${w.antonyms && w.antonyms.length > 0 ? `<div><strong>Antonyms:</strong> ${escapeHtml(w.antonyms.join(', '))}</div>` : ''}
+      </div>
+      ${w.articleTitle ? `<div class="vocab-source-tag">From: ${escapeHtml(w.articleTitle)}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+/**
+ * ==========================================================================
  * Interactive 3D Vocabulary Flashcards Engine
  * ==========================================================================
  */
@@ -1008,12 +1068,27 @@ function buildFlashcardDeck() {
   const wordMap = new Map();
   state.articles.forEach(art => {
     (art.vocabulary || []).forEach(v => {
-      const key = v.word.toLowerCase();
-      if (!wordMap.has(key)) {
+      const key = (v.word || '').toLowerCase().trim();
+      if (key && !wordMap.has(key)) {
         wordMap.set(key, { ...v, articleTitle: art.title });
       }
     });
   });
+
+  // Fallback to high-yield VOCAB_DATABASE if articles have not loaded yet
+  if (wordMap.size === 0) {
+    Object.entries(VOCAB_DATABASE).forEach(([word, info]) => {
+      wordMap.set(word, {
+        word,
+        pos: info.pos,
+        definition: info.def,
+        synonyms: info.synonyms,
+        antonyms: info.antonyms,
+        example: `High-frequency editorial usage of ${word}.`,
+        articleTitle: 'Daily Editorial Lexicon'
+      });
+    });
+  }
 
   state.flashcards.cards = Array.from(wordMap.values());
   filterFlashcards(state.flashcards.activeFilter);
@@ -1135,6 +1210,73 @@ function startDailyMockQuiz() {
   while (questions.length < 5 && state.articles.length > 0) {
     const randomArt = state.articles[Math.floor(Math.random() * state.articles.length)];
     questions.push(generateQuizObj(randomArt.title, randomArt.vocabulary, randomArt.category));
+  }
+
+  const FALLBACK_QUIZ = [
+    {
+      question: "Which of the following best describes the principle of 'Fiscal Federalism' as envisioned under Article 280 of the Indian Constitution?",
+      options: [
+        "Complete central control over all state tax collections without devolution",
+        "Institutional mechanism for revenue sharing and horizontal tax distribution between Union and States",
+        "Empowerment of the Reserve Bank of India to fix state budget deficits",
+        "Mandatory requirement for state governments to run fiscal surpluses every quarter"
+      ],
+      answer: 1,
+      explanation: "Article 280 establishes the Finance Commission every five years to recommend the principles of net tax revenue distribution between the Union and the States (vertical) and among the States (horizontal)."
+    },
+    {
+      question: "In constitutional jurisprudence, which landmark Supreme Court judgment formulated the 'Basic Structure Doctrine'?",
+      options: [
+        "Maneka Gandhi v. Union of India (1978)",
+        "Kesavananda Bharati v. State of Kerala (1973)",
+        "S.R. Bommai v. Union of India (1994)",
+        "Justice K.S. Puttaswamy v. Union of India (2017)"
+      ],
+      answer: 1,
+      explanation: "The 13-judge bench in Kesavananda Bharati (1973) held that while Parliament has wide power to amend the Constitution under Article 368, it cannot alter its Basic Structure (democracy, secularism, federalism, judicial review)."
+    },
+    {
+      question: "What is the primary objective of the Reserve Bank of India's 'Flexible Inflation Targeting' framework?",
+      options: [
+        "Pegging the Indian Rupee exchange rate strictly to the US Dollar",
+        "Maintaining Consumer Price Index (CPI) inflation at 4% with a tolerance band of +/- 2%",
+        "Eliminating the Current Account Deficit through direct export subsidies",
+        "Freezing commercial bank lending rates across all retail loan categories"
+      ],
+      answer: 1,
+      explanation: "Under the RBI Act, the Monetary Policy Committee (MPC) is mandated to keep CPI headline inflation at 4% with an upper tolerance limit of 6% and lower tolerance limit of 2%."
+    },
+    {
+      question: "What does the editorial vocabulary term 'AMELIORATE' mean in the context of public policy?",
+      options: [
+        "To make a deficient or unsatisfactory condition significantly better",
+        "To hasten the onset of an unavoidable macroeconomic recession",
+        "To impose immediate legislative penalties without due process",
+        "To delegate administrative authority to private market contractors"
+      ],
+      answer: 0,
+      explanation: "'Ameliorate' is a verb meaning to make something bad or unsatisfactory better, often used in policy editorials regarding poverty, healthcare, or regulatory relief."
+    },
+    {
+      question: "Under Article 21 of the Constitution, which of the following rights was explicitly recognized as a Fundamental Right in the 2017 Puttaswamy verdict?",
+      options: [
+        "Right to Strike in Public Utilities",
+        "Right to Privacy",
+        "Right to Property",
+        "Right to Unregulated Commercial Broadcasting"
+      ],
+      answer: 1,
+      explanation: "A unanimous 9-judge bench in Justice K.S. Puttaswamy (2017) declared the Right to Privacy an intrinsic part of the Right to Life and Personal Liberty under Article 21."
+    }
+  ];
+
+  if (questions.length < 5) {
+    for (const fq of FALLBACK_QUIZ) {
+      if (!questions.some(q => q.question === fq.question)) {
+        questions.push(fq);
+      }
+      if (questions.length >= 5) break;
+    }
   }
 
   state.quiz.questions = questions.slice(0, 5);
@@ -1539,28 +1681,58 @@ function applyReaderSize(size) {
  * Setup All Event Listeners
  */
 function setupEventListeners() {
+  function setActiveHubTab(target) {
+    [dom.tabEditorials, dom.tabFlashcards, dom.tabQuiz, dom.tabVault].forEach(tab => {
+      if (tab) tab.classList.toggle('active', tab.dataset.target === target);
+    });
+  }
+
   // Resource Hub Ribbon Tabs
   if (dom.tabEditorials) {
     dom.tabEditorials.addEventListener('click', () => {
+      setActiveHubTab('editorials');
+      if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
+      if (dom.quizModal) dom.quizModal.style.display = 'none';
+      if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
+      if (dom.vocabModal) dom.vocabModal.style.display = 'none';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
   if (dom.tabFlashcards) {
     dom.tabFlashcards.addEventListener('click', () => {
+      setActiveHubTab('flashcards');
+      if (dom.quizModal) dom.quizModal.style.display = 'none';
+      if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
+      if (dom.vocabModal) dom.vocabModal.style.display = 'none';
       buildFlashcardDeck();
       dom.flashcardModal.style.display = 'flex';
     });
   }
   if (dom.tabQuiz) {
-    dom.tabQuiz.addEventListener('click', startDailyMockQuiz);
+    dom.tabQuiz.addEventListener('click', () => {
+      setActiveHubTab('quiz');
+      if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
+      if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
+      if (dom.vocabModal) dom.vocabModal.style.display = 'none';
+      startDailyMockQuiz();
+    });
   }
   if (dom.tabVault) {
-    dom.tabVault.addEventListener('click', openKnowledgeVault);
+    dom.tabVault.addEventListener('click', () => {
+      setActiveHubTab('vault');
+      if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
+      if (dom.quizModal) dom.quizModal.style.display = 'none';
+      if (dom.vocabModal) dom.vocabModal.style.display = 'none';
+      openKnowledgeVault();
+    });
   }
 
   // Flashcards Modal
   if (dom.closeFlashcardModal) {
-    dom.closeFlashcardModal.addEventListener('click', () => dom.flashcardModal.style.display = 'none');
+    dom.closeFlashcardModal.addEventListener('click', () => {
+      dom.flashcardModal.style.display = 'none';
+      setActiveHubTab('editorials');
+    });
   }
   if (dom.flashcardScene) {
     dom.flashcardScene.addEventListener('click', flipFlashcard);
@@ -1581,7 +1753,10 @@ function setupEventListeners() {
 
   // Quiz Modal
   if (dom.closeQuizModal) {
-    dom.closeQuizModal.addEventListener('click', () => dom.quizModal.style.display = 'none');
+    dom.closeQuizModal.addEventListener('click', () => {
+      dom.quizModal.style.display = 'none';
+      setActiveHubTab('editorials');
+    });
   }
   if (dom.quizNextBtn) {
     dom.quizNextBtn.addEventListener('click', nextQuizQuestion);
@@ -1592,10 +1767,16 @@ function setupEventListeners() {
 
   // Knowledge Vault Modal
   if (dom.closeVaultModal) {
-    dom.closeVaultModal.addEventListener('click', () => dom.knowledgeVaultModal.style.display = 'none');
+    dom.closeVaultModal.addEventListener('click', () => {
+      dom.knowledgeVaultModal.style.display = 'none';
+      setActiveHubTab('editorials');
+    });
   }
   if (dom.vaultModalDone) {
-    dom.vaultModalDone.addEventListener('click', () => dom.knowledgeVaultModal.style.display = 'none');
+    dom.vaultModalDone.addEventListener('click', () => {
+      dom.knowledgeVaultModal.style.display = 'none';
+      setActiveHubTab('editorials');
+    });
   }
   const vaultTabBtns = dom.knowledgeVaultModal?.querySelectorAll('.vault-tab-btn');
   vaultTabBtns?.forEach(btn => {
@@ -1718,9 +1899,36 @@ function setupEventListeners() {
   });
 
   // Vocab Deck Modal
-  if (dom.vocabModalToggle) dom.vocabModalToggle.addEventListener('click', () => {
-    buildFlashcardDeck();
-    dom.flashcardModal.style.display = 'flex';
+  if (dom.vocabModalToggle) dom.vocabModalToggle.addEventListener('click', openVocabModal);
+  if (dom.closeVocabModal) dom.closeVocabModal.addEventListener('click', () => dom.vocabModal.style.display = 'none');
+  if (dom.vocabModalDone) dom.vocabModalDone.addEventListener('click', () => dom.vocabModal.style.display = 'none');
+  if (dom.openFlashcardsFromVocabBtn) {
+    dom.openFlashcardsFromVocabBtn.addEventListener('click', () => {
+      dom.vocabModal.style.display = 'none';
+      setActiveHubTab('flashcards');
+      buildFlashcardDeck();
+      dom.flashcardModal.style.display = 'flex';
+    });
+  }
+
+  // Click outside to dismiss modal overlays
+  [
+    dom.flashcardModal,
+    dom.quizModal,
+    dom.knowledgeVaultModal,
+    dom.vocabModal,
+    dom.bookmarksModal,
+    dom.settingsModal,
+    dom.rssModal
+  ].forEach(modal => {
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          setActiveHubTab('editorials');
+        }
+      });
+    }
   });
 
   // Random Pick (Surprise Me)
@@ -1923,4 +2131,8 @@ function showToast(msg) {
 }
 
 // Start application
-document.addEventListener('DOMContentLoaded', init);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
