@@ -1,7 +1,94 @@
 {
-  "last_updated": "2026-09-19 06:26:39 UTC",
-  "total_articles": 72,
+  "last_updated": "2026-09-20 05:53:53 UTC",
+  "total_articles": 73,
   "articles": [
+    {
+      "id": "livemint-trump-s-america-is-making-the-world-look-elsewhere",
+      "title": "Trump’s America is making the world look elsewhere",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-09-19",
+      "url": "https://www.livemint.com/opinion/trumps-america-is-making-the-world-look-elsewhere-11789797646002.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "From India’s Russia oil ties to China’s looming tariff threat and Canada’s turn towards Europe, this week offered fresh evidence of countries hedging against an increasingly unpredictable America.",
+      "takeaways": [
+        "From India’s Russia oil ties to China’s looming tariff threat and Canada’s turn towards Europe, this week offered fresh evidence of countries hedging against an increasingly unpredictable America.",
+        "Emphasizes vital strategic considerations regarding Trump’s America is making the world look elsewhere.",
+        "Emphasizes vital strategic considerations regarding Trump’s America is making the world look elsewhere."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Trump’s America is making the world look elsewhere.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Hegemony",
+          "pos": "Noun",
+          "definition": "Leadership or dominance, especially by one state or group over others",
+          "synonyms": [
+            "dominance",
+            "supremacy",
+            "ascendancy"
+          ],
+          "antonyms": [
+            "subordination",
+            "equality"
+          ],
+          "example": "Policymakers must demonstrate hegemony interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Imperative",
+          "pos": "Adjective / Noun",
+          "definition": "Of vital importance; crucial or an essential priority",
+          "synonyms": [
+            "vital",
+            "essential",
+            "crucial"
+          ],
+          "antonyms": [
+            "optional",
+            "negligible"
+          ],
+          "example": "Policymakers must demonstrate imperative interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Trump’s America is making the world look elsewhere', what is the primary meaning of the term 'Benchmark'?",
+        "options": [
+          "A standard or point of reference against which things may be compared",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Benchmark' is defined as: A standard or point of reference against which things may be compared. Synonyms include standard, criterion, gauge."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Trump’s America is making the world look elsewhere'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "From India’s Russia oil ties to China’s looming tariff threat and Canada’s turn towards Europe, this week offered fresh evidence of countries hedging against an increasingly unpredictable America."
+    },
     {
       "id": "nature-research-cognitive-resilience-helps-to-predict-alzheimer-s-deme",
       "title": "Cognitive resilience helps to predict Alzheimer’s dementia",
