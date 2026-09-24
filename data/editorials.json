@@ -1,7 +1,994 @@
 {
-  "last_updated": "2026-09-23 05:40:30 UTC",
-  "total_articles": 133,
+  "last_updated": "2026-09-24 05:57:13 UTC",
+  "total_articles": 144,
   "articles": [
+    {
+      "id": "the-hindu-deep-rot-on-the-election-commission-of-india-s-functioning-d",
+      "title": "Deep rot: On the Election Commission of India’s functioning during its SIR",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "Polity & Governance",
+      "date": "2026-09-24",
+      "url": "https://www.thehindu.com/opinion/editorial/deep-rot-on-the-election-commission-of-indias-functioning-during-its-sir/article71500793.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "With the SIR thoroughly vitiated, CEC Gyanesh Kumar must resign.",
+      "takeaways": [
+        "With the SIR thoroughly vitiated, CEC Gyanesh Kumar must resign.",
+        "Emphasizes vital strategic considerations regarding Deep rot: On the Election Commission of India’s functioning during its SIR.",
+        "Emphasizes vital strategic considerations regarding Deep rot: On the Election Commission of India’s functioning during its SIR."
+      ],
+      "dimensions": {
+        "economic": "Fiscal federalism considerations and public expenditure priorities necessary to support statutory mandates.",
+        "governance": "Checks and balances between executive action and legislative oversight, ensuring constitutional fidelity in Deep rot.",
+        "social": "Protection of fundamental civil liberties, citizen-centric administrative delivery, and participatory democracy.",
+        "global": "Upholding international democratic norms, human rights treaties, and global governance rankings."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme authority; self-governing authority of a state",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Deep rot', what is the primary meaning of the term 'Complacency'?",
+        "options": [
+          "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Complacency' is defined as: A feeling of smug or uncritical self-satisfaction with current conditions. Synonyms include smugness, self-satisfaction, inertia."
+      },
+      "practice_question": "In light of 'Deep rot', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "This editorial analysis examines 'Deep rot: On the Election Commission of India’s functioning during its SIR', published in The Hindu. The piece delves into key structural challenges and emerging trends within the Polity & Governance domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "the-hindu-trading-smart-on-the-india-new-zealand-fta",
+      "title": "Trading smart: On the India-New Zealand FTA",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "National Affairs",
+      "date": "2026-09-24",
+      "url": "https://www.thehindu.com/opinion/editorial/trading-smart-on-the-india-new-zealand-fta/article71499956.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "The India-NZ FTA shows how smaller deals can complement big-bang trade pacts.",
+      "takeaways": [
+        "The India-NZ FTA shows how smaller deals can complement big-bang trade pacts.",
+        "Emphasizes vital strategic considerations regarding Trading smart: On the India-New Zealand FTA.",
+        "Emphasizes vital strategic considerations regarding Trading smart: On the India-New Zealand FTA."
+      ],
+      "dimensions": {
+        "economic": "Fiscal federalism considerations and public expenditure priorities necessary to support statutory mandates.",
+        "governance": "Checks and balances between executive action and legislative oversight, ensuring constitutional fidelity in Trading smart.",
+        "social": "Protection of fundamental civil liberties, citizen-centric administrative delivery, and participatory democracy.",
+        "global": "Upholding international democratic norms, human rights treaties, and global governance rankings."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Trading smart', what is the primary meaning of the term 'Exacerbate'?",
+        "options": [
+          "To make a problem, bad situation, or negative feeling worse",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Exacerbate' is defined as: To make a problem, bad situation, or negative feeling worse. Synonyms include aggravate, worsen, inflame."
+      },
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'Trading smart'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "This editorial analysis examines 'Trading smart: On the India-New Zealand FTA', published in The Hindu. The piece delves into key structural challenges and emerging trends within the National Affairs domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "livemint-the-tata-case-isn-t-alone-why-jamie-dimon-s-competition-compl",
+      "title": "The Tata case isn’t alone: why Jamie Dimon’s competition complaint can’t be taken lightly",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-09-24",
+      "url": "https://www.livemint.com/opinion/online-views/the-tata-case-isn-t-alone-why-jamie-dimon-s-competition-complaint-can-t-be-taken-lightly-11790170491981.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "JP Morgan’s chairman has expressed disappointment with the scenario of competition in India even as l’affaire Tata rages and global investors tune into Indian signals of governance.",
+      "takeaways": [
+        "JP Morgan’s chairman has expressed disappointment with the scenario of competition in India even as l’affaire Tata rages and global investors tune into Indian signals of governance.",
+        "India’s economy can’t afford policy dissonance.",
+        "Emphasizes vital strategic considerations regarding The Tata case isn’t alone: why Jamie Dimon’s competition complaint can’t be taken lightly."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around The Tata case isn’t alone.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Hegemony",
+          "pos": "Noun",
+          "definition": "Leadership or dominance, especially by one state or group over others",
+          "synonyms": [
+            "dominance",
+            "supremacy",
+            "ascendancy"
+          ],
+          "antonyms": [
+            "subordination",
+            "equality"
+          ],
+          "example": "Policymakers must demonstrate hegemony interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Tata case isn’t alone', what is the primary meaning of the term 'Calamitous'?",
+        "options": [
+          "Catastrophic or disastrous",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Calamitous' is defined as: Catastrophic or disastrous. Synonyms include disastrous, ruinous, dire."
+      },
+      "practice_question": "Critically assess how recent advancements in 'The Tata case isn’t alone' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "JP Morgan’s chairman has expressed disappointment with the scenario of competition in India even as l’affaire Tata rages and global investors tune into Indian signals of governance. India’s economy can’t afford policy dissonance."
+    },
+    {
+      "id": "livemint-mint-quick-edit-india-s-economy-has-held-up-against-global-he",
+      "title": "Mint Quick Edit | India’s economy has held up against global headwinds quite impressively",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-09-24",
+      "url": "https://www.livemint.com/opinion/online-views/mint-quick-edit-india-economy-has-held-up-against-global-headwinds-impressively-gdp-forecast-upgrades-s-p-fitch-11790174703823.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The country's growth outlook has brightened, as noted by credit rating agencies like Fitch, S&amp;P and Moody's.",
+      "takeaways": [
+        "The country's growth outlook has brightened, as noted by credit rating agencies like Fitch, S&amp;P and Moody's.",
+        "If India lives up to their raised GDP projections, it will testify to the tenacity of its economy.",
+        "Emphasizes vital strategic considerations regarding Mint Quick Edit | India’s economy has held up against global headwinds quite impressively."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Mint Quick Edit.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Substantive",
+          "pos": "Adjective",
+          "definition": "Having a firm basis in reality; meaningful, considerable",
+          "synonyms": [
+            "significant",
+            "meaningful",
+            "tangible"
+          ],
+          "antonyms": [
+            "trivial",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate substantive interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Mint Quick Edit', what is the primary meaning of the term 'Scrutiny'?",
+        "options": [
+          "Critical observation or thorough examination",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Scrutiny' is defined as: Critical observation or thorough examination. Synonyms include inspection, examination, audit."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Mint Quick Edit' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "The country's growth outlook has brightened, as noted by credit rating agencies like Fitch, S&amp;P and Moody's. If India lives up to their raised GDP projections, it will testify to the tenacity of its economy."
+    },
+    {
+      "id": "livemint-ai-doomsaying-why-much-of-what-s-being-said-about-ai-power-is",
+      "title": "AI doomsaying: Why much of what’s being said about AI power is best taken with a pinch of salt",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-09-23",
+      "url": "https://www.livemint.com/opinion/online-views/ai-doomsaying-who-really-benefits-from-fear-mongering-around-ai-openai-anthropic-11790086514893.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "By highlighting the risks of their own products, are AI leaders indulging in meta talk.",
+      "takeaways": [
+        "By highlighting the risks of their own products, are AI leaders indulging in meta talk.",
+        "As Big AI seeks public funds, they have an interest in drawing attention to the power of their technology.",
+        "Since human nature prioritizes bad news over good, the industry has us listening."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around AI doomsaying.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Substantive",
+          "pos": "Adjective",
+          "definition": "Having a firm basis in reality; meaningful, considerable",
+          "synonyms": [
+            "significant",
+            "meaningful",
+            "tangible"
+          ],
+          "antonyms": [
+            "trivial",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate substantive interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equilibrium",
+          "pos": "Noun",
+          "definition": "A state in which opposing forces or influences are balanced",
+          "synonyms": [
+            "balance",
+            "symmetry",
+            "stability"
+          ],
+          "antonyms": [
+            "imbalance",
+            "instability"
+          ],
+          "example": "Policymakers must demonstrate equilibrium interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'AI doomsaying', what is the primary meaning of the term 'Substantive'?",
+        "options": [
+          "Having a firm basis in reality; meaningful, considerable",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Substantive' is defined as: Having a firm basis in reality; meaningful, considerable. Synonyms include significant, meaningful, tangible."
+      },
+      "practice_question": "Critically assess how recent advancements in 'AI doomsaying' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "By highlighting the risks of their own products, are AI leaders indulging in meta talk? As Big AI seeks public funds, they have an interest in drawing attention to the power of their technology. Since human nature prioritizes bad news over good, the industry has us listening."
+    },
+    {
+      "id": "livemint-american-media-is-setting-an-example-by-circling-wagons-again",
+      "title": "American media is setting an example by circling wagons against Trump’s punitive moves",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-09-23",
+      "url": "https://www.livemint.com/opinion/online-views/media-freedom-american-media-is-setting-an-example-by-circling-wagons-against-trump-s-punitive-moves-11790086387934.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "By filing a lawsuit against the Trump administration after the US President banned CNN, MS Now and Politico from the White House, the US press is resisting attempts to muzzle independent reporting.",
+      "takeaways": [
+        "By filing a lawsuit against the Trump administration after the US President banned CNN, MS Now and Politico from the White House, the US press is resisting attempts to muzzle independent reporting.",
+        "This is a lesson on the power of solidarity.",
+        "Emphasizes vital strategic considerations regarding American media is setting an example by circling wagons against Trump’s punitive moves."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around American media is setting an example by circling wagons against Trump’s punitive moves.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Substantive",
+          "pos": "Adjective",
+          "definition": "Having a firm basis in reality; meaningful, considerable",
+          "synonyms": [
+            "significant",
+            "meaningful",
+            "tangible"
+          ],
+          "antonyms": [
+            "trivial",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate substantive interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equilibrium",
+          "pos": "Noun",
+          "definition": "A state in which opposing forces or influences are balanced",
+          "synonyms": [
+            "balance",
+            "symmetry",
+            "stability"
+          ],
+          "antonyms": [
+            "imbalance",
+            "instability"
+          ],
+          "example": "Policymakers must demonstrate equilibrium interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'American media is setting an example by circling wagons against Trump’s punitive moves', what is the primary meaning of the term 'Substantive'?",
+        "options": [
+          "Having a firm basis in reality; meaningful, considerable",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Substantive' is defined as: Having a firm basis in reality; meaningful, considerable. Synonyms include significant, meaningful, tangible."
+      },
+      "practice_question": "Critically assess how recent advancements in 'American media is setting an example by circling wagons against Trump’s punitive moves' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "By filing a lawsuit against the Trump administration after the US President banned CNN, MS Now and Politico from the White House, the US press is resisting attempts to muzzle independent reporting. This is a lesson on the power of solidarity."
+    },
+    {
+      "id": "livemint-customs-duty-india-must-reform-its-default-payment-process-to",
+      "title": "Customs duty: India must reform its default payment process to minimize logistical delays",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Global Affairs",
+      "date": "2026-09-23",
+      "url": "https://www.livemint.com/opinion/online-views/customs-duty-india-must-reform-its-default-payment-process-to-minimize-logistical-delays-11790086226539.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The country's customs regime must trust importers to collect cargo first and pay duty later as a default rule.",
+      "takeaways": [
+        "The country's customs regime must trust importers to collect cargo first and pay duty later as a default rule.",
+        "Don’t hold shipments hostage—it slows business operations, constrains exports and makes it harder for India to join global value chains.",
+        "Emphasizes vital strategic considerations regarding Customs duty: India must reform its default payment process to minimize logistical delays."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning Customs duty.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, and exacting",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "Policymakers must demonstrate rigorous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Customs duty', what is the primary meaning of the term 'Rigorous'?",
+        "options": [
+          "Extremely thorough, exhaustive, and exacting",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Rigorous' is defined as: Extremely thorough, exhaustive, and exacting. Synonyms include meticulous, exacting, stringent."
+      },
+      "practice_question": "In light of 'Customs duty', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The country's customs regime must trust importers to collect cargo first and pay duty later as a default rule. Don’t hold shipments hostage—it slows business operations, constrains exports and makes it harder for India to join global value chains."
+    },
+    {
+      "id": "livemint-there-may-be-a-case-to-rebalance-climate-spending-but-the-ene",
+      "title": "There may be a case to rebalance climate spending but the energy transition must go on",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Environment & Climate",
+      "date": "2026-09-23",
+      "url": "https://www.livemint.com/opinion/online-views/climate-change-a-case-to-rebalance-spending-but-the-energy-transition-must-go-on-health-education-11790086109656.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "For developing economies, money going into a clean-energy transition may be better spent elsewhere—such as health and education—as some experts argue.",
+      "takeaways": [
+        "For developing economies, money going into a clean-energy transition may be better spent elsewhere—such as health and education—as some experts argue.",
+        "But that doesn’t diminish the urgency of climate action.",
+        "Emphasizes vital strategic considerations regarding There may be a case to rebalance climate spending but the energy transition must go on."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning There may be a case to rebalance climate spending but the energy transition must go on.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme authority; self-governing authority of a state",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'There may be a case to rebalance climate spending but the energy transition must go on', what is the primary meaning of the term 'Complacency'?",
+        "options": [
+          "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Complacency' is defined as: A feeling of smug or uncritical self-satisfaction with current conditions. Synonyms include smugness, self-satisfaction, inertia."
+      },
+      "practice_question": "In light of 'There may be a case to rebalance climate spending but the energy transition must go on', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "For developing economies, money going into a clean-energy transition may be better spent elsewhere—such as health and education—as some experts argue. But that doesn’t diminish the urgency of climate action."
+    },
+    {
+      "id": "livemint-investment-research-buy-and-sell-are-clear-but-what-s-the-poi",
+      "title": "Investment research: ‘Buy’ and ‘sell’ are clear but what’s the point of the 'hold' rating awarded to stocks?",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Global Affairs",
+      "date": "2026-09-23",
+      "url": "https://www.livemint.com/opinion/online-views/investment-research-buy-and-sell-are-clear-but-what-s-the-point-of-the-hold-rating-awarded-to-stocks-endowment-bias-11790085926816.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "It owes its existence to an 'endowment bias' that makes people place an irrational price premium on what they own.",
+      "takeaways": [
+        "It owes its existence to an 'endowment bias' that makes people place an irrational price premium on what they own.",
+        "Investors get even more attached to their investments than households objects.",
+        "But smart investing means overcoming irrationality."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning Investment research.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ostensible",
+          "pos": "Adjective",
+          "definition": "Stated or appearing to be true, but not necessarily so",
+          "synonyms": [
+            "apparent",
+            "superficial",
+            "professed"
+          ],
+          "antonyms": [
+            "genuine",
+            "actual"
+          ],
+          "example": "Policymakers must demonstrate ostensible interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Investment research', what is the primary meaning of the term 'Ubiquitous'?",
+        "options": [
+          "Present, appearing, or found everywhere",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Ubiquitous' is defined as: Present, appearing, or found everywhere. Synonyms include omnipresent, pervasive, everywhere."
+      },
+      "practice_question": "In light of 'Investment research', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "It owes its existence to an 'endowment bias' that makes people place an irrational price premium on what they own. Investors get even more attached to their investments than households objects. But smart investing means overcoming irrationality."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-russian-disinformation-a-foreign-thr",
+      "title": "The Guardian view on Russian disinformation: a foreign threat that relies on UK complicity",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-09-23",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/23/the-guardian-view-on-russian-disinformation-a-foreign-threat-that-relies-on-uk-complicity",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "Andy Burnham’s accusation against the Kremlin tells half the story.",
+      "takeaways": [
+        "Andy Burnham’s accusation against the Kremlin tells half the story.",
+        "Democracy’s enemies have become more determined to exploit it.",
+        "If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning The Guardian view on Russian disinformation.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Guardian view on Russian disinformation', what is the primary meaning of the term 'Exacerbate'?",
+        "options": [
+          "To make a problem, bad situation, or negative feeling worse",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Exacerbate' is defined as: To make a problem, bad situation, or negative feeling worse. Synonyms include aggravate, worsen, inflame."
+      },
+      "practice_question": "In light of 'The Guardian view on Russian disinformation', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "Andy Burnham’s accusation against the Kremlin tells half the story. Domestic extremists amplified by US big tech are part of the same problem In November 2020, Barack Obama warned of an “ epistemological crisis ” facing western democracies. Polarisation and radicalisation were corroding trust in established information sources. “If we do not have the capacity to distinguish what’s true from what’s false, then by definition the marketplace of ideas doesn’t work,” the former US president said. That vulnerability has grown since then. Democracy’s enemies have become more determined to exploit it. This is the threat that Andy Burnham highlighted in a speech at the United Nations this week. The prime minister accused Russia of waging an “industrial-scale assault” on the UK’s information environment using bot armies and fake websites to spread falsehoods, interfere in elections, foment discord and poison inter-community relations. Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here . Continue reading..."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-the-future-of-the-un-more-embattled-",
+      "title": "The Guardian view on the future of the UN: more embattled, but more necessary, than ever",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-09-23",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/23/the-guardian-view-on-the-future-of-the-un-more-embattled-but-more-necessary-than-ever",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "As the secretary general, António Guterres, prepares to step down, the general assembly is highlighting the scale of the organisation’s challenges The United Nations was created, its charter states , to “save succeeding generations from the scourge of war”.",
+      "takeaways": [
+        "As the secretary general, António Guterres, prepares to step down, the general assembly is highlighting the scale of the organisation’s challenges The United Nations was created, its charter states , to “save succeeding generations from the scourge of war”.",
+        "Vladimir Putin has not attended for more than a decade.",
+        "If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning The Guardian view on the future of the UN.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or dilemma",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Guardian view on the future of the UN', what is the primary meaning of the term 'Pragmatic'?",
+        "options": [
+          "Dealing with things sensibly and realistically based on practical considerations",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Pragmatic' is defined as: Dealing with things sensibly and realistically based on practical considerations. Synonyms include practical, sensible, hardheaded."
+      },
+      "practice_question": "In light of 'The Guardian view on the future of the UN', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "As the secretary general, António Guterres, prepares to step down, the general assembly is highlighting the scale of the organisation’s challenges The United Nations was created, its charter states , to “save succeeding generations from the scourge of war”. Donald Trump used his address to the general assembly to threaten Iran , another member state, with annihilation again. The charter also speaks of the obligations of international law. On Venezuela, Mr Trump gloated that “to the victor belong the spoils”. His speech in New York on Tuesday might be regarded as an improvement on last year’s only in that it was not an explicit, full-scale attack on the UN itself, merely on its founding principles. The absences this year are perhaps as telling as the US president’s hostile presence. Vladimir Putin has not attended for more than a decade. Nor has Xi Jinping – but the snub is more striking as he is in Washington to meet the US president. India’s Narendra Modi is not present; nor are Cyril Ramaphosa, Bola Tinubu or Abdel Fatah al-Sisi – the leaders of Africa’s three giants, South Africa, Nigeria and Egypt. While their reasons are various, the gaps speak collectively to Mr Trump’s wrecking capability and the broader challenges faced by the UN. Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here . Continue reading..."
+    },
     {
       "id": "the-hindu-freezing-democracy-on-the-election-commission-of-india-and-w",
       "title": "Freezing democracy: On the Election Commission of India and West Bengal",
