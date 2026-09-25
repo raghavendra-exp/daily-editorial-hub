@@ -27,6 +27,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0284c7">
 </head>
 <body>
   <!-- Header / Navigation -->
@@ -51,6 +53,16 @@
       </div>
 
       <div class="header-actions">
+        <button id="streak-tracker-btn" class="btn btn-streak" title="Daily Study Streak & Goals">
+          <span class="streak-icon">🔥</span>
+          <span id="streak-count-badge" class="streak-badge">1 Day</span>
+        </button>
+
+        <button id="compare-modal-btn" class="btn btn-outline" title="Compare Two Editorials Side-by-Side">
+          <span class="icon">⚖️</span>
+          <span class="label">Compare</span>
+        </button>
+
         <button id="refresh-feeds-btn" class="btn btn-primary btn-refresh" title="Fetch & Refresh Latest RSS Feeds Now">
           <span class="refresh-spinner" id="refresh-spinner-icon">🔄</span>
           <span class="refresh-label" id="refresh-label">Refresh Feeds</span>
@@ -94,6 +106,11 @@
           <span class="tab-icon">📰</span>
           <span class="tab-label">Daily Editorials</span>
         </button>
+        <button class="hub-tab-btn" id="tab-writing" data-target="writing">
+          <span class="tab-icon">✍️</span>
+          <span class="tab-label">Answer Writing Room</span>
+          <span class="hub-badge hub-badge-writing" id="writing-badge">Timed</span>
+        </button>
         <button class="hub-tab-btn" id="tab-flashcards" data-target="flashcards">
           <span class="tab-icon">🗂️</span>
           <span class="tab-label">Vocab Flashcards</span>
@@ -103,6 +120,10 @@
           <span class="tab-icon">🎯</span>
           <span class="tab-label">Daily MCQ Quiz</span>
           <span class="hub-badge hub-badge-quiz" id="quiz-badge">5 Qs</span>
+        </button>
+        <button class="hub-tab-btn" id="tab-compare" data-target="compare">
+          <span class="tab-icon">⚖️</span>
+          <span class="tab-label">Compare Editorials</span>
         </button>
         <button class="hub-tab-btn" id="tab-vault" data-target="vault">
           <span class="tab-icon">🏛️</span>
@@ -166,6 +187,17 @@
           <button class="filter-pill" data-cat="Tech & AI Research">🤖 Tech & AI</button>
           <button class="filter-pill" data-cat="Science & Tech Digest">🔬 Science</button>
           <button class="filter-pill" data-cat="Environment & Climate">🌿 Environment</button>
+        </div>
+      </div>
+
+      <div class="filter-scroll-wrapper gs-wrapper">
+        <div class="filter-group" id="gs-filters">
+          <span class="filter-label">Syllabus:</span>
+          <button class="filter-pill active" data-gs="all">All Syllabus</button>
+          <button class="filter-pill" data-gs="GS-1">🏛️ GS-1 (Society & Geography)</button>
+          <button class="filter-pill" data-gs="GS-2">⚖️ GS-2 (Polity, Governance, IR)</button>
+          <button class="filter-pill" data-gs="GS-3">📈 GS-3 (Economy, Sci-Tech, Climate)</button>
+          <button class="filter-pill" data-gs="GS-4">🧭 GS-4 (Ethics & Policy)</button>
         </div>
       </div>
     </div>
@@ -663,6 +695,16 @@
         </div>
       </div>
 
+      <!-- Floating Text Highlight Toolbar -->
+      <div id="highlight-toolbar" class="highlight-floating-toolbar" style="display: none;">
+        <span class="hl-toolbar-label">Highlight:</span>
+        <button class="hl-color-btn hl-yellow" data-hl-color="yellow" title="Crux / Key Concept">🟨</button>
+        <button class="hl-color-btn hl-green" data-hl-color="green" title="Data & Metrics">🟩</button>
+        <button class="hl-color-btn hl-blue" data-hl-color="blue" title="Constitutional / Statutory">🟦</button>
+        <button class="hl-color-btn hl-pink" data-hl-color="pink" title="Critique / Bottleneck">🟪</button>
+        <button class="hl-color-btn hl-remove" data-hl-color="clear" title="Remove Highlight">✕</button>
+      </div>
+
       <!-- Reader Scrollable Document Content -->
       <article class="reader-article-content" id="reader-article-body">
         <header class="reader-header">
@@ -703,6 +745,17 @@
           </div>
         </section>
 
+        <!-- Interactive Concept Mind Map & Flow Section -->
+        <section class="reader-section mindmap-section" id="reader-mindmap-section">
+          <div class="section-header-row">
+            <h3 class="section-subheading">🧠 Visual Concept Mind Map & Causal Flow</h3>
+            <button id="toggle-mindmap-layout-btn" class="btn-action-sm" title="Toggle Compact / Expanded Mind Map">Expand Diagram ⤢</button>
+          </div>
+          <div class="mindmap-container" id="reader-mindmap-container">
+            <!-- Populated dynamically by app.js -->
+          </div>
+        </section>
+
         <!-- Actionable Way Forward & Policy Recommendations -->
         <section class="reader-section way-forward-section">
           <h3 class="section-subheading">🟢 Actionable Way Forward & Solutions</h3>
@@ -732,7 +785,10 @@
             <div class="practice-question-box">
               <div class="q-label">✍️ Analytical Practice Question:</div>
               <p id="reader-question-text" class="question-text">Analytical Mains practice question here...</p>
-              <button id="copy-question-btn" class="btn-copy-sm">📋 Copy Question</button>
+              <div class="question-action-row">
+                <button id="copy-question-btn" class="btn-copy-sm">📋 Copy Question</button>
+                <button id="open-writing-studio-btn" class="btn-copy-sm btn-studio-trigger">⏱️ Practice in Timed Writing Room</button>
+              </div>
             </div>
           </div>
         </section>
@@ -808,6 +864,215 @@
       <p>© 2026 Daily Editorial Hub. Designed for focused, distraction-free reading.</p>
     </div>
   </footer>
+
+  <!-- Daily Study Streak & Goal Habit Tracker Modal -->
+  <div id="streak-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog streak-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>🔥 Study Streak & Daily Learning Goals</h3>
+          <p class="subtitle">Build consistent analytical reading and active recall habits every day.</p>
+        </div>
+        <button class="modal-close-btn" id="close-streak-modal">✕</button>
+      </div>
+      <div class="modal-body streak-modal-body">
+        <!-- Big Streak Hero Card -->
+        <div class="streak-hero-card">
+          <div class="streak-flame-circle">
+            <span class="streak-flame-big">🔥</span>
+            <span class="streak-hero-number" id="streak-hero-days">1</span>
+            <span class="streak-hero-label">Days Active</span>
+          </div>
+          <div class="streak-status-info">
+            <h4 id="streak-motivational-title">Consistency is Key!</h4>
+            <p id="streak-motivational-msg">You've studied editorials today. Complete all daily targets below to maintain your streak.</p>
+            <div class="streak-progress-wrap">
+              <div class="streak-progress-text">
+                <span>Today's Target Progress:</span>
+                <strong id="streak-progress-pct">0%</strong>
+              </div>
+              <div class="streak-progress-track">
+                <div class="streak-progress-fill" id="streak-progress-bar" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Daily Target Checklist -->
+        <h4 class="streak-subheading">Today's Target Checklist</h4>
+        <div class="streak-checklist">
+          <div class="streak-check-item" id="goal-read-item">
+            <div class="goal-check-icon" id="goal-read-icon">⭕</div>
+            <div class="goal-info">
+              <strong>Read 2 Daily Editorials</strong>
+              <p>Explore full text and examine 360° analytical dimensions.</p>
+            </div>
+            <span class="goal-badge" id="goal-read-count">0 / 2</span>
+          </div>
+
+          <div class="streak-check-item" id="goal-flashcard-item">
+            <div class="goal-check-icon" id="goal-flashcard-icon">⭕</div>
+            <div class="goal-info">
+              <strong>Flip 10 Vocab Flashcards</strong>
+              <p>Practice active recall to retain high-yield editorial lexicon.</p>
+            </div>
+            <span class="goal-badge" id="goal-flashcard-count">0 / 10</span>
+          </div>
+
+          <div class="streak-check-item" id="goal-quiz-item">
+            <div class="goal-check-icon" id="goal-quiz-icon">⭕</div>
+            <div class="goal-info">
+              <strong>Complete Daily 5-Q Mock Quiz</strong>
+              <p>Test current affairs comprehension and vocab retainment.</p>
+            </div>
+            <span class="goal-badge" id="goal-quiz-count">Not taken</span>
+          </div>
+
+          <div class="streak-check-item" id="goal-writing-item">
+            <div class="goal-check-icon" id="goal-writing-icon">⭕</div>
+            <div class="goal-info">
+              <strong>Timed Answer Writing Practice</strong>
+              <p>Draft a structured 150/250-word response to an editorial question.</p>
+            </div>
+            <span class="goal-badge" id="goal-writing-count">0 drafts</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="reset-streak-btn" title="Reset streak and goals if needed">Reset Goals</button>
+        <button class="btn btn-primary" id="streak-modal-done">Continue Studying</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timed Mains Answer Writing Studio Modal -->
+  <div id="writing-studio-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog writing-studio-dialog">
+      <div class="modal-header writing-studio-header">
+        <div class="modal-title-group">
+          <h3>⏱️ Timed Mains Answer Writing Studio</h3>
+          <p class="subtitle" id="writing-article-ref">Drafting practice based on current editorial</p>
+        </div>
+        <div class="writing-timer-cluster">
+          <div class="writing-timer-display" id="writing-timer-clock">07:00</div>
+          <button id="writing-timer-toggle-btn" class="btn-timer-action" title="Start / Pause Timer">▶ Start</button>
+          <button id="writing-timer-reset-btn" class="btn-timer-icon" title="Reset Timer">↺</button>
+        </div>
+        <button class="modal-close-btn" id="close-writing-modal">✕</button>
+      </div>
+      <div class="modal-body writing-studio-body">
+        <!-- Timer Selector Preset & Target Bar -->
+        <div class="writing-control-bar">
+          <div class="timer-presets">
+            <span class="preset-label">Time & Word Target:</span>
+            <button class="timer-pill active" data-time="420" data-words="150">7 Min (150 Words / 10M)</button>
+            <button class="timer-pill" data-time="600" data-words="250">10 Min (250 Words / 15M)</button>
+            <button class="timer-pill" data-time="900" data-words="350">15 Min (Long Form)</button>
+            <button class="timer-pill" data-time="0" data-words="250">Stopwatch (Open)</button>
+          </div>
+          <div class="writing-live-stats">
+            <span class="stat-tag"><strong id="writing-word-count">0</strong> / <span id="writing-target-words">150</span> words</span>
+            <span class="stat-tag"><strong id="writing-wpm-count">0</strong> WPM</span>
+            <span class="stat-tag" id="writing-save-status">Auto-saved locally</span>
+          </div>
+        </div>
+
+        <!-- Practice Question Card -->
+        <div class="writing-question-banner">
+          <span class="wq-icon">✍️</span>
+          <p class="wq-text" id="writing-question-display">Practice question loading...</p>
+        </div>
+
+        <!-- Main Writing Arena & Structural Framework Split -->
+        <div class="writing-arena-grid">
+          <!-- Textarea Input Area -->
+          <div class="writing-input-pane">
+            <textarea id="writing-editor-input" class="writing-textarea" placeholder="Start typing your structured answer here...&#10;&#10;1. Introduction: Define core concept and current context&#10;2. Body Arguments: Positive dimensions & institutional bottlenecks&#10;3. Way Forward: Actionable policy solutions & constitutional alignment"></textarea>
+          </div>
+
+          <!-- Answer Structure Framework Assistant -->
+          <div class="writing-framework-pane">
+            <h4 class="framework-heading">💡 Structure Guidelines</h4>
+            <div class="framework-step">
+              <span class="step-num">1</span>
+              <div>
+                <strong>Introduction (15-20% words)</strong>
+                <p>Define the key term, cite relevant constitutional article / committee / landmark judgment.</p>
+              </div>
+            </div>
+            <div class="framework-step">
+              <span class="step-num">2</span>
+              <div>
+                <strong>Body: 360° Arguments (60% words)</strong>
+                <p>Divide into clear sub-headings (Economic, Governance, Social, Global). Use bullet points.</p>
+              </div>
+            </div>
+            <div class="framework-step">
+              <span class="step-num">3</span>
+              <div>
+                <strong>Way Forward & Conclusion (20% words)</strong>
+                <p>Offer 2-3 constructive recommendations. Conclude on a forward-looking, constitutional note.</p>
+              </div>
+            </div>
+            <button id="writing-insert-framework-btn" class="btn btn-outline btn-sm btn-block">➕ Insert Skeleton Outline</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer writing-studio-footer">
+        <button class="btn btn-outline" id="writing-clear-btn">Clear Draft</button>
+        <button class="btn btn-outline" id="writing-copy-btn">📋 Copy Answer</button>
+        <button class="btn btn-outline" id="writing-export-btn">📥 Export to Markdown</button>
+        <button class="btn btn-primary" id="writing-save-done-btn">✔ Finish & Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dual Editorial Side-by-Side Comparison Modal -->
+  <div id="compare-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog compare-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>⚖️ Multi-Perspective Editorial Comparison</h3>
+          <p class="subtitle">Compare two editorials side-by-side to analyze differing viewpoints, arguments, and data.</p>
+        </div>
+        <div class="compare-header-controls">
+          <label class="sync-scroll-label">
+            <input type="checkbox" id="sync-scroll-toggle" checked> Sync Scroll
+          </label>
+        </div>
+        <button class="modal-close-btn" id="close-compare-modal">✕</button>
+      </div>
+      <div class="modal-body compare-modal-body">
+        <!-- Dual Selection Bar -->
+        <div class="compare-selector-bar">
+          <div class="compare-select-col">
+            <label>Perspective A (Publication 1):</label>
+            <select id="compare-select-left" class="compare-select"></select>
+          </div>
+          <div class="compare-vs-badge">VS</div>
+          <div class="compare-select-col">
+            <label>Perspective B (Publication 2):</label>
+            <select id="compare-select-right" class="compare-select"></select>
+          </div>
+        </div>
+
+        <!-- Dual Scrollable Panes -->
+        <div class="compare-split-view">
+          <!-- Left Column -->
+          <div class="compare-col" id="compare-col-left">
+            <!-- Populated dynamically -->
+          </div>
+          <!-- Right Column -->
+          <div class="compare-col" id="compare-col-right">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="compare-modal-done">Close Comparison</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Toast Notification -->
   <div id="toast" class="toast" style="display: none;"></div>

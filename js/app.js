@@ -97,12 +97,35 @@ const state = {
   selectedDate: null,
   selectedSource: 'all',
   selectedCategory: 'all',
+  selectedGS: 'all',
   searchQuery: '',
   isFetchingLive: false,
   customFeeds: JSON.parse(localStorage.getItem('editorial-custom-feeds') || '[]'),
   bookmarks: new Set(JSON.parse(localStorage.getItem('editorial-bookmarks') || '[]')),
   masteredWords: new Set(JSON.parse(localStorage.getItem('editorial-mastered-words') || '[]')),
   currentArticle: null,
+  streak: {
+    current: 1,
+    lastActiveDate: '',
+    targets: {
+      readCount: 0,
+      flashcardsCount: 0,
+      quizCompleted: false,
+      answersCount: 0
+    }
+  },
+  writingStudio: {
+    timerInterval: null,
+    totalSeconds: 420,
+    remainingSeconds: 420,
+    isRunning: false,
+    targetWords: 150,
+    currentQuestion: '',
+    currentArticleId: '',
+    currentArticleTitle: '',
+    startTime: null,
+    wordCount: 0
+  },
   flashcards: {
     cards: [],
     filteredCards: [],
@@ -282,7 +305,76 @@ const dom = {
   ttsStopBtn: document.getElementById('tts-stop-btn'),
   ttsIcon: document.getElementById('tts-icon'),
   ttsLabel: document.getElementById('tts-label'),
-  ttsSpeedBadge: document.getElementById('tts-speed-badge')
+  ttsSpeedBadge: document.getElementById('tts-speed-badge'),
+
+  // Streak & Habit Tracker Elements
+  streakTrackerBtn: document.getElementById('streak-tracker-btn'),
+  streakCountBadge: document.getElementById('streak-count-badge'),
+  streakModal: document.getElementById('streak-modal'),
+  closeStreakModal: document.getElementById('close-streak-modal'),
+  streakModalDone: document.getElementById('streak-modal-done'),
+  resetStreakBtn: document.getElementById('reset-streak-btn'),
+  streakHeroDays: document.getElementById('streak-hero-days'),
+  streakProgressPct: document.getElementById('streak-progress-pct'),
+  streakProgressBar: document.getElementById('streak-progress-bar'),
+  streakMotivationalTitle: document.getElementById('streak-motivational-title'),
+  streakMotivationalMsg: document.getElementById('streak-motivational-msg'),
+  goalReadItem: document.getElementById('goal-read-item'),
+  goalReadIcon: document.getElementById('goal-read-icon'),
+  goalReadCount: document.getElementById('goal-read-count'),
+  goalFlashcardItem: document.getElementById('goal-flashcard-item'),
+  goalFlashcardIcon: document.getElementById('goal-flashcard-icon'),
+  goalFlashcardCount: document.getElementById('goal-flashcard-count'),
+  goalQuizItem: document.getElementById('goal-quiz-item'),
+  goalQuizIcon: document.getElementById('goal-quiz-icon'),
+  goalQuizCount: document.getElementById('goal-quiz-count'),
+  goalWritingItem: document.getElementById('goal-writing-item'),
+  goalWritingIcon: document.getElementById('goal-writing-icon'),
+  goalWritingCount: document.getElementById('goal-writing-count'),
+
+  // Answer Writing Studio Elements
+  tabWriting: document.getElementById('tab-writing'),
+  openWritingStudioBtn: document.getElementById('open-writing-studio-btn'),
+  writingStudioModal: document.getElementById('writing-studio-modal'),
+  closeWritingModal: document.getElementById('close-writing-modal'),
+  writingArticleRef: document.getElementById('writing-article-ref'),
+  writingTimerClock: document.getElementById('writing-timer-clock'),
+  writingTimerToggleBtn: document.getElementById('writing-timer-toggle-btn'),
+  writingTimerResetBtn: document.getElementById('writing-timer-reset-btn'),
+  writingQuestionDisplay: document.getElementById('writing-question-display'),
+  writingEditorInput: document.getElementById('writing-editor-input'),
+  writingWordCount: document.getElementById('writing-word-count'),
+  writingTargetWords: document.getElementById('writing-target-words'),
+  writingWpmCount: document.getElementById('writing-wpm-count'),
+  writingSaveStatus: document.getElementById('writing-save-status'),
+  writingInsertFrameworkBtn: document.getElementById('writing-insert-framework-btn'),
+  writingClearBtn: document.getElementById('writing-clear-btn'),
+  writingCopyBtn: document.getElementById('writing-copy-btn'),
+  writingExportBtn: document.getElementById('writing-export-btn'),
+  writingSaveDoneBtn: document.getElementById('writing-save-done-btn'),
+
+  // Dual Comparison Elements
+  tabCompare: document.getElementById('tab-compare'),
+  compareModalBtn: document.getElementById('compare-modal-btn'),
+  compareModal: document.getElementById('compare-modal'),
+  closeCompareModal: document.getElementById('close-compare-modal'),
+  compareModalDone: document.getElementById('compare-modal-done'),
+  compareSelectLeft: document.getElementById('compare-select-left'),
+  compareSelectRight: document.getElementById('compare-select-right'),
+  compareColLeft: document.getElementById('compare-col-left'),
+  compareColRight: document.getElementById('compare-col-right'),
+  syncScrollToggle: document.getElementById('sync-scroll-toggle'),
+
+  // Mind Map Elements
+  readerMindmapSection: document.getElementById('reader-mindmap-section'),
+  readerMindmapContainer: document.getElementById('reader-mindmap-container'),
+  toggleMindmapLayoutBtn: document.getElementById('toggle-mindmap-layout-btn'),
+
+  // Highlight Toolbar
+  highlightToolbar: document.getElementById('highlight-toolbar'),
+
+  // GS Filters
+  gsFilters: document.getElementById('gs-filters')
 };
 
 /**
@@ -290,6 +382,9 @@ const dom = {
  */
 async function init() {
   applySavedPreferences();
+  initStudyStreak();
+  registerServiceWorker();
+  initTextHighlighter();
   setupEventListeners();
   updateBookmarkBadge();
   renderRssFeedsManager();
@@ -657,6 +752,20 @@ function applyFilters() {
     filtered = filtered.filter(a => a.category === state.selectedCategory);
   }
 
+  if (state.selectedGS && state.selectedGS !== 'all') {
+    const gsTarget = state.selectedGS.toUpperCase();
+    filtered = filtered.filter(a => {
+      const rel = (a.relevance_tag || '').toUpperCase();
+      if (rel.includes(gsTarget)) return true;
+      const cat = (a.category || '').toLowerCase();
+      if (gsTarget === 'GS-1' && (cat.includes('history') || cat.includes('geography') || cat.includes('society') || cat.includes('social'))) return true;
+      if (gsTarget === 'GS-2' && (cat.includes('polity') || cat.includes('governance') || cat.includes('national') || cat.includes('global') || cat.includes('international'))) return true;
+      if (gsTarget === 'GS-3' && (cat.includes('economy') || cat.includes('banking') || cat.includes('science') || cat.includes('tech') || cat.includes('environment'))) return true;
+      if (gsTarget === 'GS-4' && (cat.includes('ethics') || cat.includes('integrity') || cat.includes('attitude') || cat.includes('philosophy'))) return true;
+      return false;
+    });
+  }
+
   if (state.searchQuery.trim()) {
     const q = state.searchQuery.toLowerCase().trim();
     filtered = filtered.filter(a => {
@@ -873,6 +982,15 @@ function openReader(articleId, autoPlayAudio = false) {
     dom.readerBodyParagraphs.innerHTML = `<p>${escapeHtml(content)}</p>`;
   }
 
+  // Load saved text highlights
+  loadArticleHighlights(article.id);
+
+  // Render Visual Concept Mind Map
+  renderMindMap(article);
+
+  // Record daily study habit (reading goal)
+  recordGoalAction('read', 1);
+
   // 8. Reader Quick Quiz Check
   const quizObj = article.quiz || generateQuizObj(article.title, article.vocabulary, article.category);
   renderInlineReaderQuiz(quizObj);
@@ -922,6 +1040,7 @@ function renderInlineReaderQuiz(q) {
 
 function closeReader() {
   stopTTS();
+  if (dom.highlightToolbar) dom.highlightToolbar.style.display = 'none';
   dom.readerModal.style.display = 'none';
   document.body.style.overflow = '';
   state.currentArticle = null;
@@ -1174,6 +1293,7 @@ function markFlashcardMastered() {
   if (!card) return;
   state.masteredWords.add(card.word.toLowerCase());
   localStorage.setItem('editorial-mastered-words', JSON.stringify(Array.from(state.masteredWords)));
+  recordGoalAction('flashcard', 1);
   updateFlashcardStats();
   showToast(`Marked "${card.word}" as Mastered! ⭐`);
   nextFlashcard();
@@ -1184,6 +1304,7 @@ function markFlashcardReview() {
   if (!card) return;
   state.masteredWords.delete(card.word.toLowerCase());
   localStorage.setItem('editorial-mastered-words', JSON.stringify(Array.from(state.masteredWords)));
+  recordGoalAction('flashcard', 1);
   updateFlashcardStats();
   showToast(`Marked "${card.word}" for Review 🔄`);
   nextFlashcard();
@@ -1359,6 +1480,8 @@ function showQuizSummary() {
   dom.quizActiveView.style.display = 'none';
   dom.quizSummaryView.style.display = 'block';
 
+  recordGoalAction('quiz');
+
   const total = state.quiz.questions.length;
   const score = state.quiz.score;
   const pct = Math.round((score / total) * 100);
@@ -1389,6 +1512,537 @@ function switchVaultTab(tabKey) {
 
   tabs.forEach(t => t.classList.toggle('active', t.dataset.vaultTab === tabKey));
   contents.forEach(c => c.style.display = (c.id === `vault-tab-${tabKey}`) ? 'block' : 'none');
+}
+
+/**
+ * ==========================================================================
+ * Service Worker Registration (PWA & Offline Reading)
+ * ==========================================================================
+ */
+function registerServiceWorker() {
+  if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+    navigator.serviceWorker.register('./sw.js')
+      .then((reg) => {
+        console.log('Editorial Hub ServiceWorker registered:', reg.scope);
+      })
+      .catch((err) => {
+        console.warn('ServiceWorker registration skipped:', err);
+      });
+  }
+}
+
+/**
+ * ==========================================================================
+ * Daily Study Streak & Goal Habit Tracker Engine
+ * ==========================================================================
+ */
+function initStudyStreak() {
+  const todayStr = new Date().toISOString().split('T')[0];
+  const savedStreak = JSON.parse(localStorage.getItem('editorial-study-streak') || 'null');
+
+  if (savedStreak) {
+    state.streak = savedStreak;
+    if (state.streak.lastActiveDate !== todayStr) {
+      const last = new Date(state.streak.lastActiveDate);
+      const today = new Date(todayStr);
+      const diffDays = Math.round((today - last) / (1000 * 60 * 60 * 24));
+
+      if (diffDays === 1) {
+        state.streak.current = (state.streak.current || 1) + 1;
+      } else if (diffDays > 1) {
+        state.streak.current = 1;
+      }
+      state.streak.lastActiveDate = todayStr;
+      state.streak.targets = {
+        readCount: 0,
+        flashcardsCount: 0,
+        quizCompleted: false,
+        answersCount: 0
+      };
+      saveStudyStreak();
+    }
+  } else {
+    state.streak = {
+      current: 1,
+      lastActiveDate: todayStr,
+      targets: {
+        readCount: 0,
+        flashcardsCount: 0,
+        quizCompleted: false,
+        answersCount: 0
+      }
+    };
+    saveStudyStreak();
+  }
+
+  updateStreakUI();
+}
+
+function saveStudyStreak() {
+  localStorage.setItem('editorial-study-streak', JSON.stringify(state.streak));
+  updateStreakUI();
+}
+
+function updateStreakUI() {
+  if (dom.streakCountBadge) {
+    dom.streakCountBadge.textContent = `${state.streak.current || 1} ${state.streak.current === 1 ? 'Day' : 'Days'}`;
+  }
+}
+
+function recordGoalAction(action, val = 1) {
+  if (!state.streak || !state.streak.targets) return;
+
+  if (action === 'read') {
+    state.streak.targets.readCount = Math.min(2, (state.streak.targets.readCount || 0) + val);
+  } else if (action === 'flashcard') {
+    state.streak.targets.flashcardsCount = Math.min(10, (state.streak.targets.flashcardsCount || 0) + val);
+  } else if (action === 'quiz') {
+    state.streak.targets.quizCompleted = true;
+  } else if (action === 'writing') {
+    state.streak.targets.answersCount = (state.streak.targets.answersCount || 0) + val;
+  }
+
+  saveStudyStreak();
+  if (dom.streakModal && dom.streakModal.style.display === 'flex') {
+    renderStreakModal();
+  }
+}
+
+function renderStreakModal() {
+  if (!dom.streakHeroDays) return;
+  dom.streakHeroDays.textContent = state.streak.current || 1;
+
+  const t = state.streak.targets || { readCount: 0, flashcardsCount: 0, quizCompleted: false, answersCount: 0 };
+  let points = 0;
+  if (t.readCount >= 2) points += 25; else points += (t.readCount / 2) * 25;
+  if (t.flashcardsCount >= 10) points += 25; else points += (t.flashcardsCount / 10) * 25;
+  if (t.quizCompleted) points += 25;
+  if (t.answersCount >= 1) points += 25;
+  points = Math.round(points);
+
+  if (dom.streakProgressPct) dom.streakProgressPct.textContent = `${points}%`;
+  if (dom.streakProgressBar) dom.streakProgressBar.style.width = `${points}%`;
+
+  if (dom.goalReadCount) dom.goalReadCount.textContent = `${t.readCount || 0} / 2`;
+  if (dom.goalReadItem) dom.goalReadItem.classList.toggle('completed', (t.readCount || 0) >= 2);
+  if (dom.goalReadIcon) dom.goalReadIcon.textContent = (t.readCount || 0) >= 2 ? '✔' : '⭕';
+
+  if (dom.goalFlashcardCount) dom.goalFlashcardCount.textContent = `${t.flashcardsCount || 0} / 10`;
+  if (dom.goalFlashcardItem) dom.goalFlashcardItem.classList.toggle('completed', (t.flashcardsCount || 0) >= 10);
+  if (dom.goalFlashcardIcon) dom.goalFlashcardIcon.textContent = (t.flashcardsCount || 0) >= 10 ? '✔' : '⭕';
+
+  if (dom.goalQuizCount) dom.goalQuizCount.textContent = t.quizCompleted ? 'Completed' : 'Not taken';
+  if (dom.goalQuizItem) dom.goalQuizItem.classList.toggle('completed', !!t.quizCompleted);
+  if (dom.goalQuizIcon) dom.goalQuizIcon.textContent = t.quizCompleted ? '✔' : '⭕';
+
+  if (dom.goalWritingCount) dom.goalWritingCount.textContent = `${t.answersCount || 0} ${(t.answersCount || 0) === 1 ? 'draft' : 'drafts'}`;
+  if (dom.goalWritingItem) dom.goalWritingItem.classList.toggle('completed', (t.answersCount || 0) >= 1);
+  if (dom.goalWritingIcon) dom.goalWritingIcon.textContent = (t.answersCount || 0) >= 1 ? '✔' : '⭕';
+
+  if (points >= 100) {
+    if (dom.streakMotivationalTitle) dom.streakMotivationalTitle.textContent = '🎉 All Daily Goals Achieved!';
+    if (dom.streakMotivationalMsg) dom.streakMotivationalMsg.textContent = 'Incredible dedication! You have finished today’s readings, active recall flashcards, quiz, and writing practice.';
+  } else {
+    if (dom.streakMotivationalTitle) dom.streakMotivationalTitle.textContent = 'Consistency is Key!';
+    if (dom.streakMotivationalMsg) dom.streakMotivationalMsg.textContent = `You are ${points}% toward completing today's editorial mastery goals. Keep going!`;
+  }
+}
+
+/**
+ * ==========================================================================
+ * Visual Concept Mind Map Generator Engine
+ * ==========================================================================
+ */
+function renderMindMap(article) {
+  if (!dom.readerMindmapContainer) return;
+  dom.readerMindmapContainer.innerHTML = '';
+
+  const title = article.title || 'Editorial Topic';
+  const crux = article.crux || 'Core editorial trigger and institutional issue under discussion.';
+  const takeaways = article.takeaways || [];
+  const dims = article.dimensions || generateDimensions(article.title, article.category);
+  const ways = article.way_forward || generateWayForward(article.title, article.category);
+
+  const html = `
+    <div class="mindmap-node-row">
+      <div class="mindmap-node node-core">
+        <div class="node-header">⚡ Core Central Issue / Trigger</div>
+        <div class="node-title">${escapeHtml(title)}</div>
+        <div class="node-body">${escapeHtml(crux)}</div>
+      </div>
+    </div>
+
+    <div class="mindmap-connector-arrow">↓</div>
+
+    <div class="mindmap-node-row">
+      <div class="mindmap-node node-causes">
+        <div class="node-header">🔍 Structural Context & Root Drivers</div>
+        <div class="node-body">
+          <ul style="padding-left: 1.1rem; margin: 0;">
+            ${takeaways.map(t => `<li style="margin-bottom: 0.25rem;">${escapeHtml(t)}</li>`).join('')}
+          </ul>
+        </div>
+      </div>
+
+      <div class="mindmap-node node-dimensions">
+        <div class="node-header">🌐 360° Dimension Interlinks</div>
+        <div class="node-body">
+          <div style="margin-bottom: 0.35rem;"><strong>💼 Economy:</strong> ${escapeHtml(dims.economic || 'Resource allocation & public finance.')}</div>
+          <div style="margin-bottom: 0.35rem;"><strong>⚖️ Governance:</strong> ${escapeHtml(dims.governance || 'Institutional accountability & checks.')}</div>
+          <div><strong>👥 Society:</strong> ${escapeHtml(dims.social || 'Citizen welfare and constitutional rights.')}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mindmap-connector-arrow">↓</div>
+
+    <div class="mindmap-node-row">
+      <div class="mindmap-node node-solutions">
+        <div class="node-header">🟢 Actionable Solutions & Policy Way Forward</div>
+        <div class="node-body">
+          <ul style="padding-left: 1.1rem; margin: 0;">
+            ${ways.map(w => `<li style="margin-bottom: 0.25rem;">${escapeHtml(w)}</li>`).join('')}
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+
+  dom.readerMindmapContainer.innerHTML = html;
+}
+
+/**
+ * ==========================================================================
+ * Timed Mains Answer Writing Studio Engine
+ * ==========================================================================
+ */
+function openWritingStudio(questionText, articleTitle, articleId) {
+  state.writingStudio.currentQuestion = questionText || (state.currentArticle ? state.currentArticle.practice_question : (dom.readerQuestionText ? dom.readerQuestionText.textContent : 'Evaluate the policy implications of current editorial developments.'));
+  state.writingStudio.currentArticleTitle = articleTitle || (state.currentArticle ? state.currentArticle.title : 'General Editorial Practice');
+  state.writingStudio.currentArticleId = articleId || (state.currentArticle ? state.currentArticle.id : 'general-draft');
+
+  if (dom.writingArticleRef) {
+    dom.writingArticleRef.textContent = `Drafting response for: ${state.writingStudio.currentArticleTitle}`;
+  }
+  if (dom.writingQuestionDisplay) {
+    dom.writingQuestionDisplay.textContent = state.writingStudio.currentQuestion;
+  }
+
+  // Load saved draft
+  const savedDraft = localStorage.getItem(`editorial-draft-${state.writingStudio.currentArticleId}`) || '';
+  if (dom.writingEditorInput) {
+    dom.writingEditorInput.value = savedDraft;
+  }
+
+  // Default preset: 7 min (150 words)
+  setWritingTimerPreset(420, 150);
+
+  updateWritingStats();
+  if (dom.writingStudioModal) {
+    dom.writingStudioModal.style.display = 'flex';
+  }
+}
+
+function setWritingTimerPreset(seconds, words) {
+  clearInterval(state.writingStudio.timerInterval);
+  state.writingStudio.isRunning = false;
+  state.writingStudio.totalSeconds = seconds;
+  state.writingStudio.remainingSeconds = seconds;
+  state.writingStudio.targetWords = words;
+  state.writingStudio.startTime = null;
+
+  if (dom.writingTimerToggleBtn) dom.writingTimerToggleBtn.textContent = '▶ Start';
+  if (dom.writingTargetWords) dom.writingTargetWords.textContent = words;
+  if (dom.writingTimerClock) dom.writingTimerClock.classList.remove('timer-warning');
+  renderTimerClock();
+}
+
+function toggleWritingTimer() {
+  if (state.writingStudio.isRunning) {
+    clearInterval(state.writingStudio.timerInterval);
+    state.writingStudio.isRunning = false;
+    if (dom.writingTimerToggleBtn) dom.writingTimerToggleBtn.textContent = '▶ Resume';
+  } else {
+    state.writingStudio.isRunning = true;
+    state.writingStudio.startTime = state.writingStudio.startTime || Date.now();
+    if (dom.writingTimerToggleBtn) dom.writingTimerToggleBtn.textContent = '⏸ Pause';
+
+    state.writingStudio.timerInterval = setInterval(() => {
+      if (state.writingStudio.totalSeconds > 0) {
+        state.writingStudio.remainingSeconds--;
+        renderTimerClock();
+
+        if (state.writingStudio.remainingSeconds <= 60 && state.writingStudio.remainingSeconds > 0) {
+          if (dom.writingTimerClock) dom.writingTimerClock.classList.add('timer-warning');
+        }
+
+        if (state.writingStudio.remainingSeconds <= 0) {
+          clearInterval(state.writingStudio.timerInterval);
+          state.writingStudio.isRunning = false;
+          if (dom.writingTimerToggleBtn) dom.writingTimerToggleBtn.textContent = 'Time Up!';
+          showToast('⏰ Time is up! Review and polish your response.');
+        }
+      } else {
+        // Stopwatch mode
+        state.writingStudio.remainingSeconds++;
+        renderTimerClock();
+      }
+      updateWritingStats();
+    }, 1000);
+  }
+}
+
+function resetWritingTimer() {
+  clearInterval(state.writingStudio.timerInterval);
+  state.writingStudio.isRunning = false;
+  state.writingStudio.remainingSeconds = state.writingStudio.totalSeconds;
+  if (dom.writingTimerToggleBtn) dom.writingTimerToggleBtn.textContent = '▶ Start';
+  if (dom.writingTimerClock) dom.writingTimerClock.classList.remove('timer-warning');
+  renderTimerClock();
+}
+
+function renderTimerClock() {
+  if (!dom.writingTimerClock) return;
+  const secs = state.writingStudio.remainingSeconds;
+  const m = Math.floor(Math.abs(secs) / 60);
+  const s = Math.abs(secs) % 60;
+  dom.writingTimerClock.textContent = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+}
+
+function handleWritingInput() {
+  updateWritingStats();
+  const text = dom.writingEditorInput ? dom.writingEditorInput.value : '';
+  if (state.writingStudio.currentArticleId) {
+    localStorage.setItem(`editorial-draft-${state.writingStudio.currentArticleId}`, text);
+  }
+  if (dom.writingSaveStatus) dom.writingSaveStatus.textContent = 'Auto-saved locally';
+
+  const wordCount = text.trim() ? text.trim().split(/\s+/).filter(Boolean).length : 0;
+  if (wordCount >= 50) {
+    recordGoalAction('writing', 1);
+  }
+}
+
+function updateWritingStats() {
+  if (!dom.writingEditorInput) return;
+  const text = dom.writingEditorInput.value.trim();
+  const words = text ? text.split(/\s+/).filter(Boolean).length : 0;
+  state.writingStudio.wordCount = words;
+
+  if (dom.writingWordCount) dom.writingWordCount.textContent = words;
+
+  if (state.writingStudio.startTime && state.writingStudio.isRunning) {
+    const elapsedMinutes = Math.max(0.1, (Date.now() - state.writingStudio.startTime) / (1000 * 60));
+    const wpm = Math.round(words / elapsedMinutes);
+    if (dom.writingWpmCount) dom.writingWpmCount.textContent = wpm;
+  }
+}
+
+function insertSkeletonOutline() {
+  const template = `## 1. Introduction\n- Definition & Context: \n- Constitutional / Statutory Anchor: \n\n## 2. Body: Multi-Dimensional Arguments\n- Economic Aspect: \n- Governance & Institutional Bottlenecks: \n- Social Equity & Citizen Rights: \n- International / Global Benchmark: \n\n## 3. Way Forward & Recommendations\n- Policy Recommendation 1: \n- Administrative & Digital Transparency: \n- Forward-looking Constitutional Conclusion: `;
+
+  if (!dom.writingEditorInput) return;
+  if (dom.writingEditorInput.value.trim()) {
+    dom.writingEditorInput.value += `\n\n${template}`;
+  } else {
+    dom.writingEditorInput.value = template;
+  }
+  handleWritingInput();
+  showToast('Skeleton outline inserted! ✍️');
+}
+
+function exportWritingToMarkdown() {
+  const text = dom.writingEditorInput ? dom.writingEditorInput.value : '';
+  if (!text.trim()) {
+    showToast('Your answer draft is empty.');
+    return;
+  }
+
+  const q = state.writingStudio.currentQuestion;
+  const title = state.writingStudio.currentArticleTitle;
+  const words = state.writingStudio.wordCount;
+  const dateStr = new Date().toISOString().split('T')[0];
+
+  const md = `# Answer Writing Practice: ${title}\n` +
+    `**Date:** ${dateStr} | **Word Count:** ${words} words\n\n` +
+    `## Question:\n> ${q}\n\n` +
+    `## My Response:\n\n${text}\n\n` +
+    `---\n*Drafted via Daily Editorial Hub Timed Writing Studio*`;
+
+  const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `Answer-Draft-${dateStr}.md`;
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('Answer exported to Markdown file! 📥');
+}
+
+function copyWritingAnswer() {
+  const text = dom.writingEditorInput ? dom.writingEditorInput.value : '';
+  if (!text.trim()) {
+    showToast('Your answer draft is empty.');
+    return;
+  }
+
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(() => {
+      showToast('Answer copied to clipboard! 📋');
+    });
+  } else {
+    showToast('Clipboard access unavailable.');
+  }
+}
+
+/**
+ * ==========================================================================
+ * Dual View Multi-Perspective Comparison Engine
+ * ==========================================================================
+ */
+function openCompareModal() {
+  if (state.articles.length < 2) {
+    showToast('At least 2 editorials are needed for comparative study.');
+    return;
+  }
+
+  const optionsHtml = state.articles.map(art => `
+    <option value="${art.id}">${escapeHtml(art.source)}: ${escapeHtml(art.title.slice(0, 50))}...</option>
+  `).join('');
+
+  if (dom.compareSelectLeft) dom.compareSelectLeft.innerHTML = optionsHtml;
+  if (dom.compareSelectRight) dom.compareSelectRight.innerHTML = optionsHtml;
+
+  if (dom.compareSelectLeft) dom.compareSelectLeft.selectedIndex = 0;
+  if (dom.compareSelectRight) dom.compareSelectRight.selectedIndex = Math.min(1, state.articles.length - 1);
+
+  renderCompareColumn(dom.compareSelectLeft.value, dom.compareColLeft);
+  renderCompareColumn(dom.compareSelectRight.value, dom.compareColRight);
+
+  if (dom.compareModal) dom.compareModal.style.display = 'flex';
+}
+
+function renderCompareColumn(articleId, container) {
+  const art = state.articles.find(a => a.id === articleId);
+  if (!art || !container) return;
+
+  const dims = art.dimensions || generateDimensions(art.title, art.category);
+  const wayForward = art.way_forward || generateWayForward(art.title, art.category);
+
+  container.innerHTML = `
+    <div class="compare-article-header">
+      <span class="compare-source-badge">${escapeHtml(art.source)} • ${escapeHtml(art.category)}</span>
+      <h3 class="compare-article-title">${escapeHtml(art.title)}</h3>
+    </div>
+
+    <div class="compare-section-card">
+      <div class="compare-section-title">⚡ 30-Second Crux</div>
+      <p style="margin: 0; font-size: 0.88rem; line-height: 1.5; color: var(--text-primary);">${escapeHtml(art.crux || '')}</p>
+    </div>
+
+    <div class="compare-section-card">
+      <div class="compare-section-title">💡 Key Takeaways</div>
+      <ul style="padding-left: 1.1rem; margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+        ${(art.takeaways || []).map(t => `<li style="margin-bottom: 0.25rem;">${escapeHtml(t)}</li>`).join('')}
+      </ul>
+    </div>
+
+    <div class="compare-section-card">
+      <div class="compare-section-title">🌐 360° Analytical Breakdown</div>
+      <div style="font-size: 0.825rem; line-height: 1.45; color: var(--text-secondary);">
+        <div style="margin-bottom: 0.35rem;"><strong>💼 Economy:</strong> ${escapeHtml(dims.economic || 'N/A')}</div>
+        <div style="margin-bottom: 0.35rem;"><strong>⚖️ Governance:</strong> ${escapeHtml(dims.governance || 'N/A')}</div>
+        <div><strong>👥 Social:</strong> ${escapeHtml(dims.social || 'N/A')}</div>
+      </div>
+    </div>
+
+    <div class="compare-section-card">
+      <div class="compare-section-title">🟢 Policy Way Forward</div>
+      <ul style="padding-left: 1.1rem; margin: 0; font-size: 0.825rem; line-height: 1.45; color: var(--text-secondary);">
+        ${wayForward.map(w => `<li style="margin-bottom: 0.25rem;">${escapeHtml(w)}</li>`).join('')}
+      </ul>
+    </div>
+
+    <div style="text-align: right; margin-top: auto; padding-top: 0.5rem;">
+      <a href="${escapeHtml(art.url)}" target="_blank" rel="noopener" style="font-size: 0.8rem; color: var(--brand-primary); font-weight: 700;">Read Full Source ↗</a>
+    </div>
+  `;
+}
+
+/**
+ * ==========================================================================
+ * Text Highlighter & Margin Annotations Engine
+ * ==========================================================================
+ */
+function initTextHighlighter() {
+  if (!dom.highlightToolbar) return;
+
+  document.addEventListener('selectionchange', () => {
+    if (!dom.readerModal || dom.readerModal.style.display !== 'flex') {
+      if (dom.highlightToolbar) dom.highlightToolbar.style.display = 'none';
+      return;
+    }
+
+    const selection = window.getSelection();
+    if (!selection || selection.isCollapsed || !dom.readerBodyParagraphs || !dom.readerBodyParagraphs.contains(selection.anchorNode)) {
+      if (dom.highlightToolbar) dom.highlightToolbar.style.display = 'none';
+      return;
+    }
+
+    const range = selection.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+    if (rect.width > 0) {
+      dom.highlightToolbar.style.top = `${rect.top + window.scrollY - 46}px`;
+      dom.highlightToolbar.style.left = `${Math.max(10, rect.left + window.scrollX + (rect.width / 2) - 100)}px`;
+      dom.highlightToolbar.style.display = 'flex';
+    }
+  });
+
+  dom.highlightToolbar.querySelectorAll('.hl-color-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const color = btn.dataset.hlColor;
+      applyHighlightToSelection(color);
+      dom.highlightToolbar.style.display = 'none';
+    });
+  });
+}
+
+function applyHighlightToSelection(color) {
+  const selection = window.getSelection();
+  if (!selection || selection.rangeCount === 0) return;
+
+  const range = selection.getRangeAt(0);
+  if (color === 'clear') {
+    const parentMark = selection.anchorNode.parentElement?.closest('mark');
+    if (parentMark) {
+      const text = parentMark.textContent;
+      parentMark.replaceWith(document.createTextNode(text));
+    }
+  } else {
+    const mark = document.createElement('mark');
+    mark.className = `hl-${color}`;
+    mark.textContent = range.toString();
+    range.deleteContents();
+    range.insertNode(mark);
+  }
+
+  selection.removeAllRanges();
+  saveArticleHighlights();
+  showToast('Highlight updated! 🖍️');
+}
+
+function saveArticleHighlights() {
+  if (!state.currentArticle || !dom.readerBodyParagraphs) return;
+  const bodyHtml = dom.readerBodyParagraphs.innerHTML;
+  localStorage.setItem(`editorial-hl-${state.currentArticle.id}`, bodyHtml);
+}
+
+function loadArticleHighlights(articleId) {
+  const saved = localStorage.getItem(`editorial-hl-${articleId}`);
+  if (saved && dom.readerBodyParagraphs) {
+    dom.readerBodyParagraphs.innerHTML = saved;
+  }
 }
 
 /**
@@ -1558,6 +2212,7 @@ function openBookmarksModal() {
 function updateFilterBarUI() {
   const isFiltered = state.selectedSource !== 'all' || 
                      state.selectedCategory !== 'all' || 
+                     (state.selectedGS && state.selectedGS !== 'all') ||
                      state.searchQuery.trim() !== '' || 
                      (state.selectedDate && state.selectedDate !== state.availableDates[0]);
 
@@ -1569,6 +2224,7 @@ function updateFilterBarUI() {
     }
     if (state.selectedSource !== 'all') parts.push(`Source: ${state.selectedSource}`);
     if (state.selectedCategory !== 'all') parts.push(`Topic: ${state.selectedCategory}`);
+    if (state.selectedGS && state.selectedGS !== 'all') parts.push(`Syllabus: ${state.selectedGS}`);
     if (state.searchQuery.trim()) parts.push(`Query: "${state.searchQuery}"`);
     dom.activeFilterText.textContent = `Filtered by: ${parts.join(' • ')}`;
   } else {
@@ -1579,6 +2235,7 @@ function updateFilterBarUI() {
 function resetAllFilters() {
   state.selectedSource = 'all';
   state.selectedCategory = 'all';
+  state.selectedGS = 'all';
   state.searchQuery = '';
   dom.searchInput.value = '';
   dom.clearSearchBtn.style.display = 'none';
@@ -1592,6 +2249,11 @@ function resetAllFilters() {
   dom.categoryFilters.querySelectorAll('.filter-pill').forEach(p => {
     p.classList.toggle('active', p.dataset.cat === 'all');
   });
+  if (dom.gsFilters) {
+    dom.gsFilters.querySelectorAll('.filter-pill').forEach(p => {
+      p.classList.toggle('active', p.dataset.gs === 'all');
+    });
+  }
 
   applyFilters();
 }
@@ -1682,7 +2344,7 @@ function applyReaderSize(size) {
  */
 function setupEventListeners() {
   function setActiveHubTab(target) {
-    [dom.tabEditorials, dom.tabFlashcards, dom.tabQuiz, dom.tabVault].forEach(tab => {
+    [dom.tabEditorials, dom.tabFlashcards, dom.tabQuiz, dom.tabVault, dom.tabWriting, dom.tabCompare].forEach(tab => {
       if (tab) tab.classList.toggle('active', tab.dataset.target === target);
     });
   }
@@ -1695,6 +2357,8 @@ function setupEventListeners() {
       if (dom.quizModal) dom.quizModal.style.display = 'none';
       if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
       if (dom.vocabModal) dom.vocabModal.style.display = 'none';
+      if (dom.writingStudioModal) dom.writingStudioModal.style.display = 'none';
+      if (dom.compareModal) dom.compareModal.style.display = 'none';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
@@ -1704,6 +2368,8 @@ function setupEventListeners() {
       if (dom.quizModal) dom.quizModal.style.display = 'none';
       if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
       if (dom.vocabModal) dom.vocabModal.style.display = 'none';
+      if (dom.writingStudioModal) dom.writingStudioModal.style.display = 'none';
+      if (dom.compareModal) dom.compareModal.style.display = 'none';
       buildFlashcardDeck();
       dom.flashcardModal.style.display = 'flex';
     });
@@ -1714,6 +2380,8 @@ function setupEventListeners() {
       if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
       if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
       if (dom.vocabModal) dom.vocabModal.style.display = 'none';
+      if (dom.writingStudioModal) dom.writingStudioModal.style.display = 'none';
+      if (dom.compareModal) dom.compareModal.style.display = 'none';
       startDailyMockQuiz();
     });
   }
@@ -1723,7 +2391,31 @@ function setupEventListeners() {
       if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
       if (dom.quizModal) dom.quizModal.style.display = 'none';
       if (dom.vocabModal) dom.vocabModal.style.display = 'none';
+      if (dom.writingStudioModal) dom.writingStudioModal.style.display = 'none';
+      if (dom.compareModal) dom.compareModal.style.display = 'none';
       openKnowledgeVault();
+    });
+  }
+  if (dom.tabWriting) {
+    dom.tabWriting.addEventListener('click', () => {
+      setActiveHubTab('writing');
+      if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
+      if (dom.quizModal) dom.quizModal.style.display = 'none';
+      if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
+      if (dom.vocabModal) dom.vocabModal.style.display = 'none';
+      if (dom.compareModal) dom.compareModal.style.display = 'none';
+      openWritingStudio();
+    });
+  }
+  if (dom.tabCompare) {
+    dom.tabCompare.addEventListener('click', () => {
+      setActiveHubTab('compare');
+      if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
+      if (dom.quizModal) dom.quizModal.style.display = 'none';
+      if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
+      if (dom.vocabModal) dom.vocabModal.style.display = 'none';
+      if (dom.writingStudioModal) dom.writingStudioModal.style.display = 'none';
+      openCompareModal();
     });
   }
 
@@ -1866,6 +2558,18 @@ function setupEventListeners() {
     applyFilters();
   });
 
+  // GS Syllabus Filters
+  if (dom.gsFilters) {
+    dom.gsFilters.addEventListener('click', (e) => {
+      const pill = e.target.closest('.filter-pill');
+      if (!pill) return;
+      dom.gsFilters.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      state.selectedGS = pill.dataset.gs;
+      applyFilters();
+    });
+  }
+
   // Date Navigation
   dom.prevDateBtn.addEventListener('click', () => navigateDate(1));
   dom.nextDateBtn.addEventListener('click', () => navigateDate(-1));
@@ -1911,6 +2615,149 @@ function setupEventListeners() {
     });
   }
 
+  // Streak & Habit Tracker Modal
+  if (dom.streakTrackerBtn) {
+    dom.streakTrackerBtn.addEventListener('click', () => {
+      renderStreakModal();
+      dom.streakModal.style.display = 'flex';
+    });
+  }
+  if (dom.closeStreakModal) dom.closeStreakModal.addEventListener('click', () => dom.streakModal.style.display = 'none');
+  if (dom.streakModalDone) dom.streakModalDone.addEventListener('click', () => dom.streakModal.style.display = 'none');
+  if (dom.resetStreakBtn) {
+    dom.resetStreakBtn.addEventListener('click', () => {
+      if (confirm('Reset your daily habit streak counter and progress?')) {
+        const todayStr = new Date().toISOString().split('T')[0];
+        state.streak = {
+          current: 1,
+          lastActiveDate: todayStr,
+          targets: { readCount: 0, flashcardsCount: 0, quizCompleted: false, answersCount: 0 }
+        };
+        saveStudyStreak();
+        renderStreakModal();
+        showToast('Daily habit targets reset.');
+      }
+    });
+  }
+
+  // Mains Answer Writing Studio Modal
+  if (dom.openWritingStudioBtn) {
+    dom.openWritingStudioBtn.addEventListener('click', () => {
+      if (state.currentArticle) {
+        openWritingStudio(state.currentArticle.practice_question, state.currentArticle.title, state.currentArticle.id);
+      } else {
+        openWritingStudio();
+      }
+    });
+  }
+  if (dom.closeWritingModal) {
+    dom.closeWritingModal.addEventListener('click', () => {
+      dom.writingStudioModal.style.display = 'none';
+      setActiveHubTab('editorials');
+    });
+  }
+  if (dom.writingSaveDoneBtn) {
+    dom.writingSaveDoneBtn.addEventListener('click', () => {
+      dom.writingStudioModal.style.display = 'none';
+      setActiveHubTab('editorials');
+      showToast('Answer draft saved locally! ✍️');
+    });
+  }
+  if (dom.writingTimerToggleBtn) {
+    dom.writingTimerToggleBtn.addEventListener('click', toggleWritingTimer);
+  }
+  if (dom.writingTimerResetBtn) {
+    dom.writingTimerResetBtn.addEventListener('click', resetWritingTimer);
+  }
+  if (dom.writingEditorInput) {
+    dom.writingEditorInput.addEventListener('input', handleWritingInput);
+  }
+  if (dom.writingInsertFrameworkBtn) {
+    dom.writingInsertFrameworkBtn.addEventListener('click', insertSkeletonOutline);
+  }
+  if (dom.writingClearBtn) {
+    dom.writingClearBtn.addEventListener('click', () => {
+      if (confirm('Are you sure you want to clear your current draft?')) {
+        dom.writingEditorInput.value = '';
+        handleWritingInput();
+      }
+    });
+  }
+  if (dom.writingCopyBtn) dom.writingCopyBtn.addEventListener('click', copyWritingAnswer);
+  if (dom.writingExportBtn) dom.writingExportBtn.addEventListener('click', exportWritingToMarkdown);
+
+  if (dom.writingStudioModal) {
+    dom.writingStudioModal.querySelectorAll('.preset-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        dom.writingStudioModal.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const secs = parseInt(btn.dataset.time, 10);
+        const words = parseInt(btn.dataset.words, 10);
+        setWritingTimerPreset(secs, words);
+      });
+    });
+  }
+
+  // Dual Comparison Modal
+  if (dom.compareModalBtn) {
+    dom.compareModalBtn.addEventListener('click', openCompareModal);
+  }
+  if (dom.closeCompareModal) {
+    dom.closeCompareModal.addEventListener('click', () => {
+      dom.compareModal.style.display = 'none';
+      setActiveHubTab('editorials');
+    });
+  }
+  if (dom.compareModalDone) {
+    dom.compareModalDone.addEventListener('click', () => {
+      dom.compareModal.style.display = 'none';
+      setActiveHubTab('editorials');
+    });
+  }
+  if (dom.compareSelectLeft) {
+    dom.compareSelectLeft.addEventListener('change', () => {
+      renderCompareColumn(dom.compareSelectLeft.value, dom.compareColLeft);
+    });
+  }
+  if (dom.compareSelectRight) {
+    dom.compareSelectRight.addEventListener('change', () => {
+      renderCompareColumn(dom.compareSelectRight.value, dom.compareColRight);
+    });
+  }
+
+  // Synchronized scrolling for dual comparison
+  let isSyncingLeft = false;
+  let isSyncingRight = false;
+  if (dom.compareColLeft && dom.compareColRight) {
+    dom.compareColLeft.addEventListener('scroll', () => {
+      if (dom.syncScrollToggle && !dom.syncScrollToggle.checked) return;
+      if (!isSyncingLeft) {
+        isSyncingRight = true;
+        const pct = dom.compareColLeft.scrollTop / (dom.compareColLeft.scrollHeight - dom.compareColLeft.clientHeight);
+        dom.compareColRight.scrollTop = pct * (dom.compareColRight.scrollHeight - dom.compareColRight.clientHeight);
+      }
+      isSyncingLeft = false;
+    });
+
+    dom.compareColRight.addEventListener('scroll', () => {
+      if (dom.syncScrollToggle && !dom.syncScrollToggle.checked) return;
+      if (!isSyncingRight) {
+        isSyncingLeft = true;
+        const pct = dom.compareColRight.scrollTop / (dom.compareColRight.scrollHeight - dom.compareColRight.clientHeight);
+        dom.compareColLeft.scrollTop = pct * (dom.compareColLeft.scrollHeight - dom.compareColLeft.clientHeight);
+      }
+      isSyncingRight = false;
+    });
+  }
+
+  // Mind map layout toggle
+  if (dom.toggleMindmapLayoutBtn) {
+    dom.toggleMindmapLayoutBtn.addEventListener('click', () => {
+      dom.readerMindmapContainer.classList.toggle('mindmap-compact');
+      showToast('Toggled mind map layout view');
+    });
+  }
+
   // Click outside to dismiss modal overlays
   [
     dom.flashcardModal,
@@ -1919,7 +2766,10 @@ function setupEventListeners() {
     dom.vocabModal,
     dom.bookmarksModal,
     dom.settingsModal,
-    dom.rssModal
+    dom.rssModal,
+    dom.streakModal,
+    dom.writingStudioModal,
+    dom.compareModal
   ].forEach(modal => {
     if (modal) {
       modal.addEventListener('click', (e) => {
@@ -2058,6 +2908,10 @@ function setupEventListeners() {
       if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
       if (dom.quizModal) dom.quizModal.style.display = 'none';
       if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
+      if (dom.streakModal) dom.streakModal.style.display = 'none';
+      if (dom.writingStudioModal) dom.writingStudioModal.style.display = 'none';
+      if (dom.compareModal) dom.compareModal.style.display = 'none';
+      setActiveHubTab('editorials');
     } else if (e.key === '/' && document.activeElement !== dom.searchInput && document.activeElement !== dom.readerNotesInput) {
       e.preventDefault();
       dom.searchInput.focus();
