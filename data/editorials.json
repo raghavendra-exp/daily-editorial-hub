@@ -1,7 +1,1087 @@
 {
-  "last_updated": "2026-10-12 07:06:31 UTC",
-  "total_articles": 464,
+  "last_updated": "2026-10-12 17:42:18 UTC",
+  "total_articles": 476,
   "articles": [
+    {
+      "id": "livemint-techie-barriers-america-may-be-able-to-keep-indians-out-but-i",
+      "title": "Techie barriers: America may be able to keep Indians out but it can't ensure that IT work stays in the US",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-10-12",
+      "url": "https://www.livemint.com/opinion/online-views/techie-barriers-it-sector-america-may-be-able-to-keep-indians-out-but-cant-ensure-work-stays-in-the-us-11791721046865.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The Trump administration's latest immigration bars will make US talent imports harder, costlier and politically hazardous.",
+      "takeaways": [
+        "The Trump administration's latest immigration bars will make US talent imports harder, costlier and politically hazardous.",
+        "But India’s IT industry will adapt to US immigration curbs.",
+        "The sector’s challenge is client orientation, one way or another."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Techie barriers.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Disparity",
+          "pos": "Noun",
+          "definition": "A great difference or inequality",
+          "synonyms": [
+            "imbalance",
+            "discrepancy",
+            "gap"
+          ],
+          "antonyms": [
+            "parity",
+            "equality",
+            "similarity"
+          ],
+          "example": "Policymakers must demonstrate disparity interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Resilience",
+          "pos": "Noun",
+          "definition": "The capacity to recover quickly from difficulties; systemic toughness",
+          "synonyms": [
+            "toughness",
+            "adaptability",
+            "endurance"
+          ],
+          "antonyms": [
+            "fragility",
+            "vulnerability"
+          ],
+          "example": "Policymakers must demonstrate resilience interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Consensus",
+          "pos": "Noun",
+          "definition": "A general agreement among a group of people",
+          "synonyms": [
+            "accord",
+            "harmony",
+            "unity"
+          ],
+          "antonyms": [
+            "discord",
+            "disagreement"
+          ],
+          "example": "Policymakers must demonstrate consensus interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Techie barriers', what is the primary meaning of the term 'Disparity'?",
+        "options": [
+          "A great difference or inequality",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Disparity' is defined as: A great difference or inequality. Synonyms include imbalance, discrepancy, gap."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Techie barriers' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "The Trump administration's latest immigration bars will make US talent imports harder, costlier and politically hazardous. But India’s IT industry will adapt to US immigration curbs. The sector’s challenge is client orientation, one way or another."
+    },
+    {
+      "id": "livemint-unpopulist-opinion-why-free-market-economists-probably-feel-l",
+      "title": "Unpopulist opinion: Why free market economists probably feel like grand failures right now",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-10-12",
+      "url": "https://www.livemint.com/opinion/online-views/unpopulist-opinion-why-free-market-economists-probably-feel-like-grand-failures-right-now-11791720922255.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The idea that risk-return trade-offs no longer apply is a seductive one, so it's no wonder the notion has gained popularity on both sides of the political divide in America.",
+      "takeaways": [
+        "The idea that risk-return trade-offs no longer apply is a seductive one, so it's no wonder the notion has gained popularity on both sides of the political divide in America.",
+        "However, supporters of the free market have good reason to despair this.",
+        "Emphasizes vital strategic considerations regarding Unpopulist opinion: Why free market economists probably feel like grand failures right now."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Unpopulist opinion.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Disparity",
+          "pos": "Noun",
+          "definition": "A great difference or inequality",
+          "synonyms": [
+            "imbalance",
+            "discrepancy",
+            "gap"
+          ],
+          "antonyms": [
+            "parity",
+            "equality",
+            "similarity"
+          ],
+          "example": "Policymakers must demonstrate disparity interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Resilience",
+          "pos": "Noun",
+          "definition": "The capacity to recover quickly from difficulties; systemic toughness",
+          "synonyms": [
+            "toughness",
+            "adaptability",
+            "endurance"
+          ],
+          "antonyms": [
+            "fragility",
+            "vulnerability"
+          ],
+          "example": "Policymakers must demonstrate resilience interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Consensus",
+          "pos": "Noun",
+          "definition": "A general agreement among a group of people",
+          "synonyms": [
+            "accord",
+            "harmony",
+            "unity"
+          ],
+          "antonyms": [
+            "discord",
+            "disagreement"
+          ],
+          "example": "Policymakers must demonstrate consensus interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Unpopulist opinion', what is the primary meaning of the term 'Disparity'?",
+        "options": [
+          "A great difference or inequality",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Disparity' is defined as: A great difference or inequality. Synonyms include imbalance, discrepancy, gap."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Unpopulist opinion' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "The idea that risk-return trade-offs no longer apply is a seductive one, so it's no wonder the notion has gained popularity on both sides of the political divide in America. However, supporters of the free market have good reason to despair this."
+    },
+    {
+      "id": "livemint-narendra-modi-is-a-real-fiscal-hawk-both-as-cm-and-pm-he-doub",
+      "title": "Narendra Modi is a real fiscal hawk—both as CM and PM, he doubled down on revenues, plugged leakages",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-10-12",
+      "url": "https://www.livemint.com/opinion/columns/india-gujarat-narendra-modi-cm-pm-fiscal-hawk-discipline-revenues-leakages-budget-11791788479640.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "Tracing Modi’s record from Gujarat to the Union government, a clear trend is how he favours fiscal discipline by balancing revenue growth, spending, and debt rather than simply cutting budgets.",
+      "takeaways": [
+        "Tracing Modi’s record from Gujarat to the Union government, a clear trend is how he favours fiscal discipline by balancing revenue growth, spending, and debt rather than simply cutting budgets.",
+        "He improved collections, welfare delivery, and infrastructure investment alongside deficit reduction.",
+        "Emphasizes vital strategic considerations regarding Narendra Modi is a real fiscal hawk—both as CM and PM, he doubled down on revenues, plugged leakages."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Narendra Modi is a real fiscal hawk—both as CM and PM, he doubled down on revenues, plugged leakages.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Fiscal",
+          "pos": "Adjective",
+          "definition": "Relating to government revenue, taxes, and public spending",
+          "synonyms": [
+            "monetary",
+            "financial",
+            "budgetary"
+          ],
+          "antonyms": [],
+          "example": "Tracing Modi’s record from Gujarat to the Union government, a clear trend is how he favours fiscal discipline by balancing revenue growth, spending, and debt rather than simply cutting budgets."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Narendra Modi is a real fiscal hawk—both as CM and PM, he doubled down on revenues, plugged leakages', what is the primary meaning of the term 'Fiscal'?",
+        "options": [
+          "Relating to government revenue, taxes, and public spending",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Fiscal' is defined as: Relating to government revenue, taxes, and public spending. Synonyms include monetary, financial, budgetary."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Narendra Modi is a real fiscal hawk—both as CM and PM, he doubled down on revenues, plugged leakages'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "Tracing Modi’s record from Gujarat to the Union government, a clear trend is how he favours fiscal discipline by balancing revenue growth, spending, and debt rather than simply cutting budgets. He improved collections, welfare delivery, and infrastructure investment alongside deficit reduction."
+    },
+    {
+      "id": "livemint-india-s-securities-markets-code-lawmakers-must-put-sebi-s-rev",
+      "title": "India’s Securities Markets Code: Lawmakers must put Sebi’s revisionary authority to scrutiny",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Polity & Governance",
+      "date": "2026-10-12",
+      "url": "https://www.livemint.com/opinion/online-views/indias-securities-markets-code-lawmakers-must-put-sebi-s-revisionary-authority-to-scrutiny-11791720731133.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The regulator shouldn’t be in a position to judge its own order.",
+      "takeaways": [
+        "The regulator shouldn’t be in a position to judge its own order.",
+        "The Centre should instead replace this proposal of extraordinary authority with a right to appeal to the Securities Appellate Tribunal.",
+        "Emphasizes vital strategic considerations regarding India’s Securities Markets Code: Lawmakers must put Sebi’s revisionary authority to scrutiny."
+      ],
+      "dimensions": {
+        "economic": "Fiscal federalism considerations and public expenditure priorities necessary to support statutory mandates.",
+        "governance": "Checks and balances between executive action and legislative oversight, ensuring constitutional fidelity in India’s Securities Markets Code.",
+        "social": "Protection of fundamental civil liberties, citizen-centric administrative delivery, and participatory democracy.",
+        "global": "Upholding international democratic norms, human rights treaties, and global governance rankings."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "India’s Securities Markets Code: Lawmakers must put Sebi’s revisionary authority to scrutiny."
+        },
+        {
+          "word": "Imperative",
+          "pos": "Adjective / Noun",
+          "definition": "Of vital importance; crucial or an essential priority",
+          "synonyms": [
+            "vital",
+            "essential",
+            "crucial"
+          ],
+          "antonyms": [
+            "optional",
+            "negligible"
+          ],
+          "example": "Policymakers must demonstrate imperative interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'India’s Securities Markets Code', what is the primary meaning of the term 'Scrutiny'?",
+        "options": [
+          "Critical observation or thorough examination",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Scrutiny' is defined as: Critical observation or thorough examination. Synonyms include inspection, examination, audit."
+      },
+      "practice_question": "In light of 'India’s Securities Markets Code', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The regulator shouldn’t be in a position to judge its own order. The Centre should instead replace this proposal of extraordinary authority with a right to appeal to the Securities Appellate Tribunal."
+    },
+    {
+      "id": "nature-research-award-winning-microscopy-image-disqualified-over-ai-us",
+      "title": "Award-winning microscopy image disqualified over AI use",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-10-12",
+      "url": "https://www.nature.com/articles/d41586-026-03240-7",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 12 October 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 12 October 2026; doi:10.",
+        "1038/d41586-026-03240-7 The incident has prompted discussions about the use of artificial intelligence in scientific imagery.",
+        "Emphasizes vital strategic considerations regarding Award-winning microscopy image disqualified over AI use."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Award-winning microscopy image disqualified over AI use.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or dilemma",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Award-winning microscopy image disqualified over AI use', what is the primary meaning of the term 'Pragmatic'?",
+        "options": [
+          "Dealing with things sensibly and realistically based on practical considerations",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Pragmatic' is defined as: Dealing with things sensibly and realistically based on practical considerations. Synonyms include practical, sensible, hardheaded."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Award-winning microscopy image disqualified over AI use' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 12 October 2026; doi:10.1038/d41586-026-03240-7 The incident has prompted discussions about the use of artificial intelligence in scientific imagery."
+    },
+    {
+      "id": "nature-research-author-correction-timing-and-trajectory-of-bcr-abl1-dr",
+      "title": "Author Correction: Timing and trajectory of BCR::ABL1 -driven chronic myeloid leukaemia",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-10-12",
+      "url": "https://www.nature.com/articles/s41586-026-11253-5",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 12 October 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 12 October 2026; doi:10.",
+        "1038/s41586-026-11253-5 Author Correction: Timing and trajectory of BCR::ABL1 -driven chronic myeloid leukaemia.",
+        "Emphasizes vital strategic considerations regarding Author Correction: Timing and trajectory of BCR::ABL1 -driven chronic myeloid leukaemia."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Author Correction.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Bipartisan",
+          "pos": "Adjective",
+          "definition": "Involving agreement or cooperation between opposing political parties",
+          "synonyms": [
+            "two-party",
+            "coalition",
+            "non-partisan"
+          ],
+          "antonyms": [
+            "partisan",
+            "sectarian"
+          ],
+          "example": "Policymakers must demonstrate bipartisan interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Author Correction', what is the primary meaning of the term 'Bipartisan'?",
+        "options": [
+          "Involving agreement or cooperation between opposing political parties",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Bipartisan' is defined as: Involving agreement or cooperation between opposing political parties. Synonyms include two-party, coalition, non-partisan."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Author Correction' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 12 October 2026; doi:10.1038/s41586-026-11253-5 Author Correction: Timing and trajectory of BCR::ABL1 -driven chronic myeloid leukaemia"
+    },
+    {
+      "id": "nature-research-keep-medical-doctors-in-academia-without-them-health-c",
+      "title": "Keep medical doctors in academia — without them, health-care research will suffer",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-10-12",
+      "url": "https://www.nature.com/articles/d41586-026-03225-6",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 12 October 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 12 October 2026; doi:10.",
+        "1038/d41586-026-03225-6 Better career support and more funding stability is needed to retain this invaluable group of scientists.",
+        "Emphasizes vital strategic considerations regarding Keep medical doctors in academia — without them, health-care research will suffer."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Keep medical doctors in academia — without them, health-care research will suffer.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, and exacting",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "Policymakers must demonstrate rigorous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Keep medical doctors in academia — without them, health-care research will suffer', what is the primary meaning of the term 'Rigorous'?",
+        "options": [
+          "Extremely thorough, exhaustive, and exacting",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Rigorous' is defined as: Extremely thorough, exhaustive, and exacting. Synonyms include meticulous, exacting, stringent."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Keep medical doctors in academia — without them, health-care research will suffer' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 12 October 2026; doi:10.1038/d41586-026-03225-6 Better career support and more funding stability is needed to retain this invaluable group of scientists."
+    },
+    {
+      "id": "nature-research-beyond-the-solvent-fog-watching-molecules-dance-in-the",
+      "title": "Beyond the solvent fog: watching molecules dance in the crowd",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-10-12",
+      "url": "https://www.nature.com/articles/d41586-026-02970-y",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 12 October 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 12 October 2026; doi:10.",
+        "1038/d41586-026-02970-y A technique called time-resolved X-ray liquidography has been used to shed precision light on the steps involved in a classic chemical reaction.",
+        "Emphasizes vital strategic considerations regarding Beyond the solvent fog: watching molecules dance in the crowd."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Beyond the solvent fog.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or dilemma",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, and exacting",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "Policymakers must demonstrate rigorous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Beyond the solvent fog', what is the primary meaning of the term 'Paradigm'?",
+        "options": [
+          "A typical example or pattern of something; a framework of ideas",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Paradigm' is defined as: A typical example or pattern of something; a framework of ideas. Synonyms include model, archetype, framework."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Beyond the solvent fog' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 12 October 2026; doi:10.1038/d41586-026-02970-y A technique called time-resolved X-ray liquidography has been used to shed precision light on the steps involved in a classic chemical reaction."
+    },
+    {
+      "id": "nature-research-what-does-a-phd-pay-data-reveal-huge-gaps-across-europ",
+      "title": "What does a PhD pay? Data reveal huge gaps across Europe",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-10-12",
+      "url": "https://www.nature.com/articles/d41586-026-03181-1",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 12 October 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 12 October 2026; doi:10.",
+        "1038/d41586-026-03181-1 Earnings come in a combination of scholarships and salaries and vary widely between countries, an analysis by international federation Eurodoc reveals.",
+        "Emphasizes vital strategic considerations regarding What does a PhD pay? Data reveal huge gaps across Europe."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around What does a PhD pay? Data reveal huge gaps across Europe.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Bipartisan",
+          "pos": "Adjective",
+          "definition": "Involving agreement or cooperation between opposing political parties",
+          "synonyms": [
+            "two-party",
+            "coalition",
+            "non-partisan"
+          ],
+          "antonyms": [
+            "partisan",
+            "sectarian"
+          ],
+          "example": "Policymakers must demonstrate bipartisan interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'What does a PhD pay? Data reveal huge gaps across Europe', what is the primary meaning of the term 'Bipartisan'?",
+        "options": [
+          "Involving agreement or cooperation between opposing political parties",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Bipartisan' is defined as: Involving agreement or cooperation between opposing political parties. Synonyms include two-party, coalition, non-partisan."
+      },
+      "practice_question": "Critically assess how recent advancements in 'What does a PhD pay? Data reveal huge gaps across Europe' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 12 October 2026; doi:10.1038/d41586-026-03181-1 Earnings come in a combination of scholarships and salaries and vary widely between countries, an analysis by international federation Eurodoc reveals."
+    },
+    {
+      "id": "nature-research-hidden-signals-in-sleep-can-predict-future-health",
+      "title": "Hidden signals in sleep can predict future health",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-10-12",
+      "url": "https://www.nature.com/articles/d41586-026-03207-8",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 12 October 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 12 October 2026; doi:10.",
+        "1038/d41586-026-03207-8 From a single night of sleep, AI tools can uncover physiological patterns linked to disease and mortality that are missed by conventional sleep measures.",
+        "Emphasizes vital strategic considerations regarding Hidden signals in sleep can predict future health."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Hidden signals in sleep can predict future health.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or dilemma",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, and exacting",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "Policymakers must demonstrate rigorous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Hidden signals in sleep can predict future health', what is the primary meaning of the term 'Conundrum'?",
+        "options": [
+          "A confusing and difficult problem or dilemma",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Conundrum' is defined as: A confusing and difficult problem or dilemma. Synonyms include dilemma, puzzle, quandary."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Hidden signals in sleep can predict future health' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 12 October 2026; doi:10.1038/d41586-026-03207-8 From a single night of sleep, AI tools can uncover physiological patterns linked to disease and mortality that are missed by conventional sleep measures."
+    },
+    {
+      "id": "nature-research-i-told-chatgpt-to-continue-it-went-too-far",
+      "title": "I told ChatGPT to ‘continue’ — it went too far",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-10-12",
+      "url": "https://www.nature.com/articles/d41586-026-02714-y",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 12 October 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 12 October 2026; doi:10.",
+        "1038/d41586-026-02714-y An ambiguous instruction caused the chatbot to send three e-mails from Ying Zhao’s connected account.",
+        "The incident advanced Zhao’s project, but showed that chatbots need limits."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around I told ChatGPT to ‘continue’ — it went too far.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ostensible",
+          "pos": "Adjective",
+          "definition": "Stated or appearing to be true, but not necessarily so",
+          "synonyms": [
+            "apparent",
+            "superficial",
+            "professed"
+          ],
+          "antonyms": [
+            "genuine",
+            "actual"
+          ],
+          "example": "Policymakers must demonstrate ostensible interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'I told ChatGPT to ‘continue’ — it went too far', what is the primary meaning of the term 'Ubiquitous'?",
+        "options": [
+          "Present, appearing, or found everywhere",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Ubiquitous' is defined as: Present, appearing, or found everywhere. Synonyms include omnipresent, pervasive, everywhere."
+      },
+      "practice_question": "Critically assess how recent advancements in 'I told ChatGPT to ‘continue’ — it went too far' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 12 October 2026; doi:10.1038/d41586-026-02714-y An ambiguous instruction caused the chatbot to send three e-mails from Ying Zhao’s connected account. The incident advanced Zhao’s project, but showed that chatbots need limits."
+    },
+    {
+      "id": "nature-research-does-the-decline-of-book-reading-mark-the-end-of-ratio",
+      "title": "Does the decline of book reading mark the end of rational thinking?",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-10-12",
+      "url": "https://www.nature.com/articles/d41586-026-03224-7",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 12 October 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 12 October 2026; doi:10.",
+        "1038/d41586-026-03224-7 Smartphones and artificial intelligence are undermining our ability to follow a complex argument, with grave consequences.",
+        "Emphasizes vital strategic considerations regarding Does the decline of book reading mark the end of rational thinking?."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Does the decline of book reading mark the end of rational thinking?.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme authority; self-governing authority of a state",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Does the decline of book reading mark the end of rational thinking?', what is the primary meaning of the term 'Complacency'?",
+        "options": [
+          "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Complacency' is defined as: A feeling of smug or uncritical self-satisfaction with current conditions. Synonyms include smugness, self-satisfaction, inertia."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Does the decline of book reading mark the end of rational thinking?' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 12 October 2026; doi:10.1038/d41586-026-03224-7 Smartphones and artificial intelligence are undermining our ability to follow a complex argument, with grave consequences."
+    },
     {
       "id": "the-hindu-rights-and-wrongs-on-the-fundamental-right-to-peaceful-assem",
       "title": "Rights and wrongs: On the fundamental right to peaceful assembly and protest",
