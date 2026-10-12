@@ -1,0 +1,3413 @@
+#!/usr/bin/env python3
+"""
+Exhaustive 1-Year Exam Master Vault Data (India & World)
+Contains 74 curated dossiers and 7 expanded Prelims Fact Capsules.
+"""
+
+true = True
+false = False
+null = None
+
+MASTER_VAULT_SEED = [
+    {
+        "id": "ca-2026-bank-01",
+        "title": "RBI Monetary Policy Stance & Liquidity Framework: Repo Rate Maintained at 6.50%",
+        "date": "2026-10-09",
+        "category": "Banking & Finance",
+        "subcategory": "RBI / Monetary Policy",
+        "scope": "India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "The Reserve Bank of India's Monetary Policy Committee (MPC) maintained the benchmark policy repo rate at 6.50% while shifting stance to 'Neutral' to support growth while ensuring inflation aligns durably with the 4% target.",
+        "crux": "MPC retains repo rate at 6.50%, Standing Deposit Facility (SDF) at 6.25%, and Marginal Standing Facility (MSF) at 6.75%, adopting a neutral stance to calibrate monetary conditions.",
+        "takeaways": [
+            "MPC operates under Section 45ZB of the amended RBI Act 1934, comprising 6 members (3 from RBI, 3 external experts appointed by Central Government).",
+            "Standing Deposit Facility (SDF) introduced in 2022 acts as the non-collateralized floor of the Liquidity Adjustment Facility (LAF) corridor.",
+            "Inflation projection pegged at 4.5% for FY25 with real GDP growth projected at 7.2%."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Reserve Bank of India (RBI)",
+            "statutory_anchor": "RBI Act 1934, Section 45ZB & Section 45ZA",
+            "location": "Mumbai, Maharashtra",
+            "facts_to_remember": "Repo: 6.50%, SDF: 6.25%, MSF: 6.75%, Bank Rate: 6.75%. Inflation target band: 4% ± 2%."
+        },
+        "mcq": {
+            "question": "Which of the following statements regarding the Standing Deposit Facility (SDF) of the RBI is correct?",
+            "options": [
+                "It requires the RBI to provide government securities as collateral to absorbing banks.",
+                "It allows the RBI to absorb excess liquidity from commercial banks without providing collateral.",
+                "It operates at a rate 25 basis points higher than the Policy Repo Rate.",
+                "It was recommended by the Chakravarty Committee in 1985."
+            ],
+            "answer": 1,
+            "explanation": "SDF was introduced under Section 17 of the RBI Act in 2022 to absorb liquidity without collateral, positioned 25 bps below the Repo Rate."
+        },
+        "source": "RBI / PIB",
+        "url": "https://rbi.org.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-bank-02",
+        "title": "Digital Rupee (CBDC) Expansion: Offline Capability & Programmable Targeted Use-Cases",
+        "date": "2026-08-28",
+        "category": "Banking & Finance",
+        "subcategory": "Fintech / Currency",
+        "scope": "India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "SSC"
+        ],
+        "summary": "The RBI introduced offline functionality and programmability for the Central Bank Digital Currency (CBDC / e-Rupee) in both retail (CBDC-R) and wholesale (CBDC-W) segments.",
+        "crux": "Programmability enables targeted purpose-bound disbursements such as agricultural carbon credits or school subsidies, while offline capability enables transactions in remote low-connectivity regions.",
+        "takeaways": [
+            "CBDC is a sovereign legal tender issued by the central bank in digital form, appearing as a direct liability on RBI's balance sheet.",
+            "Operates via a two-tier model where RBI issues tokens and commercial banks distribute them to retail wallets.",
+            "Interoperability with UPI QR codes allows merchants to accept e-Rupee using their existing UPI scan infrastructure."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Reserve Bank of India (RBI)",
+            "statutory_anchor": "Reserve Bank of India Act 1934 (amended by Finance Act 2022, Sec 2)",
+            "location": "Pilot across 16+ cities & 13 participating banks",
+            "facts_to_remember": "CBDC is fungible 1:1 with fiat currency; does not earn interest; legal tender."
+        },
+        "mcq": {
+            "question": "With reference to India's Central Bank Digital Currency (CBDC), consider the following: 1. It is a direct liability on the commercial banks. 2. It yields interest identical to savings bank deposits. Which is correct?",
+            "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+            ],
+            "answer": 3,
+            "explanation": "CBDC is a direct sovereign liability of the RBI (not commercial banks) and is non-interest bearing to avoid disintermediation of bank deposits."
+        },
+        "source": "RBI Press Release",
+        "url": "https://rbi.org.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-bank-03",
+        "title": "UPI Goes Global: Cross-Border Linkages Live in UAE, France, Singapore, Mauritius & Sri Lanka",
+        "date": "2026-07-14",
+        "category": "Banking & Finance",
+        "subcategory": "Payment Systems",
+        "scope": "World & India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "SSC"
+        ],
+        "summary": "NPCI International Payments Limited (NIPL) expanded Unified Payments Interface (UPI) acceptance across France (Eiffel Tower merchant payments), UAE (interlinked with AANI), Singapore (PayNow-UPI link), Mauritius, and Sri Lanka.",
+        "crux": "Cross-border linkage enables Indian travelers and the diaspora to make instant merchant payments and inward remittances directly from rupee bank accounts via QR codes.",
+        "takeaways": [
+            "Operated by NPCI International Payments Limited (NIPL), a wholly-owned subsidiary of NPCI incorporated in 2020.",
+            "Real-time linkage with Singapore's PayNow was India's first cross-border real-time payment system linkage.",
+            "Promotes local currency settlement, reducing reliance on intermediary SWIFT correspondent banking fees."
+        ],
+        "prelims_pointers": {
+            "key_agency": "NPCI / NIPL & RBI",
+            "statutory_anchor": "Payment and Settlement Systems Act, 2007",
+            "location": "France, UAE, Singapore, Mauritius, Sri Lanka, Bhutan, Nepal",
+            "facts_to_remember": "NPCI is an initiative of RBI and IBA under PSS Act 2007; Section 8 not-for-profit company."
+        },
+        "mcq": {
+            "question": "Which subsidiary of NPCI is dedicated to deploying UPI and RuPay payment architectures internationally?",
+            "options": [
+                "NPCI Bharat BillPay Limited (NBBL)",
+                "NPCI International Payments Limited (NIPL)",
+                "Digital India Payments Corporation",
+                "RBI Payments Overseas Ltd"
+            ],
+            "answer": 1,
+            "explanation": "NIPL was established in April 2020 as the international arm of NPCI to drive cross-border deployment of UPI and RuPay."
+        },
+        "source": "NPCI / PIB",
+        "url": "https://npci.org.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-bank-04",
+        "title": "SEBI Launches T+0 Rolling Settlement Beta Cycle for Indian Equity Cash Markets",
+        "date": "2026-03-28",
+        "category": "Banking & Finance",
+        "subcategory": "Capital Markets / SEBI",
+        "scope": "India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "State PCS"
+        ],
+        "summary": "The Securities and Exchange Board of India (SEBI) commenced the beta version of optional same-day (T+0) rolling settlement for a select basket of 25 liquid scrips alongside the existing T+1 cycle.",
+        "crux": "T+0 enables instantaneous receipt of funds and securities in client demat accounts on the transaction day itself, eliminating counterparty settlement risk.",
+        "takeaways": [
+            "India became the second country after China to operate a widespread T+1 settlement cycle in 2023, and now pioneers optional T+0.",
+            "Full instantaneous trade settlement (Instantaneous Settlement) is planned as the ultimate phase.",
+            "Improves liquidity, releases blocked broker margins faster, and protects retail investors from settlement delays."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Securities and Exchange Board of India (SEBI)",
+            "statutory_anchor": "SEBI Act 1992 & Depositories Act 1996",
+            "location": "BSE & NSE Stock Exchanges",
+            "facts_to_remember": "T+0 Beta covers 25 scrips; trades executed up to 1:30 PM; optional for retail and institutional traders."
+        },
+        "mcq": {
+            "question": "Under the T+0 settlement framework introduced by SEBI, trade settlement occurs:",
+            "options": [
+                "Within 24 hours of trade execution.",
+                "On the trade day itself (same-day).",
+                "At the end of the trading week.",
+                "Instantly on continuous blockchain ledger."
+            ],
+            "answer": 1,
+            "explanation": "T+0 settlement delivers shares to the buyer's demat and funds to the seller's bank account on the exact date of trade execution."
+        },
+        "source": "SEBI / LiveMint",
+        "url": "https://sebi.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-bank-05",
+        "title": "PM Jan Dhan Yojana (PMJDY) Completes 10 Years: 53+ Crore Accounts & ₹2.3 Lakh Crore Deposits",
+        "date": "2026-08-28",
+        "category": "Banking & Finance",
+        "subcategory": "Financial Inclusion",
+        "scope": "India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "The Pradhan Mantri Jan Dhan Yojana (PMJDY), launched on August 28, 2014, completed a decade of operation, achieving over 53 crore bank accounts with cumulative deposits exceeding ₹2.3 lakh crore.",
+        "crux": "Over 55% of PMJDY account holders are women and nearly 67% of accounts are in rural and semi-urban areas, serving as the foundation of the JAM (Jan Dhan-Aadhaar-Mobile) Trinity.",
+        "takeaways": [
+            "Zero minimum balance requirement with a free RuPay debit card carrying ₹2 lakh accidental insurance cover.",
+            "Overdraft facility of up to ₹10,000 provided to eligible account holders.",
+            "Serves as the pipeline for Direct Benefit Transfers (DBT) across PM-KISAN, PAHAL, and scholarship welfare programs."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Department of Financial Services, Ministry of Finance",
+            "statutory_anchor": "National Mission on Financial Inclusion",
+            "location": "Pan-India",
+            "facts_to_remember": "Launched: 28 August 2014. Motto: 'Mera Khata Bhagya Vidhata'. RuPay accidental cover: ₹2 Lakh."
+        },
+        "mcq": {
+            "question": "What is the maximum overdraft (OD) facility available under the Pradhan Mantri Jan Dhan Yojana (PMJDY) per eligible household?",
+            "options": [
+                "₹5,000",
+                "₹10,000",
+                "₹15,000",
+                "₹20,000"
+            ],
+            "answer": 1,
+            "explanation": "The overdraft limit under PMJDY was doubled from ₹5,000 to ₹10,000, with no conditions asked for OD up to ₹2,000."
+        },
+        "source": "Ministry of Finance / PIB",
+        "url": "https://pmjdy.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-bank-06",
+        "title": "Unified Lending Interface (ULI): RBI Launches Frictionless Digital Credit Architecture",
+        "date": "2026-08-26",
+        "category": "Banking & Finance",
+        "subcategory": "Digital Credit / RBI",
+        "scope": "India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "State PCS"
+        ],
+        "summary": "RBI Governor Shaktikanta Das announced the nationwide rollout of the Unified Lending Interface (ULI), a technology platform designed to enable seamless, consent-based flow of digital financial and land record data to credit institutions.",
+        "crux": "Just as UPI transformed retail payments, ULI is designed to revolutionize lending by reducing loan appraisal turnaround times from weeks to minutes, especially for small farmers and MSMEs.",
+        "takeaways": [
+            "ULI integrates data silos including state land records, satellite imagery, milk pouring data from dairy cooperatives, and Aadhaar e-KYC.",
+            "Developed by the Reserve Bank Innovation Hub (RBIH), a wholly-owned subsidiary of RBI.",
+            "Employs a 'plug-and-play' open architecture with standardized APIs, reducing documentation burden for borrower."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Reserve Bank Innovation Hub (RBIH) & RBI",
+            "statutory_anchor": "Banking Regulation Act 1949 & RBI Act 1934",
+            "location": "Bengaluru (RBIH HQ) & Mumbai",
+            "facts_to_remember": "ULI acronym: Unified Lending Interface; focus: rural, agriculture, and MSME credit."
+        },
+        "mcq": {
+            "question": "The newly launched Unified Lending Interface (ULI) by RBI is primarily aimed at:",
+            "options": [
+                "Replacing the RTGS interbank transfer network.",
+                "Enabling frictionless, consent-based credit appraisal using digitized land and financial records.",
+                "Facilitating cross-border currency trading for retail investors.",
+                "Regulating non-performing assets of urban cooperative banks."
+            ],
+            "answer": 1,
+            "explanation": "ULI enables consent-based digital data sharing (land records, satellite data, dairy pouring data) to facilitate rapid, paperless credit evaluation."
+        },
+        "source": "RBI / Economic Times",
+        "url": "https://rbi.org.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-bank-07",
+        "title": "Sovereign Green Bonds (SGrBs): RBI Auctions Tranches to Fund Climate Mitigation Projects",
+        "date": "2026-02-12",
+        "category": "Banking & Finance",
+        "subcategory": "Green Finance / Debt",
+        "scope": "India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "State PCS"
+        ],
+        "summary": "The RBI, on behalf of the Government of India, issued Sovereign Green Bonds (SGrBs) to mobilize resources for public sector projects aimed at reducing the carbon intensity of the economy.",
+        "crux": "Proceeds from SGrBs are exclusively deployed in public expenditures related to renewable energy, clean transportation, water management, and energy efficiency under the Framework for Sovereign Green Bonds.",
+        "takeaways": [
+            "Issued as dated government securities with tenors of 5 years, 10 years, and 30 years eligible for SLR (Statutory Liquidity Ratio).",
+            "Non-resident investors can invest in SGrBs under the Fully Accessible Route (FAR).",
+            "A Green Finance Working Committee (GFWC) chaired by the Chief Economic Adviser (CEA) selects eligible green expenditure."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Finance & RBI",
+            "statutory_anchor": "Government Securities Act 2006",
+            "location": "New Delhi / Mumbai",
+            "facts_to_remember": "SGrBs are SLR eligible; classified under FAR route; nuclear power and large hydro (>25MW) excluded."
+        },
+        "mcq": {
+            "question": "Under the Framework for Sovereign Green Bonds issued by the Ministry of Finance, which of the following is EXCLUDED from eligible green expenditures?",
+            "options": [
+                "Solar and wind power generation projects.",
+                "Dedicated freight corridors and metro rail projects.",
+                "Nuclear power generation and extraction of fossil fuels.",
+                "Afforestation and biodiversity conservation programs."
+            ],
+            "answer": 2,
+            "explanation": "The framework explicitly excludes projects involving nuclear power, fossil fuel extraction, and large hydro projects >25 MW."
+        },
+        "source": "Ministry of Finance / RBI",
+        "url": "https://dea.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-bank-08",
+        "title": "RBI Launches PRAVAAH Portal, Retail Direct Mobile App & FINNET 2.0 System",
+        "date": "2026-05-28",
+        "category": "Banking & Finance",
+        "subcategory": "Digital Governance / Debt",
+        "scope": "India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "SSC"
+        ],
+        "summary": "RBI launched three major digital initiatives: the PRAVAAH portal for centralized regulatory approvals, the RBI Retail Direct Mobile App for retail G-Sec investing, and the FINNET 2.0 system.",
+        "crux": "PRAVAAH (Platform for Regulatory Application, VAlidation And AutHorisation) streamlines regulatory clearances across 60 application forms, while Retail Direct Mobile App democratizes individual participation in G-Secs.",
+        "takeaways": [
+            "Retail Direct Scheme allows individual investors to directly open a Gilt Securities Account (Retail Direct Gilt Account) with RBI without intermediary broker fees.",
+            "Supports investment in Government of India Dated Securities, Treasury Bills (T-Bills), State Development Loans (SDLs), and Sovereign Gold Bonds.",
+            "PRAVAAH enhances ease of doing business for banks, NBFCs, and payment system operators."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Reserve Bank of India (RBI)",
+            "statutory_anchor": "Government Securities Regulations 2007",
+            "location": "Mumbai, Maharashtra",
+            "facts_to_remember": "PRAVAAH: Platform for Regulatory Application, VAlidation And AutHorisation; Retail Direct: zero fee G-Sec access."
+        },
+        "mcq": {
+            "question": "What is the primary objective of the 'PRAVAAH' portal launched by the Reserve Bank of India?",
+            "options": [
+                "Conducting interbank foreign exchange swaps.",
+                "Centralized online processing of regulatory permissions and statutory approvals.",
+                "Resolving delayed payments to MSME vendors.",
+                "Monitoring cyber security incidents across commercial banks."
+            ],
+            "answer": 1,
+            "explanation": "PRAVAAH is a secure web-based portal designed for individuals and entities to apply online for regulatory licenses and approvals from the RBI."
+        },
+        "source": "RBI Press Release",
+        "url": "https://rbi.org.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-polity-01",
+        "title": "Supreme Court Unanimously Strikes Down Electoral Bonds Scheme as Unconstitutional",
+        "date": "2026-02-15",
+        "category": "Polity & Governance",
+        "subcategory": "Judiciary & Elections",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "A 5-judge Constitution Bench headed by CJI D.Y. Chandrachud unanimously invalidated the 2018 Electoral Bonds Scheme, ruling that anonymous corporate political funding violates the voters' right to information under Article 19(1)(a).",
+        "crux": "The Supreme Court struck down amendments to the Companies Act, Representation of the People Act, and Income Tax Act, ordering SBI to disclose all donor and recipient bond data to ECI for public display.",
+        "takeaways": [
+            "Ruled that voter's right to information is essential to exercise freedom of speech and expression and to evaluate corporate influence on government policy.",
+            "Rejected the government's argument that confidentiality of political donors is necessary to curb black money (doctrine of proportionality failed).",
+            "Struck down amendment to Section 182 of Companies Act that had removed the 7.5% cap on corporate political donations."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Supreme Court of India & Election Commission of India (ECI)",
+            "statutory_anchor": "Constitution of India, Art 19(1)(a), Section 29C of RPA 1951",
+            "location": "New Delhi",
+            "facts_to_remember": "Bench: 5 judges (CJI D.Y. Chandrachud, Sanjiv Khanna, B.R. Gavai, J.B. Pardiwala, Manoj Misra). Unanimous verdict."
+        },
+        "mcq": {
+            "question": "In striking down the Electoral Bonds scheme, the Supreme Court held that the scheme violated which fundamental right of voters?",
+            "options": [
+                "Right to equality under Article 14 only",
+                "Right to information under Article 19(1)(a)",
+                "Right to privacy under Article 21 only",
+                "Freedom of conscience under Article 25"
+            ],
+            "answer": 1,
+            "explanation": "The 5-judge bench held that non-disclosure of political funding violates the voters' right to information anchored in Article 19(1)(a)."
+        },
+        "source": "Supreme Court of India / The Hindu",
+        "url": "https://main.sci.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-polity-02",
+        "title": "SC/ST Sub-Classification Allowed: 7-Judge Constitution Bench Verdict (Davinder Singh Case)",
+        "date": "2026-08-01",
+        "category": "Polity & Governance",
+        "subcategory": "Constitutional Law",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS"
+        ],
+        "summary": "A landmark 7-judge Constitution Bench held by a 6:1 majority that State legislatures are constitutionally empowered to sub-classify Scheduled Castes (SCs) and Scheduled Tribes (STs) to grant preferential reservation to more backward groups.",
+        "crux": "The judgment overruled the 2004 5-judge bench decision in E.V. Chinnaiah v. State of Andhra Pradesh, holding that SCs do not form an indivisible, homogenous class.",
+        "takeaways": [
+            "Sub-classification must be based on verifiable empirical data demonstrating inadequate representation, not political expediency.",
+            "States cannot reserve 100% of seats for any sub-group, nor can they exclude any caste from the Presidential list under Article 341 entirely.",
+            "Four of the six majority judges observed that the 'Creamy Layer' principle should also apply to SCs and STs."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Supreme Court of India",
+            "statutory_anchor": "Articles 14, 15, 16(4), 341, and 342 of Constitution of India",
+            "location": "New Delhi",
+            "facts_to_remember": "Case: State of Punjab v. Davinder Singh (2024); Majority: 6:1 (Dissent: Justice Bela M. Trivedi)."
+        },
+        "mcq": {
+            "question": "Which earlier landmark judgment was overruled by the 7-judge Constitution Bench regarding sub-classification of Scheduled Castes in 2024?",
+            "options": [
+                "Indra Sawhney v. Union of India (1992)",
+                "E.V. Chinnaiah v. State of Andhra Pradesh (2004)",
+                "M. Nagaraj v. Union of India (2006)",
+                "Jarnail Singh v. Lachhmi Narain Gupta (2018)"
+            ],
+            "answer": 1,
+            "explanation": "The 7-judge bench overruled E.V. Chinnaiah (2004), which had previously held that SCs constitute a homogenous monolith that cannot be sub-divided."
+        },
+        "source": "Supreme Court / PIB",
+        "url": "https://main.sci.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-polity-03",
+        "title": "New Criminal Laws Enacted: Bharatiya Nyaya Sanhita, BNSS & BSA Come into Effect",
+        "date": "2026-07-01",
+        "category": "Polity & Governance",
+        "subcategory": "Criminal Justice",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "Three new criminal laws—Bharatiya Nyaya Sanhita (BNS 2023), Bharatiya Nagarik Suraksha Sanhita (BNSS 2023), and Bharatiya Sakshya Adhiniyam (BSA 2023)—formally came into force across India, replacing the Indian Penal Code 1860, Code of Criminal Procedure 1973, and Indian Evidence Act 1872.",
+        "crux": "The laws introduce community service as a penal punishment, mandatory videography of search and seizure, electronic Zero FIR, and replace 'sedition' with acts endangering sovereignty and unity of India.",
+        "takeaways": [
+            "BNS replaces Section 124A (Sedition) with Section 152 penalizing acts endangering the sovereignty, unity, and integrity of India.",
+            "Mandates forensic investigation for offences punishable with imprisonment of 7 years or more.",
+            "Introduces timelines for judgment delivery (within 30 days of argument conclusion, extendable to 45 days)."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Home Affairs (MHA)",
+            "statutory_anchor": "BNS Act 2023, BNSS Act 2023, BSA Act 2023",
+            "location": "Pan-India",
+            "facts_to_remember": "In force from: 1 July 2024. BNS has 358 sections (IPC had 511); BNSS has 531 sections; BSA has 170 sections."
+        },
+        "mcq": {
+            "question": "Under the newly enforced Bharatiya Nyaya Sanhita (BNS), which novel category of punishment was introduced into Indian criminal law?",
+            "options": [
+                "Indefinite solitary confinement",
+                "Community service for minor offences",
+                "Exile to designated union territories",
+                "Civil death and total asset forfeiture"
+            ],
+            "answer": 1,
+            "explanation": "BNS introduces 'Community Service' as one of the six recognized forms of punishment for petty offences (defamation, minor theft, public misconduct)."
+        },
+        "source": "PIB / Ministry of Home Affairs",
+        "url": "https://mha.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-polity-04",
+        "title": "16th Finance Commission Formally Constituted: Dr. Arvind Panagariya Appointed Chairman",
+        "date": "2026-01-06",
+        "category": "Polity & Governance",
+        "subcategory": "Fiscal Federalism",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "The President of India constituted the 16th Finance Commission with former NITI Aayog Vice-Chairman Dr. Arvind Panagariya as Chairman, tasked with recommending the tax devolution formula between Union and States for the 5-year period starting April 1, 2026.",
+        "crux": "The Commission operates under Article 280, mandated to review vertical tax sharing, grants-in-aid principles under Article 275, and financing of Disaster Management initiatives under Disaster Management Act 2005.",
+        "takeaways": [
+            "Constitutional body constituted every 5 years under Article 280 of the Constitution.",
+            "15th Finance Commission (chaired by N.K. Singh) had recommended 41% vertical devolution to States (adjusted from 42% after reorganization of J&K into UTs).",
+            "Report must be submitted by October 31, 2025, covering the award period 2026-2031."
+        ],
+        "prelims_pointers": {
+            "key_agency": "16th Finance Commission & Ministry of Finance",
+            "statutory_anchor": "Article 280 & Finance Commission (Miscellaneous Provisions) Act 1951",
+            "location": "New Delhi",
+            "facts_to_remember": "Chairman: Dr. Arvind Panagariya; Secretary: Ritvik Ranjanam Pandey; Award tenure: 2026-2031."
+        },
+        "mcq": {
+            "question": "Under Article 280 of the Indian Constitution, the Finance Commission consists of a Chairman and how many other members?",
+            "options": [
+                "3 other members",
+                "4 other members",
+                "5 other members",
+                "6 other members"
+            ],
+            "answer": 1,
+            "explanation": "Article 280(1) specifies that the Finance Commission consists of a Chairman and four other members appointed by the President."
+        },
+        "source": "PIB / Ministry of Finance",
+        "url": "https://fincomindia.nic.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-polity-05",
+        "title": "One Nation One Election: Ram Nath Kovind High-Level Committee Submits Report",
+        "date": "2026-03-14",
+        "category": "Polity & Governance",
+        "subcategory": "Electoral Reforms",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "The High-Level Committee (HLC) on Simultaneous Elections chaired by former President Ram Nath Kovind submitted its unanimous 18,626-page report recommending synchronized two-step elections across Lok Sabha, State Legislative Assemblies, and local bodies.",
+        "crux": "Recommends introducing Article 82A via constitutional amendment to notify an 'Appointed Date', synchronizing Lok Sabha and Assembly tenures, followed by local body elections within 100 days.",
+        "takeaways": [
+            "Step 1: Synchronize Lok Sabha and Legislative Assembly elections (does not require ratification by States).",
+            "Step 2: Synchronize Municipalities and Panchayats elections within 100 days of General Elections (requires ratification by at least half of the States).",
+            "Proposes single Common Electoral Roll and Electoral Photo Identity Card (EPIC) across all three tiers of governance."
+        ],
+        "prelims_pointers": {
+            "key_agency": "High-Level Committee on Simultaneous Elections & Ministry of Law and Justice",
+            "statutory_anchor": "Proposed Amendments to Articles 82A, 83, 172, 324A, 325",
+            "location": "New Delhi",
+            "facts_to_remember": "Chairman: Ram Nath Kovind; Committee members included Amit Shah, Ghulam Nabi Azad, N.K. Singh, Subhash C. Kashyap."
+        },
+        "mcq": {
+            "question": "According to the Ram Nath Kovind Committee recommendations, synchronizing elections to Municipalities and Panchayats with general elections requires:",
+            "options": [
+                "Simple majority in Parliament without State consent.",
+                "Constitutional amendment ratified by at least half of the State Legislatures.",
+                "An executive notification under Representation of the People Act.",
+                "Supreme Court approval under Article 142."
+            ],
+            "answer": 1,
+            "explanation": "Amending local government election timelines affects State subjects (Entries 5 & 6, List II) and therefore requires ratification by not less than half the States."
+        },
+        "source": "PIB / Ministry of Law and Justice",
+        "url": "https://onoe.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-polity-06",
+        "title": "Chief Election Commissioner and other ECs Act 2023: New Appointment Procedure",
+        "date": "2026-03-02",
+        "category": "Polity & Governance",
+        "subcategory": "Constitutional Bodies",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "Parliament enacted the Chief Election Commissioner and other Election Commissioners (Appointment, Conditions of Service and Term of Office) Act, 2023, establishing a statutory selection committee to replace the ad-hoc executive appointment process.",
+        "crux": "Under the new law, CEC and ECs are appointed by the President upon recommendation of a 3-member Selection Committee consisting of the Prime Minister (Chairperson), a Union Cabinet Minister, and the Leader of the Opposition (LoP) / Leader of the single largest opposition party in Lok Sabha.",
+        "takeaways": [
+            "Search Committee headed by the Cabinet Secretary prepares a panel of five candidates for the Selection Committee.",
+            "Conditions of service, salary, and allowances aligned with that of a Supreme Court Judge.",
+            "Replaced the Election Commission (Conditions of Service of Election Commissioners and Transaction of Business) Act, 1991."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Election Commission of India (ECI) & Law Ministry",
+            "statutory_anchor": "Article 324(2) of Constitution & CEC Act 2023",
+            "location": "New Delhi",
+            "facts_to_remember": "Selection Committee: PM + Cabinet Minister + LoP in Lok Sabha; Tenure: 6 years or 65 years of age."
+        },
+        "mcq": {
+            "question": "Under the CEC and other ECs (Appointment, Conditions of Service) Act 2023, who chairs the Selection Committee?",
+            "options": [
+                "Chief Justice of India",
+                "Prime Minister of India",
+                "Speaker of Lok Sabha",
+                "Union Minister of Law and Justice"
+            ],
+            "answer": 1,
+            "explanation": "The Selection Committee is chaired by the Prime Minister of India, with a designated Union Cabinet Minister and the Leader of Opposition as members."
+        },
+        "source": "Ministry of Law and Justice / PIB",
+        "url": "https://eci.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-polity-07",
+        "title": "Digital Personal Data Protection (DPDP) Act 2023: Data Protection Board & Compliance Rules",
+        "date": "2026-04-10",
+        "category": "Polity & Governance",
+        "subcategory": "Privacy & Technology Law",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "The Ministry of Electronics and IT (MeitY) progressed implementation rules for the Digital Personal Data Protection (DPDP) Act 2023, operationalizing the Data Protection Board of India and cross-border data transfer protocols.",
+        "crux": "DPDP Act grants citizens ('Data Principals') rights to access, correction, and erasure of personal data, imposing stringent fiduciary obligations on organizations ('Data Fiduciaries') with penalties up to ₹250 crore for significant data breaches.",
+        "takeaways": [
+            "Applies to processing of digital personal data within India and processing outside India if offering goods or services to Data Principals in India.",
+            "Establishment of the Data Protection Board of India as an independent digital-first adjudicatory body.",
+            "Mandates verifiable parental consent for processing data of children (below 18 years)."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Data Protection Board of India & MeitY",
+            "statutory_anchor": "DPDP Act 2023 (Act No. 22 of 2023)",
+            "location": "New Delhi",
+            "facts_to_remember": "Max penalty: ₹250 Crore per breach; Child defined as under 18; Negative list approach for cross-border data transfer."
+        },
+        "mcq": {
+            "question": "Under the Digital Personal Data Protection Act 2023, what is the maximum financial penalty that can be imposed for failure to take reasonable security safeguards to prevent a personal data breach?",
+            "options": [
+                "₹50 Crore",
+                "₹100 Crore",
+                "₹250 Crore",
+                "₹500 Crore"
+            ],
+            "answer": 2,
+            "explanation": "Section 33 and Schedule of the DPDP Act 2023 prescribe penalties up to ₹250 Crore for failing to prevent a significant personal data breach."
+        },
+        "source": "MeitY / PIB",
+        "url": "https://meity.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-polity-08",
+        "title": "Telecommunications Act 2023 Replaces 138-Year-Old Indian Telegraph Act 1885",
+        "date": "2026-06-26",
+        "category": "Polity & Governance",
+        "subcategory": "Telecom Policy",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "Key provisions of the Telecommunications Act 2023 came into effect, replacing the colonial Indian Telegraph Act 1885 and the Indian Wireless Telegraphy Act 1933 with a modern legal framework for spectrum management and national security.",
+        "crux": "The Act introduces administrative allocation of satellite communication spectrum (Satcom), replaces licensing with an authorization regime, and establishes the Digital Bharat Nidhi replacing the Universal Service Obligation Fund (USOF).",
+        "takeaways": [
+            "Allows administrative (non-auction) assignment of spectrum for satellite broadband, maritime, and public safety services (First Schedule).",
+            "Digital Bharat Nidhi broadens USOF scope to support telecom research, pilot projects, and underserved rural areas.",
+            "Provides statutory right-of-way (RoW) framework ensuring non-discriminatory access for telecom infrastructure rollout."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Department of Telecommunications (DoT) & TRAI",
+            "statutory_anchor": "Telecommunications Act 2023 (Act No. 44 of 2023)",
+            "location": "New Delhi",
+            "facts_to_remember": "Replaces: Indian Telegraph Act 1885; USOF renamed to: Digital Bharat Nidhi; Satcom spectrum: Administrative route."
+        },
+        "mcq": {
+            "question": "Under the Telecommunications Act 2023, the Universal Service Obligation Fund (USOF) has been renamed and repurposed as:",
+            "options": [
+                "BharatNet Development Fund",
+                "Digital Bharat Nidhi",
+                "National Telecom Infrastructure Corpus",
+                "Telecom Innovation Trust"
+            ],
+            "answer": 1,
+            "explanation": "Section 24 of the Telecommunications Act 2023 establishes the 'Digital Bharat Nidhi' as the modernized successor to the USOF."
+        },
+        "source": "DoT / PIB",
+        "url": "https://dot.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-polity-09",
+        "title": "Governor's Assent to Bills: Supreme Court Clarifies Article 200 Timelines",
+        "date": "2026-01-22",
+        "category": "Polity & Governance",
+        "subcategory": "Judiciary & Federalism",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS"
+        ],
+        "summary": "The Supreme Court delivered significant constitutional rulings in State of Punjab v. Principal Secretary to Governor and Tamil Nadu matters, holding that Governors cannot withhold assent to state bills indefinitely and must act promptly.",
+        "crux": "CJI-led bench held that if a Governor withholds assent under the first proviso to Article 200, the bill MUST be returned to the Legislative Assembly as soon as possible with a message, and if re-passed, the Governor has no option but to grant assent.",
+        "takeaways": [
+            "The phrase 'as soon as possible' in the first proviso to Article 200 contains an inherent constitutional obligation to act with dispatch.",
+            "A Governor cannot defeat the legislative will of an elected legislature by pocket-vetoing a bill without returning it.",
+            "Clarified that the Governor is a symbolic constitutional head and must act on aid and advice of Council of Ministers except in discretionary areas."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Supreme Court of India & State Legislatures",
+            "statutory_anchor": "Articles 200, 201, and 163 of the Constitution of India",
+            "location": "New Delhi",
+            "facts_to_remember": "Art 200 gives 4 options to Governor: Assent, Withhold, Return for reconsideration, or Reserve for President (Art 201)."
+        },
+        "mcq": {
+            "question": "Under Article 200 of the Constitution, if a State Legislative Assembly re-passes a returned bill with or without amendments, the Governor:",
+            "options": [
+                "Can withhold assent indefinitely.",
+                "Shall not withhold assent therefrom.",
+                "Must compulsorily refer the bill to the Supreme Court.",
+                "Can dissolve the Legislative Assembly."
+            ],
+            "answer": 1,
+            "explanation": "Article 200 explicitly mandates that if a bill is passed again by the Legislature with or without amendment, 'the Governor shall not withhold assent therefrom'."
+        },
+        "source": "Supreme Court of India / LiveLaw",
+        "url": "https://main.sci.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-econ-01",
+        "title": "India-EFTA Trade & Economic Partnership Agreement (TEPA): $100B Investment Pact",
+        "date": "2026-03-10",
+        "category": "Economy & Infrastructure",
+        "subcategory": "International Trade / FTA",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "India signed the landmark Trade and Economic Partnership Agreement (TEPA) with the European Free Trade Association (EFTA)—comprising Switzerland, Norway, Iceland, and Liechtenstein—securing a binding commitment of $100 billion foreign direct investment over 15 years.",
+        "crux": "TEPA is India's first modern FTA featuring a binding legal commitment on investment promotion and 1 million direct job creations in exchange for tariff concessions on 95%+ of EFTA industrial exports.",
+        "takeaways": [
+            "EFTA countries gain zero or reduced tariff access for Swiss watches, Norwegian salmon, precision machinery, and chocolates.",
+            "India excluded sensitive agricultural products (dairy, soya, coal, sensitive agricultural lines) to protect domestic farmers.",
+            "First trade agreement incorporating dedicated chapters on Sustainable Development and Environmental Obligations."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Commerce and Industry & EFTA Secretariat",
+            "statutory_anchor": "Article XXIV of GATT 1994 (Regional Trade Agreements)",
+            "location": "New Delhi / Geneva",
+            "facts_to_remember": "EFTA 4 nations: Switzerland, Norway, Iceland, Liechtenstein (Non-EU European bloc); $100B FDI over 15 years."
+        },
+        "mcq": {
+            "question": "Which four countries comprise the European Free Trade Association (EFTA) that signed the TEPA pact with India in 2024?",
+            "options": [
+                "Sweden, Finland, Denmark, Norway",
+                "Switzerland, Norway, Iceland, Liechtenstein",
+                "Austria, Switzerland, Belgium, Netherlands",
+                "United Kingdom, Norway, Switzerland, Ireland"
+            ],
+            "answer": 1,
+            "explanation": "EFTA was established in 1960 and currently consists of Switzerland, Norway, Iceland, and Liechtenstein."
+        },
+        "source": "PIB / Ministry of Commerce",
+        "url": "https://commerce.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-econ-02",
+        "title": "India Semiconductor Mission: Dholera Commercial Fab & Packaging Units Underway",
+        "date": "2026-03-01",
+        "category": "Economy & Infrastructure",
+        "subcategory": "Industrial Policy",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "Under the ₹76,000 crore India Semiconductor Mission (ISM), construction commenced on India's first commercial semiconductor fabrication facility in Dholera, Gujarat by Tata Electronics in partnership with Taiwan's Powerchip Semiconductor Manufacturing Corp (PSMC).",
+        "crux": "The ₹91,000 crore Dholera mega-fab will produce 28nm, 50nm, and 90nm nodes for automotive, power electronics, and computing, complemented by OSAT/ATMP units in Sanand and Morigaon.",
+        "takeaways": [
+            "Central Government provides 50% fiscal support on a pari-passu basis for fab and packaging units.",
+            "Tata OSAT plant in Jagiroad, Morigaon (Assam) represents the first major semiconductor investment in Northeast India.",
+            "Critical for de-risking global chip supply chains and securing sovereign electronics hardware capabilities."
+        ],
+        "prelims_pointers": {
+            "key_agency": "India Semiconductor Mission (ISM) & Digital India Corporation (MeitY)",
+            "statutory_anchor": "National Policy on Electronics (NPE 2019)",
+            "location": "Dholera (Gujarat), Sanand (Gujarat), Morigaon (Assam)",
+            "facts_to_remember": "Outlay: ₹76,000 Crore; Tech partner: PSMC Taiwan; First commercial fab: Dholera, Gujarat."
+        },
+        "mcq": {
+            "question": "India's first commercial semiconductor fabrication plant approved under the India Semiconductor Mission is being established at:",
+            "options": [
+                "Sriperumbudur, Tamil Nadu",
+                "Dholera, Gujarat",
+                "NOIDA, Uttar Pradesh",
+                "Bengaluru, Karnataka"
+            ],
+            "answer": 1,
+            "explanation": "Tata Electronics is constructing the first commercial semiconductor fabrication facility at Dholera Special Investment Region (SIR), Gujarat."
+        },
+        "source": "MeitY / PIB",
+        "url": "https://ism.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-econ-03",
+        "title": "Critical Minerals Auction: Strategic Lithium, Graphite & Rare Earth Blocks Tranches",
+        "date": "2026-02-29",
+        "category": "Economy & Infrastructure",
+        "subcategory": "Mining & Energy Transition",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "The Ministry of Mines launched multiple tranches of auction for critical and strategic mineral blocks, including Lithium (Salal-Haimana block in Reasi, J&K, and Katghora in Chhattisgarh), Titanium, Nickel, Chromium, and Rare Earth Elements (REE).",
+        "crux": "Enacted following amendments to the Mines and Minerals (Development and Regulation) Act, empowering the Union government to auction 24 critical minerals essential for EV batteries and defence.",
+        "takeaways": [
+            "MMDR Amendment Act 2023 introduced an Exploration Licence (EL) to encourage private sector reconnaissance.",
+            "De-listed six atomic minerals including Lithium and Beryllium from atomic list to allow private commercial mining.",
+            "Secures raw material resilience for India's National Electric Mobility and net-zero clean energy goals."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Mines & Geological Survey of India (GSI)",
+            "statutory_anchor": "MMDR Amendment Act 2023 & Part D of First Schedule",
+            "location": "Reasi (J&K), Katghora (Chhattisgarh), Odisha, Tamil Nadu",
+            "facts_to_remember": "Lithium reserves: 5.9 million tonnes G3 inferred resources in Reasi, J&K."
+        },
+        "mcq": {
+            "question": "Which legislative enactment in 2023 enabled the central government to auction 24 critical and strategic minerals directly to private miners?",
+            "options": [
+                "National Green Tribunal Amendment Act",
+                "Mines and Minerals (Development and Regulation) Amendment Act, 2023",
+                "Atomic Energy (Special Provisions) Act",
+                "Mineral Concession Rules 1960 repeal"
+            ],
+            "answer": 1,
+            "explanation": "The MMDR Amendment Act 2023 introduced Part D to the First Schedule specifying 24 critical and strategic minerals for central auctioning."
+        },
+        "source": "Ministry of Mines / PIB",
+        "url": "https://mines.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-econ-04",
+        "title": "India-Middle East-Europe Economic Corridor (IMEC): Strategic Multimodal Connectivity",
+        "date": "2026-01-18",
+        "category": "Economy & Infrastructure",
+        "subcategory": "Trade Routes / Geoeconomics",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "India, US, Saudi Arabia, UAE, France, Germany, Italy, and EU advanced planning on the India-Middle East-Europe Economic Corridor (IMEC), agreed on the sidelines of the New Delhi G20 Summit.",
+        "crux": "IMEC comprises two distinct corridors: the Eastern Corridor connecting India to the Arabian Gulf and the Northern Corridor connecting the Gulf to Europe via rail and shipping routes.",
+        "takeaways": [
+            "Reduces transit time between India and Europe by 40% and logistics costs by 30% compared to the Suez Canal route.",
+            "Includes clean hydrogen pipeline, high-speed digital data cables, and electricity grids alongside railway tracks.",
+            "Serves as a transparent, high-standard alternative to China's Belt and Road Initiative (BRI) under the Partnership for Global Infrastructure and Investment (PGII)."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of External Affairs & Ministry of Ports, Shipping and Waterways",
+            "statutory_anchor": "Partnership for Global Infrastructure and Investment (PGII)",
+            "location": "Mundra / JNPT Ports (India) to Fujairah / Jebel Ali (UAE), Haifa (Israel), Piraeus (Greece)",
+            "facts_to_remember": "IMEC MoU signatories: India, US, Saudi Arabia, UAE, France, Germany, Italy, EU."
+        },
+        "mcq": {
+            "question": "The India-Middle East-Europe Economic Corridor (IMEC) consists of two segments: the Eastern corridor and the Northern corridor. What does the Northern corridor connect?",
+            "options": [
+                "India to the Arabian Gulf",
+                "Arabian Gulf to Europe",
+                "Central Asia to Europe",
+                "Red Sea to Mediterranean Sea directly"
+            ],
+            "answer": 1,
+            "explanation": "The Eastern Corridor connects India to the Gulf, while the Northern Corridor connects the Arabian Gulf to European ports via rail and maritime shipping."
+        },
+        "source": "MEA / PIB",
+        "url": "https://mea.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-econ-05",
+        "title": "Foreign Trade Policy (FTP) 2023: $2 Trillion Export Target & Internationalization of Rupee",
+        "date": "2026-04-01",
+        "category": "Economy & Infrastructure",
+        "subcategory": "Foreign Trade",
+        "scope": "India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "State PCS"
+        ],
+        "summary": "The Ministry of Commerce and Industry rolled out initiatives under Foreign Trade Policy (FTP) 2023, shifting from an incentive-based to an automated remission-based regime targeting $2 Trillion in exports by 2030.",
+        "crux": "FTP 2023 has no fixed sunset date, promoting Indian Rupee invoicing in foreign trade through Special Rupee Vostro Accounts (SRVAs) and identifying 39 Towns of Export Excellence (TEE).",
+        "takeaways": [
+            "Four Pillars: Incentive to Remission, Export promotion through collaboration (Districts as Export Hubs), Ease of Doing Business, and Emerging Areas (E-Commerce).",
+            "E-commerce export cap per consignment via courier increased from ₹5 lakh to ₹10 lakh.",
+            "Designated 4 new Towns of Export Excellence (Faridabad, Mirzapur, Moradabad, Varanasi) taking total TEE count to 43."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Directorate General of Foreign Trade (DGFT) & Commerce Ministry",
+            "statutory_anchor": "Foreign Trade (Development and Regulation) Act 1992",
+            "location": "New Delhi",
+            "facts_to_remember": "Export target: $2 Trillion by 2030 ($1T merchandise + $1T services); Policy duration: Dynamic (no sunset date)."
+        },
+        "mcq": {
+            "question": "What is the targeted total export value (merchandise and services combined) set under India's Foreign Trade Policy 2023 for the year 2030?",
+            "options": [
+                "$1 Trillion",
+                "$1.5 Trillion",
+                "$2 Trillion",
+                "$3 Trillion"
+            ],
+            "answer": 2,
+            "explanation": "FTP 2023 sets an ambitious target of achieving $2 Trillion in overall exports ($1 Trillion goods and $1 Trillion services) by 2030."
+        },
+        "source": "DGFT / PIB",
+        "url": "https://dgft.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-econ-06",
+        "title": "PM Gati Shakti & National Logistics Policy (NLP): Logistics Performance Index Jumps to 38th",
+        "date": "2026-05-15",
+        "category": "Economy & Infrastructure",
+        "subcategory": "Logistics & Multimodal",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "India's ranking in the World Bank's Logistics Performance Index (LPI) improved by 6 places to 38th among 139 countries, driven by the PM Gati Shakti National Master Plan and Unified Logistics Interface Platform (ULIP).",
+        "crux": "PM Gati Shakti provides a GIS-based digital platform integrating infrastructure plans of 16 ministries to eliminate bureaucratic silos, optimize multi-modal freight connectivity, and reduce logistics cost to single-digit GDP percentages.",
+        "takeaways": [
+            "National Logistics Policy (NLP) sets targets to reduce logistics cost in India to comparable global benchmarks by 2030.",
+            "ULIP integrates 34 logistics systems of 8 ministries through open APIs for end-to-end cargo visibility.",
+            "Enables National Master Plan for multi-modal connectivity across highways, railways, ports, airports, and inland waterways."
+        ],
+        "prelims_pointers": {
+            "key_agency": "DPIIT, Ministry of Commerce and Industry",
+            "statutory_anchor": "National Logistics Policy 2022 & PM Gati Shakti NMP",
+            "location": "New Delhi",
+            "facts_to_remember": "LPI Rank: 38th / 139 (World Bank); Gati Shakti: 16 Central Ministries on BISAG-N GIS platform."
+        },
+        "mcq": {
+            "question": "In the World Bank's Logistics Performance Index (LPI), India's rank improved to which position?",
+            "options": [
+                "44th",
+                "38th",
+                "32nd",
+                "28th"
+            ],
+            "answer": 1,
+            "explanation": "India jumped six places to rank 38th out of 139 countries in the World Bank's Logistics Performance Index (LPI)."
+        },
+        "source": "DPIIT / World Bank",
+        "url": "https://dpiit.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-econ-07",
+        "title": "Fiscal Deficit Consolidation & New Tax Regime (Sec 115BAC) Structural Reforms",
+        "date": "2026-07-23",
+        "category": "Economy & Infrastructure",
+        "subcategory": "Fiscal Policy / Budget",
+        "scope": "India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "Union Budget 2024-25 targeted a fiscal deficit of 4.9% of GDP, consolidating on track to achieve below 4.5% by FY26, alongside structural tax revisions in the default New Personal Income Tax Regime.",
+        "crux": "Standard deduction under the New Tax Regime increased to ₹75,000 for salaried employees, tax slabs revised, and Capex outlay sustained at a record ₹11.11 lakh crore (3.4% of GDP).",
+        "takeaways": [
+            "Fiscal Deficit glide path anchored under Fiscal Responsibility and Budget Management (FRBM) Act 2003 principles.",
+            "Over two-thirds of personal income tax filers transitioned to the simplified New Tax Regime (Section 115BAC).",
+            "Record ₹11.11 lakh crore central capital expenditure aimed at multiplier effects on roads, railways, and urban infrastructure."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Finance & Department of Revenue",
+            "statutory_anchor": "FRBM Act 2003 & Finance Act 2024",
+            "location": "New Delhi",
+            "facts_to_remember": "Fiscal Deficit FY25 target: 4.9%; FY26 target: below 4.5%; Standard Deduction: ₹75,000; Capex: ₹11.11 Lakh Cr."
+        },
+        "mcq": {
+            "question": "Under the Union Budget, what is the government's target for fiscal deficit as a percentage of GDP for financial year 2024-25?",
+            "options": [
+                "5.4%",
+                "5.1%",
+                "4.9%",
+                "4.5%"
+            ],
+            "answer": 2,
+            "explanation": "The revised Union Budget estimated the fiscal deficit for FY 2024-25 at 4.9% of GDP, continuing the fiscal consolidation glide path to reach below 4.5% by FY26."
+        },
+        "source": "Union Budget / PIB",
+        "url": "https://indiabudget.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-econ-08",
+        "title": "Indian Sovereign Bonds Included in JP Morgan GBI-EM & Bloomberg Global Indices",
+        "date": "2026-06-28",
+        "category": "Economy & Infrastructure",
+        "subcategory": "Sovereign Debt / Capital Flows",
+        "scope": "World & India",
+        "exam_tags": [
+            "Banking (IBPS/SBI/RBI)",
+            "UPSC",
+            "State PCS"
+        ],
+        "summary": "Indian Government Bonds (G-Secs) under the Fully Accessible Route (FAR) were formally included in the flagship JP Morgan Government Bond Index-Emerging Markets (GBI-EM) Global Diversified index with a 10% maximum weight.",
+        "crux": "Index inclusion is estimated to trigger foreign portfolio inflows of $25–30 billion, broadening the investor base for central government debt and lowering domestic borrowing yields.",
+        "takeaways": [
+            "India's weight scaled up by 1% per month until reaching the maximum cap of 10% in the index.",
+            "Only eligible dated securities issued under the Fully Accessible Route (FAR) with no foreign investment caps qualify.",
+            "Bloomberg Emerging Market Local Currency Government Index also announced inclusion of Indian FAR bonds."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Reserve Bank of India (RBI) & JP Morgan",
+            "statutory_anchor": "Fully Accessible Route (FAR) Framework 2020",
+            "location": "Mumbai / New York",
+            "facts_to_remember": "Max weight: 10% in GBI-EM; Estimated inflows: $25–30 Billion; Security category: FAR G-Secs."
+        },
+        "mcq": {
+            "question": "Which category of Indian Government Securities was made eligible for inclusion in global bond indices like JP Morgan GBI-EM?",
+            "options": [
+                "State Development Loans (SDLs)",
+                "Treasury Bills (91-day T-Bills)",
+                "G-Secs under the Fully Accessible Route (FAR)",
+                "Special Oil Bonds"
+            ],
+            "answer": 2,
+            "explanation": "Only dated government securities issued under the Fully Accessible Route (FAR), introduced by RBI in 2020 with zero FPI limits, are eligible for index inclusion."
+        },
+        "source": "RBI / Bloomberg",
+        "url": "https://rbi.org.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-scitech-01",
+        "title": "Aditya-L1 Spacecraft Placed in Sun-Earth Lagrange Point L1 Halo Orbit",
+        "date": "2026-01-06",
+        "category": "Science, Tech & Defence",
+        "subcategory": "Space Exploration / ISRO",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "ISRO successfully injected India's first solar observatory mission, Aditya-L1, into a halo orbit around the Sun-Earth Lagrangian Point L1, approximately 1.5 million kilometers from Earth.",
+        "crux": "From the L1 vantage point, Aditya-L1 continuously observes the Sun without any occultation or eclipses, monitoring solar flares, coronal mass ejections (CMEs), and space weather using 7 indigenous payloads.",
+        "takeaways": [
+            "Launched aboard PSLV-C57 from Satish Dhawan Space Centre, Sriharikota.",
+            "Primary payload is the Visible Emission Line Coronagraph (VELC) developed by the Indian Institute of Astrophysics (IIA), Bengaluru.",
+            "SUIT (Solar Ultraviolet Imaging Telescope) captured unprecedented full-disk UV images of the solar photosphere and chromosphere."
+        ],
+        "prelims_pointers": {
+            "key_agency": "ISRO & Indian Institute of Astrophysics (IIA)",
+            "statutory_anchor": "Department of Space, Government of India",
+            "location": "Lagrange Point 1 (L1), 1.5 million km from Earth",
+            "facts_to_remember": "7 payloads: 4 remote sensing (VELC, SUIT, ASPEX, PAPA) + 3 in-situ (MAG, SoLEXS, HEL1OS)."
+        },
+        "mcq": {
+            "question": "What is the primary advantage of placing the Aditya-L1 solar observatory in a halo orbit around Lagrange Point 1 (L1)?",
+            "options": [
+                "It enables the spacecraft to land on the solar surface.",
+                "It provides continuous, uninterrupted view of the Sun without occultation or eclipses.",
+                "It eliminates all solar radiation pressure on the spacecraft.",
+                "It allows the satellite to re-enter Earth's atmosphere periodically for maintenance."
+            ],
+            "answer": 1,
+            "explanation": "Lagrange Point 1 offers an uninterrupted view of the Sun without any occultation or eclipse from the Earth, ensuring continuous solar monitoring."
+        },
+        "source": "ISRO / PIB",
+        "url": "https://isro.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-scitech-02",
+        "title": "INS Arighaat Commissioned: India's Second SSBN Nuclear Ballistic Submarine",
+        "date": "2026-08-29",
+        "category": "Science, Tech & Defence",
+        "subcategory": "Strategic Defence / Navy",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "India commissioned its second indigenous nuclear-powered ballistic missile submarine (SSBN), INS Arighaat (S3), into the Indian Navy at Visakhapatnam, cementing India's survivable nuclear triad.",
+        "crux": "INS Arighaat joins lead vessel INS Arihant in the Strategic Forces Command (SFC), armed with K-15 Sagarika (750 km range) and K-4 (3,500 km range) submarine-launched ballistic missiles (SLBMs).",
+        "takeaways": [
+            "Constructed under the Advanced Technology Vessel (ATV) project at Ship Building Centre (SBC), Visakhapatnam.",
+            "Powered by an indigenous 83 MW pressurized light-water reactor (PWR) using enriched uranium.",
+            "Provides an assured sea-based second-strike capability in line with India's 'No First Use' (NFU) nuclear doctrine."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Indian Navy & Strategic Forces Command (SFC)",
+            "statutory_anchor": "Nuclear Command Authority (NCA) under Cabinet Committee on Security",
+            "location": "Visakhapatnam, Andhra Pradesh",
+            "facts_to_remember": "Code: S3; Class: Arihant-class SSBN; Armament: K-15 Sagarika and K-4 SLBMs."
+        },
+        "mcq": {
+            "question": "INS Arighaat, recently commissioned into the Indian Navy, belongs to which category of naval vessels?",
+            "options": [
+                "Diesel-electric conventional attack submarine (SSK)",
+                "Nuclear-powered ballistic missile submarine (SSBN)",
+                "Guided-missile stealth destroyer (DDG)",
+                "Nuclear-powered fleet aircraft carrier (CVN)"
+            ],
+            "answer": 1,
+            "explanation": "INS Arighaat is India's second indigenous nuclear-powered ballistic missile submarine (SSBN) designed for continuous at-sea nuclear deterrence."
+        },
+        "source": "PIB / Ministry of Defence",
+        "url": "https://indiannavy.nic.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-scitech-03",
+        "title": "IndiaAI Mission: ₹10,372 Crore Allocation for Sovereign 10,000 GPU Computing",
+        "date": "2026-03-07",
+        "category": "Science, Tech & Defence",
+        "subcategory": "Artificial Intelligence",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "The Union Cabinet approved the comprehensive IndiaAI Mission with a financial outlay of ₹10,372 crore to establish a sovereign compute ecosystem with over 10,000 GPUs for AI startups and research.",
+        "crux": "The mission democratizes AI compute access under a Public-Private Partnership model, develops foundational AI models for Indian languages, and establishes the IndiaAI Datasets Platform.",
+        "takeaways": [
+            "IndiaAI Compute Capacity: Subsidized access to supercomputing infrastructure for startups, researchers, and academia.",
+            "IndiaAI Innovation Centre: Developing indigenous multimodal Foundation Models trained on Indic datasets.",
+            "IndiaAI FutureSkills: Establishing Data and AI Labs across Tier-2 and Tier-3 academic institutions."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Digital India Corporation & MeitY",
+            "statutory_anchor": "National Data Governance Framework Policy",
+            "location": "New Delhi / Pan-India",
+            "facts_to_remember": "Outlay: ₹10,372 Crore over 5 years; Target: 10,000+ AI GPUs compute capacity."
+        },
+        "mcq": {
+            "question": "What is the targeted GPU computing capacity planned to be established under the approved IndiaAI Mission?",
+            "options": [
+                "2,500 GPUs",
+                "5,000 GPUs",
+                "10,000 or more GPUs",
+                "50,000 GPUs"
+            ],
+            "answer": 2,
+            "explanation": "The IndiaAI Mission has an approved budget of ₹10,372 crore to build an AI compute infrastructure of 10,000 or more graphics processing units (GPUs)."
+        },
+        "source": "MeitY / PIB",
+        "url": "https://indiaai.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-scitech-04",
+        "title": "Gaganyaan Mission: Prime Minister Reveals 4 IAF Astronaut Designates & CE-20 Cryogenic Engine Human-Rated",
+        "date": "2026-02-27",
+        "category": "Science, Tech & Defence",
+        "subcategory": "Human Spaceflight / ISRO",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "Prime Minister Narendra Modi announced the names of the four Indian Air Force test pilots selected as astronaut-designates for India's maiden human spaceflight mission, Gaganyaan, while ISRO successfully human-rated the CE-20 cryogenic engine.",
+        "crux": "Gaganyaan aims to demonstrate human spaceflight capability by launching a 3-member crew to an orbit of 400 km for a 3-day mission and returning them safely to Earth with a splashdown in Indian sea waters.",
+        "takeaways": [
+            "Four Astronauts: Group Captain Prashanth Balakrishnan Nair, Group Captain Ajit Krishnan, Group Captain Angad Prathap, and Wing Commander Shubhanshu Shukla.",
+            "Wing Commander Shubhanshu Shukla selected as prime pilot for the Indo-US joint Axiom-4 (Ax-4) mission to the International Space Station (ISS).",
+            "Launch vehicle is the Human-Rated LVM3 (HLVM3) equipped with Crew Escape System (CES) tested in TV-D1 flight."
+        ],
+        "prelims_pointers": {
+            "key_agency": "ISRO & Indian Air Force (IAF)",
+            "statutory_anchor": "Human Space Flight Centre (HSFC), Bengaluru",
+            "location": "Bengaluru & Sriharikota",
+            "facts_to_remember": "Vehicle: HLVM3; Orbit: 400 km Low Earth Orbit; Crew: 3 astronauts for 3 days; First test humanoid: Vyommitra."
+        },
+        "mcq": {
+            "question": "Which Indian Air Force officer was selected as the prime pilot astronaut for the Axiom-4 (Ax-4) joint space mission to the International Space Station?",
+            "options": [
+                "Group Captain Prashanth Balakrishnan Nair",
+                "Wing Commander Shubhanshu Shukla",
+                "Group Captain Ajit Krishnan",
+                "Group Captain Angad Prathap"
+            ],
+            "answer": 1,
+            "explanation": "Wing Commander Shubhanshu Shukla was chosen as the prime mission pilot for the Axiom-4 mission to the ISS."
+        },
+        "source": "ISRO / PIB",
+        "url": "https://isro.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-scitech-05",
+        "title": "XPoSat (X-ray Polarimeter Satellite) Launched by ISRO PSLV-C58",
+        "date": "2026-01-01",
+        "category": "Science, Tech & Defence",
+        "subcategory": "Astrophysics / Space",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "ISRO kicked off the year by launching XPoSat (X-ray Polarimeter Satellite) onboard PSLV-C58 into a 650 km Low Earth Orbit, making India only the second country in the world after the US (NASA's IXPE) to operate a dedicated space-based X-ray polarimetry mission.",
+        "crux": "XPoSat studies the polarization of intense astronomical X-ray sources like black hole binaries, neutron stars, active galactic nuclei, and pulsar wind nebulae in the medium energy band (8-30 keV).",
+        "takeaways": [
+            "Carries two scientific payloads: POLIX (Polarimeter Instrument in X-rays) developed by Raman Research Institute (RRI), and XSPECT (X-ray Spectroscopy and Timing) by URSC.",
+            "PSLV Orbital Experimental Module (POEM-3) utilized the spent fourth stage (PS4) as an orbital platform for 10 microgravity payloads.",
+            "Complements NASA's IXPE mission by measuring polarization in a higher energy X-ray band."
+        ],
+        "prelims_pointers": {
+            "key_agency": "ISRO & Raman Research Institute (RRI)",
+            "statutory_anchor": "Department of Space, Government of India",
+            "location": "Low Earth Orbit (650 km altitude, 6-degree inclination)",
+            "facts_to_remember": "Launch vehicle: PSLV-C58; Payloads: POLIX (8-30 keV) and XSPECT (0.8-15 keV)."
+        },
+        "mcq": {
+            "question": "Which institute developed the primary scientific payload 'POLIX' (Polarimeter Instrument in X-rays) for ISRO's XPoSat mission?",
+            "options": [
+                "Tata Institute of Fundamental Research (TIFR)",
+                "Raman Research Institute (RRI), Bengaluru",
+                "Physical Research Laboratory (PRL), Ahmedabad",
+                "Indian Institute of Science (IISc)"
+            ],
+            "answer": 1,
+            "explanation": "POLIX was designed and built by the Raman Research Institute (RRI) in Bengaluru in collaboration with the U R Rao Satellite Centre (URSC)."
+        },
+        "source": "ISRO / The Hindu",
+        "url": "https://isro.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-scitech-06",
+        "title": "Agni-5 with MIRV (Mission Divyastra): Multiple Nuclear Warhead Technology Tested",
+        "date": "2026-03-11",
+        "category": "Science, Tech & Defence",
+        "subcategory": "Missile Technology / DRDO",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "DRDO successfully conducted the maiden flight test of the indigenously developed Agni-5 missile equipped with Multiple Independently Targetable Re-entry Vehicle (MIRV) technology under the codename 'Mission Divyastra'.",
+        "crux": "MIRV technology allows a single intercontinental ballistic missile to carry multiple nuclear warheads, each capable of being programmed to strike separate targets hundreds of kilometers apart, defeating ballistic missile defence shields.",
+        "takeaways": [
+            "India joined an elite league of nations with proven MIRV capability (US, Russia, China, France, and UK).",
+            "Equipped with indigenous avionics systems and high-accuracy sensor packages ensuring pinpoint terminal accuracy.",
+            "Agni-5 is a three-stage solid-fuel missile with a strike range exceeding 5,000 kilometers, capable of road-mobile canisterized launch."
+        ],
+        "prelims_pointers": {
+            "key_agency": "DRDO & Strategic Forces Command (SFC)",
+            "statutory_anchor": "Integrated Guided Missile Development Programme (IGMDP)",
+            "location": "Dr. APJ Abdul Kalam Island, Odisha coast",
+            "facts_to_remember": "Mission Divyastra; Range: >5,000 km; Propulsion: 3-stage solid; MIRV: Multiple warheads on independent vectors."
+        },
+        "mcq": {
+            "question": "What is the defining capability of an ICBM equipped with MIRV technology as demonstrated in 'Mission Divyastra'?",
+            "options": [
+                "It can refuel liquid propellant during supersonic flight.",
+                "A single missile carries multiple warheads that can strike independent targets across different geographic coordinates.",
+                "It can fly below radar horizon using scramjet air-breathing propulsion.",
+                "It can only be detected by ocean acoustic sonar."
+            ],
+            "answer": 1,
+            "explanation": "MIRV (Multiple Independently Targetable Re-entry Vehicle) allows a single ballistic missile to deploy multiple warheads, each guided to hit separate designated targets."
+        },
+        "source": "DRDO / PIB",
+        "url": "https://drdo.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-scitech-07",
+        "title": "National Quantum Mission (NQM): Hub-and-Spoke Thematic Research Ecosystem",
+        "date": "2026-04-18",
+        "category": "Science, Tech & Defence",
+        "subcategory": "Deep Tech / Physics",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "The Department of Science and Technology (DST) approved guidelines for four Thematic Hubs (T-Hubs) under the ₹6,003 crore National Quantum Mission (NQM) to develop intermediate-scale quantum computers with 50-1000 physical qubits.",
+        "crux": "NQM focuses on four core verticals: Quantum Computing, Quantum Communication, Quantum Sensing & Metrology, and Quantum Materials & Devices, positioning India among the top 6 global quantum leaders.",
+        "takeaways": [
+            "Aims to achieve satellite-based secure quantum communications over a ground distance of 2,000 km.",
+            "Develops quantum key distribution (QKD) over terrestrial fiber networks and multi-node quantum networks.",
+            "Targets development of high-sensitivity magnetometers, atomic clocks, and superconducting quantum chips."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Department of Science and Technology (DST)",
+            "statutory_anchor": "National Quantum Mission Governing Body",
+            "location": "New Delhi / IISc, IITs, TIFR",
+            "facts_to_remember": "Outlay: ₹6,003 Crore (2023-2031); 4 T-Hubs: Computing, Communication, Sensing, Materials."
+        },
+        "mcq": {
+            "question": "Which of the following is NOT one of the four Thematic Hubs (T-Hubs) established under India's National Quantum Mission?",
+            "options": [
+                "Quantum Computing",
+                "Quantum Communication",
+                "Quantum Sensing and Metrology",
+                "Quantum Space Propulsion"
+            ],
+            "answer": 3,
+            "explanation": "The four verticals of NQM are: Quantum Computing, Quantum Communication, Quantum Sensing & Metrology, and Quantum Materials & Devices."
+        },
+        "source": "DST / PIB",
+        "url": "https://dst.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-scitech-08",
+        "title": "Deep Ocean Mission: Samudrayaan 'MATSYA 6000' Manned Submersible Tested",
+        "date": "2026-06-12",
+        "category": "Science, Tech & Defence",
+        "subcategory": "Ocean Science / Earth Sciences",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "The National Institute of Ocean Technology (NIOT), Chennai, under the Ministry of Earth Sciences, completed shallow water wet tests of the indigenous manned submersible 'MATSYA 6000' under the flagship Deep Ocean Mission.",
+        "crux": "MATSYA 6000 is engineered to carry three humans to a depth of 6,000 meters in the Indian Ocean to survey polymetallic nodules, hydrothermal sulfides, and deep-sea biodiversity using a titanium alloy personnel sphere.",
+        "takeaways": [
+            "Deep Ocean Mission has a 5-year outlay of ₹4,077 crore to harness living and non-living marine resources.",
+            "International Seabed Authority (ISA) has allocated 75,000 sq km in the Central Indian Ocean Basin to India for polymetallic nodule exploration.",
+            "Only five countries (US, Russia, France, Japan, and China) possess human submersibles capable of diving to 6,000 meters."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Earth Sciences (MoES) & NIOT Chennai",
+            "statutory_anchor": "Deep Ocean Mission (DOM)",
+            "location": "Chennai / Central Indian Ocean Basin",
+            "facts_to_remember": "Vehicle: MATSYA 6000; Depth: 6,000 m; Personnel: 3 humans; Hull material: 80mm Titanium alloy sphere."
+        },
+        "mcq": {
+            "question": "The indigenous manned deep-ocean submersible being developed by NIOT under India's Deep Ocean Mission is named:",
+            "options": [
+                "VARUNA 5000",
+                "MATSYA 6000",
+                "SAGARIKA 3000",
+                "SAMUDRA 7000"
+            ],
+            "answer": 1,
+            "explanation": "MATSYA 6000 is the manned submersible vehicle designed to take 3 scientists to a depth of 6,000 meters in the ocean."
+        },
+        "source": "MoES / PIB",
+        "url": "https://moes.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-scitech-09",
+        "title": "NexCAR19: India's First Indigenous CAR-T Cell Gene Therapy Approved for Cancer",
+        "date": "2026-04-05",
+        "category": "Science, Tech & Defence",
+        "subcategory": "Biotechnology / Health",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "President Droupadi Murmu dedicated to the nation 'NexCAR19' (Actalycabtagene autoleucel), India's first indigenously developed CAR-T (Chimeric Antigen Receptor T-cell) therapy, developed collaboratively by IIT Bombay and ImmunoACT.",
+        "crux": "NexCAR19 genetically reprograms the patient's own T-cells to identify and eliminate cancer cells, targeting B-cell lymphomas and leukemia at one-tenth of global commercial costs.",
+        "takeaways": [
+            "Approved by the Central Drugs Standard Control Organisation (CDSCO) for relapsed/refractory B-cell malignancies.",
+            "First humanized CAR-T cell therapy designed to reduce neurotoxicity and cytokine release syndrome.",
+            "Supported by the Biotechnology Industry Research Assistance Council (BIRAC) National Biopharma Mission."
+        ],
+        "prelims_pointers": {
+            "key_agency": "IIT Bombay, ImmunoACT & Tata Memorial Hospital",
+            "statutory_anchor": "Drugs and Cosmetics Act 1940 & CDSCO approval",
+            "location": "Mumbai, Maharashtra",
+            "facts_to_remember": "Therapy name: NexCAR19; Target: CD19 protein on cancerous B-cells; Cost: ~₹30–40 lakh vs ₹4 crore overseas."
+        },
+        "mcq": {
+            "question": "What is the mechanism of action of 'NexCAR19', India's first indigenously developed CAR-T cell therapy?",
+            "options": [
+                "It uses monoclonal antibodies to block angiogenesis in tumors.",
+                "It genetically re-engineers patient's own T-cells with a chimeric receptor to destroy CD19-expressing cancer cells.",
+                "It deploys radioactive isotopes directly into bone marrow.",
+                "It suppresses cellular division via mRNA transcription inhibition."
+            ],
+            "answer": 1,
+            "explanation": "CAR-T cell therapy extracts the patient's own T-cells, genetically modifies them with a Chimeric Antigen Receptor to target the CD19 antigen on cancer cells, and re-infuses them."
+        },
+        "source": "BIRAC / PIB",
+        "url": "https://dbtindia.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-hist-01",
+        "title": "Moidams of Assam Inscribed as India's 43rd UNESCO World Heritage Site",
+        "date": "2026-07-26",
+        "category": "History, Art & Culture",
+        "subcategory": "UNESCO / Medieval History",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "The 'Moidams—the Mound-Burial System of the Ahom Dynasty' in Charaideo, Assam, was inscribed on the UNESCO World Heritage List during the 46th World Heritage Committee session in New Delhi, becoming India's 43rd World Heritage site.",
+        "crux": "Charaideo Moidams represents the first cultural World Heritage site from Northeast India, showcasing the 600-year-old vaulted earthen burial architecture of Tai-Ahom royals compared to the Egyptian pyramids.",
+        "takeaways": [
+            "Charaideo was the first capital established by Chaolung Sukaphaa, founder of the Ahom dynasty, in 1253 CE.",
+            "A Moidam consists of a domical mound housing a vaulted brick chamber (chow-chali), covered with earth and a hemispherical earthen superstructure.",
+            "India now has 43 UNESCO World Heritage Sites (35 Cultural, 7 Natural, and 1 Mixed - Khangchendzonga)."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Archaeological Survey of India (ASI) & UNESCO",
+            "statutory_anchor": "Ancient Monuments and Archaeological Sites and Remains Act 1958",
+            "location": "Charaideo, Upper Assam",
+            "facts_to_remember": "43rd site in India; 1st cultural site in NE India; Ahom dynasty (1228-1826 CE); Founder: Chaolung Sukaphaa."
+        },
+        "mcq": {
+            "question": "Which royal dynasty built the pyramidal earthen burial mound system known as 'Moidams' in Charaideo, Assam?",
+            "options": [
+                "Kamata Dynasty",
+                "Ahom Dynasty",
+                "Koch Dynasty",
+                "Varman Dynasty"
+            ],
+            "answer": 1,
+            "explanation": "The Moidams are the sacred vaulted mound-burial tumuli of royalty belonging to the Tai-Ahom dynasty of Assam."
+        },
+        "source": "UNESCO / PIB",
+        "url": "https://whc.unesco.org",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-hist-02",
+        "title": "Garba of Gujarat Inscribed on UNESCO Intangible Cultural Heritage List",
+        "date": "2026-01-10",
+        "category": "History, Art & Culture",
+        "subcategory": "Performing Arts / UNESCO",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "UNESCO inscribed 'Garba of Gujarat' on the Representative List of the Intangible Cultural Heritage of Humanity under the 2003 Convention, during its 18th session in Kasane, Botswana.",
+        "crux": "Garba is a devotional ritualistic dance performed during the nine-day Hindu festival of Navratri, centered around an earthen lamp (Garbha Deep) or an idol of Goddess Durga/Amba, symbolizing life and feminine divinity.",
+        "takeaways": [
+            "Garba became the 15th intangible cultural heritage element from India on UNESCO's list.",
+            "Earlier inscriptions include Yoga, Kumbh Mela, Vedic Chanting, Durga Puja of Kolkata (2021), and Chhau Dance.",
+            "Fosters social inclusion, community cohesion, and transmission of devotional poetry across generations."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Sangeet Natak Akademi & Ministry of Culture",
+            "statutory_anchor": "UNESCO 2003 Convention for Safeguarding Intangible Cultural Heritage",
+            "location": "Gujarat / Pan-India",
+            "facts_to_remember": "15th Indian element on UNESCO ICH list; Associated with: Navratri & feminine energy (Shakti)."
+        },
+        "mcq": {
+            "question": "The traditional dance form 'Garba of Gujarat', inscribed by UNESCO on its Intangible Cultural Heritage list, is traditionally performed around:",
+            "options": [
+                "A sacred fire altar (Yajna kunda)",
+                "A perforated earthenware pot with an oil lamp inside (Garbha Deep)",
+                "A ceremonial harvest sickle",
+                "A bronze idol of Nataraja"
+            ],
+            "answer": 1,
+            "explanation": "Garba derives from the Sanskrit word 'Garbha' (womb) and is performed in circular patterns around a perforated earthen pot containing a lamp (Garbha Deep)."
+        },
+        "source": "UNESCO / PIB",
+        "url": "https://ich.unesco.org",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-hist-03",
+        "title": "Vadnagar Archaeological Excavations: 2,800-Year Continuous Settlement Uncovered",
+        "date": "2026-01-27",
+        "category": "History, Art & Culture",
+        "subcategory": "Archaeology / Ancient History",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "A collaborative excavation led by the Archaeological Survey of India (ASI) and IIT Kharagpur uncovered evidence of continuous human settlement in Vadnagar, Gujarat dating back to 800 BCE.",
+        "crux": "The findings challenge the narrative of a prolonged 'Dark Age' between the collapse of the Indus Valley Civilization and the emergence of the Early Historic second urbanization in the Gangetic plain.",
+        "takeaways": [
+            "Reveals seven successive cultural stages: Pre-Rambha, Mauryan, Indo-Greek, Kshatrapa, Solanki/Chalukya, Sultanate, and Gaekwad-modern periods.",
+            "Vadnagar was historically known as Anartapura, Anandapura, and Chamatkarpur, visited by Chinese pilgrim Xuanzang in the 7th century CE.",
+            "Excavations revealed an ancient Buddhist monastery with stupas, terracotta artifacts, Roman amphora shards, and coin mints."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Archaeological Survey of India (ASI) & IIT Kharagpur",
+            "statutory_anchor": "Ancient Monuments and Archaeological Sites and Remains Act 1958",
+            "location": "Vadnagar, Mehsana district, Gujarat",
+            "facts_to_remember": "Settlement date: 800 BCE (Late Vedic / Iron Age); 7 cultural layers; Xuanzang noted 10 Buddhist monasteries here."
+        },
+        "mcq": {
+            "question": "Which ancient town in Gujarat recently revealed evidence of continuous human habitation spanning 2,800 years across seven successive cultural periods?",
+            "options": [
+                "Dholavira",
+                "Lothal",
+                "Vadnagar",
+                "Rangpur"
+            ],
+            "answer": 2,
+            "explanation": "Excavations at Vadnagar (Mehsana, Gujarat) proved continuous settlement from 800 BCE through the Mauryan, Solanki, and modern eras."
+        },
+        "source": "ASI / The Hindu",
+        "url": "https://asi.nic.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-hist-04",
+        "title": "Santiniketan & Sacred Ensembles of the Hoysalas Inscribed on UNESCO World Heritage List",
+        "date": "2026-02-14",
+        "category": "History, Art & Culture",
+        "subcategory": "Temple Architecture & Heritage",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "UNESCO inscribed Rabindranath Tagore's ashram school Santiniketan (West Bengal, 41st site) and the Sacred Ensembles of the Hoysalas (Belur, Halebidu, and Somanathapura in Karnataka, 42nd site) on the World Heritage List.",
+        "crux": "Hoysala temples (12th-13th century) epitomize the stellate (star-shaped) ground plan, chloritic schist (soapstone) intricate friezes, and Vesara architectural synthesis under King Vishnuvardhana and Narasimha I.",
+        "takeaways": [
+            "Three Hoysala temples: Chennakeshava Temple at Belur, Hoysaleswara Temple at Halebidu, and Keshava Temple at Somanathapura.",
+            "Santiniketan was founded in 1901 by Rabindranath Tagore based on ancient Indian Gurukul traditions and pan-Asian internationalism.",
+            "Features the famous signed sculptures of Hoysala master craftsmen like Dasoja, Chavana, and Mallitamma."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Archaeological Survey of India (ASI) & UNESCO",
+            "statutory_anchor": "World Heritage Convention 1972",
+            "location": "Birbhum (West Bengal) & Hassan/Mysuru (Karnataka)",
+            "facts_to_remember": "Hoysala sites: Belur, Halebidu, Somanathapura; Material: Soapstone (Chloritic Schist); Plan: Stellate."
+        },
+        "mcq": {
+            "question": "The Sacred Ensembles of the Hoysalas inscribed by UNESCO feature which distinctive architectural ground plan and building material?",
+            "options": [
+                "Octagonal ground plan built entirely with red sandstone",
+                "Stellate (star-shaped) plan built with chloritic schist (soapstone)",
+                "Circular stupa plan built with unburnt mud bricks",
+                "Panchayatana plan built using granite monolithic blocks"
+            ],
+            "answer": 1,
+            "explanation": "Hoysala temple architecture is characterized by stellate (star-shaped) vimana platforms and the extensive use of soapstone (chloritic schist) for intricate miniature carving."
+        },
+        "source": "UNESCO / ASI",
+        "url": "https://whc.unesco.org",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-hist-05",
+        "title": "Sengol Installed in New Parliament: Chola Dynasty Symbol of Righteous Governance",
+        "date": "2026-05-28",
+        "category": "History, Art & Culture",
+        "subcategory": "Parliamentary Heritage",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "The historic golden sceptre 'Sengol' was consecrated and placed adjacent to the Lok Sabha Speaker's chair in the New Parliament Building, reviving an ancient Tamil tradition of ethical rule and power transition.",
+        "crux": "Originating from the Imperial Chola dynasty, the Sengol (derived from the Tamil word 'Semmai' meaning righteousness) represents the transfer of power and the ruler's solemn duty to govern justly under 'Dharma'.",
+        "takeaways": [
+            "Crafted in 1947 by Vummidi Bangaru Chetty jewelers on the guidance of C. Rajagopalachari and Thiruvavaduthurai Adheenam mutt.",
+            "Handed to first Prime Minister Jawaharlal Nehru on August 14, 1947, as a sacred symbol of independence from British rule.",
+            "Topped by a carved recumbent Nandi (the bull of Shiva), symbolizing unyielding justice, steadfast truth, and duty."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Lok Sabha Secretariat & Ministry of Culture",
+            "statutory_anchor": "Constitutional Parliamentary Symbols",
+            "location": "Lok Sabha Chamber, New Parliament House, New Delhi",
+            "facts_to_remember": "Dynasty: Chola; Symbol at crest: Nandi (righteousness); Tamil origin: Semmai; Mutt: Thiruvavaduthurai Adheenam."
+        },
+        "mcq": {
+            "question": "The crest of the golden sceptre 'Sengol', installed in the Lok Sabha chamber, features which carved sacred motif symbolizing justice?",
+            "options": [
+                "Ashoka Lion Capital",
+                "Recumbent Nandi (the sacred bull)",
+                "Peacock with open feathers",
+                "Dharma Chakra with 24 spokes"
+            ],
+            "answer": 1,
+            "explanation": "The Sengol is surmounted by a hand-carved Nandi, representing righteousness, steadfastness, and unbiased justice."
+        },
+        "source": "PIB / Ministry of Culture",
+        "url": "https://sansad.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-hist-06",
+        "title": "Maratha Military Landscapes of India Nominated for UNESCO World Heritage Recognition",
+        "date": "2026-02-01",
+        "category": "History, Art & Culture",
+        "subcategory": "Fort Architecture / Maratha History",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "India nominated the 'Maratha Military Landscapes of India' as its official submission for the UNESCO World Heritage List cycle 2024–2025, comprising 12 strategic hill, coastal, and island forts developed under Chhatrapati Shivaji Maharaj.",
+        "crux": "The network exemplifies guerrilla warfare ('Ganimi Kava') landscape integration, utilizing Western Ghats cliff topography and Konkan naval fortresses between the 17th and 19th centuries.",
+        "takeaways": [
+            "11 forts in Maharashtra: Salher, Shivneri, Lohagad, Khanderi, Raigad, Rajgad, Pratapgad, Suvarnadurg, Panhala, Vijaydurg, and Sindhudurg.",
+            "1 fort in Tamil Nadu: Gingee Fort (dubbed the 'Troy of the East' by the British).",
+            "Integrates hill forts, coastal sea forts (Sindhudurg, Vijaydurg), and island citadens (Khanderi, Suvarnadurg)."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Archaeological Survey of India (ASI) & Government of Maharashtra",
+            "statutory_anchor": "UNESCO Operational Guidelines for World Heritage",
+            "location": "Sahyadri Ranges (Maharashtra) & Villupuram (Tamil Nadu)",
+            "facts_to_remember": "Total forts: 12 (11 in Maharashtra + 1 Gingee in Tamil Nadu); Era: 17th-19th Century CE."
+        },
+        "mcq": {
+            "question": "Which fort located in Tamil Nadu is included among the 12 nominated sites of the 'Maratha Military Landscapes of India' for UNESCO World Heritage recognition?",
+            "options": [
+                "Vellore Fort",
+                "Gingee Fort",
+                "Thanjavur Maratha Palace",
+                "Dindigul Fort"
+            ],
+            "answer": 1,
+            "explanation": "Gingee Fort in Tamil Nadu is the sole non-Maharashtra fort included in the 12 nominated Maratha Military Landscapes."
+        },
+        "source": "ASI / PIB",
+        "url": "https://asi.nic.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-hist-07",
+        "title": "Classical Language Status Conferred on 5 New Indian Languages",
+        "date": "2026-10-04",
+        "category": "History, Art & Culture",
+        "subcategory": "Linguistics & Heritage",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "The Union Cabinet chaired by Prime Minister Narendra Modi conferred the prestigious status of 'Classical Language' on five languages: Marathi, Pali, Prakrit, Assamese, and Bengali, expanding the total count of Classical Languages in India from 6 to 11.",
+        "crux": "Criteria for Classical Language status include high antiquity of early texts over 1,500–2,000 years, a body of ancient literature considered valuable heritage, and original literary tradition.",
+        "takeaways": [
+            "Previously 6 Classical Languages: Tamil (2004), Sanskrit (2005), Telugu (2008), Kannada (2008), Malayalam (2013), and Odia (2014).",
+            "Status enables two major annual international awards for scholars, dedicated university chairs, and Centers of Excellence for studies.",
+            "Pali and Prakrit are foundational to early Buddhist canonical texts (Tripitaka) and Jain Agamas respectively."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Culture & Sahitya Akademi",
+            "statutory_anchor": "National Criteria for Classical Languages",
+            "location": "New Delhi / Pan-India",
+            "facts_to_remember": "Total Classical Languages now: 11 (Tamil, Sanskrit, Telugu, Kannada, Malayalam, Odia, Marathi, Pali, Prakrit, Assamese, Bengali)."
+        },
+        "mcq": {
+            "question": "With the recent notification in October 2024 adding Marathi, Pali, Prakrit, Assamese, and Bengali, how many languages in India now enjoy 'Classical Language' status?",
+            "options": [
+                "8",
+                "9",
+                "11",
+                "14"
+            ],
+            "answer": 2,
+            "explanation": "With the addition of 5 new languages to the existing 6 (Tamil, Sanskrit, Telugu, Kannada, Malayalam, Odia), the total count of Classical Languages in India reached 11."
+        },
+        "source": "PIB / Ministry of Culture",
+        "url": "https://indiaculture.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-hist-08",
+        "title": "High-Yield GI Tags 2024: Majuli Masks, Cuttack Silver Filigree & Risa Textile Inscribed",
+        "date": "2026-03-05",
+        "category": "History, Art & Culture",
+        "subcategory": "Intellectual Property / GI",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "The Geographical Indications Registry granted GI certificates to prominent traditional crafts, including Cuttack Rupa Tarakasi (Odisha), Majuli Masks and Manuscript Paintings (Assam), and Risa Textile (Tripura).",
+        "crux": "GI status confers legal protection against unauthorized imitation under the Geographical Indications of Goods Act 1999, certifying quality and geographic uniqueness.",
+        "takeaways": [
+            "Cuttack Rupa Tarakasi: Ancient delicate silver filigree craft dating back over 500 years with fine silver wire ornamentation.",
+            "Majuli Masks (Mukha Shilpa): Bamboo, clay, and cowdung devotional masks made by Neo-Vaishnavite Satras for Bhaona folk theater.",
+            "Risa: Customary handwoven indigenous female chest wrapper worn by indigenous Tripuri tribal communities."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Geographical Indications Registry, DPIIT, Ministry of Commerce and Industry",
+            "statutory_anchor": "Geographical Indications of Goods (Registration and Protection) Act, 1999",
+            "location": "GI Registry, Chennai",
+            "facts_to_remember": "GI validity: 10 years (renewable); First Indian GI tag: Darjeeling Tea (2004-05)."
+        },
+        "mcq": {
+            "question": "Which historic handicraft from Odisha, known for its delicate fine-wire silver filigree work, was awarded the Geographical Indication (GI) tag in 2024?",
+            "options": [
+                "Pipili Applique Craft",
+                "Cuttack Rupa Tarakasi",
+                "Raghurajpur Pattachitra",
+                "Dhokra Bell Metal"
+            ],
+            "answer": 1,
+            "explanation": "Cuttack's famous Rupa Tarakasi (silver filigree) was granted the Geographical Indication (GI) tag in March 2024."
+        },
+        "source": "GI Registry / PIB",
+        "url": "https://ipindia.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-sports-01",
+        "title": "Paris 2024 Olympics: Manu Bhaker Historic Double Bronze in Shooting",
+        "date": "2026-08-11",
+        "category": "Sports & Games",
+        "subcategory": "Olympics / Shooting",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "Manu Bhaker created history at the Paris 2024 Olympic Games, becoming the first athlete in independent India's history to win two Olympic medals in a single edition of the Games.",
+        "crux": "Bhaker won Bronze in the Women's 10m Air Pistol individual event and a second Bronze in the 10m Air Pistol Mixed Team event alongside Sarabjot Singh.",
+        "takeaways": [
+            "India concluded Paris 2024 with 6 medals: 1 Silver (Neeraj Chopra) and 5 Bronze (Manu Bhaker x2, Swapnil Kusale, Men's Hockey, Aman Sehrawat).",
+            "Swapnil Kusale won India's first-ever Olympic medal (Bronze) in the Men's 50m Rifle 3 Positions event.",
+            "Aman Sehrawat (57kg Freestyle wrestling) became India's youngest individual Olympic medalist at age 21."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Indian Olympic Association (IOA) & Ministry of Youth Affairs and Sports",
+            "statutory_anchor": "Target Olympic Podium Scheme (TOPS)",
+            "location": "Paris, France (Chateauroux Shooting Centre)",
+            "facts_to_remember": "Manu Bhaker: 2 medals in single Olympics; Total Paris medals: 6 (1 Silver, 5 Bronze)."
+        },
+        "mcq": {
+            "question": "Who became the first athlete in independent India's history to win two medals in a single edition of the Olympic Games at Paris 2024?",
+            "options": [
+                "PV Sindhu",
+                "Manu Bhaker",
+                "Neeraj Chopra",
+                "Mirabai Chanu"
+            ],
+            "answer": 1,
+            "explanation": "Manu Bhaker won two bronze medals in Paris 2024 (10m Air Pistol individual and 10m Air Pistol mixed team)."
+        },
+        "source": "Olympics.com / PIB",
+        "url": "https://olympics.com",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-sports-02",
+        "title": "Paris 2024 Paralympics: India's Record 29 Medals & Sumit Antil Back-to-Back Gold",
+        "date": "2026-09-08",
+        "category": "Sports & Games",
+        "subcategory": "Paralympics / Athletics",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "India delivered its best-ever performance in Paralympic history at the Paris 2024 Paralympic Games, winning 29 medals (7 Gold, 9 Silver, 13 Bronze) and finishing 18th in the overall medal table.",
+        "crux": "Sumit Antil became the first Indian man to defend a Paralympic title with Gold in Javelin (F64, 70.59m Games Record), while Navdeep Singh secured Gold in Javelin (F41), and Avani Lekhara defended her 10m Air Rifle Gold.",
+        "takeaways": [
+            "Surpassed previous best of 19 medals at Tokyo 2020 Paralympics.",
+            "Sheetal Devi (armless archer using legs) won Bronze in Mixed Team Compound Archery alongside Rakesh Kumar.",
+            "Harvinder Singh won India's first-ever Paralympic Gold medal in Archery (Men's Individual Recurve)."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Paralympic Committee of India (PCI) & Sports Ministry",
+            "statutory_anchor": "Target Olympic Podium Scheme (TOPS)",
+            "location": "Paris, France",
+            "facts_to_remember": "Total: 29 medals (7 Gold, 9 Silver, 13 Bronze); Rank: 18th; Sumit Antil: 70.59m F64 record."
+        },
+        "mcq": {
+            "question": "How many total medals did India win at the Paris 2024 Paralympic Games, achieving its highest-ever tally in Paralympic history?",
+            "options": [
+                "19 medals",
+                "24 medals",
+                "29 medals",
+                "35 medals"
+            ],
+            "answer": 2,
+            "explanation": "India won 29 medals (7 Gold, 9 Silver, 13 Bronze) at Paris 2024, placing 18th overall."
+        },
+        "source": "Paralympic.org / PIB",
+        "url": "https://paralympic.org",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-sports-03",
+        "title": "45th FIDE Chess Olympiad Budapest: Historic Double Gold in Open and Women's Sections",
+        "date": "2026-09-23",
+        "category": "Sports & Games",
+        "subcategory": "Chess / FIDE",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "India achieved an unprecedented double gold medal triumph at the 45th FIDE Chess Olympiad in Budapest, Hungary, winning both the Open section (Hamilton-Russell Cup) and the Women's section (Vera Menchik Cup).",
+        "crux": "India became only the third country in chess history (after Soviet Union and China) to win both titles at the same Olympiad, with D Gukesh, Arjun Erigaisi, Divya Deshmukh, and Vantika Agrawal also winning individual board gold medals.",
+        "takeaways": [
+            "Open Team: D Gukesh, Praggnanandhaa R, Arjun Erigaisi, Vidit Gujrathi, and Pentala Harikrishna.",
+            "Women's Team: Harika Dronavalli, Vaishali Rameshbabu, Divya Deshmukh, Vantika Agrawal, and Tania Sachdev.",
+            "Gukesh posted a staggering 27-point tournament performance rating above 3050, winning 9 out of 10 games."
+        ],
+        "prelims_pointers": {
+            "key_agency": "All India Chess Federation (AICF) & FIDE",
+            "statutory_anchor": "International Chess Federation (FIDE)",
+            "location": "Budapest, Hungary",
+            "facts_to_remember": "45th edition; Double Gold; Open trophy: Hamilton-Russell Cup; Women's trophy: Vera Menchik Cup."
+        },
+        "mcq": {
+            "question": "At the 45th FIDE Chess Olympiad in Budapest 2024, the Indian Men's team lifted which historic championship trophy?",
+            "options": [
+                "Vera Menchik Cup",
+                "Hamilton-Russell Cup",
+                "Nona Gaprindashvili Trophy",
+                "Fischer Memorial Shield"
+            ],
+            "answer": 1,
+            "explanation": "The Hamilton-Russell Cup is awarded to the winners of the Open section, while the Vera Menchik Cup is awarded to the Women's section."
+        },
+        "source": "FIDE / PIB",
+        "url": "https://fide.com",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-sports-04",
+        "title": "ICC Men's T20 World Cup 2024: India Crowned World Champions Defeating South Africa",
+        "date": "2026-06-29",
+        "category": "Sports & Games",
+        "subcategory": "Cricket",
+        "scope": "World & India",
+        "exam_tags": [
+            "SSC",
+            "Banking",
+            "State PCS"
+        ],
+        "summary": "The Indian Men's Cricket Team won the ICC Men's T20 World Cup 2024, defeating South Africa by 7 runs in the final at Kensington Oval, Bridgetown, Barbados, ending an 11-year ICC trophy drought.",
+        "crux": "India became the first team in T20 World Cup history to win the tournament undefeated, claiming their second T20 World Cup title (first won in 2007 under MS Dhoni).",
+        "takeaways": [
+            "Virat Kohli named Player of the Match in the Final (76 off 59 balls).",
+            "Jasprit Bumrah named Player of the Tournament (15 wickets at an economy rate of 4.17).",
+            "Rohit Sharma and Virat Kohli formally announced their retirement from T20 International cricket following the victory."
+        ],
+        "prelims_pointers": {
+            "key_agency": "BCCI & International Cricket Council (ICC)",
+            "statutory_anchor": "ICC 9th Men's T20 World Cup",
+            "location": "USA & West Indies (Final: Bridgetown, Barbados)",
+            "facts_to_remember": "Champions: India (2nd title); Runners-up: South Africa; Player of Tournament: Jasprit Bumrah."
+        },
+        "mcq": {
+            "question": "Who was awarded the 'Player of the Tournament' award at the ICC Men's T20 World Cup 2024?",
+            "options": [
+                "Virat Kohli",
+                "Rohit Sharma",
+                "Jasprit Bumrah",
+                "Hardik Pandya"
+            ],
+            "answer": 2,
+            "explanation": "Jasprit Bumrah was named Player of the Tournament for taking 15 wickets with a phenomenal economy rate of 4.17."
+        },
+        "source": "BCCI / ICC",
+        "url": "https://icc-cricket.com",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-sports-05",
+        "title": "Rohan Bopanna Becomes Oldest Grand Slam Champion and World No. 1 in Tennis History",
+        "date": "2026-01-27",
+        "category": "Sports & Games",
+        "subcategory": "Tennis / Grand Slams",
+        "scope": "World & India",
+        "exam_tags": [
+            "Banking",
+            "SSC",
+            "State PCS"
+        ],
+        "summary": "Rohan Bopanna won the Australian Open 2024 Men's Doubles title alongside Australian partner Matthew Ebden, becoming the oldest man in the Open Era to win a Grand Slam title and to reach ATP World No. 1 ranking at the age of 43.",
+        "crux": "Bopanna defeated Italian duo Simone Bolelli and Andrea Vavassori in straight sets, surpassing Mike Bryan's previous record as the oldest Grand Slam doubles champion.",
+        "takeaways": [
+            "Conferred the Padma Shri award in 2024 for extraordinary contributions to Indian tennis.",
+            "Became only the fourth Indian tennis player to achieve the ATP World No. 1 doubles ranking after Leander Paes, Mahesh Bhupathi, and Sania Mirza.",
+            "Won his first men's doubles Major after 61 Grand Slam appearances."
+        ],
+        "prelims_pointers": {
+            "key_agency": "All India Tennis Association (AITA) & ATP",
+            "statutory_anchor": "Australian Open / Grand Slam Tennis",
+            "location": "Melbourne Park, Australia",
+            "facts_to_remember": "Age: 43 years, 329 days; Partner: Matthew Ebden (Australia); Rank: ATP World No. 1."
+        },
+        "mcq": {
+            "question": "At age 43, Rohan Bopanna won the Men's Doubles title at the Australian Open 2024 partnering with:",
+            "options": [
+                "Simone Bolelli",
+                "Matthew Ebden",
+                "Wesley Koolhof",
+                "Ivan Dodig"
+            ],
+            "answer": 1,
+            "explanation": "Rohan Bopanna partnered with Australian player Matthew Ebden to lift the Australian Open 2024 Men's Doubles title."
+        },
+        "source": "ATP / AusOpen.com",
+        "url": "https://ausopen.com",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-sports-06",
+        "title": "D Gukesh Wins FIDE Candidates 2024 to Become Youngest World Title Challenger in History",
+        "date": "2026-04-22",
+        "category": "Sports & Games",
+        "subcategory": "Chess / World Championship",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "17-year-old Grandmaster Dommaraju Gukesh won the FIDE Candidates Tournament 2024 in Toronto, Canada, becoming the youngest player in chess history to win the Candidates and earn the right to challenge the reigning World Champion.",
+        "crux": "Gukesh broke Garry Kasparov's 40-year-old record (set at age 20 in 1984), scoring 9 out of 14 points against an elite field including Hikaru Nakamura, Fabiano Caruana, and Ian Nepomniachtchi to challenge Ding Liren.",
+        "takeaways": [
+            "Became only the second Indian after Viswanathan Anand to qualify for a World Chess Championship match.",
+            "Koneru Humpy and Vaishali Rameshbabu finished joint second in the Women's Candidates tournament.",
+            "Crowned World Champion match venue later hosted in Singapore in late 2024."
+        ],
+        "prelims_pointers": {
+            "key_agency": "FIDE & All India Chess Federation",
+            "statutory_anchor": "FIDE World Championship Cycle",
+            "location": "Toronto, Canada",
+            "facts_to_remember": "Age: 17; Record: Youngest Candidates winner (surpassed Kasparov); Score: 9/14."
+        },
+        "mcq": {
+            "question": "Who became the youngest challenger in World Chess Championship history by winning the FIDE Candidates Tournament 2024 in Toronto?",
+            "options": [
+                "Rameshbabu Praggnanandhaa",
+                "Arjun Erigaisi",
+                "Dommaraju Gukesh",
+                "Nodirbek Abdusattorov"
+            ],
+            "answer": 2,
+            "explanation": "17-year-old D Gukesh won the Candidates tournament with 9/14 points, breaking Garry Kasparov's longstanding record."
+        },
+        "source": "FIDE / The Hindu",
+        "url": "https://fide.com",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-sports-07",
+        "title": "Neeraj Chopra Wins Javelin Silver at Paris 2024 Olympics (89.45m Throw)",
+        "date": "2026-08-08",
+        "category": "Sports & Games",
+        "subcategory": "Olympics / Athletics",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "Reigning Olympic and World Champion Neeraj Chopra won the Silver medal in the Men's Javelin Throw at the Paris 2024 Olympic Games with a season-best throw of 89.45 meters at the Stade de France.",
+        "crux": "Chopra became the first Indian track-and-field athlete in post-independence history to win back-to-back Olympic medals (Gold at Tokyo 2020, Silver at Paris 2024).",
+        "takeaways": [
+            "Gold was won by Pakistan's Arshad Nadeem with a monstrous Olympic Record throw of 92.97 meters.",
+            "Chopra became the fourth Indian athlete in post-independence history to win multiple individual Olympic medals after Norman Pritchard, Sushil Kumar, PV Sindhu, and Manu Bhaker.",
+            "Followed by his 2023 World Athletics Championship Gold in Budapest (88.17m)."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Athletics Federation of India (AFI) & IOA",
+            "statutory_anchor": "Target Olympic Podium Scheme (TOPS)",
+            "location": "Stade de France, Paris",
+            "facts_to_remember": "Silver medal; Throw: 89.45 meters; Gold: Arshad Nadeem (92.97m OR)."
+        },
+        "mcq": {
+            "question": "Neeraj Chopra secured the Silver medal in the Men's Javelin Throw final at the Paris 2024 Olympics with a throw of:",
+            "options": [
+                "87.58 meters",
+                "88.17 meters",
+                "89.45 meters",
+                "90.18 meters"
+            ],
+            "answer": 2,
+            "explanation": "Neeraj Chopra produced a throw of 89.45 meters on his second attempt to win the Olympic Silver medal."
+        },
+        "source": "Olympics.com / PIB",
+        "url": "https://olympics.com",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-sports-08",
+        "title": "37th National Games Goa: Maharashtra Topped Medal Tally with Raja Bhalindra Singh Trophy",
+        "date": "2026-01-04",
+        "category": "Sports & Games",
+        "subcategory": "National Games",
+        "scope": "India",
+        "exam_tags": [
+            "SSC",
+            "State PCS",
+            "Banking"
+        ],
+        "summary": "The 37th National Games concluded in Goa with Maharashtra finishing atop the medal standings with 228 medals (80 Gold, 69 Silver, 79 Bronze), winning the prestigious Raja Bhalindra Singh Trophy for the first time since 1994.",
+        "crux": "Services Sports Control Board (SSCB) finished second with 66 Gold medals, while Haryana finished third with 62 Gold medals in the multi-sport event featuring 43 disciplines.",
+        "takeaways": [
+            "Official Mascot of the 37th National Games was 'Moga' (an Indian bison / Gaur representing love in Konkani).",
+            "Traditional martial arts Gatka, Kalaripayattu, Yogasana, and Mallakhamb featured prominently.",
+            "38th edition of the National Games awarded to Uttarakhand."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Indian Olympic Association (IOA) & Sports Authority of Goa",
+            "statutory_anchor": "National Games of India",
+            "location": "Goa (five cities: Panaji, Margao, Mapusa, Ponda, Vasco)",
+            "facts_to_remember": "Champions: Maharashtra (228 medals); Trophy: Raja Bhalindra Singh Trophy; Mascot: Moga (Gaur)."
+        },
+        "mcq": {
+            "question": "Which state contingent lifted the Raja Bhalindra Singh Trophy by topping the overall medal tally at the 37th National Games held in Goa?",
+            "options": [
+                "Services (SSCB)",
+                "Haryana",
+                "Maharashtra",
+                "Kerala"
+            ],
+            "answer": 2,
+            "explanation": "Maharashtra topped the medal tally with 80 gold and 228 overall medals to claim the Raja Bhalindra Singh Trophy."
+        },
+        "source": "IOA / PIB",
+        "url": "https://olympic.ind.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-national-01",
+        "title": "PM Surya Ghar: Muft Bijli Yojana Launched with ₹75,021 Crore Outlay for 1 Crore Solar Homes",
+        "date": "2026-02-13",
+        "category": "National Affairs & Schemes",
+        "subcategory": "Renewable Energy / Welfare",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "Prime Minister Narendra Modi launched the 'PM Surya Ghar: Muft Bijli Yojana' with a total financial outlay of ₹75,021 crore, aimed at providing up to 300 units of free electricity every month to 1 crore households through rooftop solar installations.",
+        "crux": "Provides central financial assistance (subsidy) up to ₹78,000 for 3 kW rooftop solar systems, integrated with low-interest collateral-free bank loans at around 7% interest through a National Portal.",
+        "takeaways": [
+            "Subsidy structure: ₹30,000 for 1 kW system, ₹60,000 for 2 kW system, and ₹78,000 for 3 kW or higher systems.",
+            "Urban local bodies and Panchayats incentivized to develop 'Model Solar Villages' in every district.",
+            "Projected to save households ₹75,000 crore annually in electricity bills and reduce carbon emissions by 720 million tonnes."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of New and Renewable Energy (MNRE)",
+            "statutory_anchor": "Cabinet approval on 29 February 2024",
+            "location": "Pan-India",
+            "facts_to_remember": "Outlay: ₹75,021 Crore; Target: 1 Crore households; Free electricity: Up to 300 units/month; Max subsidy: ₹78,000."
+        },
+        "mcq": {
+            "question": "Under the PM Surya Ghar: Muft Bijli Yojana, what is the maximum central financial subsidy provided for a 3 kW or higher residential rooftop solar system?",
+            "options": [
+                "₹50,000",
+                "₹65,000",
+                "₹78,000",
+                "₹90,000"
+            ],
+            "answer": 2,
+            "explanation": "The scheme provides a maximum subsidy of ₹78,000 for systems of 3 kW capacity or higher."
+        },
+        "source": "MNRE / PIB",
+        "url": "https://pmsuryaghar.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-national-02",
+        "title": "Swachh Survekshan Awards: Indore and Surat Crowned Joint Cleanest Cities in India",
+        "date": "2026-01-11",
+        "category": "National Affairs & Schemes",
+        "subcategory": "Urban Sanitation",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "President Droupadi Murmu presented the Swachh Survekshan Awards, where Indore (for the 7th consecutive year) and Surat were declared the joint cleanest cities in India in the category of cities with more than 1 lakh population.",
+        "crux": "Navi Mumbai was ranked the third cleanest city, while Maharashtra bagged the award for the best-performing State in sanitation, followed by Madhya Pradesh and Chhattisgarh.",
+        "takeaways": [
+            "Conducted by the Ministry of Housing and Urban Affairs (MoHUA) under Swachh Bharat Mission-Urban (SBM-U).",
+            "Saswad in Maharashtra was ranked the cleanest city among urban local bodies with population below 1 lakh.",
+            "Varanasi and Prayagraj emerged as the cleanest Ganga towns."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Housing and Urban Affairs (MoHUA)",
+            "statutory_anchor": "Swachh Bharat Mission (Urban) 2.0",
+            "location": "New Delhi / Indore, Surat, Navi Mumbai",
+            "facts_to_remember": "Cleanest cities (>1 lakh): Indore & Surat (Joint 1st); Best state: Maharashtra; Cleanest Ganga town: Varanasi."
+        },
+        "mcq": {
+            "question": "Which two cities were jointly awarded the title of 'Cleanest City' (population > 1 Lakh) at the Swachh Survekshan Awards?",
+            "options": [
+                "Indore and Bhopal",
+                "Indore and Surat",
+                "Surat and Navi Mumbai",
+                "Chandigarh and Mysuru"
+            ],
+            "answer": 1,
+            "explanation": "Indore and Surat shared the top honor as joint cleanest cities in the more than 1 lakh population category."
+        },
+        "source": "MoHUA / PIB",
+        "url": "https://swachhsurvekshan.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-national-03",
+        "title": "PM Vishwakarma Scheme: Financial Aid & Skill Toolkits for 18 Traditional Artisan Trades",
+        "date": "2026-04-18",
+        "category": "National Affairs & Schemes",
+        "subcategory": "Skill Development / MSME",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "The Central Sector 'PM Vishwakarma Scheme' achieved over 2 crore applicant registrations, providing holistic handholding to traditional artisans and craftspeople working with their hands and traditional tools across 18 family-based trades.",
+        "crux": "Offers recognition through PM Vishwakarma Certificate & ID card, skill upgradation stipend (₹500/day), toolkit incentive of ₹15,000, and collateral-free enterprise development loans up to ₹3 lakh at a concessional 5% interest rate.",
+        "takeaways": [
+            "Fully funded by Central Government with an initial outlay of ₹13,000 crore for FY24 to FY28.",
+            "Credit support provided in two tranches: Tranche 1 up to ₹1 lakh (18 months) and Tranche 2 up to ₹2 lakh (30 months).",
+            "Covers 18 trades including carpenters (Suthar), blacksmiths (Lohar), goldsmiths (Sonar), potters (Kumhaar), weavers, and boat builders."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of MSME, Ministry of Skill Development, and Department of Financial Services",
+            "statutory_anchor": "Central Sector Scheme launched 17 September 2023",
+            "location": "Pan-India",
+            "facts_to_remember": "Outlay: ₹13,000 Crore; Trades covered: 18; Loan: Up to ₹3 Lakh at 5% interest; Toolkit grant: ₹15,000."
+        },
+        "mcq": {
+            "question": "Under the PM Vishwakarma Scheme, what is the concessional interest rate charged to beneficiary artisans for collateral-free credit?",
+            "options": [
+                "3%",
+                "5%",
+                "7%",
+                "8.5%"
+            ],
+            "answer": 1,
+            "explanation": "The scheme offers collateral-free loans up to ₹3 lakh at a concessional interest rate of 5%, with interest subvention provided by the Central Government."
+        },
+        "source": "Ministry of MSME / PIB",
+        "url": "https://pmvishwakarma.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-national-04",
+        "title": "PM-eBus Sewa Scheme: Deployment of 10,000 Electric Buses Across 169 Urban Centers",
+        "date": "2026-05-10",
+        "category": "National Affairs & Schemes",
+        "subcategory": "Urban Mobility / Green Transit",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "The Ministry of Housing and Urban Affairs signed contracts under the 'PM-eBus Sewa' scheme to roll out 10,000 electric buses on a Public-Private Partnership (PPP) model across 169 cities lacking organized public bus transport.",
+        "crux": "With an estimated cost of ₹57,613 crore (Central support ₹20,000 crore), the scheme supports city bus operations for 10 years, promoting electric mobility and green power charging infrastructure.",
+        "takeaways": [
+            "Priority given to cities with a population between 3 lakh and 40 lakh, including capital cities of Union Territories and North-Eastern States.",
+            "City authorities contract private bus operators on Gross Cost Contract (GCC) basis while receiving operational subsidies per kilometer from Centre.",
+            "Reduces urban tailpipe emissions, diesel import bills, and congestion in Tier-2 and Tier-3 urban areas."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Housing and Urban Affairs (MoHUA)",
+            "statutory_anchor": "National E-Mobility Mission & SBM-U",
+            "location": "169 cities across India",
+            "facts_to_remember": "Buses: 10,000 e-buses; Total cost: ₹57,613 Crore; Model: PPP with Gross Cost Contract (GCC)."
+        },
+        "mcq": {
+            "question": "What business model is adopted under the PM-eBus Sewa scheme for operating 10,000 electric buses in designated cities?",
+            "options": [
+                "Direct municipal government ownership and operation",
+                "Public-Private Partnership (PPP) on Gross Cost Contract (GCC) model",
+                "Fully privatized fare-metering without state subsidies",
+                "Corporate Social Responsibility (CSR) grant operations"
+            ],
+            "answer": 1,
+            "explanation": "Under PM-eBus Sewa, city bus operations are run through a PPP framework on a Gross Cost Contract (GCC) model with central operational support."
+        },
+        "source": "MoHUA / PIB",
+        "url": "https://mohua.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-national-05",
+        "title": "Pradhan Mantri Awas Yojana (PMAY 2.0): Target to Construct 3 Crore Additional Homes",
+        "date": "2026-06-10",
+        "category": "National Affairs & Schemes",
+        "subcategory": "Affordable Housing",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "In its first cabinet decision, the Union Government approved financial assistance for the construction of 3 crore additional houses under the Pradhan Mantri Awas Yojana (PMAY)—2 crore houses under PMAY-Gramin and 1 crore under PMAY-Urban 2.0.",
+        "crux": "Addresses the housing needs of poor, lower-middle, and middle-class families with enhanced basic amenities including toilet, LPG connection, tap water, and electricity under convergence with other welfare missions.",
+        "takeaways": [
+            "PMAY-U 2.0 introduces an Interest Subsidy Scheme (ISS) for home loans up to ₹35 lakh for EWS and LIG categories.",
+            "All houses require mandatory ownership or co-ownership in the name of the female head of the family.",
+            "Constructed using disaster-resilient green technologies with geo-tagging at each stage of construction."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Rural Development (PMAY-G) & MoHUA (PMAY-U)",
+            "statutory_anchor": "Cabinet decision 10 June 2024",
+            "location": "Rural and Urban India",
+            "facts_to_remember": "Total houses: 3 Crore (2 Cr Rural + 1 Cr Urban); Gender empowerment: Mandatory female co-ownership."
+        },
+        "mcq": {
+            "question": "Under the expanded PMAY 2.0 guidelines approved in 2024, what is the total number of additional houses planned to be constructed?",
+            "options": [
+                "1 Crore",
+                "2 Crore",
+                "3 Crore",
+                "5 Crore"
+            ],
+            "answer": 2,
+            "explanation": "The Union Cabinet approved financial assistance to construct 3 crore additional houses (2 crore under PMAY-Gramin and 1 crore under PMAY-Urban)."
+        },
+        "source": "PIB / MoRD",
+        "url": "https://pmayg.nic.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-national-06",
+        "title": "Aspirational Blocks Programme (ABP): First Delta Rankings for 500 Blocks Announced",
+        "date": "2026-01-16",
+        "category": "National Affairs & Schemes",
+        "subcategory": "Decentralized Governance",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS"
+        ],
+        "summary": "NITI Aayog published the inaugural Delta Rankings for the Aspirational Blocks Programme (ABP), recognizing Tiriyani Block of Kumuram Bheem Asifabad district (Telangana) with the 1st rank and Kaushambi block (Uttar Pradesh) with the 2nd rank.",
+        "crux": "Building on the success of the Aspirational Districts Programme, ABP focuses on fast-tracking development across 500 historically lagging blocks in 329 districts across 40 Key Performance Indicators (KPIs).",
+        "takeaways": [
+            "KPIs categorized into 5 themes: Health & Nutrition, Education, Agriculture & Water Resources, Basic Infrastructure, and Social Development.",
+            "Launched the 'Chintan Shivir' and 'Sankalp Saptaah' nationwide governance convergence campaigns.",
+            "Employs competitive federalism and peer learning to empower grassroot block administration."
+        ],
+        "prelims_pointers": {
+            "key_agency": "NITI Aayog",
+            "statutory_anchor": "National Development Agenda",
+            "location": "500 blocks across 27 States and 4 UTs",
+            "facts_to_remember": "Top block: Tiriyani (Telangana); 2nd: Kaushambi (UP); Coverage: 500 blocks."
+        },
+        "mcq": {
+            "question": "Which administrative block achieved the top position in NITI Aayog's first-ever Delta Rankings under the Aspirational Blocks Programme (ABP)?",
+            "options": [
+                "Kaushambi Block, Uttar Pradesh",
+                "Tiriyani Block, Telangana",
+                "Aripal Block, Jammu and Kashmir",
+                "Nandurbar Block, Maharashtra"
+            ],
+            "answer": 1,
+            "explanation": "Tiriyani block of Kumuram Bheem Asifabad district in Telangana secured the top rank in NITI Aayog's first ABP Delta Rankings."
+        },
+        "source": "NITI Aayog / PIB",
+        "url": "https://niti.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-national-07",
+        "title": "Jal Jeevan Mission: Reaches Milestone of 75%+ Rural Households with Tap Water Connections",
+        "date": "2026-03-22",
+        "category": "National Affairs & Schemes",
+        "subcategory": "Rural Water Supply",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "On World Water Day, the Department of Drinking Water and Sanitation announced that over 75% of rural households in India (over 14.5 crore families) have been provided with functional household tap water connections under the Jal Jeevan Mission (JJM).",
+        "crux": "JJM aims to provide 55 liters per capita per day (lpcd) of potable drinking water to every rural household ('Har Ghar Jal') through functional household tap connections (FHTC) by 2024.",
+        "takeaways": [
+            "Nine States and Union Territories have achieved 100% 'Har Ghar Jal' certification: Goa, Telangana, Haryana, Gujarat, Punjab, Himachal Pradesh, Puducherry, D&D/D&NH, and A&N Islands.",
+            "Water Quality Management Information System (WQMIS) integrates field test kits and NABL-accredited labs for potability surveillance.",
+            "Implemented under community ownership with Village Water and Sanitation Committees (VWSC) / Pani Samitis."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Department of Drinking Water & Sanitation, Ministry of Jal Shakti",
+            "statutory_anchor": "National Jal Jeevan Mission launched 15 August 2019",
+            "location": "Pan-India Rural",
+            "facts_to_remember": "Supply norm: 55 liters per capita per day; First 100% Har Ghar Jal state: Goa; First certified district: Burhanpur (MP)."
+        },
+        "mcq": {
+            "question": "What is the prescribed minimum quantity of safe potable drinking water provided per person per day under the Jal Jeevan Mission?",
+            "options": [
+                "40 liters per capita per day",
+                "55 liters per capita per day",
+                "70 liters per capita per day",
+                "100 liters per capita per day"
+            ],
+            "answer": 1,
+            "explanation": "Jal Jeevan Mission aims to provide 55 liters of water per person per day to every rural household through Functional Household Tap Connections."
+        },
+        "source": "Ministry of Jal Shakti / PIB",
+        "url": "https://jaljeevanmission.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-national-08",
+        "title": "Bharat 6G Vision Document & 'Bharat 6G Alliance' Launched by DoT",
+        "date": "2026-04-25",
+        "category": "National Affairs & Schemes",
+        "subcategory": "Telecommunications / R&D",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "The Department of Telecommunications unveiled the 'Bharat 6G Vision' document and formally launched the 'Bharat 6G Alliance' (B6GA) to position India as a leading global supplier of intellectual property, products, and standards in sixth-generation telecommunications.",
+        "crux": "Operates under the guiding principles of Affordability, Sustainability, and Ubiquity, aiming for commercial 6G deployment by 2030 and securing at least 10% of global standard patents.",
+        "takeaways": [
+            "6G is expected to deliver ultra-low latency (<1 millisecond) and speeds up to 1 Terabit per second (Tbps), 100 times faster than 5G.",
+            "International Telecommunication Union (ITU) officially approved the 6G Framework (IMT-2030), adopting key inputs submitted by India.",
+            "Supported by an accelerated R&D funding corpus under the Telecom Technology Development Fund (TTDF)."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Department of Telecommunications (DoT) & TSDSI",
+            "statutory_anchor": "National Digital Communications Policy",
+            "location": "New Delhi",
+            "facts_to_remember": "Target year: 2030; ITU designation for 6G: IMT-2030; Core themes: Affordability, Sustainability, Ubiquity."
+        },
+        "mcq": {
+            "question": "What is the official terminology adopted by the International Telecommunication Union (ITU) for sixth-generation (6G) wireless technology systems?",
+            "options": [
+                "IMT-2020",
+                "IMT-Advanced",
+                "IMT-2030",
+                "NextGen Wireless 2030"
+            ],
+            "answer": 2,
+            "explanation": "The ITU formally approved the framework for 6G under the technical designation 'IMT-2030'."
+        },
+        "source": "DoT / PIB",
+        "url": "https://dot.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-intl-01",
+        "title": "16th BRICS Summit in Kazan, Russia: Historic Expansion Welcomes 5 New Member States",
+        "date": "2026-10-24",
+        "category": "International & Global Affairs",
+        "subcategory": "Multilateral Summits",
+        "scope": "World",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "The 16th BRICS Summit convened in Kazan, Russia, under the theme 'Strengthening Multilateralism for Just Global Development and Security', marking the first summit meeting since the formal expansion of BRICS to include Egypt, Ethiopia, Iran, and the United Arab Emirates.",
+        "crux": "Leaders adopted the comprehensive Kazan Declaration, reaffirming commitment to cross-border settlement in local currencies (BRICS Pay / BRICS Bridge) and reform of the Bretton Woods financial institutions and the UN Security Council.",
+        "takeaways": [
+            "Prime Minister Narendra Modi and Chinese President Xi Jinping held their first formal bilateral meeting in five years on the sidelines of the summit following the patrolling pact along the Line of Actual Control (LAC).",
+            "BRICS represents over 45% of the world's population and roughly 35% of global GDP by Purchasing Power Parity (PPP).",
+            "Created a new category of 'BRICS Partner Countries' to engage non-member developing economies."
+        ],
+        "prelims_pointers": {
+            "key_agency": "BRICS (Brazil, Russia, India, China, South Africa + 4 New Members)",
+            "statutory_anchor": "Kazan Declaration 2024",
+            "location": "Kazan, Republic of Tatarstan, Russia",
+            "facts_to_remember": "New members: Egypt, Ethiopia, Iran, UAE; 2024 Chair: Russia; 2025 Chair: Brazil; 16th Summit."
+        },
+        "mcq": {
+            "question": "Which city hosted the 16th BRICS Summit in October 2024, marking the first summit of the expanded BRICS bloc?",
+            "options": [
+                "Johannesburg, South Africa",
+                "Kazan, Russia",
+                "Beijing, China",
+                "Brasilia, Brazil"
+            ],
+            "answer": 1,
+            "explanation": "The 16th BRICS Summit was held in Kazan, Russia, under the Russian BRICS Chairmanship."
+        },
+        "source": "Ministry of External Affairs / Reuters",
+        "url": "https://mea.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-intl-02",
+        "title": "G20 Rio de Janeiro Summit (Brazil): Global Alliance Against Hunger and Poverty Launched",
+        "date": "2026-11-19",
+        "category": "International & Global Affairs",
+        "subcategory": "Global Summits / G20",
+        "scope": "World",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "The 19th G20 Summit convened in Rio de Janeiro, Brazil, under President Luiz Inácio Lula da Silva, officially launching the 'Global Alliance Against Hunger and Poverty' and advancing the global governance reforms initiated during India's 2023 G20 Presidency.",
+        "crux": "The summit focused on three core pillars: Social inclusion and the fight against hunger, energy transition and sustainable development, and reform of global governance institutions (UNSC, WTO, IMF).",
+        "takeaways": [
+            "India, Brazil, and South Africa formed the G20 Troika, maintaining continuity on Global South priorities.",
+            "African Union (AU), inducted as a permanent member under India's G20 Presidency at New Delhi, participated in full capacity.",
+            "Endorsed progressive taxation on ultra-high-net-worth individuals and capital replenishment for Multilateral Development Banks (MDBs)."
+        ],
+        "prelims_pointers": {
+            "key_agency": "G20 (Group of Twenty) & African Union",
+            "statutory_anchor": "Rio de Janeiro Leaders' Declaration 2024",
+            "location": "Rio de Janeiro, Brazil",
+            "facts_to_remember": "G20 2024 Presidency: Brazil; 2025 Presidency: South Africa. Theme: 'Building a Just World and a Sustainable Planet'."
+        },
+        "mcq": {
+            "question": "Which major global initiative was formally launched by Brazilian President Lula da Silva at the G20 Rio de Janeiro Summit 2024?",
+            "options": [
+                "Global Clean Hydrogen Compact",
+                "Global Alliance Against Hunger and Poverty",
+                "International Sovereign Debt Restructuring Forum",
+                "Global Artificial Intelligence Governance Treaty"
+            ],
+            "answer": 1,
+            "explanation": "The flagship deliverable of Brazil's G20 presidency was the Global Alliance Against Hunger and Poverty, endorsed by over 80 countries."
+        },
+        "source": "G20.org / PIB",
+        "url": "https://g20.org",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-intl-03",
+        "title": "Exercise Tarang Shakti 2024: India's Largest-Ever Multilateral Air Force Combat Drill",
+        "date": "2026-08-30",
+        "category": "International & Global Affairs",
+        "subcategory": "Defence Diplomacy / Air Force",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "The Indian Air Force (IAF) conducted 'Exercise Tarang Shakti 2024', the largest multilateral air combat exercise ever hosted on Indian soil, involving air forces from over 30 countries in two phases across Tamil Nadu and Rajasthan.",
+        "crux": "Phase 1 was conducted at Sulur Air Force Station (Tamil Nadu) featuring Germany, France, Spain, and the UK, while Phase 2 took place at Jodhpur (Rajasthan) with participation from the US, Australia, Greece, UAE, and Singapore.",
+        "takeaways": [
+            "Showcased indigenous aviation platforms including LCA Tejas Mk1, Light Combat Helicopter (Prachand), and ALH Dhruv.",
+            "Marked the first deployment of the German Eurofighter Typhoon and Spanish Eurofighter fighters on Indian soil.",
+            "Strengthens interoperability, combat tactics, and strategic defence partnerships with Quad, European, and Middle Eastern allies."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Indian Air Force (IAF)",
+            "statutory_anchor": "Defence Cooperation Agreements",
+            "location": "Sulur (Tamil Nadu) & Jodhpur (Rajasthan)",
+            "facts_to_remember": "Name: Tarang Shakti 2024; Participating nations: 30+; Host: Indian Air Force; First-of-its-kind multilateral air drill in India."
+        },
+        "mcq": {
+            "question": "Which air base hosted Phase 1 of 'Exercise Tarang Shakti 2024', India's largest-ever multilateral air exercise?",
+            "options": [
+                "Ambala Air Force Station, Haryana",
+                "Sulur Air Force Station, Tamil Nadu",
+                "Gwalior Air Force Station, Madhya Pradesh",
+                "Hindon Air Force Station, Uttar Pradesh"
+            ],
+            "answer": 1,
+            "explanation": "Phase 1 of Tarang Shakti was held at Sulur Air Force Station in Tamil Nadu, followed by Phase 2 at Jodhpur Air Force Station in Rajasthan."
+        },
+        "source": "PIB / Indian Air Force",
+        "url": "https://indianairforce.nic.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-intl-04",
+        "title": "24th SCO Summit in Astana: Belarus Admitted as 10th Full Member State",
+        "date": "2026-07-04",
+        "category": "International & Global Affairs",
+        "subcategory": "Regional Security / SCO",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "The Shanghai Cooperation Organisation (SCO) Council of Heads of State met in Astana, Kazakhstan, officially admitting the Republic of Belarus as the 10th full member state of the Eurasian security bloc.",
+        "crux": "Leaders signed the Astana Declaration and approved the SCO Development Strategy until 2035, affirming cooperation against terrorism, separatism, and extremism ('three evils') and promoting settlement in national currencies.",
+        "takeaways": [
+            "SCO now comprises 10 member states: China, Russia, Kazakhstan, Kyrgyzstan, Tajikistan, Uzbekistan, India, Pakistan, Iran, and Belarus.",
+            "External Affairs Minister Dr. S. Jaishankar represented India, reiterating zero tolerance against cross-border terrorism and respect for sovereignty in connectivity.",
+            "China assumed the rotating SCO presidency for 2024–2025."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Shanghai Cooperation Organisation (SCO)",
+            "statutory_anchor": "Astana Declaration & SCO Charter 2002",
+            "location": "Astana, Kazakhstan",
+            "facts_to_remember": "10th member: Belarus (joined 2024); 9th member was Iran (joined 2023); RATS HQ: Tashkent, Uzbekistan; SCO Sec: Beijing."
+        },
+        "mcq": {
+            "question": "Which nation was formally inducted as the 10th full member state of the Shanghai Cooperation Organisation (SCO) at the 2024 Astana Summit?",
+            "options": [
+                "Armenia",
+                "Belarus",
+                "Mongolia",
+                "Azerbaijan"
+            ],
+            "answer": 1,
+            "explanation": "Belarus became the 10th full member of the SCO at the Astana Summit in July 2024."
+        },
+        "source": "MEA / Reuters",
+        "url": "https://sectsco.org",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-intl-05",
+        "title": "Quad Leaders' Summit in Wilmington: Quad Cancer Moonshot & MAITRI Initiative Launched",
+        "date": "2026-09-22",
+        "category": "International & Global Affairs",
+        "subcategory": "Indo-Pacific / Quad",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "The fourth in-person Quad Leaders' Summit convened in Wilmington, Delaware (USA), attended by leaders of India, the United States, Japan, and Australia, announcing flagship health, maritime, and semiconductor security initiatives.",
+        "crux": "Leaders unveiled the 'Quad Cancer Moonshot' to combat cervical cancer across the Indo-Pacific and the Maritime Initiative for Training in the Indo-Pacific (MAITRI) to empower regional coast guards.",
+        "takeaways": [
+            "India committed $7.5 million worth of HPV sampling kits, detection tools, and cervical cancer vaccines to the Indo-Pacific region.",
+            "Announced the first-ever 'Quad-at-Sea Ship Observer Mission' scheduled for 2025 between the four Coast Guards.",
+            "Reaffirmed commitment to a free, open, and inclusive Indo-Pacific respecting UNCLOS maritime law."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Quad (India, USA, Japan, Australia)",
+            "statutory_anchor": "Wilmington Declaration Joint Statement",
+            "location": "Wilmington, Delaware, USA",
+            "facts_to_remember": "Quad 4 nations; Flagship initiatives: Quad Cancer Moonshot, MAITRI, Semiconductor Supply Chain Contingency Network."
+        },
+        "mcq": {
+            "question": "What is the primary objective of the 'Quad Cancer Moonshot' partnership unveiled at the Wilmington Quad Summit 2024?",
+            "options": [
+                "Eliminating radiation exposure from nuclear submarines",
+                "Preventing and combating cervical cancer across the Indo-Pacific region",
+                "Funding lunar medical radiation testing facilities",
+                "Subsidizing chemotherapy drugs for G7 economies"
+            ],
+            "answer": 1,
+            "explanation": "The Quad Cancer Moonshot is a groundbreaking health initiative focused on expanding HPV vaccination, screening, and treatment for cervical cancer in the Indo-Pacific."
+        },
+        "source": "MEA / WhiteHouse.gov",
+        "url": "https://mea.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-intl-06",
+        "title": "Colombo Security Conclave (CSC): Founding Charter Signed for Maritime Security",
+        "date": "2026-08-30",
+        "category": "International & Global Affairs",
+        "subcategory": "Indian Ocean Security",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS"
+        ],
+        "summary": "India, Sri Lanka, the Maldives, and Mauritius formally signed the founding Charter and Memorandum of Understanding establishing the Colombo Security Conclave (CSC) as a institutionalized regional security grouping in the Indian Ocean.",
+        "crux": "CSC focuses on five core pillars: Maritime safety and security, countering terrorism and radicalisation, combating trafficking and transnational organised crime, cyber security, and humanitarian assistance and disaster relief (HADR).",
+        "takeaways": [
+            "Charter signed in Colombo by National Security Advisers (NSA Ajit Doval representing India).",
+            "Permanent Secretariat established in Colombo, Sri Lanka.",
+            "Bangladesh and Seychelles participate as observer states."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Colombo Security Conclave (CSC) Secretariat",
+            "statutory_anchor": "CSC Founding Charter 2024",
+            "location": "Colombo, Sri Lanka",
+            "facts_to_remember": "Member states: India, Sri Lanka, Maldives, Mauritius; Observers: Bangladesh, Seychelles; 5 Security Pillars."
+        },
+        "mcq": {
+            "question": "Where is the permanent Secretariat of the institutionalized Colombo Security Conclave (CSC) established?",
+            "options": [
+                "New Delhi, India",
+                "Male, Maldives",
+                "Colombo, Sri Lanka",
+                "Port Louis, Mauritius"
+            ],
+            "answer": 2,
+            "explanation": "The permanent Secretariat of the Colombo Security Conclave is located in Colombo, Sri Lanka."
+        },
+        "source": "MEA / PIB",
+        "url": "https://mea.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-intl-07",
+        "title": "BAPS Hindu Mandir in Abu Dhabi: First Traditional Stone Temple in Middle East Inaugurated",
+        "date": "2026-02-14",
+        "category": "International & Global Affairs",
+        "subcategory": "Cultural Diplomacy",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "Prime Minister Narendra Modi inaugurated the BAPS Hindu Mandir in Abu Dhabi, United Arab Emirates, marking the first traditional stone-carved Hindu temple in the Middle East region.",
+        "crux": "Built on 27 acres of land gifted by UAE President Sheikh Mohamed bin Zayed Al Nahyan, the temple features seven spires (shikhars) representing the seven emirates of the UAE, constructed without steel or ferrous metals.",
+        "takeaways": [
+            "Constructed using pink sandstone from Rajasthan and Italian Carrara marble using ancient Nagara-style stone interlocking techniques.",
+            "Symbolizes mutual tolerance, communal harmony, and the vibrant Indian diaspora ties in West Asia.",
+            "Depicts value tales from Indian epics alongside traditional Arabic, Mayan, Aztec, and Egyptian civilizational fables."
+        ],
+        "prelims_pointers": {
+            "key_agency": "BAPS Swaminarayan Sanstha & UAE Ministry of Tolerance",
+            "statutory_anchor": "Bilateral Cultural Agreement",
+            "location": "Abu Mreikhah, Abu Dhabi, UAE",
+            "facts_to_remember": "Architectural features: 7 spires (7 emirates), Nagara style, Pink sandstone from Rajasthan, No structural steel."
+        },
+        "mcq": {
+            "question": "The BAPS Hindu Mandir inaugurated in Abu Dhabi features seven spires (shikhars). What do the seven spires symbolically represent?",
+            "options": [
+                "The seven holy rivers of India (Sapta Sindhu)",
+                "The seven Emirates that constitute the UAE",
+                "The seven celestial sages (Saptarishi)",
+                "The seven continents of the world"
+            ],
+            "answer": 1,
+            "explanation": "The seven shikhars (spires) of the Abu Dhabi temple symbolize the unity of the seven emirates of the UAE."
+        },
+        "source": "PIB / Khaleej Times",
+        "url": "https://mea.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-intl-08",
+        "title": "3rd Voice of Global South Summit (VOGSS): India Champions Developing World Priorities",
+        "date": "2026-08-17",
+        "category": "International & Global Affairs",
+        "subcategory": "Global South Diplomacy",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "India hosted the 3rd Voice of Global South Summit virtually under the theme 'An Empowered Global South for a Sustainable Future', bringing together leaders from over 120 developing nations across Asia, Africa, and Latin America.",
+        "crux": "Prime Minister Modi proposed a comprehensive 'Global South Development Compact' focused on trade, technology sharing, concessional finance, and human resource capacity building without imposing debt burdens.",
+        "takeaways": [
+            "India operationalized the DAKSHIN (Development and Knowledge Sharing Initiative) Global South Center of Excellence.",
+            "Promotes the 'Arogya Maitri' project supplying life-saving medical supplies to crisis-hit developing nations.",
+            "Reiterates demand for reform of the UN Security Council and international financial institutions (IMF/World Bank)."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of External Affairs (MEA)",
+            "statutory_anchor": "Global South Development Compact",
+            "location": "New Delhi (Virtual Summit)",
+            "facts_to_remember": "Theme: 'An Empowered Global South for a Sustainable Future'; Center of Excellence: DAKSHIN; Health initiative: Arogya Maitri."
+        },
+        "mcq": {
+            "question": "Which Center of Excellence was established by India to coordinate knowledge-sharing and sustainable development solutions with developing countries?",
+            "options": [
+                "SAMARTH",
+                "DAKSHIN",
+                "SANKALP",
+                "MAITRI"
+            ],
+            "answer": 1,
+            "explanation": "DAKSHIN (Development and Knowledge Sharing Initiative) was established by India as a specialized Center of Excellence for Global South nations."
+        },
+        "source": "MEA / PIB",
+        "url": "https://mea.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-env-01",
+        "title": "India Adds 3 New Ramsar Sites: Total Network Reaches 85 Wetlands of Global Importance",
+        "date": "2026-08-14",
+        "category": "Environment & Ecology",
+        "subcategory": "Wetlands & Conservation",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "On the eve of Independence Day, India designated three new wetlands under the Ramsar Convention on Wetlands—Nanjarayan Bird Sanctuary and Kazhuveli Bird Sanctuary in Tamil Nadu, and Tawa Reservoir in Madhya Pradesh—expanding India's Ramsar network to 85 sites.",
+        "crux": "India has the second largest network of Ramsar sites in Asia after China, with Tamil Nadu hosting the highest number of Ramsar sites in India (18 sites), followed by Uttar Pradesh (10 sites).",
+        "takeaways": [
+            "Nanjarayan Bird Sanctuary (Tiruppur, TN): 83rd site, an ancient large irrigation tank home to migratory waterbirds on the Central Asian Flyway.",
+            "Kazhuveli Bird Sanctuary (Villupuram, TN): 84th site, second largest brackish water lake in South India after Pulicat Lake.",
+            "Tawa Reservoir (Hoshangabad, MP): 85th site, situated inside Satpura Tiger Reserve at the confluence of Tawa and Denwa rivers."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Environment, Forest and Climate Change (MoEFCC) & Ramsar Secretariat",
+            "statutory_anchor": "Ramsar Convention 1971 & Wetlands (Conservation and Management) Rules 2017",
+            "location": "Tamil Nadu (18 sites) & Madhya Pradesh",
+            "facts_to_remember": "Total Ramsar sites: 85; State with most sites: Tamil Nadu (18); World Wetlands Day: 2 February."
+        },
+        "mcq": {
+            "question": "Which Indian State currently possesses the highest number of Ramsar Sites (18 wetlands of international importance) in India?",
+            "options": [
+                "Uttar Pradesh",
+                "Kerala",
+                "Tamil Nadu",
+                "Madhya Pradesh"
+            ],
+            "answer": 2,
+            "explanation": "Tamil Nadu leads India with 18 Ramsar sites, followed by Uttar Pradesh with 10 sites."
+        },
+        "source": "MoEFCC / PIB",
+        "url": "https://moef.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-env-02",
+        "title": "International Big Cat Alliance (IBCA) Headquarters Formally Founded in India",
+        "date": "2026-02-29",
+        "category": "Environment & Ecology",
+        "subcategory": "Wildlife Conservation",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "The Union Cabinet approved the establishment of the International Big Cat Alliance (IBCA) with its headquarters in India, alongside a one-time budgetary grant of ₹150 crore for five years.",
+        "crux": "IBCA is a multi-country, multi-agency coalition of 97 big-cat range countries dedicated to the conservation of seven major big cats: Tiger, Lion, Leopard, Snow Leopard, Cheetah, Jaguar, and Puma.",
+        "takeaways": [
+            "Launched during the 50th anniversary commemoration of Project Tiger in Mysuru, Karnataka.",
+            "India is the only country in the world to host five of the seven big cats in the wild (Tiger, Lion, Leopard, Snow Leopard, Cheetah).",
+            "Governance framework includes a General Assembly of member states and an elected Council headed by a President."
+        ],
+        "prelims_pointers": {
+            "key_agency": "National Tiger Conservation Authority (NTCA) & MoEFCC",
+            "statutory_anchor": "International treaty-based organisation headquarters in India",
+            "location": "India (Headquarters)",
+            "facts_to_remember": "7 Big Cats: Tiger, Lion, Leopard, Snow Leopard, Cheetah, Jaguar, Puma; Initial grant: ₹150 Crore."
+        },
+        "mcq": {
+            "question": "Which two big cats included in the International Big Cat Alliance (IBCA) are NOT naturally found in the wild in India?",
+            "options": [
+                "Jaguar and Puma",
+                "Snow Leopard and Cheetah",
+                "Leopard and Tiger",
+                "Cheetah and Lion"
+            ],
+            "answer": 0,
+            "explanation": "Jaguars (native to the Americas) and Pumas (native to the Americas) are not found in the wild in India."
+        },
+        "source": "PIB / NTCA",
+        "url": "https://ntca.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-env-03",
+        "title": "COP28 UAE Consensus & COP29 Baku Summit: Transitioning Away from Fossil Fuels",
+        "date": "2026-01-02",
+        "category": "Environment & Ecology",
+        "subcategory": "Climate Change / UNFCCC",
+        "scope": "World",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC",
+            "Banking"
+        ],
+        "summary": "The UNFCCC COP28 in Dubai adopted the historic 'UAE Consensus', calling on all nations to transition away from fossil fuels in energy systems to achieve net zero by 2050, followed by the COP29 summit in Baku focusing on the New Collective Quantified Goal (NCQG) on climate finance.",
+        "crux": "COP28 formally operationalized the Loss and Damage Fund hosted by the World Bank, and set global targets to triple renewable energy capacity and double energy efficiency rates by 2030.",
+        "takeaways": [
+            "COP29 in Baku, Azerbaijan, was dubbed the 'Finance COP' to negotiate a new financial target replacing the previous $100 billion annual climate pledge.",
+            "India advocated for climate justice, differentiation under Common But Differentiated Responsibilities and Respective Capabilities (CBDR-RC), and affordable technology transfer.",
+            "India launched the Green Credits Initiative (GCI) on the sidelines of COP28 to incentivize voluntary environmental positive actions."
+        ],
+        "prelims_pointers": {
+            "key_agency": "UNFCCC & MoEFCC",
+            "statutory_anchor": "Paris Agreement (Article 9 & Article 2)",
+            "location": "Dubai (COP28) / Baku, Azerbaijan (COP29)",
+            "facts_to_remember": "COP28: UAE Consensus, Loss & Damage Fund; COP29: Baku, Azerbaijan (NCQG Climate Finance); India's Net Zero target: 2070."
+        },
+        "mcq": {
+            "question": "The primary agenda and focus of the COP29 climate summit held in Baku, Azerbaijan was negotiating the:",
+            "options": [
+                "Global Methane Pledge enforcement.",
+                "New Collective Quantified Goal (NCQG) on climate finance.",
+                "Universal carbon border adjustment mechanism.",
+                "Global plastic ban treaty."
+            ],
+            "answer": 1,
+            "explanation": "COP29 in Baku was dubbed the 'Finance COP', focused on establishing the New Collective Quantified Goal (NCQG) to replace the $100 billion/year climate finance target."
+        },
+        "source": "UNFCCC / PIB",
+        "url": "https://unfccc.int",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-env-04",
+        "title": "Project Tiger Completes 50 Years: NTCA Census Records 3,682 Wild Tigers in India",
+        "date": "2026-04-09",
+        "category": "Environment & Ecology",
+        "subcategory": "Wildlife Censuses / NTCA",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "Celebrating 50 years of Project Tiger (launched in 1973), the National Tiger Conservation Authority (NTCA) released the Status of Tigers report, revealing India's tiger population reached a minimum of 3,167 and an estimated upper mean of 3,682 wild tigers.",
+        "crux": "India is now home to approximately 75% of the world's wild tiger population, growing at an annual rate of 6.1%, with Central India and the Shivalik Hills-Gangetic plains recording significant population expansions.",
+        "takeaways": [
+            "Madhya Pradesh retained its status as the 'Tiger State of India' with 785 tigers, followed by Karnataka (563) and Uttarakhand (560).",
+            "Corbett Tiger Reserve has the highest tiger density with 260 tigers inside the reserve.",
+            "55 tiger reserves currently notified across India, with Dholpur-Karauli (Rajasthan) and Veerangana Durgavati (MP) as recent additions."
+        ],
+        "prelims_pointers": {
+            "key_agency": "National Tiger Conservation Authority (NTCA) & Wildlife Institute of India (WII)",
+            "statutory_anchor": "Wildlife (Protection) Act 1972, Section 38L",
+            "location": "Pan-India across 55 Tiger Reserves",
+            "facts_to_remember": "Total tigers: 3,682; Top State: Madhya Pradesh (785); Top Reserve: Corbett (260); Global share: ~75%."
+        },
+        "mcq": {
+            "question": "According to the 5th cycle All India Tiger Estimation report, which Indian state holds the highest population of wild tigers?",
+            "options": [
+                "Karnataka",
+                "Uttarakhand",
+                "Madhya Pradesh",
+                "Maharashtra"
+            ],
+            "answer": 2,
+            "explanation": "Madhya Pradesh recorded 785 tigers, making it the state with the highest tiger population in India."
+        },
+        "source": "NTCA / MoEFCC",
+        "url": "https://ntca.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-env-05",
+        "title": "Global Biofuels Alliance (GBA): 24 Nations Join Clean Energy Compact",
+        "date": "2026-03-18",
+        "category": "Environment & Ecology",
+        "subcategory": "Renewable Energy / Biofuels",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "The Global Biofuels Alliance (GBA), initiated by India alongside Brazil and the United States on the sidelines of the New Delhi G20 Summit, expanded to 24 member nations and 12 international organizations to accelerate sustainable biofuel trade.",
+        "crux": "GBA aims to facilitate technology transfers, develop harmonized international biofuel standards, and promote blending mandates (e.g. India's E20 target of 20% ethanol blending in petrol by 2025-26).",
+        "takeaways": [
+            "Co-founded by India, Brazil, and the US, who collectively account for 85% of global ethanol production and 81% of consumption.",
+            "International organizations supporting GBA include the International Energy Agency (IEA), International Renewable Energy Agency (IRENA), and World Bank.",
+            "Promotes sustainable 2G (second-generation) ethanol from agricultural biomass (paddy straw, bagasse) reducing stubble burning."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Ministry of Petroleum and Natural Gas (MoPNG) & GBA Secretariat",
+            "statutory_anchor": "National Policy on Biofuels 2018 (amended 2022)",
+            "location": "New Delhi / Global",
+            "facts_to_remember": "Lead founders: India, US, Brazil; India's ethanol blending target: E20 by 2025-26."
+        },
+        "mcq": {
+            "question": "Which three nations are the founding core members of the Global Biofuels Alliance (GBA)?",
+            "options": [
+                "India, Germany, and France",
+                "India, United States, and Brazil",
+                "India, Russia, and Saudi Arabia",
+                "India, Australia, and Japan"
+            ],
+            "answer": 1,
+            "explanation": "India, the United States, and Brazil—the world's largest biofuel producers—co-founded the Global Biofuels Alliance."
+        },
+        "source": "MoPNG / PIB",
+        "url": "https://mopng.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-env-06",
+        "title": "Supreme Court Recognizes Fundamental Right to be Free from Adverse Effects of Climate Change",
+        "date": "2026-04-06",
+        "category": "Environment & Ecology",
+        "subcategory": "Environmental Jurisprudence",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS"
+        ],
+        "summary": "In M.K. Ranjitsinh v. Union of India, a 3-judge Supreme Court bench headed by CJI D.Y. Chandrachud formally recognized an explicit fundamental right to be free from the adverse effects of climate change under Articles 14 and 21 of the Constitution.",
+        "crux": "While balancing the conservation of the critically endangered Great Indian Bustard (GIB) with the development of solar power transmission corridors in Rajasthan and Gujarat, the Court held that the right to life is incomplete without climate stability.",
+        "takeaways": [
+            "The Court held that the right to health and a clean environment under Article 21 intrinsically includes freedom from catastrophic climate disruption.",
+            "Article 14 (Equality) applies because marginalized and vulnerable communities disproportionately suffer from climate-induced droughts and floods.",
+            "Appointed an expert committee to assess where underground vs overhead transmission lines can coexist with GIB bird flight diverters."
+        ],
+        "prelims_pointers": {
+            "key_agency": "Supreme Court of India",
+            "statutory_anchor": "Articles 21, 14, 48A, and 51A(g) of the Constitution of India",
+            "location": "New Delhi / Thar Desert (Rajasthan & Gujarat)",
+            "facts_to_remember": "Case: M.K. Ranjitsinh v. Union of India; Species: Great Indian Bustard (GIB - Critically Endangered, IUCN Red List)."
+        },
+        "mcq": {
+            "question": "In which landmark 2024 judgment did the Supreme Court explicitly recognize the 'right to be free from the adverse effects of climate change' as part of Articles 14 and 21?",
+            "options": [
+                "M.C. Mehta v. Union of India (Taj Trapezium case)",
+                "M.K. Ranjitsinh v. Union of India (Great Indian Bustard case)",
+                "Vellore Citizens' Welfare Forum v. Union of India",
+                "T.N. Godavarman Thirumulpad v. Union of India"
+            ],
+            "answer": 1,
+            "explanation": "In M.K. Ranjitsinh v. Union of India (2024), the Supreme Court ruled that citizens have a fundamental right under Articles 14 and 21 to be free from adverse climate change impacts."
+        },
+        "source": "Supreme Court of India / LiveLaw",
+        "url": "https://main.sci.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-env-07",
+        "title": "National Green Hydrogen Mission: SIGHT Program Tranches Awarded for 5 MMT Target",
+        "date": "2026-01-20",
+        "category": "Environment & Ecology",
+        "subcategory": "Green Hydrogen / Energy Transition",
+        "scope": "India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "Banking",
+            "SSC"
+        ],
+        "summary": "The Ministry of New and Renewable Energy (MNRE) awarded letters of award under the Strategic Interventions for Green Hydrogen Transition (SIGHT) program, supporting electrolyser manufacturing and green hydrogen production under the ₹19,744 crore mission.",
+        "crux": "Aims to build at least 5 Million Metric Tonnes (MMT) per annum of green hydrogen production capacity by 2030, abating nearly 50 MMT of annual greenhouse gas emissions and saving ₹1 lakh crore in fossil fuel imports.",
+        "takeaways": [
+            "Outlay of ₹19,744 crore: ₹17,490 crore for SIGHT program, ₹1,466 crore for pilot projects, and ₹400 crore for R&D.",
+            "Designated ports (Deendayal, Paradip, and VO Chidambaranar) are being developed as Green Hydrogen Hubs.",
+            "Notified green hydrogen standards requiring well-to-gate emissions not exceeding 2 kg CO2 equivalent per kg of H2."
+        ],
+        "prelims_pointers": {
+            "key_agency": "MNRE & Solar Energy Corporation of India (SECI)",
+            "statutory_anchor": "National Green Hydrogen Mission approved January 2023",
+            "location": "Pan-India",
+            "facts_to_remember": "Mission outlay: ₹19,744 Crore; Target: 5 MMT Green H2 per annum by 2030; Associated RE addition: 125 GW."
+        },
+        "mcq": {
+            "question": "What is the annual production target of Green Hydrogen set under the National Green Hydrogen Mission by 2030?",
+            "options": [
+                "1 Million Metric Tonne (MMT)",
+                "2.5 Million Metric Tonnes (MMT)",
+                "5 Million Metric Tonnes (MMT)",
+                "10 Million Metric Tonnes (MMT)"
+            ],
+            "answer": 2,
+            "explanation": "The mission aims to develop green hydrogen production capacity of at least 5 Million Metric Tonnes (MMT) per annum by 2030."
+        },
+        "source": "MNRE / PIB",
+        "url": "https://mnre.gov.in",
+        "is_vault": true
+    },
+    {
+        "id": "ca-2026-env-08",
+        "title": "Project Cheetah Phase 2: Gandhi Sagar Sanctuary Prepared as Second African Cheetah Habitat",
+        "date": "2026-05-02",
+        "category": "Environment & Ecology",
+        "subcategory": "Species Reintroduction / Wildlife",
+        "scope": "World & India",
+        "exam_tags": [
+            "UPSC",
+            "State PCS",
+            "SSC"
+        ],
+        "summary": "The National Tiger Conservation Authority (NTCA) completed predator-proof fencing and prey-base augmentations at Gandhi Sagar Wildlife Sanctuary in Madhya Pradesh, preparing it to receive the next batch of African cheetahs under Project Cheetah.",
+        "crux": "Gandhi Sagar serves as the second home to disperse cheetahs from Kuno National Park to prevent territorial overcrowding, establishing a viable metapopulation across the Chambal river landscape.",
+        "takeaways": [
+            "Cheetah was declared extinct in India in 1952; reintroduced in September 2022 from Namibia and South Africa.",
+            "Gandhi Sagar sanctuary is located in Mandsaur and Neemuch districts of MP on the Chambal river basin.",
+            "Over 17 cubs have been born on Indian soil at Kuno National Park since reintroduction."
+        ],
+        "prelims_pointers": {
+            "key_agency": "National Tiger Conservation Authority (NTCA) & MP Forest Department",
+            "statutory_anchor": "Action Plan for Introduction of Cheetah in India",
+            "location": "Gandhi Sagar Sanctuary (Mandsaur/Neemuch, MP) & Kuno NP (Sheopur, MP)",
+            "facts_to_remember": "Cheetah declared extinct in India: 1952; Reintroduced: 2022; New second site: Gandhi Sagar Sanctuary."
+        },
+        "mcq": {
+            "question": "Which wildlife sanctuary in Madhya Pradesh has been readied as the second habitat to receive reintroduced African cheetahs after Kuno National Park?",
+            "options": [
+                "Nauradehi Wildlife Sanctuary",
+                "Gandhi Sagar Wildlife Sanctuary",
+                "Ratapani Wildlife Sanctuary",
+                "Bagdara Wildlife Sanctuary"
+            ],
+            "answer": 1,
+            "explanation": "Gandhi Sagar Wildlife Sanctuary in Mandsaur and Neemuch districts of MP was prepared as the second home for cheetahs under Project Cheetah."
+        },
+        "source": "NTCA / PIB",
+        "url": "https://ntca.gov.in",
+        "is_vault": true
+    }
+]
+
+FACT_CAPSULES = {
+    "appointments_heads": [
+        {
+            "title": "Chief Justice of India (CJI)",
+            "person": "Justice Sanjiv Khanna",
+            "key_detail": "51st Chief Justice of India, succeeding Justice D.Y. Chandrachud (Nov 2024).",
+            "tenure_or_date": "Nov 2024 - May 2025"
+        },
+        {
+            "title": "Chief Election Commissioner of India (CEC)",
+            "person": "Rajiv Kumar (with ECs Gyanesh Kumar & Sukhbir Singh Sandhu)",
+            "key_detail": "First EC appointments made under the new 2023 CEC Appointment Act selection committee.",
+            "tenure_or_date": "2024 - Present"
+        },
+        {
+            "title": "Comptroller & Auditor General of India (CAG)",
+            "person": "K. Sanjay Murthy",
+            "key_detail": "Appointed under Article 148, succeeding Girish Chandra Murmu; former Secretary Higher Education.",
+            "tenure_or_date": "Nov 2024 - Present"
+        },
+        {
+            "title": "16th Finance Commission Chairman",
+            "person": "Dr. Arvind Panagariya",
+            "key_detail": "Constitutional body under Article 280; formulating tax devolution for award period 2026-2031.",
+            "tenure_or_date": "Dec 2023 - Present"
+        },
+        {
+            "title": "Cabinet Secretary of India",
+            "person": "Dr. T.V. Somanathan",
+            "key_detail": "Top civil servant and ex-officio head of Civil Services Board; former Finance Secretary.",
+            "tenure_or_date": "Aug 2024 - Present"
+        },
+        {
+            "title": "Chief of Defence Staff (CDS)",
+            "person": "General Anil Chauhan",
+            "key_detail": "Principal Military Adviser to Defence Minister & Permanent Chairman Chiefs of Staff Committee.",
+            "tenure_or_date": "2022 - Present"
+        },
+        {
+            "title": "Chief of the Army Staff (COAS)",
+            "person": "General Upendra Dwivedi",
+            "key_detail": "30th Chief of the Army Staff; commissioned into Jammu and Kashmir Rifles.",
+            "tenure_or_date": "June 2024 - Present"
+        },
+        {
+            "title": "Chief of the Naval Staff (CNS)",
+            "person": "Admiral Dinesh K. Tripathi",
+            "key_detail": "26th Chief of the Naval Staff; communication and electronic warfare specialist.",
+            "tenure_or_date": "April 2024 - Present"
+        },
+        {
+            "title": "Chief of the Air Staff (CAS)",
+            "person": "Air Chief Marshal Amar Preet Singh",
+            "key_detail": "28th Chief of the Air Staff; veteran fighter combat leader and experimental test pilot.",
+            "tenure_or_date": "Sept 2024 - Present"
+        },
+        {
+            "title": "Governor, Reserve Bank of India",
+            "person": "Shaktikanta Das",
+            "key_detail": "25th Governor of RBI; named Central Banker of the Year globally by Global Finance magazine.",
+            "tenure_or_date": "Extended term"
+        },
+        {
+            "title": "Chief Economic Adviser of India (CEA)",
+            "person": "Dr. V. Anantha Nageswaran",
+            "key_detail": "Lead author of the Economic Survey under the Department of Economic Affairs.",
+            "tenure_or_date": "2022 - Present"
+        },
+        {
+            "title": "CEO, NITI Aayog",
+            "person": "B.V.R. Subrahmanyam",
+            "key_detail": "Administrative head of the premier policy think tank driving national development agendas.",
+            "tenure_or_date": "2023 - Present"
+        }
+    ],
+    "military_exercises": [
+        {
+            "exercise": "Exercise Tarang Shakti 2024",
+            "forces": "Multilateral Air Forces (30+ nations)",
+            "location": "Sulur (Tamil Nadu) & Jodhpur (Rajasthan)",
+            "focus": "Largest-ever multilateral air combat war game hosted by the Indian Air Force."
+        },
+        {
+            "exercise": "Exercise Desert Cyclone",
+            "forces": "India & UAE (Army)",
+            "location": "Mahajan Field Firing Range, Rajasthan",
+            "focus": "Inaugural joint military drill on desert & urban counter-insurgency warfare."
+        },
+        {
+            "exercise": "Exercise Malabar 2024",
+            "forces": "Quad Navies (India, US, Japan, Australia)",
+            "location": "Visakhapatnam / Bay of Bengal",
+            "focus": "High-end anti-submarine warfare, air defence drills, and carrier operations."
+        },
+        {
+            "exercise": "Exercise Surya Kiran XVIII",
+            "forces": "India & Nepal (Army)",
+            "location": "Saljhandi, Nepal / Pithoragarh",
+            "focus": "Jungle warfare, counter-terrorism, and high-altitude mountain warfare ops."
+        },
+        {
+            "exercise": "Exercise Mitra Shakti X",
+            "forces": "India & Sri Lanka (Army)",
+            "location": "Maduru Oya, Sri Lanka",
+            "focus": "Joint counter-terror tactical operations under Chapter VII of UN Charter."
+        },
+        {
+            "exercise": "Exercise DUSTLIK V",
+            "forces": "India & Uzbekistan (Army)",
+            "location": "Termez, Uzbekistan",
+            "focus": "Joint tactical combat operations in semi-desert and mountainous terrain."
+        },
+        {
+            "exercise": "Exercise Nomad Elephant",
+            "forces": "India & Mongolia (Army)",
+            "location": "Umroi, Meghalaya",
+            "focus": "Counter-terror tactical drills in mountainous terrain under UN mandate."
+        },
+        {
+            "exercise": "Exercise Pitch Black 2024",
+            "forces": "Multilateral Air Forces (20 nations)",
+            "location": "Darwin, Australia (RAAF)",
+            "focus": "Complex air combat scenarios with IAF Su-30MKI fighters deploying."
+        },
+        {
+            "exercise": "Exercise Yudh Abhyas 2024",
+            "forces": "India & United States (Army)",
+            "location": "Mahajan, Rajasthan",
+            "focus": "Employment of combined arms, surveillance drones, and electronic warfare."
+        },
+        {
+            "exercise": "Exercise Milan 2024",
+            "forces": "Multilateral Navies (50+ nations)",
+            "location": "Visakhapatnam, Andhra Pradesh",
+            "focus": "India's largest biennial multilateral naval exercise under Eastern Naval Command."
+        },
+        {
+            "exercise": "Exercise Shakti 2024",
+            "forces": "India & France (Army)",
+            "location": "Umroi, Meghalaya",
+            "focus": "Multi-domain operations in semi-urban terrain under UN Chapter VII."
+        }
+    ],
+    "summits_themes": [
+        {
+            "summit": "16th BRICS Summit",
+            "presidency": "Russia (Kazan)",
+            "theme": "Strengthening Multilateralism for Just Global Development and Security",
+            "significance": "First summit with expanded membership (Egypt, Ethiopia, Iran, UAE). Kazan Declaration adopted."
+        },
+        {
+            "summit": "19th G20 Summit",
+            "presidency": "Brazil (Rio de Janeiro)",
+            "theme": "Building a Just World and a Sustainable Planet",
+            "significance": "Launched Global Alliance Against Hunger and Poverty; African Union seated as permanent member."
+        },
+        {
+            "summit": "COP29 Climate Summit",
+            "presidency": "Azerbaijan (Baku)",
+            "theme": "In Solidarity for a Green World",
+            "significance": "The 'Finance COP' negotiating the New Collective Quantified Goal (NCQG) on climate finance."
+        },
+        {
+            "summit": "24th SCO Summit",
+            "presidency": "Kazakhstan (Astana)",
+            "theme": "Strengthening Multilateral Dialogue – Striving Towards Sustainable Peace",
+            "significance": "Formally admitted Belarus as the 10th full member state of the SCO."
+        },
+        {
+            "summit": "50th G7 Summit",
+            "presidency": "Italy (Apulia)",
+            "theme": "Defending Rules-Based Order & Global South Partnerships",
+            "significance": "PM Modi participated in G7 Outreach sessions addressing AI and energy security."
+        },
+        {
+            "summit": "Quad Leaders' Summit 2024",
+            "presidency": "United States (Wilmington)",
+            "theme": "Enduring Partners for a Free and Open Indo-Pacific",
+            "significance": "Launched Quad Cancer Moonshot and MAITRI maritime coast guard training initiative."
+        },
+        {
+            "summit": "3rd Voice of Global South Summit",
+            "presidency": "India (Virtual)",
+            "theme": "An Empowered Global South for a Sustainable Future",
+            "significance": "PM Modi proposed the Global South Development Compact across 120+ developing nations."
+        },
+        {
+            "summit": "WTSA 2024 (World Telecom Assembly)",
+            "presidency": "India (New Delhi)",
+            "theme": "Fostering Global Consensus on AI and 6G Telecommunications",
+            "significance": "First time WTSA held in the Asia-Pacific region, inaugurating India Mobile Congress."
+        }
+    ],
+    "unesco_heritage_gi_tags": [
+        {
+            "item": "Charaideo Moidams",
+            "category": "UNESCO World Heritage Site (43rd)",
+            "state": "Assam",
+            "significance": "First cultural World Heritage site from Northeast India; 600-year-old Tai-Ahom royal burial mound architecture."
+        },
+        {
+            "item": "Garba of Gujarat",
+            "category": "UNESCO Intangible Cultural Heritage (15th)",
+            "state": "Gujarat",
+            "significance": "15th Indian cultural element inscribed under the UNESCO 2003 Convention; devotional Navratri dance."
+        },
+        {
+            "item": "Santiniketan",
+            "category": "UNESCO World Heritage Site (41st)",
+            "state": "West Bengal",
+            "significance": "Rabindranath Tagore's residential ashram university reflecting pan-Asian humanism and nature-centric education."
+        },
+        {
+            "item": "Sacred Ensembles of the Hoysalas",
+            "category": "UNESCO World Heritage Site (42nd)",
+            "state": "Karnataka",
+            "significance": "12th-13th century soapstone temples at Belur, Halebidu, and Somanathapura with stellate floor plans."
+        },
+        {
+            "item": "Cuttack Rupa Tarakasi",
+            "category": "Geographical Indication (GI)",
+            "state": "Odisha",
+            "significance": "500-year-old fine-wire silver filigree jewelry and metal decorative craft from Cuttack."
+        },
+        {
+            "item": "Majuli Masks & Manuscript Art",
+            "category": "Geographical Indication (GI)",
+            "state": "Assam",
+            "significance": "Handcrafted bamboo, clay, and cloth theatrical masks developed in Neo-Vaishnavite Satras."
+        },
+        {
+            "item": "Risa Textile",
+            "category": "Geographical Indication (GI)",
+            "state": "Tripura",
+            "significance": "Customary handwoven female tribal attire with vibrant traditional motifs of the Tripuri community."
+        },
+        {
+            "item": "Kutch Rogan Craft",
+            "category": "Geographical Indication (GI)",
+            "state": "Gujarat",
+            "significance": "Centuries-old fabric painting using boiled castor oil paste and colored earth pigments by Khatri artisans."
+        },
+        {
+            "item": "Banaras Metal Vessel Craft",
+            "category": "Geographical Indication (GI)",
+            "state": "Uttar Pradesh",
+            "significance": "Traditional hand-hammered brass and copper utensils and religious ceremonial vessels."
+        }
+    ],
+    "ramsar_sites_environment": [
+        {
+            "site": "Nanjarayan Bird Sanctuary",
+            "state": "Tamil Nadu",
+            "type": "Freshwater Wetland",
+            "key_facts": "83rd Ramsar site; historical large irrigation reservoir on the Noyyal River harboring migratory waterfowl."
+        },
+        {
+            "site": "Kazhuveli Bird Sanctuary",
+            "state": "Tamil Nadu",
+            "type": "Brackish Water Lagoon",
+            "key_facts": "84th Ramsar site; second largest brackish water lake in South India after Pulicat Lake along the Coromandel Coast."
+        },
+        {
+            "site": "Tawa Reservoir",
+            "state": "Madhya Pradesh",
+            "type": "Freshwater Dam Reservoir",
+            "key_facts": "85th Ramsar site; located inside Satpura Tiger Reserve at the confluence of Tawa and Denwa rivers."
+        },
+        {
+            "site": "Ankasamudra Bird Conservation Reserve",
+            "state": "Karnataka",
+            "type": "Manmade Wetland",
+            "key_facts": "80th Ramsar site; tank built for irrigation harboring breeding painted storks and black-headed ibis."
+        },
+        {
+            "site": "Aghanashini Estuary",
+            "state": "Karnataka",
+            "type": "Estuarine Wetland",
+            "key_facts": "81st Ramsar site; formed where the Aghanashini River flows into the Arabian Sea; supports bivalve shellfish fisheries."
+        },
+        {
+            "site": "Magadi Kere Conservation Reserve",
+            "state": "Karnataka",
+            "type": "Freshwater Lake",
+            "key_facts": "82nd Ramsar site; wintering ground for bar-headed geese feeding on agricultural gram crops."
+        },
+        {
+            "site": "Sirpur Wetland & Yashwant Sagar",
+            "state": "Madhya Pradesh",
+            "type": "Freshwater Reservoir",
+            "key_facts": "Historical wetlands in Indore designated as Ramsar sites supporting vulnerable sarus cranes."
+        },
+        {
+            "site": "Keoladeo National Park & Loktak Lake",
+            "state": "Rajasthan & Manipur",
+            "type": "Montreux Record Sites",
+            "key_facts": "India's two wetlands placed on the Montreux Record due to ecological character changes."
+        }
+    ],
+    "sports_champions_awards": [
+        {
+            "event": "Paris 2024 Olympics Double Bronze",
+            "recipient": "Manu Bhaker (Shooting)",
+            "record": "First Indian in post-independence history to win 2 medals in a single Olympic Games."
+        },
+        {
+            "event": "Paris 2024 Olympics Javelin Silver",
+            "recipient": "Neeraj Chopra (Athletics)",
+            "record": "First Indian track & field athlete to win back-to-back Olympic medals (89.45m throw)."
+        },
+        {
+            "event": "Paris 2024 Paralympics Javelin Gold",
+            "recipient": "Sumit Antil (F64) & Navdeep Singh (F41)",
+            "record": "Sumit Antil: Back-to-back Paralympic Gold (70.59m record); Navdeep Singh: F41 Gold."
+        },
+        {
+            "event": "45th FIDE Chess Olympiad Double Gold",
+            "recipient": "Indian Men's & Women's Teams",
+            "record": "First time in chess history India won BOTH Open (Hamilton-Russell) & Women's (Vera Menchik) titles."
+        },
+        {
+            "event": "FIDE Candidates Tournament 2024",
+            "recipient": "D Gukesh (Chess)",
+            "record": "Youngest winner of Candidates tournament in history at age 17, breaking Kasparov's record."
+        },
+        {
+            "event": "ICC Men's T20 World Cup 2024",
+            "recipient": "Indian Men's Cricket Team",
+            "record": "Undefeated champions defeating South Africa; 2nd T20 World Cup title; Player of Tournament: Jasprit Bumrah."
+        },
+        {
+            "event": "Australian Open 2024 Doubles Title",
+            "recipient": "Rohan Bopanna & Matthew Ebden",
+            "record": "Bopanna became oldest Grand Slam champion & World No. 1 in tennis history at age 43."
+        },
+        {
+            "event": "Major Dhyan Chand Khel Ratna 2023",
+            "recipient": "Satwiksairaj Rankireddy & Chirag Shetty",
+            "record": "World No. 1 men's doubles badminton pair; Asian Games Gold medalists."
+        },
+        {
+            "event": "37th National Games Goa",
+            "recipient": "Maharashtra Contingent",
+            "record": "Topped medal tally with 228 medals (80 Gold), winning the Raja Bhalindra Singh Trophy."
+        }
+    ],
+    "indices_india_rank": [
+        {
+            "index_name": "Logistics Performance Index (LPI)",
+            "publisher": "World Bank",
+            "india_rank": "38th / 139",
+            "score_detail": "Jumped 6 spots driven by PM Gati Shakti National Master Plan and National Logistics Policy."
+        },
+        {
+            "index_name": "Global Innovation Index (GII)",
+            "publisher": "WIPO",
+            "india_rank": "39th / 133",
+            "score_detail": "Retains top spot among Central and Southern Asian economies; 1st among lower-middle income economies."
+        },
+        {
+            "index_name": "Climate Change Performance Index (CCPI)",
+            "publisher": "Germanwatch",
+            "india_rank": "7th / 67",
+            "score_detail": "Ranked among top 10 performing nations globally for low per-capita emissions and rapid renewable expansion."
+        },
+        {
+            "index_name": "Human Development Index (HDI)",
+            "publisher": "UNDP",
+            "india_rank": "134th / 193",
+            "score_detail": "Score improved to 0.644 placing India in Medium Human Development category; Life expectancy rose to 67.7 years."
+        },
+        {
+            "index_name": "Network Readiness Index (NRI)",
+            "publisher": "Portulans Institute",
+            "india_rank": "49th / 134",
+            "score_detail": "Ranks 1st globally in AI talent concentration and mobile broadband internet affordability."
+        },
+        {
+            "index_name": "World Press Freedom Index",
+            "publisher": "Reporters Without Borders (RSF)",
+            "india_rank": "159th / 180",
+            "score_detail": "Score of 31.28 reflecting challenges highlighted in media concentration and regulatory pressures."
+        },
+        {
+            "index_name": "Global Hunger Index (GHI)",
+            "publisher": "Welthungerhilfe & Concern Worldwide",
+            "india_rank": "105th / 127",
+            "score_detail": "Scored 27.3 categorized under 'Serious' hunger level (Government highlighted methodology limitations)."
+        },
+        {
+            "index_name": "Corruption Perceptions Index (CPI)",
+            "publisher": "Transparency International",
+            "india_rank": "93rd / 180",
+            "score_detail": "Scored 39 out of 100 based on perceptions of public sector corruption."
+        },
+        {
+            "index_name": "Travel & Tourism Development Index (TTDI)",
+            "publisher": "World Economic Forum (WEF)",
+            "india_rank": "39th / 119",
+            "score_detail": "Highest ranked country in South Asia driven by cultural resources and competitive price parity."
+        }
+    ]
+}
