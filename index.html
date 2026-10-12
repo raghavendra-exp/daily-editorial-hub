@@ -117,6 +117,11 @@
           <span class="tab-icon">📰</span>
           <span class="tab-label">Daily Editorials</span>
         </button>
+        <button class="hub-tab-btn" id="tab-ca" data-target="ca">
+          <span class="tab-icon">🎯</span>
+          <span class="tab-label">Current Affairs 360°</span>
+          <span class="hub-badge hub-badge-ca" id="ca-badge">1-Yr + Daily</span>
+        </button>
         <button class="hub-tab-btn" id="tab-writing" data-target="writing">
           <span class="tab-icon">✍️</span>
           <span class="tab-label">Answer Writing Room</span>
@@ -144,6 +149,8 @@
     </div>
   </nav>
 
+  <!-- Main Editorials View Container -->
+  <div id="editorials-view-container">
   <!-- Date Navigation & Summary Banner -->
   <section class="banner-section">
     <div class="container banner-inner">
@@ -249,6 +256,210 @@
       <!-- Dynamically populated by app.js -->
     </div>
   </main>
+  </div> <!-- /#editorials-view-container -->
+
+  <!-- ==========================================================================
+       Current Affairs 360° Module (1-Year Master Vault & Daily Live Stream)
+       ========================================================================== -->
+  <div id="current-affairs-view-container" class="ca-view-container" style="display: none;">
+    <!-- CA Hero & Stats Banner -->
+    <section class="ca-hero-section">
+      <div class="container ca-hero-inner">
+        <div class="ca-hero-title-box">
+          <div class="ca-hero-badge">🎯 Comprehensive Exam Booster • India & World</div>
+          <h2 class="ca-hero-title">Current Affairs 360° Master Vault</h2>
+          <p class="ca-hero-desc">
+            Exhaustive, high-yield coverage across Banking, Polity, Economy, Sci-Tech, Defence, History/Culture, Sports, National & Global Affairs asked in exams over the past 1 year, updated daily via automated GitHub feeds.
+          </p>
+        </div>
+
+        <div class="ca-stats-grid">
+          <div class="ca-stat-card">
+            <span class="ca-stat-num" id="ca-stat-total">175+</span>
+            <span class="ca-stat-label">Total Exam Dossiers</span>
+          </div>
+          <div class="ca-stat-card">
+            <span class="ca-stat-num" id="ca-stat-vault">1-Year</span>
+            <span class="ca-stat-label">Master Archive</span>
+          </div>
+          <div class="ca-stat-card">
+            <span class="ca-stat-num" id="ca-stat-daily">Daily</span>
+            <span class="ca-stat-label">Live Stream</span>
+          </div>
+          <div class="ca-stat-card">
+            <span class="ca-stat-num" id="ca-stat-capsules">7 Themes</span>
+            <span class="ca-stat-label">Prelims Fact Cards</span>
+          </div>
+        </div>
+
+        <div class="ca-hero-actions">
+          <button id="ca-sync-live-btn" class="btn btn-primary ca-action-btn" title="Fetch today's live breaking news releases">
+            <span class="btn-icon" id="ca-sync-spinner">🔄</span>
+            <span id="ca-sync-label">Sync Live Feeds</span>
+          </button>
+          <button id="ca-export-btn" class="btn btn-secondary ca-action-btn" title="Download Current Affairs Compilation in Markdown for Notion/Obsidian">
+            <span class="btn-icon">📥</span>
+            <span>Export Notes (.md)</span>
+          </button>
+          <button id="ca-print-btn" class="btn btn-secondary ca-action-btn" title="Generate clean PDF / Print Study Handout">
+            <span class="btn-icon">🖨️</span>
+            <span>Print Study Handout</span>
+          </button>
+          <span class="ca-update-pill" id="ca-update-pill">🟢 Auto-Updated Daily via GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CA Sub-Navigation Modes -->
+    <nav class="ca-subnav">
+      <div class="container ca-subnav-inner">
+        <button class="ca-subnav-btn active" id="ca-subtab-vault" data-casub="vault">
+          <span class="sub-icon">📚</span>
+          <span class="sub-text">1-Year Master Vault (Dossiers)</span>
+        </button>
+        <button class="ca-subnav-btn" id="ca-subtab-daily" data-casub="daily">
+          <span class="sub-icon">📅</span>
+          <span class="sub-text">Daily Live Feed (Today & Fresh)</span>
+        </button>
+        <button class="ca-subnav-btn" id="ca-subtab-capsules" data-casub="capsules">
+          <span class="sub-icon">⚡</span>
+          <span class="sub-text">Prelims Fact Capsules (Speed Revision)</span>
+        </button>
+        <button class="ca-subnav-btn" id="ca-subtab-quiz" data-casub="quiz">
+          <span class="sub-icon">🧠</span>
+          <span class="sub-text">Daily CA MCQ Arena (Prelims Quiz)</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- CA Filter & Search Suite -->
+    <section class="ca-filter-section" id="ca-filter-section">
+      <div class="container">
+        <!-- Search Bar -->
+        <div class="ca-search-bar-row">
+          <div class="ca-search-input-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="ca-search-input" class="search-input" placeholder="Search current affairs by keyword, ministry, act, scheme, country, trophy, article... (Press '/' to focus)">
+            <button id="ca-clear-search-btn" class="clear-search-btn" style="display: none;">✕</button>
+          </div>
+        </div>
+
+        <!-- Scope Pills (India / World) -->
+        <div class="filter-scroll-wrapper">
+          <div class="filter-group" id="ca-scope-filters">
+            <span class="filter-label">Scope:</span>
+            <button class="filter-pill active" data-cascope="all">All Scopes</button>
+            <button class="filter-pill" data-cascope="India">🇮🇳 India Focus</button>
+            <button class="filter-pill" data-cascope="World">🌍 World / Global Focus</button>
+            <button class="filter-pill" data-cascope="World & India">🌐 Bilateral / India & World</button>
+          </div>
+        </div>
+
+        <!-- Exam Focus Pills -->
+        <div class="filter-scroll-wrapper">
+          <div class="filter-group" id="ca-exam-filters">
+            <span class="filter-label">Target Exam:</span>
+            <button class="filter-pill active" data-caexam="all">All Exams</button>
+            <button class="filter-pill" data-caexam="UPSC">🏛️ UPSC CSE</button>
+            <button class="filter-pill" data-caexam="Banking (IBPS/SBI/RBI)">🏦 Banking & Insurance</button>
+            <button class="filter-pill" data-caexam="SSC">⚡ SSC CGL / CHSL</button>
+            <button class="filter-pill" data-caexam="State PCS">🗺️ State PCS</button>
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="filter-scroll-wrapper topic-wrapper">
+          <div class="filter-group" id="ca-category-filters">
+            <span class="filter-label">Subject:</span>
+            <button class="filter-pill active" data-cacat="all">All Subjects (9)</button>
+            <button class="filter-pill" data-cacat="Banking & Finance">🏦 Banking & Finance</button>
+            <button class="filter-pill" data-cacat="Polity & Governance">⚖️ Polity & Constitution</button>
+            <button class="filter-pill" data-cacat="Economy & Infrastructure">📈 Economy & Trade</button>
+            <button class="filter-pill" data-cacat="Science, Tech & Defence">🔬 Sci-Tech & Defence</button>
+            <button class="filter-pill" data-cacat="History, Art & Culture">📜 History, Art & Culture</button>
+            <button class="filter-pill" data-cacat="Sports & Games">🏆 Sports & Games</button>
+            <button class="filter-pill" data-cacat="National Affairs & Schemes">🇮🇳 National Affairs & Schemes</button>
+            <button class="filter-pill" data-cacat="International & Global Affairs">🌍 International & Summits</button>
+            <button class="filter-pill" data-cacat="Environment & Ecology">🌿 Environment & Climate</button>
+          </div>
+        </div>
+
+        <!-- Active Filter Bar -->
+        <div id="ca-active-filters-bar" class="active-filters-bar" style="display: none;">
+          <span class="active-filter-badge" id="ca-active-filter-text">Filtered</span>
+          <button id="ca-reset-filters-btn" class="reset-link">Reset all filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CA Main Content Panes -->
+    <main class="container ca-main-content">
+      <!-- 1. Dossier / Feed Grid Pane -->
+      <div id="ca-dossier-pane" class="ca-content-pane">
+        <div class="view-header">
+          <h3 id="ca-view-title" class="section-title">📚 High-Yield Exam Dossiers (Past 1 Year)</h3>
+          <span id="ca-results-count" class="results-meta">Showing 0 dossiers</span>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="ca-loading-spinner" class="loading-state" style="display: none;">
+          <div class="spinner"></div>
+          <p>Loading current affairs dossiers & live feed...</p>
+        </div>
+
+        <!-- Empty State -->
+        <div id="ca-empty-state" class="empty-state" style="display: none;">
+          <div class="empty-icon">🔍</div>
+          <h3>No current affairs found</h3>
+          <p>Try modifying your search keywords or switching subject/scope filters.</p>
+          <button id="ca-empty-reset-btn" class="btn btn-primary">Reset Filters</button>
+        </div>
+
+        <!-- Current Affairs Grid -->
+        <div id="ca-grid" class="ca-grid">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </div>
+
+      <!-- 2. Prelims Fact Capsules Pane (Speed Revision Tables) -->
+      <div id="ca-capsules-pane" class="ca-content-pane" style="display: none;">
+        <div class="view-header">
+          <h3 class="section-title">⚡ Prelims Fact Capsules • High-Yield Revision Tables</h3>
+          <span class="results-meta">Speed revision of appointments, military drills, summits, GI tags, Ramsar sites & sports</span>
+        </div>
+
+        <!-- Capsule Tabs -->
+        <div class="capsule-nav-tabs">
+          <button class="capsule-nav-btn active" data-capstab="appointments">👑 Appointments & Heads</button>
+          <button class="capsule-nav-btn" data-capstab="military">⚔️ Military & Defence Drills</button>
+          <button class="capsule-nav-btn" data-capstab="summits">🌐 Global Summits & Themes</button>
+          <button class="capsule-nav-btn" data-capstab="heritage">🏛️ UNESCO Heritage & GI Tags</button>
+          <button class="capsule-nav-btn" data-capstab="ramsar">🦆 Ramsar Wetlands & Ecology</button>
+          <button class="capsule-nav-btn" data-capstab="sports">🥇 Sports Records & Awards</button>
+          <button class="capsule-nav-btn" data-capstab="indices">📊 Global Indices & India Rank</button>
+        </div>
+
+        <!-- Capsule Tables Container -->
+        <div id="ca-capsules-container" class="ca-capsules-container">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </div>
+
+      <!-- 3. Current Affairs Daily MCQ Arena Pane -->
+      <div id="ca-quiz-pane" class="ca-content-pane" style="display: none;">
+        <div class="view-header">
+          <h3 class="section-title">🧠 Current Affairs Daily MCQ Practice Arena</h3>
+          <span class="results-meta">High-yield Prelims Mock Questions with Instant Explanations</span>
+        </div>
+
+        <div class="ca-quiz-arena-box">
+          <div class="ca-quiz-card-wrapper" id="ca-quiz-card-wrapper">
+            <!-- Dynamically populated by app.js -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
 
   <!-- Daily Vocab Deck Modal -->
   <div id="vocab-modal" class="modal-overlay" style="display: none;">
@@ -1081,6 +1292,96 @@
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" id="compare-modal-done">Close Comparison</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Current Affairs Full Detail & Study Drawer Modal
+       ========================================================================== -->
+  <div id="ca-detail-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog ca-detail-dialog">
+      <div class="modal-header">
+        <div class="ca-detail-header-info">
+          <div class="ca-detail-badges">
+            <span id="ca-detail-cat-badge" class="ca-cat-badge">Banking & Finance</span>
+            <span id="ca-detail-scope-badge" class="ca-scope-badge">🇮🇳 India Focus</span>
+            <span id="ca-detail-date" class="ca-date-badge">📅 12 Oct 2026</span>
+          </div>
+          <h3 id="ca-detail-title" class="ca-detail-title">Current Affair Title</h3>
+        </div>
+        <button class="modal-close-btn" id="close-ca-detail-modal">✕</button>
+      </div>
+
+      <div class="modal-body ca-detail-body">
+        <!-- Audio TTS Bar -->
+        <div class="ca-tts-bar">
+          <button id="ca-detail-tts-btn" class="btn-tts">
+            <span id="ca-tts-icon">▶</span>
+            <span id="ca-tts-label">Listen to Brief</span>
+          </button>
+          <button id="ca-detail-tts-stop" class="btn-tts-stop" style="display: none;">⏹ Stop</button>
+          <span class="ca-detail-source" id="ca-detail-source">Source: PIB Official</span>
+        </div>
+
+        <!-- 30-Second Exam Crux -->
+        <div class="ca-section-card ca-crux-card">
+          <div class="ca-section-title">⚡ 30-Second Exam Crux</div>
+          <p id="ca-detail-crux" class="ca-crux-text">Crux summary text.</p>
+        </div>
+
+        <!-- Key Exam Takeaways -->
+        <div class="ca-section-card">
+          <div class="ca-section-title">💡 Key Exam Takeaways & Analysis</div>
+          <ul id="ca-detail-takeaways" class="ca-takeaways-list">
+            <!-- Takeaway bullets -->
+          </ul>
+        </div>
+
+        <!-- Prelims Fact Box -->
+        <div class="ca-section-card ca-prelims-card">
+          <div class="ca-section-title">📌 Prelims Fact Capsule</div>
+          <div class="ca-prelims-grid">
+            <div class="ca-prelims-item">
+              <strong>Key Agency / Body:</strong>
+              <span id="ca-detail-agency">Reserve Bank of India</span>
+            </div>
+            <div class="ca-prelims-item">
+              <strong>Statutory / Constitutional Anchor:</strong>
+              <span id="ca-detail-statute">RBI Act 1934</span>
+            </div>
+            <div class="ca-prelims-item">
+              <strong>Location / Focus:</strong>
+              <span id="ca-detail-location">Mumbai, India</span>
+            </div>
+            <div class="ca-prelims-item">
+              <strong>Facts to Remember:</strong>
+              <span id="ca-detail-facts">High-yield pointers.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Practice MCQ Check -->
+        <div class="ca-section-card ca-detail-mcq-card">
+          <div class="ca-section-title">🎯 Prelims Quick Check MCQ</div>
+          <div id="ca-detail-mcq-box" class="ca-detail-mcq-box">
+            <!-- Interactive MCQ -->
+          </div>
+        </div>
+
+        <!-- Personal Notes Box -->
+        <div class="ca-section-card">
+          <div class="notes-header">
+            <div class="ca-section-title" style="margin: 0;">📝 My Exam Revision Notes</div>
+            <span id="ca-notes-status" class="notes-status-badge">Auto-saved locally</span>
+          </div>
+          <textarea id="ca-detail-notes-input" class="reader-notes-textarea" placeholder="Jot down personal mnemonic hints, related constitutional articles, or cross-linkages for this current affair... (Auto-saved)"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer ca-detail-footer">
+        <button id="ca-detail-export-md" class="btn btn-secondary">📥 Export Note (.md)</button>
+        <a id="ca-detail-source-link" href="#" target="_blank" rel="noopener" class="btn btn-primary">Read Official Release ↗</a>
       </div>
     </div>
   </div>

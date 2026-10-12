@@ -35,19 +35,20 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Fetch Latest Editorials & Research Papers
+      - name: Fetch Latest Editorials & Current Affairs
         run: |
           python scripts/fetch_editorials.py
+          python scripts/fetch_current_affairs.py
 
       - name: Commit & Push Updated Dataset
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/editorials.json
+          git add data/editorials.json data/current_affairs.json
           if git diff --staged --quiet; then
-            echo "No new editorials detected today."
+            echo "No new updates detected today."
           else
-            git commit -m "chore(data): auto-update daily editorials [skip ci]"
+            git commit -m "chore(data): auto-update daily editorials & current affairs [skip ci]"
             git push origin main
           fi
 

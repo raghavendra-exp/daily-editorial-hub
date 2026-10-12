@@ -2,13 +2,14 @@
  * Daily Editorial Hub - Service Worker (PWA & Offline Support)
  */
 
-const CACHE_NAME = 'editorial-hub-v2';
+const CACHE_NAME = 'editorial-hub-v3';
 const STATIC_ASSETS = [
   './',
   './index.html',
   './css/styles.css',
   './js/app.js',
   './data/editorials.json',
+  './data/current_affairs.json',
   './manifest.json'
 ];
 
@@ -39,8 +40,8 @@ self.addEventListener('fetch', (event) => {
   // Ignore non-GET requests
   if (event.request.method !== 'GET') return;
 
-  // For data/editorials.json, prefer network with cache fallback so fresh daily editions load
-  if (requestUrl.pathname.endsWith('editorials.json')) {
+  // For data/editorials.json and data/current_affairs.json, prefer network with cache fallback
+  if (requestUrl.pathname.endsWith('editorials.json') || requestUrl.pathname.endsWith('current_affairs.json')) {
     event.respondWith(
       fetch(event.request)
         .then((response) => {

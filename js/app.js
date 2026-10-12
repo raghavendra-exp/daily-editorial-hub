@@ -149,6 +149,29 @@ const state = {
     utterance: null,
     isSpeaking: false,
     isPaused: false
+  },
+  ca: {
+    items: [],
+    filteredItems: [],
+    factCapsules: {},
+    activeSubTab: 'vault',
+    selectedCategory: 'all',
+    selectedScope: 'all',
+    selectedExam: 'all',
+    searchQuery: '',
+    activeCapsuleTab: 'appointments',
+    quiz: {
+      questions: [],
+      currentIndex: 0,
+      score: 0,
+      answered: false,
+      selectedOption: null
+    },
+    currentDetailItem: null,
+    tts: {
+      isSpeaking: false,
+      utterance: null
+    }
   }
 };
 
@@ -201,9 +224,78 @@ const dom = {
 
   // Hub Tabs
   tabEditorials: document.getElementById('tab-editorials'),
+  tabCA: document.getElementById('tab-ca'),
   tabFlashcards: document.getElementById('tab-flashcards'),
   tabQuiz: document.getElementById('tab-quiz'),
   tabVault: document.getElementById('tab-vault'),
+
+  // View Containers
+  editorialsViewContainer: document.getElementById('editorials-view-container'),
+  caViewContainer: document.getElementById('current-affairs-view-container'),
+
+  // Current Affairs 360° DOM Elements
+  caStatTotal: document.getElementById('ca-stat-total'),
+  caStatVault: document.getElementById('ca-stat-vault'),
+  caStatDaily: document.getElementById('ca-stat-daily'),
+  caStatCapsules: document.getElementById('ca-stat-capsules'),
+  caSyncLiveBtn: document.getElementById('ca-sync-live-btn'),
+  caSyncSpinner: document.getElementById('ca-sync-spinner'),
+  caSyncLabel: document.getElementById('ca-sync-label'),
+  caExportBtn: document.getElementById('ca-export-btn'),
+  caPrintBtn: document.getElementById('ca-print-btn'),
+  caUpdatePill: document.getElementById('ca-update-pill'),
+
+  caSubtabVault: document.getElementById('ca-subtab-vault'),
+  caSubtabDaily: document.getElementById('ca-subtab-daily'),
+  caSubtabCapsules: document.getElementById('ca-subtab-capsules'),
+  caSubtabQuiz: document.getElementById('ca-subtab-quiz'),
+
+  caDossierPane: document.getElementById('ca-dossier-pane'),
+  caCapsulesPane: document.getElementById('ca-capsules-pane'),
+  caQuizPane: document.getElementById('ca-quiz-pane'),
+  caFilterSection: document.getElementById('ca-filter-section'),
+
+  caSearchInput: document.getElementById('ca-search-input'),
+  caClearSearchBtn: document.getElementById('ca-clear-search-btn'),
+  caScopeFilters: document.getElementById('ca-scope-filters'),
+  caExamFilters: document.getElementById('ca-exam-filters'),
+  caCategoryFilters: document.getElementById('ca-category-filters'),
+  caActiveFiltersBar: document.getElementById('ca-active-filters-bar'),
+  caActiveFilterText: document.getElementById('ca-active-filter-text'),
+  caResetFiltersBtn: document.getElementById('ca-reset-filters-btn'),
+  caEmptyResetBtn: document.getElementById('ca-empty-reset-btn'),
+
+  caViewTitle: document.getElementById('ca-view-title'),
+  caResultsCount: document.getElementById('ca-results-count'),
+  caLoadingSpinner: document.getElementById('ca-loading-spinner'),
+  caEmptyState: document.getElementById('ca-empty-state'),
+  caGrid: document.getElementById('ca-grid'),
+
+  caCapsulesContainer: document.getElementById('ca-capsules-container'),
+  caQuizCardWrapper: document.getElementById('ca-quiz-card-wrapper'),
+
+  caDetailModal: document.getElementById('ca-detail-modal'),
+  closeCaDetailModal: document.getElementById('close-ca-detail-modal'),
+  caDetailCatBadge: document.getElementById('ca-detail-cat-badge'),
+  caDetailScopeBadge: document.getElementById('ca-detail-scope-badge'),
+  caDetailDate: document.getElementById('ca-detail-date'),
+  caDetailTitle: document.getElementById('ca-detail-title'),
+  caDetailTtsBtn: document.getElementById('ca-detail-tts-btn'),
+  caDetailTtsStop: document.getElementById('ca-detail-tts-stop'),
+  caTtsIcon: document.getElementById('ca-tts-icon'),
+  caTtsLabel: document.getElementById('ca-tts-label'),
+  caDetailSource: document.getElementById('ca-detail-source'),
+  caDetailCrux: document.getElementById('ca-detail-crux'),
+  caDetailTakeaways: document.getElementById('ca-detail-takeaways'),
+  caDetailAgency: document.getElementById('ca-detail-agency'),
+  caDetailStatute: document.getElementById('ca-detail-statute'),
+  caDetailLocation: document.getElementById('ca-detail-location'),
+  caDetailFacts: document.getElementById('ca-detail-facts'),
+  caDetailMcqBox: document.getElementById('ca-detail-mcq-box'),
+  caDetailNotesInput: document.getElementById('ca-detail-notes-input'),
+  caNotesStatus: document.getElementById('ca-notes-status'),
+  caDetailExportMd: document.getElementById('ca-detail-export-md'),
+  caDetailSourceLink: document.getElementById('ca-detail-source-link'),
 
   // RSS Manager Elements
   refreshFeedsBtn: document.getElementById('refresh-feeds-btn'),
@@ -389,6 +481,7 @@ async function init() {
   updateBookmarkBadge();
   renderRssFeedsManager();
   await loadEditorialData();
+  await loadCurrentAffairsData();
   handleUrlHashRouting();
 }
 
@@ -2339,20 +2432,956 @@ function applyReaderSize(size) {
   });
 }
 
+// ==========================================================================
+// CURRENT AFFAIRS 360° MODULE (1-Year Master Vault & Daily Feeds)
+// ==========================================================================
+
+const CA_CATEGORY_ICONS = {
+  "Banking & Finance": "🏦",
+  "Polity & Governance": "⚖️",
+  "Economy & Infrastructure": "📈",
+  "Science, Tech & Defence": "🔬",
+  "History, Art & Culture": "📜",
+  "Sports & Games": "🏆",
+  "National Affairs & Schemes": "🇮🇳",
+  "International & Global Affairs": "🌍",
+  "Environment & Ecology": "🌿"
+};
+
+const CAPSULE_DATA_MAP = {
+  appointments: {
+    key: 'appointments_heads',
+    title: '👑 Constitutional & National Appointments (Past 1 Year)',
+    subtitle: 'High-yield appointments frequently targeted in UPSC CSE Prelims, RBI Grade B, and SSC CGL.',
+    headers: ['Designation / Office', 'Appointee / Incumbent', 'Exam Crux & Statutory Anchor', 'Date / Tenure'],
+    renderRow: (item) => `
+      <tr>
+        <td class="cap-col-bold">${escapeHtml(item.title)}</td>
+        <td class="cap-col-highlight">${escapeHtml(item.person)}</td>
+        <td>${escapeHtml(item.key_detail)}</td>
+        <td class="cap-col-date">${escapeHtml(item.tenure_or_date)}</td>
+      </tr>
+    `
+  },
+  military: {
+    key: 'military_exercises',
+    title: '⚔️ Joint Military & Defence Exercises (2024–2026)',
+    subtitle: 'Bilateral and multilateral war games, air exercises, and naval drills.',
+    headers: ['Exercise Name', 'Forces / Nations Involved', 'Location / Venue', 'Strategic Objectives & Focus'],
+    renderRow: (item) => `
+      <tr>
+        <td class="cap-col-bold">${escapeHtml(item.exercise)}</td>
+        <td class="cap-col-highlight">${escapeHtml(item.forces)}</td>
+        <td>${escapeHtml(item.location)}</td>
+        <td>${escapeHtml(item.focus)}</td>
+      </tr>
+    `
+  },
+  summits: {
+    key: 'summits_themes',
+    title: '🌐 Global Summits, Presidencies & Official Themes',
+    subtitle: 'Multilateral conferences shaping geopolitics, trade, and climate agreements.',
+    headers: ['Summit / Forum', 'Presidency / Host', 'Official Theme', 'Strategic Outcomes & Declarations'],
+    renderRow: (item) => `
+      <tr>
+        <td class="cap-col-bold">${escapeHtml(item.summit)}</td>
+        <td class="cap-col-highlight">${escapeHtml(item.presidency)}</td>
+        <td><em>"${escapeHtml(item.theme)}"</em></td>
+        <td>${escapeHtml(item.significance)}</td>
+      </tr>
+    `
+  },
+  heritage: {
+    key: 'unesco_heritage_gi_tags',
+    title: '🏛️ UNESCO World Heritage & Geographical Indications (GI)',
+    subtitle: 'Newly inscribed cultural, natural, and intangible heritage sites & notable GI tags.',
+    headers: ['Item / Site / Art', 'Category', 'State / Region', 'Significance & Historical Context'],
+    renderRow: (item) => `
+      <tr>
+        <td class="cap-col-bold">${escapeHtml(item.item)}</td>
+        <td><span class="cap-pill">${escapeHtml(item.category)}</span></td>
+        <td class="cap-col-highlight">${escapeHtml(item.state)}</td>
+        <td>${escapeHtml(item.significance)}</td>
+      </tr>
+    `
+  },
+  ramsar: {
+    key: 'ramsar_sites_environment',
+    title: '🦆 Ramsar Wetland Sites & Ecological Landmarks',
+    subtitle: "India's network of 85 Ramsar sites and biodiversity hotspots.",
+    headers: ['Wetland Site', 'State / UT', 'Ecosystem Type', 'Ecological Significance & Flagship Species'],
+    renderRow: (item) => `
+      <tr>
+        <td class="cap-col-bold">${escapeHtml(item.site)}</td>
+        <td class="cap-col-highlight">${escapeHtml(item.state)}</td>
+        <td><span class="cap-pill">${escapeHtml(item.type)}</span></td>
+        <td>${escapeHtml(item.key_facts)}</td>
+      </tr>
+    `
+  },
+  sports: {
+    key: 'sports_champions_awards',
+    title: '🥇 Major Sports Champions, Records & National Honors',
+    subtitle: 'Historic milestones across Olympic, Paralympic, Chess, Cricket, and Tennis arenas.',
+    headers: ['Event / Championship', 'Champion / Recipient', 'Historic Record / Milestone'],
+    renderRow: (item) => `
+      <tr>
+        <td class="cap-col-bold">${escapeHtml(item.event)}</td>
+        <td class="cap-col-highlight">${escapeHtml(item.recipient)}</td>
+        <td>${escapeHtml(item.record)}</td>
+      </tr>
+    `
+  },
+  indices: {
+    key: 'indices_india_rank',
+    title: "📊 Global Indices, Reports & India's Ranking",
+    subtitle: 'Benchmark rankings by World Bank, WIPO, UNDP, Germanwatch, and WEF.',
+    headers: ['Index / Report', 'Publishing Body', "India's Rank", 'Key Drivers & Insights'],
+    renderRow: (item) => `
+      <tr>
+        <td class="cap-col-bold">${escapeHtml(item.index_name)}</td>
+        <td class="cap-col-highlight">${escapeHtml(item.publisher)}</td>
+        <td><strong style="color: var(--primary); font-size: 1rem;">${escapeHtml(item.india_rank)}</strong></td>
+        <td>${escapeHtml(item.score_detail)}</td>
+      </tr>
+    `
+  }
+};
+
+function isMasterDossier(item) {
+  if (!item) return false;
+  if (item.is_vault) return true;
+  if (/^ca-\d{4}-[a-z]+-\d{2}$/.test(item.id)) return true;
+  return false;
+}
+
+/**
+ * Fetch and load Current Affairs dataset (1-Year Master Vault + Daily Feeds)
+ */
+async function loadCurrentAffairsData() {
+  if (dom.caLoadingSpinner) dom.caLoadingSpinner.style.display = 'block';
+  if (dom.caGrid) dom.caGrid.innerHTML = '';
+
+  try {
+    const res = await fetch('data/current_affairs.json');
+    let baseItems = [];
+    if (res.ok) {
+      const data = await res.json();
+      baseItems = data.items || [];
+      state.ca.factCapsules = data.fact_capsules || {};
+      if (data.last_updated && dom.caUpdatePill) {
+        dom.caUpdatePill.textContent = `🟢 Updated: ${data.last_updated}`;
+      }
+    }
+
+    const localLiveCache = JSON.parse(localStorage.getItem('ca-live-cache') || '[]');
+    const existingIds = new Set(baseItems.map(i => i.id));
+    const merged = [...localLiveCache.filter(i => !existingIds.has(i.id)), ...baseItems];
+    state.ca.items = merged;
+
+    // Update hero stats
+    const totalCount = state.ca.items.length;
+    const vaultCount = state.ca.items.filter(isMasterDossier).length;
+    const dailyCount = totalCount - vaultCount;
+
+    if (dom.caStatTotal) dom.caStatTotal.textContent = `${totalCount}+`;
+    if (dom.caStatVault) dom.caStatVault.textContent = `${vaultCount} Curated`;
+    if (dom.caStatDaily) dom.caStatDaily.textContent = `${dailyCount} Feeds`;
+    if (dom.caStatCapsules) dom.caStatCapsules.textContent = `7 Themes`;
+
+    applyCAFilters();
+    renderCACapsules('appointments');
+    initCAQuizArena();
+  } catch (err) {
+    console.error('Error loading current affairs data:', err);
+    if (dom.caEmptyState) dom.caEmptyState.style.display = 'block';
+  } finally {
+    if (dom.caLoadingSpinner) dom.caLoadingSpinner.style.display = 'none';
+  }
+}
+
+/**
+ * Filter current affairs by subtab, subject, scope, exam target, and search keywords
+ */
+function applyCAFilters() {
+  let items = [...state.ca.items];
+
+  // 1. Subnav Filter: Vault vs Daily
+  if (state.ca.activeSubTab === 'vault') {
+    items = items.filter(isMasterDossier);
+  } else if (state.ca.activeSubTab === 'daily') {
+    items = items.filter(i => !isMasterDossier(i));
+  }
+
+  // 2. Category Filter
+  if (state.ca.selectedCategory !== 'all') {
+    items = items.filter(i => i.category === state.ca.selectedCategory);
+  }
+
+  // 3. Scope Filter
+  if (state.ca.selectedScope !== 'all') {
+    items = items.filter(i => i.scope === state.ca.selectedScope || (i.scope === 'World & India' && (state.ca.selectedScope === 'India' || state.ca.selectedScope === 'World')));
+  }
+
+  // 4. Target Exam Filter
+  if (state.ca.selectedExam !== 'all') {
+    const examTarget = state.ca.selectedExam.toLowerCase();
+    items = items.filter(i => Array.isArray(i.exam_tags) && i.exam_tags.some(tag => tag.toLowerCase().includes(examTarget)));
+  }
+
+  // 5. Search Query Filter
+  const q = state.ca.searchQuery.trim().toLowerCase();
+  if (q) {
+    items = items.filter(i => {
+      const titleMatch = (i.title || '').toLowerCase().includes(q);
+      const cruxMatch = (i.crux || '').toLowerCase().includes(q);
+      const summaryMatch = (i.summary || '').toLowerCase().includes(q);
+      const catMatch = (i.category || '').toLowerCase().includes(q);
+      const subcatMatch = (i.subcategory || '').toLowerCase().includes(q);
+      const agencyMatch = (i.prelims_pointers?.key_agency || '').toLowerCase().includes(q);
+      const factsMatch = (i.prelims_pointers?.facts_to_remember || '').toLowerCase().includes(q);
+      const locationMatch = (i.prelims_pointers?.location || '').toLowerCase().includes(q);
+      const statuteMatch = (i.prelims_pointers?.statutory_anchor || '').toLowerCase().includes(q);
+      const takeawayMatch = Array.isArray(i.takeaways) && i.takeaways.some(t => t.toLowerCase().includes(q));
+      return titleMatch || cruxMatch || summaryMatch || catMatch || subcatMatch || agencyMatch || factsMatch || locationMatch || statuteMatch || takeawayMatch;
+    });
+  }
+
+  state.ca.filteredItems = items;
+
+  // Update Result Count
+  if (dom.caResultsCount) {
+    dom.caResultsCount.textContent = `Showing ${items.length} dossier${items.length === 1 ? '' : 's'}`;
+  }
+
+  // Update Active Filter Bar
+  updateCAActiveFilterBar();
+
+  // Render cards
+  renderCACards();
+}
+
+function updateCAActiveFilterBar() {
+  if (!dom.caActiveFiltersBar || !dom.caActiveFilterText) return;
+  const tags = [];
+  if (state.ca.selectedCategory !== 'all') tags.push(`Subject: ${state.ca.selectedCategory}`);
+  if (state.ca.selectedScope !== 'all') tags.push(`Scope: ${state.ca.selectedScope}`);
+  if (state.ca.selectedExam !== 'all') tags.push(`Exam: ${state.ca.selectedExam}`);
+  if (state.ca.searchQuery.trim()) tags.push(`Search: "${state.ca.searchQuery.trim()}"`);
+
+  if (tags.length > 0) {
+    dom.caActiveFilterText.textContent = tags.join(' • ');
+    dom.caActiveFiltersBar.style.display = 'flex';
+  } else {
+    dom.caActiveFiltersBar.style.display = 'none';
+  }
+}
+
+/**
+ * Render Current Affairs Cards in Grid
+ */
+function renderCACards() {
+  if (!dom.caGrid) return;
+  dom.caGrid.innerHTML = '';
+
+  const items = state.ca.filteredItems;
+
+  if (items.length === 0) {
+    if (dom.caEmptyState) dom.caEmptyState.style.display = 'block';
+    dom.caGrid.style.display = 'none';
+    return;
+  }
+
+  if (dom.caEmptyState) dom.caEmptyState.style.display = 'none';
+  dom.caGrid.style.display = 'grid';
+
+  const frag = document.createDocumentFragment();
+
+  items.forEach(item => {
+    const card = document.createElement('article');
+    card.className = 'ca-card';
+    card.setAttribute('data-cat', item.category);
+    card.setAttribute('data-id', item.id);
+
+    const icon = CA_CATEGORY_ICONS[item.category] || '📌';
+    const scopeLabel = item.scope === 'India' ? '🇮🇳 India' : (item.scope === 'World' ? '🌍 World' : '🌐 Bilateral');
+    const isMaster = isMasterDossier(item);
+    const dateFormatted = formatDateHuman(item.date);
+
+    const takeawaysHtml = Array.isArray(item.takeaways) && item.takeaways.length > 0
+      ? item.takeaways.slice(0, 2).map(t => `<li>${escapeHtml(t)}</li>`).join('')
+      : `<li>${escapeHtml(item.summary || item.title)}</li>`;
+
+    const agency = item.prelims_pointers?.key_agency || '';
+    const factHint = item.prelims_pointers?.facts_to_remember || item.prelims_pointers?.statutory_anchor || '';
+
+    const examTagsHtml = Array.isArray(item.exam_tags)
+      ? item.exam_tags.map(t => `<span class="ca-exam-pill">${escapeHtml(t)}</span>`).join('')
+      : '<span class="ca-exam-pill">UPSC</span>';
+
+    card.innerHTML = `
+      <div class="ca-card-header">
+        <div class="ca-card-badges">
+          <span class="ca-cat-badge">${icon} ${escapeHtml(item.category)}</span>
+          <span class="ca-scope-badge">${scopeLabel}</span>
+          ${isMaster ? '<span class="ca-vault-badge">⭐ Master Archive</span>' : ''}
+        </div>
+        <span class="ca-card-date">${dateFormatted}</span>
+      </div>
+
+      <h3 class="ca-card-title">${escapeHtml(item.title)}</h3>
+
+      <div class="ca-card-crux">
+        <span class="crux-icon">⚡</span>
+        <p class="crux-text">${escapeHtml(item.crux || item.summary || '')}</p>
+      </div>
+
+      <div class="ca-card-takeaways">
+        <div class="takeaways-label">💡 High-Yield Exam Takeaways:</div>
+        <ul class="takeaways-list">
+          ${takeawaysHtml}
+        </ul>
+      </div>
+
+      ${factHint || agency ? `
+        <div class="ca-card-prelims-box">
+          <span class="prelims-tag">📌 Prelims Fact:</span>
+          <span class="prelims-fact-snippet">${escapeHtml(agency ? agency + ' — ' : '')}${escapeHtml(factHint)}</span>
+        </div>
+      ` : ''}
+
+      <div class="ca-card-footer">
+        <div class="ca-card-exam-tags">
+          ${examTagsHtml}
+        </div>
+        <div class="ca-card-actions">
+          <button class="ca-btn-study" title="Open complete exam study dossier with notes and quiz">
+            Study Dossier ↗
+          </button>
+        </div>
+      </div>
+    `;
+
+    card.addEventListener('click', () => {
+      openCADetailModal(item.id);
+    });
+
+    frag.appendChild(card);
+  });
+
+  dom.caGrid.appendChild(frag);
+}
+
+/**
+ * Switch Sub-Navigation View: Vault, Daily, Capsules, or Quiz
+ */
+function switchCASubTab(tabName) {
+  state.ca.activeSubTab = tabName;
+
+  [dom.caSubtabVault, dom.caSubtabDaily, dom.caSubtabCapsules, dom.caSubtabQuiz].forEach(btn => {
+    if (btn) btn.classList.toggle('active', btn.dataset.casub === tabName);
+  });
+
+  if (tabName === 'vault') {
+    if (dom.caDossierPane) dom.caDossierPane.style.display = 'block';
+    if (dom.caFilterSection) dom.caFilterSection.style.display = 'block';
+    if (dom.caCapsulesPane) dom.caCapsulesPane.style.display = 'none';
+    if (dom.caQuizPane) dom.caQuizPane.style.display = 'none';
+    if (dom.caViewTitle) dom.caViewTitle.textContent = "📚 1-Year Master Vault (Curated Exam Dossiers)";
+    applyCAFilters();
+  } else if (tabName === 'daily') {
+    if (dom.caDossierPane) dom.caDossierPane.style.display = 'block';
+    if (dom.caFilterSection) dom.caFilterSection.style.display = 'block';
+    if (dom.caCapsulesPane) dom.caCapsulesPane.style.display = 'none';
+    if (dom.caQuizPane) dom.caQuizPane.style.display = 'none';
+    if (dom.caViewTitle) dom.caViewTitle.textContent = "📅 Daily Live News Stream (Today & Fresh Feeds)";
+    applyCAFilters();
+  } else if (tabName === 'capsules') {
+    if (dom.caDossierPane) dom.caDossierPane.style.display = 'none';
+    if (dom.caFilterSection) dom.caFilterSection.style.display = 'none';
+    if (dom.caCapsulesPane) dom.caCapsulesPane.style.display = 'block';
+    if (dom.caQuizPane) dom.caQuizPane.style.display = 'none';
+    renderCACapsules(state.ca.activeCapsuleTab || 'appointments');
+  } else if (tabName === 'quiz') {
+    if (dom.caDossierPane) dom.caDossierPane.style.display = 'none';
+    if (dom.caFilterSection) dom.caFilterSection.style.display = 'none';
+    if (dom.caCapsulesPane) dom.caCapsulesPane.style.display = 'none';
+    if (dom.caQuizPane) dom.caQuizPane.style.display = 'block';
+    renderCAQuizArena();
+  }
+}
+
+/**
+ * Render Prelims Fact Capsules (Speed Revision Tables)
+ */
+function renderCACapsules(tabKey) {
+  state.ca.activeCapsuleTab = tabKey;
+
+  if (dom.caCapsulesPane) {
+    dom.caCapsulesPane.querySelectorAll('.capsule-nav-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.capstab === tabKey);
+    });
+  }
+
+  const config = CAPSULE_DATA_MAP[tabKey];
+  if (!config || !dom.caCapsulesContainer) return;
+
+  const dataList = (state.ca.factCapsules && state.ca.factCapsules[config.key]) || [];
+
+  if (dataList.length === 0) {
+    dom.caCapsulesContainer.innerHTML = `
+      <div class="empty-state">
+        <p>No capsule records found for this section yet.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const theadHtml = config.headers.map(h => `<th>${escapeHtml(h)}</th>`).join('');
+  const tbodyHtml = dataList.map(item => config.renderRow(item)).join('');
+
+  dom.caCapsulesContainer.innerHTML = `
+    <div class="capsule-card">
+      <div class="capsule-card-header">
+        <h4 class="capsule-title">${config.title}</h4>
+        <p class="capsule-desc">${config.subtitle}</p>
+      </div>
+      <div class="table-responsive">
+        <table class="capsule-table">
+          <thead>
+            <tr>${theadHtml}</tr>
+          </thead>
+          <tbody>
+            ${tbodyHtml}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Initialize and render Interactive MCQ Arena
+ */
+function initCAQuizArena() {
+  const itemsWithMcq = state.ca.items.filter(i => i.mcq && i.mcq.question && Array.isArray(i.mcq.options));
+  if (itemsWithMcq.length === 0) return;
+
+  const shuffled = [...itemsWithMcq].sort(() => 0.5 - Math.random());
+  state.ca.quiz = {
+    questions: shuffled.slice(0, 10),
+    currentIndex: 0,
+    score: 0,
+    answered: false,
+    selectedOption: null
+  };
+}
+
+function renderCAQuizArena() {
+  if (!dom.caQuizCardWrapper) return;
+  const quiz = state.ca.quiz;
+
+  if (!quiz.questions || quiz.questions.length === 0) {
+    initCAQuizArena();
+  }
+
+  if (quiz.currentIndex >= quiz.questions.length) {
+    const pct = Math.round((quiz.score / quiz.questions.length) * 100);
+    let msg = "Keep practicing! Review the 1-Year Master Vault to strengthen fundamentals.";
+    if (pct >= 80) msg = "🌟 Exceptional Prelims Mastery! Outstanding accuracy across subjects.";
+    else if (pct >= 50) msg = "👍 Good performance! Revise the Fact Capsules to hit 90%+ in the real exam.";
+
+    dom.caQuizCardWrapper.innerHTML = `
+      <div class="quiz-summary-card">
+        <div class="quiz-summary-icon">🏆</div>
+        <h3>Prelims MCQ Arena Completed!</h3>
+        <div class="quiz-score-circle">
+          <span class="quiz-score-number">${quiz.score} / ${quiz.questions.length}</span>
+          <span class="quiz-score-pct">${pct}% Correct</span>
+        </div>
+        <p class="quiz-summary-feedback">${msg}</p>
+        <div class="quiz-summary-actions">
+          <button id="ca-retake-quiz-btn" class="btn btn-primary">🔄 Retake Arena (Fresh Questions)</button>
+          <button id="ca-review-capsules-btn" class="btn btn-secondary">⚡ Revise Fact Capsules</button>
+        </div>
+      </div>
+    `;
+
+    const retakeBtn = document.getElementById('ca-retake-quiz-btn');
+    if (retakeBtn) {
+      retakeBtn.addEventListener('click', () => {
+        initCAQuizArena();
+        renderCAQuizArena();
+      });
+    }
+
+    const reviewCapsulesBtn = document.getElementById('ca-review-capsules-btn');
+    if (reviewCapsulesBtn) {
+      reviewCapsulesBtn.addEventListener('click', () => {
+        switchCASubTab('capsules');
+      });
+    }
+    return;
+  }
+
+  const currentItem = quiz.questions[quiz.currentIndex];
+  const mcq = currentItem.mcq;
+  const qNum = quiz.currentIndex + 1;
+  const totalQ = quiz.questions.length;
+
+  dom.caQuizCardWrapper.innerHTML = `
+    <div class="quiz-card">
+      <div class="quiz-header">
+        <div class="quiz-meta-left">
+          <span class="quiz-q-num">Question ${qNum} of ${totalQ}</span>
+          <span class="ca-cat-badge" style="margin-left: 0.5rem;">${escapeHtml(currentItem.category)}</span>
+        </div>
+        <span class="quiz-score-pill">Score: ${quiz.score}/${totalQ}</span>
+      </div>
+
+      <div class="quiz-question-text">${escapeHtml(mcq.question)}</div>
+
+      <div class="quiz-options-list" id="ca-quiz-options">
+        ${mcq.options.map((opt, idx) => {
+          let btnClass = 'quiz-opt-btn';
+          let disabled = quiz.answered ? 'disabled' : '';
+          if (quiz.answered) {
+            if (idx === mcq.answer) btnClass += ' correct';
+            else if (idx === quiz.selectedOption) btnClass += ' incorrect';
+          }
+          return `
+            <button class="${btnClass}" data-opt-idx="${idx}" ${disabled}>
+              <span class="opt-letter">${String.fromCharCode(65 + idx)}</span>
+              <span class="opt-label">${escapeHtml(opt)}</span>
+            </button>
+          `;
+        }).join('')}
+      </div>
+
+      ${quiz.answered ? `
+        <div class="quiz-explanation-box">
+          <span class="quiz-expl-badge">💡 Exam Explanation & High-Yield Analysis</span>
+          <p class="quiz-expl-text">${escapeHtml(mcq.explanation || 'Refer to the dossier for complete details.')}</p>
+        </div>
+        <div class="quiz-action-row" style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+          <button id="ca-quiz-next-btn" class="btn btn-primary">
+            ${quiz.currentIndex + 1 === totalQ ? 'Finish Arena & See Score 🏆' : 'Next Question →'}
+          </button>
+        </div>
+      ` : ''}
+    </div>
+  `;
+
+  if (!quiz.answered) {
+    const optButtons = dom.caQuizCardWrapper.querySelectorAll('#ca-quiz-options .quiz-opt-btn');
+    optButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedIdx = parseInt(btn.dataset.optIdx, 10);
+        quiz.answered = true;
+        quiz.selectedOption = selectedIdx;
+        if (selectedIdx === mcq.answer) {
+          quiz.score++;
+        }
+        renderCAQuizArena();
+      });
+    });
+  } else {
+    const nextBtn = document.getElementById('ca-quiz-next-btn');
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        quiz.currentIndex++;
+        quiz.answered = false;
+        quiz.selectedOption = null;
+        renderCAQuizArena();
+      });
+    }
+  }
+}
+
+/**
+ * Open Full Current Affairs Detail & Study Drawer Modal
+ */
+function openCADetailModal(id) {
+  const item = state.ca.items.find(i => i.id === id);
+  if (!item) return;
+
+  state.ca.currentDetailItem = item;
+
+  if (dom.caDetailCatBadge) dom.caDetailCatBadge.textContent = item.category;
+  if (dom.caDetailScopeBadge) {
+    dom.caDetailScopeBadge.textContent = item.scope === 'India' ? '🇮🇳 India Focus' : (item.scope === 'World' ? '🌍 World Focus' : '🌐 Bilateral');
+  }
+  if (dom.caDetailDate) dom.caDetailDate.textContent = '📅 ' + formatDateHuman(item.date);
+  if (dom.caDetailTitle) dom.caDetailTitle.textContent = item.title;
+  if (dom.caDetailSource) dom.caDetailSource.textContent = 'Source: ' + (item.source || 'Official');
+
+  if (dom.caDetailCrux) dom.caDetailCrux.textContent = item.crux || item.summary || '';
+  if (dom.caDetailTakeaways) {
+    if (Array.isArray(item.takeaways) && item.takeaways.length > 0) {
+      dom.caDetailTakeaways.innerHTML = item.takeaways.map(t => `<li>${escapeHtml(t)}</li>`).join('');
+    } else {
+      dom.caDetailTakeaways.innerHTML = `<li>${escapeHtml(item.summary || item.title)}</li>`;
+    }
+  }
+
+  if (dom.caDetailAgency) dom.caDetailAgency.textContent = item.prelims_pointers?.key_agency || 'N/A';
+  if (dom.caDetailStatute) dom.caDetailStatute.textContent = item.prelims_pointers?.statutory_anchor || 'N/A';
+  if (dom.caDetailLocation) dom.caDetailLocation.textContent = item.prelims_pointers?.location || 'N/A';
+  if (dom.caDetailFacts) dom.caDetailFacts.textContent = item.prelims_pointers?.facts_to_remember || 'N/A';
+
+  if (dom.caDetailMcqBox) {
+    if (item.mcq && item.mcq.question && Array.isArray(item.mcq.options)) {
+      renderCADetailMcq(item.mcq);
+    } else {
+      dom.caDetailMcqBox.innerHTML = '<p style="color: var(--text-muted); font-size: 0.9rem;">Practice question will be generated in tomorrow\'s update.</p>';
+    }
+  }
+
+  if (dom.caDetailNotesInput) {
+    dom.caDetailNotesInput.value = localStorage.getItem('ca-notes-' + item.id) || '';
+  }
+  if (dom.caNotesStatus) dom.caNotesStatus.textContent = 'Auto-saved locally';
+
+  if (dom.caDetailSourceLink) {
+    dom.caDetailSourceLink.href = item.url || '#';
+  }
+
+  stopCADetailTts();
+
+  if (dom.caDetailModal) dom.caDetailModal.style.display = 'flex';
+}
+
+function renderCADetailMcq(mcq) {
+  if (!dom.caDetailMcqBox) return;
+  let detailAnswered = false;
+
+  dom.caDetailMcqBox.innerHTML = `
+    <p class="quiz-question-text" style="font-size: 0.95rem; margin-bottom: 0.75rem;">${escapeHtml(mcq.question)}</p>
+    <div class="quiz-options-list" id="modal-mcq-options">
+      ${mcq.options.map((opt, idx) => `
+        <button class="quiz-opt-btn" data-opt-idx="${idx}" style="padding: 0.6rem 0.85rem;">
+          <span class="opt-letter">${String.fromCharCode(65 + idx)}</span>
+          <span class="opt-label">${escapeHtml(opt)}</span>
+        </button>
+      `).join('')}
+    </div>
+    <div id="modal-mcq-expl" class="quiz-explanation-box" style="display: none; margin-top: 0.75rem;">
+      <span class="quiz-expl-badge">💡 Analysis & Answer</span>
+      <p class="quiz-expl-text" style="font-size: 0.85rem; margin-top: 0.35rem;">${escapeHtml(mcq.explanation)}</p>
+    </div>
+  `;
+
+  const optButtons = dom.caDetailMcqBox.querySelectorAll('#modal-mcq-options .quiz-opt-btn');
+  optButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (detailAnswered) return;
+      detailAnswered = true;
+      const selected = parseInt(btn.dataset.optIdx, 10);
+      optButtons.forEach((b, idx) => {
+        b.disabled = true;
+        if (idx === mcq.answer) b.classList.add('correct');
+        else if (idx === selected) b.classList.add('incorrect');
+      });
+      const expl = dom.caDetailMcqBox.querySelector('#modal-mcq-expl');
+      if (expl) expl.style.display = 'block';
+    });
+  });
+}
+
+function closeCADetailModal() {
+  stopCADetailTts();
+  if (dom.caDetailModal) dom.caDetailModal.style.display = 'none';
+  state.ca.currentDetailItem = null;
+}
+
+function handleCADetailTts() {
+  const item = state.ca.currentDetailItem;
+  if (!item || !window.speechSynthesis) {
+    showToast('Text-to-speech is not supported on this browser.');
+    return;
+  }
+
+  if (state.ca.tts.isSpeaking) {
+    stopCADetailTts();
+    return;
+  }
+
+  window.speechSynthesis.cancel();
+
+  const narrationText = `${item.title}. Crux: ${item.crux || item.summary}. Key exam takeaways: ${(item.takeaways || []).join('. ')}. Key Agency: ${item.prelims_pointers?.key_agency || ''}. Prelims facts: ${item.prelims_pointers?.facts_to_remember || ''}`;
+
+  const utterance = new SpeechSynthesisUtterance(narrationText);
+  utterance.rate = state.preferences.speechSpeed || 1.0;
+  utterance.pitch = 1.0;
+
+  utterance.onstart = () => {
+    state.ca.tts.isSpeaking = true;
+    if (dom.caTtsIcon) dom.caTtsIcon.textContent = '⏸️';
+    if (dom.caTtsLabel) dom.caTtsLabel.textContent = 'Pause Brief';
+    if (dom.caDetailTtsStop) dom.caDetailTtsStop.style.display = 'inline-flex';
+  };
+
+  utterance.onend = () => {
+    stopCADetailTts();
+  };
+
+  utterance.onerror = () => {
+    stopCADetailTts();
+  };
+
+  state.ca.tts.utterance = utterance;
+  window.speechSynthesis.speak(utterance);
+}
+
+function stopCADetailTts() {
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+  state.ca.tts.isSpeaking = false;
+  state.ca.tts.utterance = null;
+  if (dom.caTtsIcon) dom.caTtsIcon.textContent = '🔊';
+  if (dom.caTtsLabel) dom.caTtsLabel.textContent = 'Listen to Brief';
+  if (dom.caDetailTtsStop) dom.caDetailTtsStop.style.display = 'none';
+}
+
+function exportCAMarkdown() {
+  const items = state.ca.filteredItems.length > 0 ? state.ca.filteredItems : state.ca.items;
+  if (!items || items.length === 0) {
+    showToast('No current affairs dossiers to export.');
+    return;
+  }
+
+  const todayStr = new Date().toISOString().slice(0, 10);
+  let md = `# Daily Editorial Hub • Current Affairs 360° Compendium\n`;
+  md += `*Export Date: ${todayStr} | Total Exam Dossiers: ${items.length}*\n\n`;
+  md += `Coverage: Banking, Polity, Economy, Science & Tech, Defence, History/Culture, Sports, National & International Events.\n\n`;
+  md += `---\n\n`;
+
+  items.forEach((item, idx) => {
+    md += `## ${idx + 1}. ${item.title}\n`;
+    md += `- **Date:** ${item.date} | **Category:** ${item.category} | **Scope:** ${item.scope}\n`;
+    md += `- **Target Exams:** ${(item.exam_tags || []).join(', ')}\n`;
+    md += `- **Source:** ${item.source || 'Official Release'} ([Link](${item.url || '#'}))\n\n`;
+
+    md += `### ⚡ 30-Second Exam Crux\n`;
+    md += `> ${item.crux || item.summary}\n\n`;
+
+    md += `### 💡 Key Exam Takeaways\n`;
+    (item.takeaways || []).forEach(t => {
+      md += `- ${t}\n`;
+    });
+    md += `\n`;
+
+    if (item.prelims_pointers) {
+      md += `### 📌 Prelims Fact Capsule\n`;
+      md += `- **Key Agency:** ${item.prelims_pointers.key_agency || 'N/A'}\n`;
+      md += `- **Statutory / Constitutional Anchor:** ${item.prelims_pointers.statutory_anchor || 'N/A'}\n`;
+      md += `- **Location / Scope:** ${item.prelims_pointers.location || 'N/A'}\n`;
+      md += `- **Facts to Remember:** ${item.prelims_pointers.facts_to_remember || 'N/A'}\n\n`;
+    }
+
+    if (item.mcq) {
+      md += `### 🎯 Prelims Practice MCQ\n`;
+      md += `**Q:** ${item.mcq.question}\n\n`;
+      (item.mcq.options || []).forEach((opt, oIdx) => {
+        const letter = String.fromCharCode(65 + oIdx);
+        const marker = oIdx === item.mcq.answer ? ' *(Correct)*' : '';
+        md += `- **${letter})** ${opt}${marker}\n`;
+      });
+      md += `\n**Explanation:** ${item.mcq.explanation}\n\n`;
+    }
+
+    const personalNote = localStorage.getItem('ca-notes-' + item.id);
+    if (personalNote) {
+      md += `### 📝 My Personal Revision Notes\n`;
+      md += `${personalNote}\n\n`;
+    }
+
+    md += `---\n\n`;
+  });
+
+  const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `Current_Affairs_Compendium_${todayStr}.md`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast(`Exported ${items.length} dossiers to Markdown!`);
+}
+
+function exportSingleCADossier(item) {
+  if (!item) return;
+  let md = `# ${item.title}\n`;
+  md += `- **Date:** ${item.date} | **Category:** ${item.category} | **Scope:** ${item.scope}\n`;
+  md += `- **Target Exams:** ${(item.exam_tags || []).join(', ')}\n\n`;
+  md += `## ⚡ 30-Second Crux\n> ${item.crux || item.summary}\n\n`;
+  md += `## 💡 Key Takeaways\n`;
+  (item.takeaways || []).forEach(t => md += `- ${t}\n`);
+  md += `\n## 📌 Prelims Facts\n`;
+  md += `- Agency: ${item.prelims_pointers?.key_agency || 'N/A'}\n`;
+  md += `- Statute: ${item.prelims_pointers?.statutory_anchor || 'N/A'}\n`;
+  md += `- Facts: ${item.prelims_pointers?.facts_to_remember || 'N/A'}\n\n`;
+  const note = localStorage.getItem('ca-notes-' + item.id);
+  if (note) md += `## 📝 My Notes\n${note}\n\n`;
+
+  const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${item.id}_Notes.md`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('Note exported!');
+}
+
+async function syncLiveCAFeeds() {
+  if (dom.caSyncSpinner) dom.caSyncSpinner.classList.add('spinning');
+  if (dom.caSyncLabel) dom.caSyncLabel.textContent = 'Syncing...';
+
+  try {
+    const targetUrl = 'https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1';
+    const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`;
+    
+    const res = await fetch(proxyUrl);
+    if (!res.ok) throw new Error('Proxy error');
+    const data = await res.json();
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(data.contents, 'text/xml');
+    const items = Array.from(xml.querySelectorAll('item'));
+
+    if (items.length > 0) {
+      const todayStr = new Date().toISOString().slice(0, 10);
+      const newDossiers = [];
+
+      items.slice(0, 10).forEach((node, i) => {
+        const title = (node.querySelector('title')?.textContent || '').trim();
+        const link = (node.querySelector('link')?.textContent || '').trim();
+        const desc = (node.querySelector('description')?.textContent || '').trim();
+
+        if (title) {
+          const id = `ca-${todayStr}-live-${i + 1}`;
+          if (!state.ca.items.some(existing => existing.title === title)) {
+            newDossiers.push({
+              id,
+              title,
+              date: todayStr,
+              category: "National Affairs & Schemes",
+              subcategory: "PIB Live Feed",
+              scope: "India",
+              exam_tags: ["UPSC", "State PCS", "Banking", "SSC"],
+              summary: desc || title,
+              crux: `Official government release: ${title}. Key national update issued via Press Information Bureau.`,
+              takeaways: [
+                desc || "Details and guidelines issued under official government notification.",
+                "High relevance for national policy and scheme monitoring."
+              ],
+              prelims_pointers: {
+                key_agency: "Government of India / PIB",
+                statutory_anchor: "Executive Notification",
+                location: "New Delhi, India",
+                facts_to_remember: title
+              },
+              mcq: {
+                question: `Which ministry or government entity issued the recent briefing: "${title.slice(0, 70)}..."?`,
+                options: ["Press Information Bureau (PIB)", "Reserve Bank of India", "Ministry of Finance", "NITI Aayog"],
+                answer: 0,
+                explanation: "Released via the official Press Information Bureau (PIB) daily dispatch."
+              },
+              source: "PIB Official Live",
+              url: link
+            });
+          }
+        }
+      });
+
+      if (newDossiers.length > 0) {
+        const localLiveCache = JSON.parse(localStorage.getItem('ca-live-cache') || '[]');
+        const updatedCache = [...newDossiers, ...localLiveCache];
+        localStorage.setItem('ca-live-cache', JSON.stringify(updatedCache.slice(0, 50)));
+
+        state.ca.items = [...newDossiers, ...state.ca.items];
+        applyCAFilters();
+        showToast(`Synced ${newDossiers.length} fresh current affairs updates!`);
+      } else {
+        showToast('All current affairs feeds are already up to date!');
+      }
+    } else {
+      showToast('All current affairs feeds are already up to date!');
+    }
+  } catch (err) {
+    console.warn('Live sync fallback:', err);
+    showToast('Live RSS sync attempted. Datasets refreshed from cache.');
+  } finally {
+    if (dom.caSyncSpinner) dom.caSyncSpinner.classList.remove('spinning');
+    if (dom.caSyncLabel) dom.caSyncLabel.textContent = 'Sync Live Feeds';
+  }
+}
+
+function resetCAFilters() {
+  state.ca.selectedCategory = 'all';
+  state.ca.selectedScope = 'all';
+  state.ca.selectedExam = 'all';
+  state.ca.searchQuery = '';
+  if (dom.caSearchInput) dom.caSearchInput.value = '';
+  if (dom.caClearSearchBtn) dom.caClearSearchBtn.style.display = 'none';
+
+  if (dom.caCategoryFilters) {
+    dom.caCategoryFilters.querySelectorAll('.filter-pill').forEach(b => {
+      b.classList.toggle('active', b.dataset.cacat === 'all');
+    });
+  }
+  if (dom.caScopeFilters) {
+    dom.caScopeFilters.querySelectorAll('.filter-pill').forEach(b => {
+      b.classList.toggle('active', b.dataset.cascope === 'all');
+    });
+  }
+  if (dom.caExamFilters) {
+    dom.caExamFilters.querySelectorAll('.filter-pill').forEach(b => {
+      b.classList.toggle('active', b.dataset.caexam === 'all');
+    });
+  }
+  applyCAFilters();
+}
+
 /**
  * Setup All Event Listeners
  */
 function setupEventListeners() {
   function setActiveHubTab(target) {
-    [dom.tabEditorials, dom.tabFlashcards, dom.tabQuiz, dom.tabVault, dom.tabWriting, dom.tabCompare].forEach(tab => {
+    [dom.tabEditorials, dom.tabCA, dom.tabFlashcards, dom.tabQuiz, dom.tabVault, dom.tabWriting, dom.tabCompare].forEach(tab => {
       if (tab) tab.classList.toggle('active', tab.dataset.target === target);
     });
+
+    if (target === 'ca') {
+      if (dom.editorialsViewContainer) dom.editorialsViewContainer.style.display = 'none';
+      if (dom.caViewContainer) dom.caViewContainer.style.display = 'block';
+    } else {
+      if (dom.caViewContainer) dom.caViewContainer.style.display = 'none';
+      if (dom.editorialsViewContainer) dom.editorialsViewContainer.style.display = 'block';
+    }
   }
 
   // Resource Hub Ribbon Tabs
   if (dom.tabEditorials) {
     dom.tabEditorials.addEventListener('click', () => {
       setActiveHubTab('editorials');
+      if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
+      if (dom.quizModal) dom.quizModal.style.display = 'none';
+      if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
+      if (dom.vocabModal) dom.vocabModal.style.display = 'none';
+      if (dom.writingStudioModal) dom.writingStudioModal.style.display = 'none';
+      if (dom.compareModal) dom.compareModal.style.display = 'none';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+  if (dom.tabCA) {
+    dom.tabCA.addEventListener('click', () => {
+      setActiveHubTab('ca');
       if (dom.flashcardModal) dom.flashcardModal.style.display = 'none';
       if (dom.quizModal) dom.quizModal.style.display = 'none';
       if (dom.knowledgeVaultModal) dom.knowledgeVaultModal.style.display = 'none';
@@ -2416,6 +3445,109 @@ function setupEventListeners() {
       if (dom.vocabModal) dom.vocabModal.style.display = 'none';
       if (dom.writingStudioModal) dom.writingStudioModal.style.display = 'none';
       openCompareModal();
+    });
+  }
+
+  // Current Affairs 360° Event Listeners
+  if (dom.caSubtabVault) dom.caSubtabVault.addEventListener('click', () => switchCASubTab('vault'));
+  if (dom.caSubtabDaily) dom.caSubtabDaily.addEventListener('click', () => switchCASubTab('daily'));
+  if (dom.caSubtabCapsules) dom.caSubtabCapsules.addEventListener('click', () => switchCASubTab('capsules'));
+  if (dom.caSubtabQuiz) dom.caSubtabQuiz.addEventListener('click', () => switchCASubTab('quiz'));
+
+  if (dom.caScopeFilters) {
+    dom.caScopeFilters.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-pill');
+      if (!btn) return;
+      dom.caScopeFilters.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.ca.selectedScope = btn.dataset.cascope || 'all';
+      applyCAFilters();
+    });
+  }
+
+  if (dom.caExamFilters) {
+    dom.caExamFilters.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-pill');
+      if (!btn) return;
+      dom.caExamFilters.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.ca.selectedExam = btn.dataset.caexam || 'all';
+      applyCAFilters();
+    });
+  }
+
+  if (dom.caCategoryFilters) {
+    dom.caCategoryFilters.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-pill');
+      if (!btn) return;
+      dom.caCategoryFilters.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.ca.selectedCategory = btn.dataset.cacat || 'all';
+      applyCAFilters();
+    });
+  }
+
+  if (dom.caSearchInput) {
+    dom.caSearchInput.addEventListener('input', (e) => {
+      state.ca.searchQuery = e.target.value;
+      if (dom.caClearSearchBtn) {
+        dom.caClearSearchBtn.style.display = state.ca.searchQuery ? 'block' : 'none';
+      }
+      applyCAFilters();
+    });
+  }
+
+  if (dom.caClearSearchBtn) {
+    dom.caClearSearchBtn.addEventListener('click', () => {
+      if (dom.caSearchInput) dom.caSearchInput.value = '';
+      state.ca.searchQuery = '';
+      dom.caClearSearchBtn.style.display = 'none';
+      applyCAFilters();
+    });
+  }
+
+  if (dom.caResetFiltersBtn) dom.caResetFiltersBtn.addEventListener('click', resetCAFilters);
+  if (dom.caEmptyResetBtn) dom.caEmptyResetBtn.addEventListener('click', resetCAFilters);
+
+  if (dom.caSyncLiveBtn) dom.caSyncLiveBtn.addEventListener('click', syncLiveCAFeeds);
+  if (dom.caExportBtn) dom.caExportBtn.addEventListener('click', exportCAMarkdown);
+  if (dom.caPrintBtn) dom.caPrintBtn.addEventListener('click', () => window.print());
+
+  if (dom.caCapsulesPane) {
+    dom.caCapsulesPane.addEventListener('click', (e) => {
+      const btn = e.target.closest('.capsule-nav-btn');
+      if (!btn) return;
+      renderCACapsules(btn.dataset.capstab);
+    });
+  }
+
+  if (dom.closeCaDetailModal) dom.closeCaDetailModal.addEventListener('click', closeCADetailModal);
+  if (dom.caDetailModal) {
+    dom.caDetailModal.addEventListener('click', (e) => {
+      if (e.target === dom.caDetailModal) closeCADetailModal();
+    });
+  }
+  if (dom.caDetailTtsBtn) dom.caDetailTtsBtn.addEventListener('click', handleCADetailTts);
+  if (dom.caDetailTtsStop) dom.caDetailTtsStop.addEventListener('click', stopCADetailTts);
+
+  let caNotesSaveTimeout;
+  if (dom.caDetailNotesInput) {
+    dom.caDetailNotesInput.addEventListener('input', (e) => {
+      if (!state.ca.currentDetailItem) return;
+      if (dom.caNotesStatus) dom.caNotesStatus.textContent = 'Saving...';
+      clearTimeout(caNotesSaveTimeout);
+      caNotesSaveTimeout = setTimeout(() => {
+        localStorage.setItem('ca-notes-' + state.ca.currentDetailItem.id, e.target.value);
+        if (dom.caNotesStatus) dom.caNotesStatus.textContent = 'Auto-saved locally ✓';
+      }, 300);
+    });
+  }
+
+  if (dom.caDetailExportMd) {
+    dom.caDetailExportMd.addEventListener('click', () => {
+      if (state.ca.currentDetailItem) {
+        exportSingleCADossier(state.ca.currentDetailItem);
+      }
     });
   }
 
@@ -2900,6 +4032,7 @@ function setupEventListeners() {
   // Keyboard Shortcuts
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
+      if (dom.caDetailModal && dom.caDetailModal.style.display === 'flex') closeCADetailModal();
       if (dom.readerModal.style.display === 'flex') closeReader();
       if (dom.bookmarksModal) dom.bookmarksModal.style.display = 'none';
       if (dom.vocabModal) dom.vocabModal.style.display = 'none';
@@ -2911,10 +4044,13 @@ function setupEventListeners() {
       if (dom.streakModal) dom.streakModal.style.display = 'none';
       if (dom.writingStudioModal) dom.writingStudioModal.style.display = 'none';
       if (dom.compareModal) dom.compareModal.style.display = 'none';
-      setActiveHubTab('editorials');
-    } else if (e.key === '/' && document.activeElement !== dom.searchInput && document.activeElement !== dom.readerNotesInput) {
+    } else if (e.key === '/' && document.activeElement !== dom.searchInput && document.activeElement !== dom.readerNotesInput && document.activeElement !== dom.caSearchInput && document.activeElement !== dom.caDetailNotesInput) {
       e.preventDefault();
-      dom.searchInput.focus();
+      if (dom.caViewContainer && dom.caViewContainer.style.display !== 'none' && dom.caSearchInput) {
+        dom.caSearchInput.focus();
+      } else if (dom.searchInput) {
+        dom.searchInput.focus();
+      }
     } else if (dom.flashcardModal && dom.flashcardModal.style.display === 'flex') {
       if (e.key === ' ' || e.key === 'Enter') {
         e.preventDefault();
@@ -2937,6 +4073,14 @@ function handleUrlHashRouting() {
     if (state.articles.some(a => a.id === articleId)) {
       openReader(articleId);
     }
+  } else if (hash && hash.startsWith('#ca-item-')) {
+    const caId = hash.replace('#ca-item-', '');
+    if (state.ca && state.ca.items.some(i => i.id === caId)) {
+      if (dom.tabCA) dom.tabCA.click();
+      openCADetailModal(caId);
+    }
+  } else if (hash === '#current-affairs' || hash === '#ca') {
+    if (dom.tabCA) dom.tabCA.click();
   }
 }
 
