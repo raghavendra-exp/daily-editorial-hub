@@ -178,6 +178,8 @@ LIVE_CA_FEEDS = [
 def clean_html(text: str) -> str:
     if not text:
         return ""
+    text = text.replace("\u2018", "'").replace("\u2019", "'").replace("\u201c", '"').replace("\u201d", '"')
+    text = text.replace("\u2013", "-").replace("\u2014", "-").replace("\ufffd", "'").replace("\x92", "'")
     text = re.sub(r"<[^>]+>", " ", text)
     text = html.unescape(text)
     text = re.sub(r"\s+", " ", text).strip()
@@ -358,6 +360,99 @@ def fetch_rss_feed(feed_cfg: dict) -> list:
         
     return items
 
+def fetch_newsonair_news():
+    """
+    Fetches official Government of India news broadcasts from Akashvani / News On AIR (newsonair.gov.in)
+    covering National, International, Business/Economy, and Sports categories.
+    """
+    categories = [
+        ("https://newsonair.gov.in/category/national/", "National Affairs & Schemes", "India"),
+        ("https://newsonair.gov.in/category/international/", "International & Global Affairs", "World"),
+        ("https://newsonair.gov.in/category/business/", "Economy & Infrastructure", "India"),
+        ("https://newsonair.gov.in/category/sports/", "Sports & Games", "World & India"),
+    ]
+    
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    }
+    
+    items = []
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    
+    for url, default_cat, default_scope in categories:
+        cat_name = url.strip("/").split("/")[-1].title()
+        print(f"Querying News On AIR (newsonair.gov.in): {cat_name}...")
+        req = urllib.request.Request(url, headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=12) as response:
+                raw_html = response.read().decode("utf-8", errors="ignore")
+                article_blocks = re.findall(r'<article[^>]*>(.*?)</article>', raw_html, re.DOTALL)
+                
+                count = 0
+                for block in article_blocks[:12]:
+                    title_match = re.search(r'<h[2-4][^>]*>\s*<a[^>]+href=["\'](https://newsonair\.gov\.in/[^"\']+)["\'][^>]*>(.*?)</a>', block, re.DOTALL)
+                    if not title_match:
+                        title_match = re.search(r'<a[^>]+href=["\'](https://newsonair\.gov\.in/[^"\']+)["\'][^>]*class="[^"]*entry-title[^"]*"[^>]*>(.*?)</a>', block, re.DOTALL)
+                    
+                    if not title_match:
+                        continue
+                        
+                    link = title_match.group(1).strip()
+                    title = clean_html(title_match.group(2))
+                    
+                    if len(title) < 15 or '/category/' in link or link.endswith(('/feedback/', '/about-us/')):
+                        continue
+                        
+                    desc_match = re.search(r'<p[^>]+class=["\'][^"\']*blogDisc[^"\']*["\'][^>]*>(.*?)</p>', block, re.DOTALL)
+                    desc = clean_html(desc_match.group(1)) if desc_match else title
+                    
+                    date_match = re.search(r'<p[^>]+class=["\'][^"\']*colorPrimary[^"\']*["\'][^>]*>(.*?)</p>', block, re.DOTALL)
+                    date_str = today_str
+                    if date_match:
+                        raw_date = html.unescape(re.sub(r'<[^>]+>', '', date_match.group(1))).strip()
+                        m = re.search(r'([A-Za-z]+ \d{1,2}, \d{4})', raw_date)
+                        if m:
+                            try:
+                                dt = datetime.strptime(m.group(1), "%B %d, %Y")
+                                date_str = dt.strftime("%Y-%m-%d")
+                            except Exception:
+                                pass
+                                
+                    category = classify_category(title, desc, default_cat)
+                    scope = infer_scope(title, desc, default_scope)
+                    crux = generate_exam_crux(title, desc, category)
+                    takeaways = generate_takeaways(title, desc, category)
+                    prelims = generate_prelims_pointers(title, category, scope)
+                    mcq = generate_mcq(title, category)
+                    
+                    safe_slug = re.sub(r"[^a-zA-Z0-9]+", "-", title.lower()).strip("-")[:45]
+                    item_id = f"ca-air-{date_str}-{safe_slug}"
+                    
+                    items.append({
+                        "id": item_id,
+                        "title": title,
+                        "date": date_str,
+                        "category": category,
+                        "subcategory": f"{category} (AIR Broadcast)",
+                        "scope": scope,
+                        "exam_tags": ["UPSC", "State PCS", "Banking", "SSC"],
+                        "summary": desc,
+                        "crux": crux,
+                        "takeaways": takeaways,
+                        "prelims_pointers": prelims,
+                        "mcq": mcq,
+                        "source": "News On AIR (Akashvani)",
+                        "url": link,
+                        "is_vault": False
+                    })
+                    count += 1
+                print(f"  -> Extracted {count} broadcast items from News On AIR {cat_name}")
+        except Exception as e:
+            print(f"  [Notice] Skipping News On AIR ({cat_name}): {e}")
+            
+    return items
+
 def update_current_affairs_dataset():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
@@ -413,6 +508,19 @@ def update_current_affairs_dataset():
                 existing_titles.add(t_norm)
                 count += 1
         print(f"  -> Extracted {count} fresh daily items from {cfg['source']}")
+        
+    # 2b. Fetch official news from News On AIR (Akashvani / newsonair.gov.in)
+    print("Querying News On AIR (newsonair.gov.in) official broadcasts...")
+    air_items = fetch_newsonair_news()
+    air_count = 0
+    for item in air_items:
+        t_norm = item["title"].strip().lower()
+        if item["id"] not in existing_ids and t_norm not in existing_titles:
+            new_daily_items.append(item)
+            existing_ids.add(item["id"])
+            existing_titles.add(t_norm)
+            air_count += 1
+    print(f"  -> Extracted {air_count} fresh items from News On AIR (newsonair.gov.in)")
         
     # 3. Combine and sort
     all_items = new_daily_items + existing_items

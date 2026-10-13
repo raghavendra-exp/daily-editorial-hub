@@ -56,6 +56,13 @@ const DEFAULT_FEEDS = [
     category: 'Tech & AI Research',
     icon: '🤖',
     tone: 'Academic / Technical'
+  },
+  {
+    name: 'News On AIR (Akashvani)',
+    url: 'https://newsonair.gov.in/category/national/',
+    category: 'National Affairs',
+    icon: '🎙️',
+    tone: 'Official / Public Broadcaster'
   }
 ];
 
@@ -158,6 +165,7 @@ const state = {
     selectedCategory: 'all',
     selectedScope: 'all',
     selectedExam: 'all',
+    selectedSource: 'all',
     searchQuery: '',
     activeCapsuleTab: 'appointments',
     quiz: {
@@ -257,6 +265,7 @@ const dom = {
 
   caSearchInput: document.getElementById('ca-search-input'),
   caClearSearchBtn: document.getElementById('ca-clear-search-btn'),
+  caSourceFilters: document.getElementById('ca-source-filters'),
   caScopeFilters: document.getElementById('ca-scope-filters'),
   caExamFilters: document.getElementById('ca-exam-filters'),
   caCategoryFilters: document.getElementById('ca-category-filters'),
@@ -2623,6 +2632,23 @@ function applyCAFilters() {
     items = items.filter(i => i.scope === state.ca.selectedScope || (i.scope === 'World & India' && (state.ca.selectedScope === 'India' || state.ca.selectedScope === 'World')));
   }
 
+  // 3b. Official Source Filter
+  if (state.ca.selectedSource && state.ca.selectedSource !== 'all') {
+    const srcTarget = state.ca.selectedSource.toLowerCase();
+    items = items.filter(i => {
+      const src = (i.source || '').toLowerCase();
+      const url = (i.url || '').toLowerCase();
+      if (srcTarget === 'air' || srcTarget === 'newsonair') {
+        return src.includes('air') || src.includes('newsonair') || url.includes('newsonair.gov.in');
+      }
+      if (srcTarget === 'pib') return src.includes('pib');
+      if (srcTarget === 'hindu') return src.includes('hindu');
+      if (srcTarget === 'express') return src.includes('express');
+      if (srcTarget === 'mint') return src.includes('mint') || src.includes('economic');
+      return src.includes(srcTarget);
+    });
+  }
+
   // 4. Target Exam Filter
   if (state.ca.selectedExam !== 'all') {
     const examTarget = state.ca.selectedExam.toLowerCase();
@@ -2666,6 +2692,10 @@ function updateCAActiveFilterBar() {
   const tags = [];
   if (state.ca.selectedCategory !== 'all') tags.push(`Subject: ${state.ca.selectedCategory}`);
   if (state.ca.selectedScope !== 'all') tags.push(`Scope: ${state.ca.selectedScope}`);
+  if (state.ca.selectedSource && state.ca.selectedSource !== 'all') {
+    const srcMap = { air: 'News On AIR (Akashvani)', pib: 'PIB Official', hindu: 'The Hindu', express: 'Indian Express', mint: 'LiveMint/ET' };
+    tags.push(`Source: ${srcMap[state.ca.selectedSource] || state.ca.selectedSource}`);
+  }
   if (state.ca.selectedExam !== 'all') tags.push(`Exam: ${state.ca.selectedExam}`);
   if (state.ca.searchQuery.trim()) tags.push(`Search: "${state.ca.searchQuery.trim()}"`);
 
@@ -2706,6 +2736,7 @@ function renderCACards() {
     const icon = CA_CATEGORY_ICONS[item.category] || '📌';
     const scopeLabel = item.scope === 'India' ? '🇮🇳 India' : (item.scope === 'World' ? '🌍 World' : '🌐 Bilateral');
     const isMaster = isMasterDossier(item);
+    const isNewsOnAir = (item.source && (item.source.includes('AIR') || item.source.includes('newsonair'))) || (item.url && item.url.includes('newsonair.gov.in'));
     const dateFormatted = formatDateHuman(item.date);
 
     const takeawaysHtml = Array.isArray(item.takeaways) && item.takeaways.length > 0
@@ -2725,6 +2756,7 @@ function renderCACards() {
           <span class="ca-cat-badge">${icon} ${escapeHtml(item.category)}</span>
           <span class="ca-scope-badge">${scopeLabel}</span>
           ${isMaster ? '<span class="ca-vault-badge">⭐ Master Archive</span>' : ''}
+          ${isNewsOnAir ? '<span class="ca-air-badge">🎙️ News On AIR</span>' : ''}
         </div>
         <span class="ca-card-date">${dateFormatted}</span>
       </div>
@@ -3326,6 +3358,7 @@ function resetCAFilters() {
   state.ca.selectedCategory = 'all';
   state.ca.selectedScope = 'all';
   state.ca.selectedExam = 'all';
+  state.ca.selectedSource = 'all';
   state.ca.searchQuery = '';
   if (dom.caSearchInput) dom.caSearchInput.value = '';
   if (dom.caClearSearchBtn) dom.caClearSearchBtn.style.display = 'none';
@@ -3338,6 +3371,11 @@ function resetCAFilters() {
   if (dom.caScopeFilters) {
     dom.caScopeFilters.querySelectorAll('.filter-pill').forEach(b => {
       b.classList.toggle('active', b.dataset.cascope === 'all');
+    });
+  }
+  if (dom.caSourceFilters) {
+    dom.caSourceFilters.querySelectorAll('.filter-pill').forEach(b => {
+      b.classList.toggle('active', b.dataset.casource === 'all');
     });
   }
   if (dom.caExamFilters) {
@@ -3453,6 +3491,17 @@ function setupEventListeners() {
   if (dom.caSubtabDaily) dom.caSubtabDaily.addEventListener('click', () => switchCASubTab('daily'));
   if (dom.caSubtabCapsules) dom.caSubtabCapsules.addEventListener('click', () => switchCASubTab('capsules'));
   if (dom.caSubtabQuiz) dom.caSubtabQuiz.addEventListener('click', () => switchCASubTab('quiz'));
+
+  if (dom.caSourceFilters) {
+    dom.caSourceFilters.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-pill');
+      if (!btn) return;
+      dom.caSourceFilters.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.ca.selectedSource = btn.dataset.casource || 'all';
+      applyCAFilters();
+    });
+  }
 
   if (dom.caScopeFilters) {
     dom.caScopeFilters.addEventListener('click', (e) => {

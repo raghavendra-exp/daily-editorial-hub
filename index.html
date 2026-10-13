@@ -269,7 +269,7 @@
           <div class="ca-hero-badge">🎯 Comprehensive Exam Booster • India & World</div>
           <h2 class="ca-hero-title">Current Affairs 360° Master Vault</h2>
           <p class="ca-hero-desc">
-            Exhaustive, high-yield coverage across Banking, Polity, Economy, Sci-Tech, Defence, History/Culture, Sports, National & Global Affairs asked in exams over the past 1 year, updated daily via automated GitHub feeds.
+            Exhaustive, high-yield coverage across Banking, Polity, Economy, Sci-Tech, Defence, History/Culture, Sports, National & Global Affairs asked in exams over the past 1 year, updated daily via official broadcasts (News On AIR / Akashvani, PIB) and leading national sources.
           </p>
         </div>
 
@@ -297,6 +297,10 @@
             <span class="btn-icon" id="ca-sync-spinner">🔄</span>
             <span id="ca-sync-label">Sync Live Feeds</span>
           </button>
+          <a href="https://newsonair.gov.in/" target="_blank" rel="noopener" class="btn btn-secondary ca-action-btn" title="Open official News On AIR Akashvani broadcast portal">
+            <span class="btn-icon">📻</span>
+            <span>News On AIR Portal ↗</span>
+          </a>
           <button id="ca-export-btn" class="btn btn-secondary ca-action-btn" title="Download Current Affairs Compilation in Markdown for Notion/Obsidian">
             <span class="btn-icon">📥</span>
             <span>Export Notes (.md)</span>
@@ -341,6 +345,19 @@
             <span class="search-icon">🔍</span>
             <input type="text" id="ca-search-input" class="search-input" placeholder="Search current affairs by keyword, ministry, act, scheme, country, trophy, article... (Press '/' to focus)">
             <button id="ca-clear-search-btn" class="clear-search-btn" style="display: none;">✕</button>
+          </div>
+        </div>
+
+        <!-- Official Source Filter Pills -->
+        <div class="filter-scroll-wrapper">
+          <div class="filter-group" id="ca-source-filters">
+            <span class="filter-label">Official Source:</span>
+            <button class="filter-pill active" data-casource="all">All Sources</button>
+            <button class="filter-pill" data-casource="air">🎙️ News On AIR (Akashvani)</button>
+            <button class="filter-pill" data-casource="pib">🏛️ PIB Official</button>
+            <button class="filter-pill" data-casource="hindu">📰 The Hindu</button>
+            <button class="filter-pill" data-casource="express">🗞️ Indian Express</button>
+            <button class="filter-pill" data-casource="mint">📊 LiveMint & ET</button>
           </div>
         </div>
 
