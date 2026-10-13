@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-13 04:08:07 UTC",
-  "total_records": 575,
+  "last_updated": "2026-10-13 04:11:07 UTC",
+  "total_records": 578,
   "categories": [
     "Banking & Finance",
     "Polity & Governance",
@@ -497,6 +497,129 @@
       "source": "Ministry of External Affairs / Reuters",
       "url": "https://mea.gov.in",
       "is_vault": true
+    },
+    {
+      "id": "ca-2026-10-13-anti-cec-protests-live-police-seek-extension-",
+      "title": "Anti-CEC protests LIVE: Police seek extension of CAPF deployment in Delhi till Oct. 20 amid protest concerns",
+      "date": "2026-10-13",
+      "category": "Polity & Governance",
+      "subcategory": "Polity & Governance Brief",
+      "scope": "India",
+      "exam_tags": [
+        "UPSC",
+        "State PCS",
+        "Banking",
+        "SSC"
+      ],
+      "summary": "Supreme Court will be hearing pleas challenging the closure of several metro stations in Delhi amid the protest against the CEC",
+      "crux": "Key Exam Focus: Supreme Court will be hearing pleas challenging the closure of several metro stations in Delhi amid the protest against the CEC",
+      "takeaways": [
+        "Supreme Court will be hearing pleas challenging the closure of several metro stations in Delhi amid the protest against the CEC",
+        "Core Context: Recent institutional policy development concerning Polity & Governance.",
+        "Exam Relevance: High-priority topic for prelims factual questions and mains analytical answers."
+      ],
+      "prelims_pointers": {
+        "key_agency": "Supreme Court of India / ECI",
+        "statutory_anchor": "Constitution of India / RP Act 1951",
+        "location": "India",
+        "facts_to_remember": "Key prelims concept under Polity & Governance: Note associated constitutional articles, nodal ministry, and quantifiable targets."
+      },
+      "mcq": {
+        "question": "With reference to recent developments regarding 'Anti-CEC protests LIVE: Police seek extension of CAPF deployment in Delhi t...', consider the following statements: Which is most accurate?",
+        "options": [
+          "It represents an initiative led by the designated nodal agency under Polity & Governance.",
+          "It is restricted entirely to municipal administration without central involvement.",
+          "It supersedes constitutional fundamental rights under all circumstances.",
+          "It has been repealed by the Supreme Court with retrospective effect."
+        ],
+        "answer": 0,
+        "explanation": "Statement A is correct: This recent development falls directly under Polity & Governance and is administered by the respective central or international regulatory bodies."
+      },
+      "source": "The Hindu National News",
+      "url": "https://www.thehindu.com/news/national/anti-cec-delhi-protest-against-gyanesh-kumar-cec-october-13-2026-live-updates/article71577767.ece",
+      "is_vault": false
+    },
+    {
+      "id": "ca-2026-10-13-rahul-gandhi-s-plea-not-listed-for-hearing-on",
+      "title": "Rahul Gandhi's plea not listed for hearing on October 13, faces routine clerical hurdles",
+      "date": "2026-10-13",
+      "category": "Polity & Governance",
+      "subcategory": "Polity & Governance Brief",
+      "scope": "World",
+      "exam_tags": [
+        "UPSC",
+        "State PCS",
+        "Banking",
+        "SSC"
+      ],
+      "summary": "Under the Supreme Court Rules, when a petition has defects, the petitioner is typically given a time window, such as 28 days or standard registry timelines, depending on the specific filing chapter to cure the defects",
+      "crux": "Key Exam Focus: Under the Supreme Court Rules, when a petition has defects, the petitioner is typically given a time window, such as 28 days or standard registry timelines, depending on the specific filing chapter to cure the defects",
+      "takeaways": [
+        "Under the Supreme Court Rules, when a petition has defects, the petitioner is typically given a time window, such as 28 days or standard registry timelines, depending on the specific filing chapter to cure the defects",
+        "Core Context: Recent institutional policy development concerning Polity & Governance.",
+        "Exam Relevance: High-priority topic for prelims factual questions and mains analytical answers."
+      ],
+      "prelims_pointers": {
+        "key_agency": "Supreme Court of India / ECI",
+        "statutory_anchor": "Constitution of India / RP Act 1951",
+        "location": "Global",
+        "facts_to_remember": "Key prelims concept under Polity & Governance: Note associated constitutional articles, nodal ministry, and quantifiable targets."
+      },
+      "mcq": {
+        "question": "With reference to recent developments regarding 'Rahul Gandhi's plea not listed for hearing on October 13, faces routine cle...', consider the following statements: Which is most accurate?",
+        "options": [
+          "It represents an initiative led by the designated nodal agency under Polity & Governance.",
+          "It is restricted entirely to municipal administration without central involvement.",
+          "It supersedes constitutional fundamental rights under all circumstances.",
+          "It has been repealed by the Supreme Court with retrospective effect."
+        ],
+        "answer": 0,
+        "explanation": "Statement A is correct: This recent development falls directly under Polity & Governance and is administered by the respective central or international regulatory bodies."
+      },
+      "source": "The Hindu National News",
+      "url": "https://www.thehindu.com/news/national/rahul-gandhis-plea-not-listed-for-hearing-on-october-13-faces-routine-clerical-hurdles/article71577862.ece",
+      "is_vault": false
+    },
+    {
+      "id": "ca-2026-10-13-j-k-waqf-board-pushes-for-uniform-friday-serm",
+      "title": "J&K Waqf Board pushes for uniform Friday sermons, 'preachers' committee to decide topics in advance'",
+      "date": "2026-10-13",
+      "category": "National Affairs & Schemes",
+      "subcategory": "National Affairs & Schemes Brief",
+      "scope": "World",
+      "exam_tags": [
+        "UPSC",
+        "State PCS",
+        "Banking",
+        "SSC"
+      ],
+      "summary": "J&K Waqf Board pushes for uniform Friday sermons, 'preachers' committee to decide topics in advance'",
+      "crux": "Key Exam Focus: J&K Waqf Board pushes for uniform Friday sermons, 'preachers' committee to decide topics in advance'",
+      "takeaways": [
+        "Significant development reported under National Affairs & Schemes with direct bearing on national policy.",
+        "Policy implication: Highlights active governmental regulatory intervention and governance frameworks.",
+        "Candidate takeaway: Revise statutory provisions, constitutional articles, and key organizations involved."
+      ],
+      "prelims_pointers": {
+        "key_agency": "Central Government Ministry",
+        "statutory_anchor": "Flagship Centrally Sponsored / Central Sector Scheme",
+        "location": "Global",
+        "facts_to_remember": "Key prelims concept under National Affairs & Schemes: Note associated constitutional articles, nodal ministry, and quantifiable targets."
+      },
+      "mcq": {
+        "question": "With reference to recent developments regarding 'J&K Waqf Board pushes for uniform Friday sermons, 'preachers' committee to ...', consider the following statements: Which is most accurate?",
+        "options": [
+          "It represents an initiative led by the designated nodal agency under National Affairs & Schemes.",
+          "It is restricted entirely to municipal administration without central involvement.",
+          "It supersedes constitutional fundamental rights under all circumstances.",
+          "It has been repealed by the Supreme Court with retrospective effect."
+        ],
+        "answer": 0,
+        "explanation": "Statement A is correct: This recent development falls directly under National Affairs & Schemes and is administered by the respective central or international regulatory bodies."
+      },
+      "source": "The Hindu National News",
+      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/jk-waqf-board-pushes-for-uniform-friday-sermons-preachers-committee-to-decidetopics-in-advance/article71576422.ece",
+      "is_vault": false
     },
     {
       "id": "ca-2026-10-13-france-braces-for-fresh-student-demonstration",
