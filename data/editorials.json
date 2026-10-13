@@ -1,7 +1,98 @@
 {
-  "last_updated": "2026-10-13 04:10:25 UTC",
-  "total_articles": 483,
+  "last_updated": "2026-10-13 04:31:38 UTC",
+  "total_articles": 484,
   "articles": [
+    {
+      "id": "livemint-upi-charges-the-economics-of-a-digital-public-good",
+      "title": "UPI charges: the economics of a digital public good",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-10-13",
+      "url": "https://www.livemint.com/opinion/online-views/upi-mdr-charges-new-rules-merchant-discount-rate-11791823504548.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "As UPI moves from adoption to sustainability, differentiated pricing must balance cost recovery with financial inclusion, merchant affordability and competition.",
+      "takeaways": [
+        "As UPI moves from adoption to sustainability, differentiated pricing must balance cost recovery with financial inclusion, merchant affordability and competition.",
+        "Emphasizes vital strategic considerations regarding UPI charges: the economics of a digital public good.",
+        "Emphasizes vital strategic considerations regarding UPI charges: the economics of a digital public good."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around UPI charges.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Salient",
+          "pos": "Adjective",
+          "definition": "Most noticeable, prominent, or important",
+          "synonyms": [
+            "striking",
+            "notable",
+            "vital"
+          ],
+          "antonyms": [
+            "minor",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate salient interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'UPI charges', what is the primary meaning of the term 'Salient'?",
+        "options": [
+          "Most noticeable, prominent, or important",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Salient' is defined as: Most noticeable, prominent, or important. Synonyms include striking, notable, vital."
+      },
+      "practice_question": "Critically assess how recent advancements in 'UPI charges' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "As UPI moves from adoption to sustainability, differentiated pricing must balance cost recovery with financial inclusion, merchant affordability and competition."
+    },
     {
       "id": "the-hindu-winning-differently-on-the-by-election-results-in-west-benga",
       "title": "Winning, differently: On the by-election results in West Bengal, Tamil Nadu and Puducherry",
