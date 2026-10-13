@@ -2560,6 +2560,7 @@ const CAPSULE_DATA_MAP = {
 function isMasterDossier(item) {
   if (!item) return false;
   if (item.is_vault) return true;
+  if (/^ca-vault-[a-z]+-\d{2}$/.test(item.id)) return true;
   if (/^ca-\d{4}-[a-z]+-\d{2}$/.test(item.id)) return true;
   return false;
 }

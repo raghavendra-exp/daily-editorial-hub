@@ -17,7 +17,7 @@ import re
 import json
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import html
 
 # ---------------------------------------------------------------------------
@@ -326,6 +326,18 @@ def fetch_rss_feed(feed_cfg: dict) -> list:
                 pub_elem = elem.find("pubDate") if channel is not None else elem.find("{http://www.w3.org/2005/Atom}updated")
                 pub_str = pub_elem.text if pub_elem is not None else ""
                 today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+                date_str = today_str
+                if pub_str:
+                    try:
+                        import email.utils
+                        p_dt = email.utils.parsedate_to_datetime(pub_str)
+                        p_date = p_dt.strftime("%Y-%m-%d")
+                        if p_date <= today_str:
+                            date_str = p_date
+                    except Exception:
+                        pass
+                if date_str > today_str:
+                    date_str = today_str
                 
                 # Classify
                 category = classify_category(title, desc, default_cat)
@@ -336,12 +348,12 @@ def fetch_rss_feed(feed_cfg: dict) -> list:
                 mcq = generate_mcq(title, category)
                 
                 safe_slug = re.sub(r"[^a-zA-Z0-9]+", "-", title.lower()).strip("-")[:45]
-                item_id = f"ca-{today_str}-{safe_slug}"
+                item_id = f"ca-{date_str}-{safe_slug}"
                 
                 items.append({
                     "id": item_id,
                     "title": title,
-                    "date": today_str,
+                    "date": date_str,
                     "category": category,
                     "subcategory": f"{category} Brief",
                     "scope": scope,
@@ -415,9 +427,13 @@ def fetch_newsonair_news():
                         if m:
                             try:
                                 dt = datetime.strptime(m.group(1), "%B %d, %Y")
-                                date_str = dt.strftime("%Y-%m-%d")
+                                parsed_date = dt.strftime("%Y-%m-%d")
+                                if parsed_date <= today_str:
+                                    date_str = parsed_date
                             except Exception:
                                 pass
+                    if date_str > today_str:
+                        date_str = today_str
                                 
                     category = classify_category(title, desc, default_cat)
                     scope = infer_scope(title, desc, default_scope)
@@ -458,7 +474,12 @@ def update_current_affairs_dataset():
     project_root = os.path.dirname(script_dir)
     data_file = os.path.join(project_root, "data", "current_affairs.json")
     
-    print(f"=== Daily Exam Current Affairs Fetcher starting at {datetime.now(timezone.utc).isoformat()} ===")
+    now_utc = datetime.now(timezone.utc)
+    today_str = now_utc.strftime("%Y-%m-%d")
+    one_year_ago_str = (now_utc - timedelta(days=365)).strftime("%Y-%m-%d")
+
+    print(f"=== Daily Exam Current Affairs Fetcher starting at {now_utc.isoformat()} ===")
+    print(f"Authentic 1-Year Window: {one_year_ago_str} to {today_str}")
     
     existing_items = []
     if os.path.exists(data_file):
@@ -472,29 +493,52 @@ def update_current_affairs_dataset():
         except Exception as e:
             print(f"Error reading existing current affairs data: {e}")
             
-    existing_ids = {item["id"] for item in existing_items}
-    existing_titles = {item.get("title", "").strip().lower() for item in existing_items}
+    # The 74 master dossiers in MASTER_VAULT_SEED are authoritative for the past 1-year vault
+    vault_titles = {seed["title"].strip().lower() for seed in MASTER_VAULT_SEED}
     
-    # 1. Merge Seed items if not present and ensure is_vault flag is set
-    seed_map = {seed["id"]: seed for seed in MASTER_VAULT_SEED}
-    for item in existing_items:
-        if item.get("id") in seed_map:
-            item.update(seed_map[item["id"]])
-            item["is_vault"] = True
-        else:
-            item["is_vault"] = False
-
-    seed_added = 0
+    # 1. Start with the authoritative master vault dossiers
+    curated_items = []
+    existing_ids = set()
+    existing_titles = set()
+    
     for seed in MASTER_VAULT_SEED:
-        if seed["id"] not in existing_ids and seed["title"].strip().lower() not in existing_titles:
-            existing_items.append(seed)
-            existing_ids.add(seed["id"])
-            existing_titles.add(seed["title"].strip().lower())
-            seed_added += 1
+        v_item = dict(seed)
+        v_item["is_vault"] = True
+        curated_items.append(v_item)
+        existing_ids.add(v_item["id"])
+        existing_titles.add(v_item["title"].strip().lower())
+        
+    print(f"Master Vault: loaded {len(curated_items)} authoritative dossiers (strictly 2025-2026).")
+
+    # 2. Preserve valid dynamic live feed items from previous crawls
+    preserved_live_count = 0
+    for item in existing_items:
+        # Discard stale vault items from previous runs (superseded by MASTER_VAULT_SEED)
+        if item.get("is_vault") or item.get("id", "").startswith("ca-2024-") or item.get("id", "").startswith("ca-vault-"):
+            continue
+        t_norm = item.get("title", "").strip().lower()
+        if t_norm in vault_titles:
+            continue
             
-    print(f"Master Vault Seed: verified {len(MASTER_VAULT_SEED)} high-yield core dossiers ({seed_added} new).")
+        # Ensure date is strictly clamped within the 1-year window
+        d = item.get("date", today_str)
+        if d > today_str:
+            d = today_str
+        elif d < one_year_ago_str:
+            continue
+            
+        item["date"] = d
+        item["is_vault"] = False
+        
+        if item["id"] not in existing_ids and t_norm not in existing_titles:
+            curated_items.append(item)
+            existing_ids.add(item["id"])
+            existing_titles.add(t_norm)
+            preserved_live_count += 1
+            
+    print(f"Preserved {preserved_live_count} dynamic live items within the 1-year window.")
     
-    # 2. Fetch live daily items from RSS feeds
+    # 3. Fetch live daily items from RSS feeds
     new_daily_items = []
     for cfg in LIVE_CA_FEEDS:
         print(f"Querying RSS: {cfg['source']} ({cfg['default_cat']})...")
@@ -509,7 +553,7 @@ def update_current_affairs_dataset():
                 count += 1
         print(f"  -> Extracted {count} fresh daily items from {cfg['source']}")
         
-    # 2b. Fetch official news from News On AIR (Akashvani / newsonair.gov.in)
+    # 3b. Fetch official news from News On AIR (Akashvani / newsonair.gov.in)
     print("Querying News On AIR (newsonair.gov.in) official broadcasts...")
     air_items = fetch_newsonair_news()
     air_count = 0
@@ -522,8 +566,8 @@ def update_current_affairs_dataset():
             air_count += 1
     print(f"  -> Extracted {air_count} fresh items from News On AIR (newsonair.gov.in)")
         
-    # 3. Combine and sort
-    all_items = new_daily_items + existing_items
+    # 4. Combine and sort
+    all_items = curated_items + new_daily_items
     all_items.sort(key=lambda x: x.get("date", "2000-01-01"), reverse=True)
     
     # 4. Save formatted JSON
