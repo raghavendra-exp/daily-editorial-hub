@@ -12,9 +12,9 @@ VAULT_ITEMS = [
     # 1. Banking & Financial Awareness
     # -----------------------------------------------------------------------
     {
-        "id": "ca-2026-bank-01",
+        "id": "ca-2024-bank-01",
         "title": "RBI Monetary Policy Stance & Liquidity Framework: Repo Rate Maintained at 6.50%",
-        "date": "2026-10-09",
+        "date": "2024-10-09",
         "category": "Banking & Finance",
         "subcategory": "RBI / Monetary Policy",
         "scope": "India",
@@ -47,9 +47,9 @@ VAULT_ITEMS = [
         "url": "https://rbi.org.in"
     },
     {
-        "id": "ca-2026-bank-02",
+        "id": "ca-2024-bank-02",
         "title": "Digital Rupee (CBDC) Expansion: Offline Capability & Programmable Targeted Use-Cases",
-        "date": "2026-08-28",
+        "date": "2024-08-28",
         "category": "Banking & Finance",
         "subcategory": "Fintech / Currency",
         "scope": "India",
@@ -82,9 +82,9 @@ VAULT_ITEMS = [
         "url": "https://rbi.org.in"
     },
     {
-        "id": "ca-2026-bank-03",
+        "id": "ca-2024-bank-03",
         "title": "UPI Goes Global: Cross-Border Linkages Live in UAE, France, Singapore, Mauritius & Sri Lanka",
-        "date": "2026-07-14",
+        "date": "2024-07-14",
         "category": "Banking & Finance",
         "subcategory": "Payment Systems",
         "scope": "World & India",
@@ -117,9 +117,9 @@ VAULT_ITEMS = [
         "url": "https://npci.org.in"
     },
     {
-        "id": "ca-2026-bank-04",
+        "id": "ca-2024-bank-04",
         "title": "SEBI Launches T+0 Rolling Settlement Beta Cycle for Indian Equity Cash Markets",
-        "date": "2026-03-28",
+        "date": "2024-03-28",
         "category": "Banking & Finance",
         "subcategory": "Capital Markets / SEBI",
         "scope": "India",
@@ -152,9 +152,9 @@ VAULT_ITEMS = [
         "url": "https://sebi.gov.in"
     },
     {
-        "id": "ca-2026-bank-05",
+        "id": "ca-2024-bank-05",
         "title": "PM Jan Dhan Yojana (PMJDY) Completes 10 Years: 53+ Crore Accounts & ₹2.3 Lakh Crore Deposits",
-        "date": "2026-08-28",
+        "date": "2024-08-28",
         "category": "Banking & Finance",
         "subcategory": "Financial Inclusion",
         "scope": "India",
@@ -187,9 +187,9 @@ VAULT_ITEMS = [
         "url": "https://pmjdy.gov.in"
     },
     {
-        "id": "ca-2026-bank-06",
+        "id": "ca-2024-bank-06",
         "title": "Unified Lending Interface (ULI): RBI Launches Frictionless Digital Credit Architecture",
-        "date": "2026-08-26",
+        "date": "2024-08-26",
         "category": "Banking & Finance",
         "subcategory": "Digital Credit / RBI",
         "scope": "India",
@@ -222,9 +222,9 @@ VAULT_ITEMS = [
         "url": "https://rbi.org.in"
     },
     {
-        "id": "ca-2026-bank-07",
+        "id": "ca-2024-bank-07",
         "title": "Sovereign Green Bonds (SGrBs): RBI Auctions Tranches to Fund Climate Mitigation Projects",
-        "date": "2026-02-12",
+        "date": "2024-02-12",
         "category": "Banking & Finance",
         "subcategory": "Green Finance / Debt",
         "scope": "India",
@@ -257,9 +257,9 @@ VAULT_ITEMS = [
         "url": "https://dea.gov.in"
     },
     {
-        "id": "ca-2026-bank-08",
+        "id": "ca-2024-bank-08",
         "title": "RBI Launches PRAVAAH Portal, Retail Direct Mobile App & FINNET 2.0 System",
-        "date": "2026-05-28",
+        "date": "2024-05-28",
         "category": "Banking & Finance",
         "subcategory": "Digital Governance / Debt",
         "scope": "India",
@@ -296,9 +296,9 @@ VAULT_ITEMS = [
     # 2. Polity, Constitution & Governance
     # -----------------------------------------------------------------------
     {
-        "id": "ca-2026-polity-01",
+        "id": "ca-2024-polity-01",
         "title": "Supreme Court Unanimously Strikes Down Electoral Bonds Scheme as Unconstitutional",
-        "date": "2026-02-15",
+        "date": "2024-02-15",
         "category": "Polity & Governance",
         "subcategory": "Judiciary & Elections",
         "scope": "India",
@@ -331,9 +331,9 @@ VAULT_ITEMS = [
         "url": "https://main.sci.gov.in"
     },
     {
-        "id": "ca-2026-polity-02",
+        "id": "ca-2024-polity-02",
         "title": "SC/ST Sub-Classification Allowed: 7-Judge Constitution Bench Verdict (Davinder Singh Case)",
-        "date": "2026-08-01",
+        "date": "2024-08-01",
         "category": "Polity & Governance",
         "subcategory": "Constitutional Law",
         "scope": "India",
@@ -366,9 +366,9 @@ VAULT_ITEMS = [
         "url": "https://main.sci.gov.in"
     },
     {
-        "id": "ca-2026-polity-03",
+        "id": "ca-2024-polity-03",
         "title": "New Criminal Laws Enacted: Bharatiya Nyaya Sanhita, BNSS & BSA Come into Effect",
-        "date": "2026-07-01",
+        "date": "2024-07-01",
         "category": "Polity & Governance",
         "subcategory": "Criminal Justice",
         "scope": "India",
@@ -401,9 +401,9 @@ VAULT_ITEMS = [
         "url": "https://mha.gov.in"
     },
     {
-        "id": "ca-2026-polity-04",
+        "id": "ca-2024-polity-04",
         "title": "16th Finance Commission Formally Constituted: Dr. Arvind Panagariya Appointed Chairman",
-        "date": "2026-01-06",
+        "date": "2024-01-06",
         "category": "Polity & Governance",
         "subcategory": "Fiscal Federalism",
         "scope": "India",
@@ -436,9 +436,9 @@ VAULT_ITEMS = [
         "url": "https://fincomindia.nic.in"
     },
     {
-        "id": "ca-2026-polity-05",
+        "id": "ca-2024-polity-05",
         "title": "One Nation One Election: Ram Nath Kovind High-Level Committee Submits Report",
-        "date": "2026-03-14",
+        "date": "2024-03-14",
         "category": "Polity & Governance",
         "subcategory": "Electoral Reforms",
         "scope": "India",
@@ -471,9 +471,9 @@ VAULT_ITEMS = [
         "url": "https://onoe.gov.in"
     },
     {
-        "id": "ca-2026-polity-06",
+        "id": "ca-2024-polity-06",
         "title": "Chief Election Commissioner and other ECs Act 2023: New Appointment Procedure",
-        "date": "2026-03-02",
+        "date": "2024-03-02",
         "category": "Polity & Governance",
         "subcategory": "Constitutional Bodies",
         "scope": "India",
@@ -506,9 +506,9 @@ VAULT_ITEMS = [
         "url": "https://eci.gov.in"
     },
     {
-        "id": "ca-2026-polity-07",
+        "id": "ca-2024-polity-07",
         "title": "Digital Personal Data Protection (DPDP) Act 2023: Data Protection Board & Compliance Rules",
-        "date": "2026-04-10",
+        "date": "2024-04-10",
         "category": "Polity & Governance",
         "subcategory": "Privacy & Technology Law",
         "scope": "India",
@@ -541,9 +541,9 @@ VAULT_ITEMS = [
         "url": "https://meity.gov.in"
     },
     {
-        "id": "ca-2026-polity-08",
+        "id": "ca-2024-polity-08",
         "title": "Telecommunications Act 2023 Replaces 138-Year-Old Indian Telegraph Act 1885",
-        "date": "2026-06-26",
+        "date": "2024-06-26",
         "category": "Polity & Governance",
         "subcategory": "Telecom Policy",
         "scope": "India",
@@ -576,9 +576,9 @@ VAULT_ITEMS = [
         "url": "https://dot.gov.in"
     },
     {
-        "id": "ca-2026-polity-09",
+        "id": "ca-2024-polity-09",
         "title": "Governor's Assent to Bills: Supreme Court Clarifies Article 200 Timelines",
-        "date": "2026-01-22",
+        "date": "2024-01-22",
         "category": "Polity & Governance",
         "subcategory": "Judiciary & Federalism",
         "scope": "India",
@@ -615,9 +615,9 @@ VAULT_ITEMS = [
     # 3. Economy & Infrastructure
     # -----------------------------------------------------------------------
     {
-        "id": "ca-2026-econ-01",
+        "id": "ca-2024-econ-01",
         "title": "India-EFTA Trade & Economic Partnership Agreement (TEPA): $100B Investment Pact",
-        "date": "2026-03-10",
+        "date": "2024-03-10",
         "category": "Economy & Infrastructure",
         "subcategory": "International Trade / FTA",
         "scope": "World & India",
@@ -650,9 +650,9 @@ VAULT_ITEMS = [
         "url": "https://commerce.gov.in"
     },
     {
-        "id": "ca-2026-econ-02",
+        "id": "ca-2024-econ-02",
         "title": "India Semiconductor Mission: Dholera Commercial Fab & Packaging Units Underway",
-        "date": "2026-03-01",
+        "date": "2024-03-01",
         "category": "Economy & Infrastructure",
         "subcategory": "Industrial Policy",
         "scope": "India",
@@ -685,9 +685,9 @@ VAULT_ITEMS = [
         "url": "https://ism.gov.in"
     },
     {
-        "id": "ca-2026-econ-03",
+        "id": "ca-2024-econ-03",
         "title": "Critical Minerals Auction: Strategic Lithium, Graphite & Rare Earth Blocks Tranches",
-        "date": "2026-02-29",
+        "date": "2024-02-29",
         "category": "Economy & Infrastructure",
         "subcategory": "Mining & Energy Transition",
         "scope": "India",
@@ -720,9 +720,9 @@ VAULT_ITEMS = [
         "url": "https://mines.gov.in"
     },
     {
-        "id": "ca-2026-econ-04",
+        "id": "ca-2024-econ-04",
         "title": "India-Middle East-Europe Economic Corridor (IMEC): Strategic Multimodal Connectivity",
-        "date": "2026-01-18",
+        "date": "2024-01-18",
         "category": "Economy & Infrastructure",
         "subcategory": "Trade Routes / Geoeconomics",
         "scope": "World & India",
@@ -755,9 +755,9 @@ VAULT_ITEMS = [
         "url": "https://mea.gov.in"
     },
     {
-        "id": "ca-2026-econ-05",
+        "id": "ca-2024-econ-05",
         "title": "Foreign Trade Policy (FTP) 2023: $2 Trillion Export Target & Internationalization of Rupee",
-        "date": "2026-04-01",
+        "date": "2024-04-01",
         "category": "Economy & Infrastructure",
         "subcategory": "Foreign Trade",
         "scope": "India",
@@ -790,9 +790,9 @@ VAULT_ITEMS = [
         "url": "https://dgft.gov.in"
     },
     {
-        "id": "ca-2026-econ-06",
+        "id": "ca-2024-econ-06",
         "title": "PM Gati Shakti & National Logistics Policy (NLP): Logistics Performance Index Jumps to 38th",
-        "date": "2026-05-15",
+        "date": "2024-05-15",
         "category": "Economy & Infrastructure",
         "subcategory": "Logistics & Multimodal",
         "scope": "India",
@@ -825,9 +825,9 @@ VAULT_ITEMS = [
         "url": "https://dpiit.gov.in"
     },
     {
-        "id": "ca-2026-econ-07",
+        "id": "ca-2024-econ-07",
         "title": "Fiscal Deficit Consolidation & New Tax Regime (Sec 115BAC) Structural Reforms",
-        "date": "2026-07-23",
+        "date": "2024-07-23",
         "category": "Economy & Infrastructure",
         "subcategory": "Fiscal Policy / Budget",
         "scope": "India",
@@ -860,9 +860,9 @@ VAULT_ITEMS = [
         "url": "https://indiabudget.gov.in"
     },
     {
-        "id": "ca-2026-econ-08",
+        "id": "ca-2024-econ-08",
         "title": "Indian Sovereign Bonds Included in JP Morgan GBI-EM & Bloomberg Global Indices",
-        "date": "2026-06-28",
+        "date": "2024-06-28",
         "category": "Economy & Infrastructure",
         "subcategory": "Sovereign Debt / Capital Flows",
         "scope": "World & India",
@@ -899,9 +899,9 @@ VAULT_ITEMS = [
     # 4. Science, Technology, Space & Defence
     # -----------------------------------------------------------------------
     {
-        "id": "ca-2026-scitech-01",
+        "id": "ca-2024-scitech-01",
         "title": "Aditya-L1 Spacecraft Placed in Sun-Earth Lagrange Point L1 Halo Orbit",
-        "date": "2026-01-06",
+        "date": "2024-01-06",
         "category": "Science, Tech & Defence",
         "subcategory": "Space Exploration / ISRO",
         "scope": "World & India",
@@ -934,9 +934,9 @@ VAULT_ITEMS = [
         "url": "https://isro.gov.in"
     },
     {
-        "id": "ca-2026-scitech-02",
+        "id": "ca-2024-scitech-02",
         "title": "INS Arighaat Commissioned: India's Second SSBN Nuclear Ballistic Submarine",
-        "date": "2026-08-29",
+        "date": "2024-08-29",
         "category": "Science, Tech & Defence",
         "subcategory": "Strategic Defence / Navy",
         "scope": "India",
@@ -969,9 +969,9 @@ VAULT_ITEMS = [
         "url": "https://indiannavy.nic.in"
     },
     {
-        "id": "ca-2026-scitech-03",
+        "id": "ca-2024-scitech-03",
         "title": "IndiaAI Mission: ₹10,372 Crore Allocation for Sovereign 10,000 GPU Computing",
-        "date": "2026-03-07",
+        "date": "2024-03-07",
         "category": "Science, Tech & Defence",
         "subcategory": "Artificial Intelligence",
         "scope": "India",
@@ -1004,9 +1004,9 @@ VAULT_ITEMS = [
         "url": "https://indiaai.gov.in"
     },
     {
-        "id": "ca-2026-scitech-04",
+        "id": "ca-2024-scitech-04",
         "title": "Gaganyaan Mission: Prime Minister Reveals 4 IAF Astronaut Designates & CE-20 Cryogenic Engine Human-Rated",
-        "date": "2026-02-27",
+        "date": "2024-02-27",
         "category": "Science, Tech & Defence",
         "subcategory": "Human Spaceflight / ISRO",
         "scope": "India",
@@ -1039,9 +1039,9 @@ VAULT_ITEMS = [
         "url": "https://isro.gov.in"
     },
     {
-        "id": "ca-2026-scitech-05",
+        "id": "ca-2024-scitech-05",
         "title": "XPoSat (X-ray Polarimeter Satellite) Launched by ISRO PSLV-C58",
-        "date": "2026-01-01",
+        "date": "2024-01-01",
         "category": "Science, Tech & Defence",
         "subcategory": "Astrophysics / Space",
         "scope": "World & India",
@@ -1074,9 +1074,9 @@ VAULT_ITEMS = [
         "url": "https://isro.gov.in"
     },
     {
-        "id": "ca-2026-scitech-06",
+        "id": "ca-2024-scitech-06",
         "title": "Agni-5 with MIRV (Mission Divyastra): Multiple Nuclear Warhead Technology Tested",
-        "date": "2026-03-11",
+        "date": "2024-03-11",
         "category": "Science, Tech & Defence",
         "subcategory": "Missile Technology / DRDO",
         "scope": "India",
@@ -1109,9 +1109,9 @@ VAULT_ITEMS = [
         "url": "https://drdo.gov.in"
     },
     {
-        "id": "ca-2026-scitech-07",
+        "id": "ca-2024-scitech-07",
         "title": "National Quantum Mission (NQM): Hub-and-Spoke Thematic Research Ecosystem",
-        "date": "2026-04-18",
+        "date": "2024-04-18",
         "category": "Science, Tech & Defence",
         "subcategory": "Deep Tech / Physics",
         "scope": "India",
@@ -1144,9 +1144,9 @@ VAULT_ITEMS = [
         "url": "https://dst.gov.in"
     },
     {
-        "id": "ca-2026-scitech-08",
+        "id": "ca-2024-scitech-08",
         "title": "Deep Ocean Mission: Samudrayaan 'MATSYA 6000' Manned Submersible Tested",
-        "date": "2026-06-12",
+        "date": "2024-06-12",
         "category": "Science, Tech & Defence",
         "subcategory": "Ocean Science / Earth Sciences",
         "scope": "India",
@@ -1179,9 +1179,9 @@ VAULT_ITEMS = [
         "url": "https://moes.gov.in"
     },
     {
-        "id": "ca-2026-scitech-09",
+        "id": "ca-2024-scitech-09",
         "title": "NexCAR19: India's First Indigenous CAR-T Cell Gene Therapy Approved for Cancer",
-        "date": "2026-04-05",
+        "date": "2024-04-05",
         "category": "Science, Tech & Defence",
         "subcategory": "Biotechnology / Health",
         "scope": "India",
@@ -1218,9 +1218,9 @@ VAULT_ITEMS = [
     # 5. History, Art, Heritage & Culture
     # -----------------------------------------------------------------------
     {
-        "id": "ca-2026-hist-01",
+        "id": "ca-2024-hist-01",
         "title": "Moidams of Assam Inscribed as India's 43rd UNESCO World Heritage Site",
-        "date": "2026-07-26",
+        "date": "2024-07-26",
         "category": "History, Art & Culture",
         "subcategory": "UNESCO / Medieval History",
         "scope": "India",
@@ -1253,9 +1253,9 @@ VAULT_ITEMS = [
         "url": "https://whc.unesco.org"
     },
     {
-        "id": "ca-2026-hist-02",
+        "id": "ca-2024-hist-02",
         "title": "Garba of Gujarat Inscribed on UNESCO Intangible Cultural Heritage List",
-        "date": "2026-01-10",
+        "date": "2024-01-10",
         "category": "History, Art & Culture",
         "subcategory": "Performing Arts / UNESCO",
         "scope": "India",
@@ -1288,9 +1288,9 @@ VAULT_ITEMS = [
         "url": "https://ich.unesco.org"
     },
     {
-        "id": "ca-2026-hist-03",
+        "id": "ca-2024-hist-03",
         "title": "Vadnagar Archaeological Excavations: 2,800-Year Continuous Settlement Uncovered",
-        "date": "2026-01-27",
+        "date": "2024-01-27",
         "category": "History, Art & Culture",
         "subcategory": "Archaeology / Ancient History",
         "scope": "India",
@@ -1323,9 +1323,9 @@ VAULT_ITEMS = [
         "url": "https://asi.nic.in"
     },
     {
-        "id": "ca-2026-hist-04",
+        "id": "ca-2024-hist-04",
         "title": "Santiniketan & Sacred Ensembles of the Hoysalas Inscribed on UNESCO World Heritage List",
-        "date": "2026-02-14",
+        "date": "2024-02-14",
         "category": "History, Art & Culture",
         "subcategory": "Temple Architecture & Heritage",
         "scope": "India",
@@ -1358,9 +1358,9 @@ VAULT_ITEMS = [
         "url": "https://whc.unesco.org"
     },
     {
-        "id": "ca-2026-hist-05",
+        "id": "ca-2024-hist-05",
         "title": "Sengol Installed in New Parliament: Chola Dynasty Symbol of Righteous Governance",
-        "date": "2026-05-28",
+        "date": "2024-05-28",
         "category": "History, Art & Culture",
         "subcategory": "Parliamentary Heritage",
         "scope": "India",
@@ -1393,9 +1393,9 @@ VAULT_ITEMS = [
         "url": "https://sansad.in"
     },
     {
-        "id": "ca-2026-hist-06",
+        "id": "ca-2024-hist-06",
         "title": "Maratha Military Landscapes of India Nominated for UNESCO World Heritage Recognition",
-        "date": "2026-02-01",
+        "date": "2024-02-01",
         "category": "History, Art & Culture",
         "subcategory": "Fort Architecture / Maratha History",
         "scope": "India",
@@ -1428,9 +1428,9 @@ VAULT_ITEMS = [
         "url": "https://asi.nic.in"
     },
     {
-        "id": "ca-2026-hist-07",
+        "id": "ca-2024-hist-07",
         "title": "Classical Language Status Conferred on 5 New Indian Languages",
-        "date": "2026-10-04",
+        "date": "2024-10-04",
         "category": "History, Art & Culture",
         "subcategory": "Linguistics & Heritage",
         "scope": "India",
@@ -1463,9 +1463,9 @@ VAULT_ITEMS = [
         "url": "https://indiaculture.gov.in"
     },
     {
-        "id": "ca-2026-hist-08",
+        "id": "ca-2024-hist-08",
         "title": "High-Yield GI Tags 2024: Majuli Masks, Cuttack Silver Filigree & Risa Textile Inscribed",
-        "date": "2026-03-05",
+        "date": "2024-03-05",
         "category": "History, Art & Culture",
         "subcategory": "Intellectual Property / GI",
         "scope": "India",
@@ -1502,9 +1502,9 @@ VAULT_ITEMS = [
     # 6. Sports & Games
     # -----------------------------------------------------------------------
     {
-        "id": "ca-2026-sports-01",
+        "id": "ca-2024-sports-01",
         "title": "Paris 2024 Olympics: Manu Bhaker Historic Double Bronze in Shooting",
-        "date": "2026-08-11",
+        "date": "2024-08-11",
         "category": "Sports & Games",
         "subcategory": "Olympics / Shooting",
         "scope": "World & India",
@@ -1537,9 +1537,9 @@ VAULT_ITEMS = [
         "url": "https://olympics.com"
     },
     {
-        "id": "ca-2026-sports-02",
+        "id": "ca-2024-sports-02",
         "title": "Paris 2024 Paralympics: India's Record 29 Medals & Sumit Antil Back-to-Back Gold",
-        "date": "2026-09-08",
+        "date": "2024-09-08",
         "category": "Sports & Games",
         "subcategory": "Paralympics / Athletics",
         "scope": "World & India",
@@ -1572,9 +1572,9 @@ VAULT_ITEMS = [
         "url": "https://paralympic.org"
     },
     {
-        "id": "ca-2026-sports-03",
+        "id": "ca-2024-sports-03",
         "title": "45th FIDE Chess Olympiad Budapest: Historic Double Gold in Open and Women's Sections",
-        "date": "2026-09-23",
+        "date": "2024-09-23",
         "category": "Sports & Games",
         "subcategory": "Chess / FIDE",
         "scope": "World & India",
@@ -1607,9 +1607,9 @@ VAULT_ITEMS = [
         "url": "https://fide.com"
     },
     {
-        "id": "ca-2026-sports-04",
+        "id": "ca-2024-sports-04",
         "title": "ICC Men's T20 World Cup 2024: India Crowned World Champions Defeating South Africa",
-        "date": "2026-06-29",
+        "date": "2024-06-29",
         "category": "Sports & Games",
         "subcategory": "Cricket",
         "scope": "World & India",
@@ -1642,9 +1642,9 @@ VAULT_ITEMS = [
         "url": "https://icc-cricket.com"
     },
     {
-        "id": "ca-2026-sports-05",
+        "id": "ca-2024-sports-05",
         "title": "Rohan Bopanna Becomes Oldest Grand Slam Champion and World No. 1 in Tennis History",
-        "date": "2026-01-27",
+        "date": "2024-01-27",
         "category": "Sports & Games",
         "subcategory": "Tennis / Grand Slams",
         "scope": "World & India",
@@ -1677,9 +1677,9 @@ VAULT_ITEMS = [
         "url": "https://ausopen.com"
     },
     {
-        "id": "ca-2026-sports-06",
+        "id": "ca-2024-sports-06",
         "title": "D Gukesh Wins FIDE Candidates 2024 to Become Youngest World Title Challenger in History",
-        "date": "2026-04-22",
+        "date": "2024-04-22",
         "category": "Sports & Games",
         "subcategory": "Chess / World Championship",
         "scope": "World & India",
@@ -1712,9 +1712,9 @@ VAULT_ITEMS = [
         "url": "https://fide.com"
     },
     {
-        "id": "ca-2026-sports-07",
+        "id": "ca-2024-sports-07",
         "title": "Neeraj Chopra Wins Javelin Silver at Paris 2024 Olympics (89.45m Throw)",
-        "date": "2026-08-08",
+        "date": "2024-08-08",
         "category": "Sports & Games",
         "subcategory": "Olympics / Athletics",
         "scope": "World & India",
@@ -1747,9 +1747,9 @@ VAULT_ITEMS = [
         "url": "https://olympics.com"
     },
     {
-        "id": "ca-2026-sports-08",
+        "id": "ca-2024-sports-08",
         "title": "37th National Games Goa: Maharashtra Topped Medal Tally with Raja Bhalindra Singh Trophy",
-        "date": "2026-01-04",
+        "date": "2024-01-04",
         "category": "Sports & Games",
         "subcategory": "National Games",
         "scope": "India",
@@ -1786,9 +1786,9 @@ VAULT_ITEMS = [
     # 7. National Affairs & Flagship Schemes
     # -----------------------------------------------------------------------
     {
-        "id": "ca-2026-national-01",
+        "id": "ca-2024-national-01",
         "title": "PM Surya Ghar: Muft Bijli Yojana Launched with ₹75,021 Crore Outlay for 1 Crore Solar Homes",
-        "date": "2026-02-13",
+        "date": "2024-02-13",
         "category": "National Affairs & Schemes",
         "subcategory": "Renewable Energy / Welfare",
         "scope": "India",
@@ -1821,9 +1821,9 @@ VAULT_ITEMS = [
         "url": "https://pmsuryaghar.gov.in"
     },
     {
-        "id": "ca-2026-national-02",
+        "id": "ca-2024-national-02",
         "title": "Swachh Survekshan Awards: Indore and Surat Crowned Joint Cleanest Cities in India",
-        "date": "2026-01-11",
+        "date": "2024-01-11",
         "category": "National Affairs & Schemes",
         "subcategory": "Urban Sanitation",
         "scope": "India",
@@ -1856,9 +1856,9 @@ VAULT_ITEMS = [
         "url": "https://swachhsurvekshan.gov.in"
     },
     {
-        "id": "ca-2026-national-03",
+        "id": "ca-2024-national-03",
         "title": "PM Vishwakarma Scheme: Financial Aid & Skill Toolkits for 18 Traditional Artisan Trades",
-        "date": "2026-04-18",
+        "date": "2024-04-18",
         "category": "National Affairs & Schemes",
         "subcategory": "Skill Development / MSME",
         "scope": "India",
@@ -1891,9 +1891,9 @@ VAULT_ITEMS = [
         "url": "https://pmvishwakarma.gov.in"
     },
     {
-        "id": "ca-2026-national-04",
+        "id": "ca-2024-national-04",
         "title": "PM-eBus Sewa Scheme: Deployment of 10,000 Electric Buses Across 169 Urban Centers",
-        "date": "2026-05-10",
+        "date": "2024-05-10",
         "category": "National Affairs & Schemes",
         "subcategory": "Urban Mobility / Green Transit",
         "scope": "India",
@@ -1926,9 +1926,9 @@ VAULT_ITEMS = [
         "url": "https://mohua.gov.in"
     },
     {
-        "id": "ca-2026-national-05",
+        "id": "ca-2024-national-05",
         "title": "Pradhan Mantri Awas Yojana (PMAY 2.0): Target to Construct 3 Crore Additional Homes",
-        "date": "2026-06-10",
+        "date": "2024-06-10",
         "category": "National Affairs & Schemes",
         "subcategory": "Affordable Housing",
         "scope": "India",
@@ -1961,9 +1961,9 @@ VAULT_ITEMS = [
         "url": "https://pmayg.nic.in"
     },
     {
-        "id": "ca-2026-national-06",
+        "id": "ca-2024-national-06",
         "title": "Aspirational Blocks Programme (ABP): First Delta Rankings for 500 Blocks Announced",
-        "date": "2026-01-16",
+        "date": "2024-01-16",
         "category": "National Affairs & Schemes",
         "subcategory": "Decentralized Governance",
         "scope": "India",
@@ -1996,9 +1996,9 @@ VAULT_ITEMS = [
         "url": "https://niti.gov.in"
     },
     {
-        "id": "ca-2026-national-07",
+        "id": "ca-2024-national-07",
         "title": "Jal Jeevan Mission: Reaches Milestone of 75%+ Rural Households with Tap Water Connections",
-        "date": "2026-03-22",
+        "date": "2024-03-22",
         "category": "National Affairs & Schemes",
         "subcategory": "Rural Water Supply",
         "scope": "India",
@@ -2031,9 +2031,9 @@ VAULT_ITEMS = [
         "url": "https://jaljeevanmission.gov.in"
     },
     {
-        "id": "ca-2026-national-08",
+        "id": "ca-2024-national-08",
         "title": "Bharat 6G Vision Document & 'Bharat 6G Alliance' Launched by DoT",
-        "date": "2026-04-25",
+        "date": "2024-04-25",
         "category": "National Affairs & Schemes",
         "subcategory": "Telecommunications / R&D",
         "scope": "India",
@@ -2070,9 +2070,9 @@ VAULT_ITEMS = [
     # 8. International Affairs & Global Summits
     # -----------------------------------------------------------------------
     {
-        "id": "ca-2026-intl-01",
+        "id": "ca-2024-intl-01",
         "title": "16th BRICS Summit in Kazan, Russia: Historic Expansion Welcomes 5 New Member States",
-        "date": "2026-10-24",
+        "date": "2024-10-24",
         "category": "International & Global Affairs",
         "subcategory": "Multilateral Summits",
         "scope": "World",
@@ -2105,9 +2105,9 @@ VAULT_ITEMS = [
         "url": "https://mea.gov.in"
     },
     {
-        "id": "ca-2026-intl-02",
+        "id": "ca-2024-intl-02",
         "title": "G20 Rio de Janeiro Summit (Brazil): Global Alliance Against Hunger and Poverty Launched",
-        "date": "2026-11-19",
+        "date": "2024-11-19",
         "category": "International & Global Affairs",
         "subcategory": "Global Summits / G20",
         "scope": "World",
@@ -2140,9 +2140,9 @@ VAULT_ITEMS = [
         "url": "https://g20.org"
     },
     {
-        "id": "ca-2026-intl-03",
+        "id": "ca-2024-intl-03",
         "title": "Exercise Tarang Shakti 2024: India's Largest-Ever Multilateral Air Force Combat Drill",
-        "date": "2026-08-30",
+        "date": "2024-08-30",
         "category": "International & Global Affairs",
         "subcategory": "Defence Diplomacy / Air Force",
         "scope": "World & India",
@@ -2175,9 +2175,9 @@ VAULT_ITEMS = [
         "url": "https://indianairforce.nic.in"
     },
     {
-        "id": "ca-2026-intl-04",
+        "id": "ca-2024-intl-04",
         "title": "24th SCO Summit in Astana: Belarus Admitted as 10th Full Member State",
-        "date": "2026-07-04",
+        "date": "2024-07-04",
         "category": "International & Global Affairs",
         "subcategory": "Regional Security / SCO",
         "scope": "World & India",
@@ -2210,9 +2210,9 @@ VAULT_ITEMS = [
         "url": "https://sectsco.org"
     },
     {
-        "id": "ca-2026-intl-05",
+        "id": "ca-2024-intl-05",
         "title": "Quad Leaders' Summit in Wilmington: Quad Cancer Moonshot & MAITRI Initiative Launched",
-        "date": "2026-09-22",
+        "date": "2024-09-22",
         "category": "International & Global Affairs",
         "subcategory": "Indo-Pacific / Quad",
         "scope": "World & India",
@@ -2245,9 +2245,9 @@ VAULT_ITEMS = [
         "url": "https://mea.gov.in"
     },
     {
-        "id": "ca-2026-intl-06",
+        "id": "ca-2024-intl-06",
         "title": "Colombo Security Conclave (CSC): Founding Charter Signed for Maritime Security",
-        "date": "2026-08-30",
+        "date": "2024-08-30",
         "category": "International & Global Affairs",
         "subcategory": "Indian Ocean Security",
         "scope": "World & India",
@@ -2280,9 +2280,9 @@ VAULT_ITEMS = [
         "url": "https://mea.gov.in"
     },
     {
-        "id": "ca-2026-intl-07",
+        "id": "ca-2024-intl-07",
         "title": "BAPS Hindu Mandir in Abu Dhabi: First Traditional Stone Temple in Middle East Inaugurated",
-        "date": "2026-02-14",
+        "date": "2024-02-14",
         "category": "International & Global Affairs",
         "subcategory": "Cultural Diplomacy",
         "scope": "World & India",
@@ -2315,9 +2315,9 @@ VAULT_ITEMS = [
         "url": "https://mea.gov.in"
     },
     {
-        "id": "ca-2026-intl-08",
+        "id": "ca-2024-intl-08",
         "title": "3rd Voice of Global South Summit (VOGSS): India Champions Developing World Priorities",
-        "date": "2026-08-17",
+        "date": "2024-08-17",
         "category": "International & Global Affairs",
         "subcategory": "Global South Diplomacy",
         "scope": "World & India",
@@ -2354,9 +2354,9 @@ VAULT_ITEMS = [
     # 9. Environment, Ecology & Climate Change
     # -----------------------------------------------------------------------
     {
-        "id": "ca-2026-env-01",
+        "id": "ca-2024-env-01",
         "title": "India Adds 3 New Ramsar Sites: Total Network Reaches 85 Wetlands of Global Importance",
-        "date": "2026-08-14",
+        "date": "2024-08-14",
         "category": "Environment & Ecology",
         "subcategory": "Wetlands & Conservation",
         "scope": "India",
@@ -2389,9 +2389,9 @@ VAULT_ITEMS = [
         "url": "https://moef.gov.in"
     },
     {
-        "id": "ca-2026-env-02",
+        "id": "ca-2024-env-02",
         "title": "International Big Cat Alliance (IBCA) Headquarters Formally Founded in India",
-        "date": "2026-02-29",
+        "date": "2024-02-29",
         "category": "Environment & Ecology",
         "subcategory": "Wildlife Conservation",
         "scope": "World & India",
@@ -2424,9 +2424,9 @@ VAULT_ITEMS = [
         "url": "https://ntca.gov.in"
     },
     {
-        "id": "ca-2026-env-03",
+        "id": "ca-2024-env-03",
         "title": "COP28 UAE Consensus & COP29 Baku Summit: Transitioning Away from Fossil Fuels",
-        "date": "2026-01-02",
+        "date": "2024-01-02",
         "category": "Environment & Ecology",
         "subcategory": "Climate Change / UNFCCC",
         "scope": "World",
@@ -2459,9 +2459,9 @@ VAULT_ITEMS = [
         "url": "https://unfccc.int"
     },
     {
-        "id": "ca-2026-env-04",
+        "id": "ca-2024-env-04",
         "title": "Project Tiger Completes 50 Years: NTCA Census Records 3,682 Wild Tigers in India",
-        "date": "2026-04-09",
+        "date": "2024-04-09",
         "category": "Environment & Ecology",
         "subcategory": "Wildlife Censuses / NTCA",
         "scope": "India",
@@ -2494,9 +2494,9 @@ VAULT_ITEMS = [
         "url": "https://ntca.gov.in"
     },
     {
-        "id": "ca-2026-env-05",
+        "id": "ca-2024-env-05",
         "title": "Global Biofuels Alliance (GBA): 24 Nations Join Clean Energy Compact",
-        "date": "2026-03-18",
+        "date": "2024-03-18",
         "category": "Environment & Ecology",
         "subcategory": "Renewable Energy / Biofuels",
         "scope": "World & India",
@@ -2529,9 +2529,9 @@ VAULT_ITEMS = [
         "url": "https://mopng.gov.in"
     },
     {
-        "id": "ca-2026-env-06",
+        "id": "ca-2024-env-06",
         "title": "Supreme Court Recognizes Fundamental Right to be Free from Adverse Effects of Climate Change",
-        "date": "2026-04-06",
+        "date": "2024-04-06",
         "category": "Environment & Ecology",
         "subcategory": "Environmental Jurisprudence",
         "scope": "India",
@@ -2564,9 +2564,9 @@ VAULT_ITEMS = [
         "url": "https://main.sci.gov.in"
     },
     {
-        "id": "ca-2026-env-07",
+        "id": "ca-2024-env-07",
         "title": "National Green Hydrogen Mission: SIGHT Program Tranches Awarded for 5 MMT Target",
-        "date": "2026-01-20",
+        "date": "2024-01-20",
         "category": "Environment & Ecology",
         "subcategory": "Green Hydrogen / Energy Transition",
         "scope": "India",
@@ -2599,9 +2599,9 @@ VAULT_ITEMS = [
         "url": "https://mnre.gov.in"
     },
     {
-        "id": "ca-2026-env-08",
+        "id": "ca-2024-env-08",
         "title": "Project Cheetah Phase 2: Gandhi Sagar Sanctuary Prepared as Second African Cheetah Habitat",
-        "date": "2026-05-02",
+        "date": "2024-05-02",
         "category": "Environment & Ecology",
         "subcategory": "Species Reintroduction / Wildlife",
         "scope": "World & India",
