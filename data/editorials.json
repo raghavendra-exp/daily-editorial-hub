@@ -1,7 +1,1088 @@
 {
-  "last_updated": "2026-10-18 05:34:29 UTC",
-  "total_articles": 573,
+  "last_updated": "2026-10-19 05:53:41 UTC",
+  "total_articles": 585,
   "articles": [
+    {
+      "id": "livemint-long-term-capital-gains-and-securities-transaction-taxation-h",
+      "title": "Long-term capital gains and securities transaction taxation: Here’s how to reform them",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-10-19",
+      "url": "https://www.livemint.com/opinion/online-views/long-term-capital-gains-and-securities-transaction-taxation-here-s-how-to-reform-them-11792317094644.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "India’s finance minister Nirmala Sitharaman has hinted at a possible review of these levies that many market participants consider a bugbear.",
+      "takeaways": [
+        "India’s finance minister Nirmala Sitharaman has hinted at a possible review of these levies that many market participants consider a bugbear.",
+        "Lighter levies are popular, but tax principles must guide reforms.",
+        "Here’s what the next budget could do."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Long-term capital gains and securities transaction taxation.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ostensible",
+          "pos": "Adjective",
+          "definition": "Stated or appearing to be true, but not necessarily so",
+          "synonyms": [
+            "apparent",
+            "superficial",
+            "professed"
+          ],
+          "antonyms": [
+            "genuine",
+            "actual"
+          ],
+          "example": "Policymakers must demonstrate ostensible interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Long-term capital gains and securities transaction taxation', what is the primary meaning of the term 'Ubiquitous'?",
+        "options": [
+          "Present, appearing, or found everywhere",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Ubiquitous' is defined as: Present, appearing, or found everywhere. Synonyms include omnipresent, pervasive, everywhere."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Long-term capital gains and securities transaction taxation'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "India’s finance minister Nirmala Sitharaman has hinted at a possible review of these levies that many market participants consider a bugbear. Lighter levies are popular, but tax principles must guide reforms. Here’s what the next budget could do."
+    },
+    {
+      "id": "livemint-mint-quick-edit-lives-lost-in-kolkata-s-stampede-should-make-",
+      "title": "Mint Quick Edit | Lives lost in Kolkata’s stampede should make us think about the limits of free speech",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Global Affairs",
+      "date": "2026-10-19",
+      "url": "https://www.livemint.com/opinion/online-views/mint-quick-edit-kolkata-stampede-why-it-calls-for-scrutiny-of-free-speech-11792334219404.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The police account of the tragedy suggests it was set off by an announcement asking people to leave.",
+      "takeaways": [
+        "The police account of the tragedy suggests it was set off by an announcement asking people to leave.",
+        "To the extent this was akin to ‘fire’ shouted in a hall, it draws reasonable constraints on free speech into the picture.",
+        "Indeed, it should prompt deeper reflection on this fundamental right."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning Mint Quick Edit.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Ostensible",
+          "pos": "Adjective",
+          "definition": "Stated or appearing to be true, but not necessarily so",
+          "synonyms": [
+            "apparent",
+            "superficial",
+            "professed"
+          ],
+          "antonyms": [
+            "genuine",
+            "actual"
+          ],
+          "example": "Policymakers must demonstrate ostensible interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Tenuous",
+          "pos": "Adjective",
+          "definition": "Very weak or slight; insubstantial",
+          "synonyms": [
+            "flimsy",
+            "fragile",
+            "shaky"
+          ],
+          "antonyms": [
+            "strong",
+            "robust",
+            "firm"
+          ],
+          "example": "Policymakers must demonstrate tenuous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Disparity",
+          "pos": "Noun",
+          "definition": "A great difference or inequality",
+          "synonyms": [
+            "imbalance",
+            "discrepancy",
+            "gap"
+          ],
+          "antonyms": [
+            "parity",
+            "equality",
+            "similarity"
+          ],
+          "example": "Policymakers must demonstrate disparity interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Mint Quick Edit', what is the primary meaning of the term 'Ostensible'?",
+        "options": [
+          "Stated or appearing to be true, but not necessarily so",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Ostensible' is defined as: Stated or appearing to be true, but not necessarily so. Synonyms include apparent, superficial, professed."
+      },
+      "practice_question": "In light of 'Mint Quick Edit', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The police account of the tragedy suggests it was set off by an announcement asking people to leave. To the extent this was akin to ‘fire’ shouted in a hall, it draws reasonable constraints on free speech into the picture. Indeed, it should prompt deeper reflection on this fundamental right."
+    },
+    {
+      "id": "livemint-yogi-akhilesh-and-the-high-stakes-battle-for-up",
+      "title": "Yogi, Akhilesh and the high-stakes battle for UP",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-10-19",
+      "url": "https://www.livemint.com/opinion/columns/yogi-akhilesh-and-the-high-stakes-battle-for-up-11792320792548.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The two claimants to Lucknow’s throne, Yogi Adityanath and Akhilesh Yadav, are still relatively young by political standards.",
+      "takeaways": [
+        "The two claimants to Lucknow’s throne, Yogi Adityanath and Akhilesh Yadav, are still relatively young by political standards.",
+        "Their well-wishers see both as racehorses built for the long haul.",
+        "Emphasizes vital strategic considerations regarding Yogi, Akhilesh and the high-stakes battle for UP."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Yogi, Akhilesh and the high-stakes battle for UP.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Substantive",
+          "pos": "Adjective",
+          "definition": "Having a firm basis in reality; meaningful, considerable",
+          "synonyms": [
+            "significant",
+            "meaningful",
+            "tangible"
+          ],
+          "antonyms": [
+            "trivial",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate substantive interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equilibrium",
+          "pos": "Noun",
+          "definition": "A state in which opposing forces or influences are balanced",
+          "synonyms": [
+            "balance",
+            "symmetry",
+            "stability"
+          ],
+          "antonyms": [
+            "imbalance",
+            "instability"
+          ],
+          "example": "Policymakers must demonstrate equilibrium interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Yogi, Akhilesh and the high-stakes battle for UP', what is the primary meaning of the term 'Substantive'?",
+        "options": [
+          "Having a firm basis in reality; meaningful, considerable",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Substantive' is defined as: Having a firm basis in reality; meaningful, considerable. Synonyms include significant, meaningful, tangible."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Yogi, Akhilesh and the high-stakes battle for UP'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "The two claimants to Lucknow’s throne, Yogi Adityanath and Akhilesh Yadav, are still relatively young by political standards. Their well-wishers see both as racehorses built for the long haul."
+    },
+    {
+      "id": "the-hindu-beyond-religiosity-on-the-kolkata-pandal-tragedy",
+      "title": "Beyond religiosity: on the Kolkata pandal tragedy",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "National Affairs",
+      "date": "2026-10-18",
+      "url": "https://www.thehindu.com/opinion/editorial/beyond-religiosity-on-the-kolkata-pandal-tragedy/article71600037.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "Better crowd regulation could have prevented the Kolkata pandal tragedy.",
+      "takeaways": [
+        "Better crowd regulation could have prevented the Kolkata pandal tragedy.",
+        "Emphasizes vital strategic considerations regarding Beyond religiosity: on the Kolkata pandal tragedy.",
+        "Emphasizes vital strategic considerations regarding Beyond religiosity: on the Kolkata pandal tragedy."
+      ],
+      "dimensions": {
+        "economic": "Fiscal federalism considerations and public expenditure priorities necessary to support statutory mandates.",
+        "governance": "Checks and balances between executive action and legislative oversight, ensuring constitutional fidelity in Beyond religiosity.",
+        "social": "Protection of fundamental civil liberties, citizen-centric administrative delivery, and participatory democracy.",
+        "global": "Upholding international democratic norms, human rights treaties, and global governance rankings."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Salient",
+          "pos": "Adjective",
+          "definition": "Most noticeable, prominent, or important",
+          "synonyms": [
+            "striking",
+            "notable",
+            "vital"
+          ],
+          "antonyms": [
+            "minor",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate salient interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Beyond religiosity', what is the primary meaning of the term 'Salient'?",
+        "options": [
+          "Most noticeable, prominent, or important",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Salient' is defined as: Most noticeable, prominent, or important. Synonyms include striking, notable, vital."
+      },
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'Beyond religiosity'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "This editorial analysis examines 'Beyond religiosity: on the Kolkata pandal tragedy', published in The Hindu. The piece delves into key structural challenges and emerging trends within the National Affairs domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "the-hindu-treacherous-waters-on-the-bihar-boat-tragedy",
+      "title": "Treacherous waters: on the Bihar boat tragedy",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "Environment & Climate",
+      "date": "2026-10-18",
+      "url": "https://www.thehindu.com/opinion/editorial/treacherous-waters-on-the-bihar-boat-tragedy/article71599919.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "Access to safe transport is of utmost importance in remote villages.",
+      "takeaways": [
+        "Access to safe transport is of utmost importance in remote villages.",
+        "Emphasizes vital strategic considerations regarding Treacherous waters: on the Bihar boat tragedy.",
+        "Emphasizes vital strategic considerations regarding Treacherous waters: on the Bihar boat tragedy."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning Treacherous waters.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Imperative",
+          "pos": "Adjective / Noun",
+          "definition": "Of vital importance; crucial or an essential priority",
+          "synonyms": [
+            "vital",
+            "essential",
+            "crucial"
+          ],
+          "antonyms": [
+            "optional",
+            "negligible"
+          ],
+          "example": "Policymakers must demonstrate imperative interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme authority; self-governing authority of a state",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Treacherous waters', what is the primary meaning of the term 'Imperative'?",
+        "options": [
+          "Of vital importance; crucial or an essential priority",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Imperative' is defined as: Of vital importance; crucial or an essential priority. Synonyms include vital, essential, crucial."
+      },
+      "practice_question": "In light of 'Treacherous waters', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "This editorial analysis examines 'Treacherous waters: on the Bihar boat tragedy', published in The Hindu. The piece delves into key structural challenges and emerging trends within the Environment & Climate domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "livemint-the-indian-economy-has-displayed-growth-resilience-but-fault-",
+      "title": "The Indian economy has displayed growth resilience—but fault lines have grown too that can’t be papered over",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-10-18",
+      "url": "https://www.livemint.com/opinion/online-views/rajrishi-singhal-why-india-s-growing-economy-requires-financial-stabilizers-11792056253559.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "A storm may be brewing on account of structural weaknesses that mustn’t catch policymakers off-guard.",
+      "takeaways": [
+        "A storm may be brewing on account of structural weaknesses that mustn’t catch policymakers off-guard.",
+        "Among our worries should be growing household stashes of gold, the fallout of El Niño, generalized inflation, rising interest rates and a potential AI bubble burst.",
+        "Emphasizes vital strategic considerations regarding The Indian economy has displayed growth resilience—but fault lines have grown too that can’t be papered over."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to The Indian economy has displayed growth resilience—but fault lines have grown too that can’t be papered over.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Resilience",
+          "pos": "Noun",
+          "definition": "The capacity to recover quickly from difficulties; systemic toughness",
+          "synonyms": [
+            "toughness",
+            "adaptability",
+            "endurance"
+          ],
+          "antonyms": [
+            "fragility",
+            "vulnerability"
+          ],
+          "example": "The Indian economy has displayed growth resilience—but fault lines have grown too that can’t be papered over."
+        },
+        {
+          "word": "Contentious",
+          "pos": "Adjective",
+          "definition": "Causing or likely to cause an argument; controversial",
+          "synonyms": [
+            "disputed",
+            "controversial",
+            "debated"
+          ],
+          "antonyms": [
+            "uncontroversial",
+            "peaceful"
+          ],
+          "example": "Policymakers must demonstrate contentious interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Fiscal",
+          "pos": "Adjective",
+          "definition": "Relating to government revenue, taxes, and public spending",
+          "synonyms": [
+            "monetary",
+            "financial",
+            "budgetary"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate fiscal interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Indian economy has displayed growth resilience—but fault lines have grown too that can’t be papered over', what is the primary meaning of the term 'Resilience'?",
+        "options": [
+          "The capacity to recover quickly from difficulties; systemic toughness",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Resilience' is defined as: The capacity to recover quickly from difficulties; systemic toughness. Synonyms include toughness, adaptability, endurance."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'The Indian economy has displayed growth resilience—but fault lines have grown too that can’t be papered over'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "A storm may be brewing on account of structural weaknesses that mustn’t catch policymakers off-guard. Among our worries should be growing household stashes of gold, the fallout of El Niño, generalized inflation, rising interest rates and a potential AI bubble burst."
+    },
+    {
+      "id": "livemint-imf-outlook-the-global-economy-may-not-be-doing-as-badly-as-f",
+      "title": "IMF outlook: The global economy may not be doing as badly as feared but it’s laden with major risks",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-10-18",
+      "url": "https://www.livemint.com/opinion/online-views/imf-outlook-global-economy-has-held-up-but-various-risks-still-loom-11792056285506.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "Rarely has a fairly positive forecast from the International Monetary Fund (IMF) had so many qualifiers.",
+      "takeaways": [
+        "Rarely has a fairly positive forecast from the International Monetary Fund (IMF) had so many qualifiers.",
+        "The predictions aren’t so much cause for celebration as a recognition that the worst hasn’t come to pass.",
+        "But what can we expect from here on."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to IMF outlook.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ameliorate",
+          "pos": "Verb",
+          "definition": "To make something bad or unsatisfactory better",
+          "synonyms": [
+            "improve",
+            "enhance",
+            "better"
+          ],
+          "antonyms": [
+            "worsen",
+            "deteriorate"
+          ],
+          "example": "Policymakers must demonstrate ameliorate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Bipartisan",
+          "pos": "Adjective",
+          "definition": "Involving agreement or cooperation between opposing political parties",
+          "synonyms": [
+            "two-party",
+            "coalition",
+            "non-partisan"
+          ],
+          "antonyms": [
+            "partisan",
+            "sectarian"
+          ],
+          "example": "Policymakers must demonstrate bipartisan interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'IMF outlook', what is the primary meaning of the term 'Institutional'?",
+        "options": [
+          "Relating to an established organization, law, or custom",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Institutional' is defined as: Relating to an established organization, law, or custom. Synonyms include formal, established, systemic."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'IMF outlook'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "Rarely has a fairly positive forecast from the International Monetary Fund (IMF) had so many qualifiers. The predictions aren’t so much cause for celebration as a recognition that the worst hasn’t come to pass. But what can we expect from here on?"
+    },
+    {
+      "id": "livemint-yes-bank-at-1-verdict-does-this-instrument-fulfil-the-purpose",
+      "title": "Yes Bank AT-1 verdict: Does this instrument fulfil the purpose it was originally designed for?",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-10-18",
+      "url": "https://www.livemint.com/opinion/online-views/yes-bank-at-1-verdict-does-this-instrument-fulfil-the-purpose-it-was-originally-designed-for-11792295179560.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The Supreme Court's ruling should prompt neither triumphalism among bondholders nor defensiveness among regulators.",
+      "takeaways": [
+        "The Supreme Court's ruling should prompt neither triumphalism among bondholders nor defensiveness among regulators.",
+        "It should trigger a serious reconsideration of AT-1’s economic rationale, the quality of bank supervision and the legal foundations of insolvency resolution.",
+        "Emphasizes vital strategic considerations regarding Yes Bank AT-1 verdict: Does this instrument fulfil the purpose it was originally designed for?."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Yes Bank AT-1 verdict.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, and exacting",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "Policymakers must demonstrate rigorous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Yes Bank AT-1 verdict', what is the primary meaning of the term 'Rigorous'?",
+        "options": [
+          "Extremely thorough, exhaustive, and exacting",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Rigorous' is defined as: Extremely thorough, exhaustive, and exacting. Synonyms include meticulous, exacting, stringent."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Yes Bank AT-1 verdict'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "The Supreme Court's ruling should prompt neither triumphalism among bondholders nor defensiveness among regulators. It should trigger a serious reconsideration of AT-1’s economic rationale, the quality of bank supervision and the legal foundations of insolvency resolution."
+    },
+    {
+      "id": "livemint-manu-joseph-the-poor-have-a-right-to-fun-why-don-t-the-rich-u",
+      "title": "Manu Joseph: The poor have a right to fun—why don't the rich understand that?",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Global Affairs",
+      "date": "2026-10-18",
+      "url": "https://www.livemint.com/opinion/online-views/manu-joseph-the-poor-have-a-right-to-fun-why-dont-the-rich-understand-that-11792056202202.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The perception of the elite that frivolity is a form of luxury, and that the poor are or should be preoccupied with dreary things is one of our worst misdiagnoses of the human condition.",
+      "takeaways": [
+        "The perception of the elite that frivolity is a form of luxury, and that the poor are or should be preoccupied with dreary things is one of our worst misdiagnoses of the human condition.",
+        "Entertainment is not the byproduct of progress—rather, progress is a byproduct of entertainment.",
+        "Emphasizes vital strategic considerations regarding Manu Joseph: The poor have a right to fun—why don't the rich understand that?."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning Manu Joseph.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Salient",
+          "pos": "Adjective",
+          "definition": "Most noticeable, prominent, or important",
+          "synonyms": [
+            "striking",
+            "notable",
+            "vital"
+          ],
+          "antonyms": [
+            "minor",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate salient interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Manu Joseph', what is the primary meaning of the term 'Salient'?",
+        "options": [
+          "Most noticeable, prominent, or important",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Salient' is defined as: Most noticeable, prominent, or important. Synonyms include striking, notable, vital."
+      },
+      "practice_question": "In light of 'Manu Joseph', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The perception of the elite that frivolity is a form of luxury, and that the poor are or should be preoccupied with dreary things is one of our worst misdiagnoses of the human condition. Entertainment is not the byproduct of progress—rather, progress is a byproduct of entertainment."
+    },
+    {
+      "id": "livemint-what-s-wrong-with-calling-it-an-ai-race-a-lot-and-india-shoul",
+      "title": "What's wrong with calling it an 'AI race'? A lot—and India should reject this notion outright",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-10-18",
+      "url": "https://www.livemint.com/opinion/online-views/whats-wrong-with-calling-it-an-ai-race-india-should-reject-this-notion-outright-11792055828755.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "For something to be called a race, it must fulfil three conditions, which the competitive pursuit of AI does not.",
+      "takeaways": [
+        "For something to be called a race, it must fulfil three conditions, which the competitive pursuit of AI does not.",
+        "India should resist this idea before it distorts resource allocation— and focus instead on deploying AI to its advantage.",
+        "Emphasizes vital strategic considerations regarding What's wrong with calling it an 'AI race'? A lot—and India should reject this notion outright."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around What's wrong with calling it an 'AI race'? A lot—and India should reject this notion outright.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Hegemony",
+          "pos": "Noun",
+          "definition": "Leadership or dominance, especially by one state or group over others",
+          "synonyms": [
+            "dominance",
+            "supremacy",
+            "ascendancy"
+          ],
+          "antonyms": [
+            "subordination",
+            "equality"
+          ],
+          "example": "Policymakers must demonstrate hegemony interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'What's wrong with calling it an 'AI race'? A lot—and India should reject this notion outright', what is the primary meaning of the term 'Calamitous'?",
+        "options": [
+          "Catastrophic or disastrous",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Calamitous' is defined as: Catastrophic or disastrous. Synonyms include disastrous, ruinous, dire."
+      },
+      "practice_question": "Critically assess how recent advancements in 'What's wrong with calling it an 'AI race'? A lot—and India should reject this notion outright' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "For something to be called a race, it must fulfil three conditions, which the competitive pursuit of AI does not. India should resist this idea before it distorts resource allocation— and focus instead on deploying AI to its advantage."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-plague-in-russia-what-is-most-worryi",
+      "title": "The Guardian view on plague in Russia: what is most worrying is the lack of information",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-10-18",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/18/the-guardian-view-on-plague-in-russia-what-is-most-worrying-is-the-lack-of-information",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "In the three weeks since a health worker’s death in Siberia, officials have stonewalled the WHO – setting a worrying precedent for future pandemics Is there a plague outbreak in Russia.",
+      "takeaways": [
+        "In the three weeks since a health worker’s death in Siberia, officials have stonewalled the WHO – setting a worrying precedent for future pandemics Is there a plague outbreak in Russia.",
+        "With swift medical intervention, plague is treatable.",
+        "It is this uncertainty that has the World Health Organization (WHO) and international community worried: partly because there is a – very small – risk of an outbreak, and partly because it is yet another warning that the international coordination we rely on to prevent pandemics is fraying along with the rest of international politics, and could easily fail to protect us in the future."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning The Guardian view on plague in Russia.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Disparity",
+          "pos": "Noun",
+          "definition": "A great difference or inequality",
+          "synonyms": [
+            "imbalance",
+            "discrepancy",
+            "gap"
+          ],
+          "antonyms": [
+            "parity",
+            "equality",
+            "similarity"
+          ],
+          "example": "Policymakers must demonstrate disparity interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Resilience",
+          "pos": "Noun",
+          "definition": "The capacity to recover quickly from difficulties; systemic toughness",
+          "synonyms": [
+            "toughness",
+            "adaptability",
+            "endurance"
+          ],
+          "antonyms": [
+            "fragility",
+            "vulnerability"
+          ],
+          "example": "Policymakers must demonstrate resilience interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Consensus",
+          "pos": "Noun",
+          "definition": "A general agreement among a group of people",
+          "synonyms": [
+            "accord",
+            "harmony",
+            "unity"
+          ],
+          "antonyms": [
+            "discord",
+            "disagreement"
+          ],
+          "example": "Policymakers must demonstrate consensus interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Guardian view on plague in Russia', what is the primary meaning of the term 'Disparity'?",
+        "options": [
+          "A great difference or inequality",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Disparity' is defined as: A great difference or inequality. Synonyms include imbalance, discrepancy, gap."
+      },
+      "practice_question": "In light of 'The Guardian view on plague in Russia', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "In the three weeks since a health worker’s death in Siberia, officials have stonewalled the WHO – setting a worrying precedent for future pandemics Is there a plague outbreak in Russia? If the answer were a clear yes, there shouldn’t be much reason to worry. With swift medical intervention, plague is treatable. But in the nearly three weeks since a worker at a Siberian plague research unit died of a mysterious respiratory illness, state officials have been consistently tight-lipped about what happened and whether there were any further cases. It is this uncertainty that has the World Health Organization (WHO) and international community worried: partly because there is a – very small – risk of an outbreak, and partly because it is yet another warning that the international coordination we rely on to prevent pandemics is fraying along with the rest of international politics, and could easily fail to protect us in the future. Continue reading..."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-schools-the-hardest-questions-for-lu",
+      "title": "The Guardian view on schools: the hardest questions for Lucy Powell are about priorities",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-10-18",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/18/the-guardian-view-on-schools-the-hardest-questions-for-lucy-powell-are-about-priorities",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "The education secretary is right that her job is not to ‘polish the status quo’.",
+      "takeaways": [
+        "The education secretary is right that her job is not to ‘polish the status quo’.",
+        "There is a grim irony in a situation where tech companies both compete with humans for contracts and undermine our ability to talk to one other.",
+        "Following negative feedback from schools, she has also asked Ofsted to look again at its new inspection framework."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning The Guardian view on schools.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Substantive",
+          "pos": "Adjective",
+          "definition": "Having a firm basis in reality; meaningful, considerable",
+          "synonyms": [
+            "significant",
+            "meaningful",
+            "tangible"
+          ],
+          "antonyms": [
+            "trivial",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate substantive interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equilibrium",
+          "pos": "Noun",
+          "definition": "A state in which opposing forces or influences are balanced",
+          "synonyms": [
+            "balance",
+            "symmetry",
+            "stability"
+          ],
+          "antonyms": [
+            "imbalance",
+            "instability"
+          ],
+          "example": "Policymakers must demonstrate equilibrium interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Guardian view on schools', what is the primary meaning of the term 'Substantive'?",
+        "options": [
+          "Having a firm basis in reality; meaningful, considerable",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Substantive' is defined as: Having a firm basis in reality; meaningful, considerable. Synonyms include significant, meaningful, tangible."
+      },
+      "practice_question": "In light of 'The Guardian view on schools', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The education secretary is right that her job is not to ‘polish the status quo’. Next, she must decide what to change first There is a good case to be made for the increased importance of speaking skills in our new age of machines. With the UK economy’s stronger-than-expected recent performance widely linked to AI investment, it is vital that people are equipped for the kinds of in-person, public-facing jobs that are least likely to be automated. A concerning decline in children’s language development, both in the UK and internationally, has been linked to high screen use. There is a grim irony in a situation where tech companies both compete with humans for contracts and undermine our ability to talk to one other . The Guardian has previously backed efforts to more strongly embed speaking skills, or oracy, in British schools. In a speech on Thursday, Lucy Powell promised to give them equal status to reading and writing in English (education is devolved, so her main responsibility is for England, but there are parallel initiatives in the other nations). Yet with promised updates to the national curriculum postponed, and plans for special educational needs reform causing deep anxiety to families, schools and councils, the hardest questions for the education secretary are about priorities. Following negative feedback from schools, she has also asked Ofsted to look again at its new inspection framework. Continue reading..."
+    },
     {
       "id": "nature-research-briefing-chat-an-invisible-tattoo-that-appears-under-u",
       "title": "Briefing Chat: An invisible tattoo that appears under UV light – and then disappears",
