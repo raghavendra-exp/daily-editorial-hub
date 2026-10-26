@@ -1,7 +1,1792 @@
 {
-  "last_updated": "2026-10-25 05:49:17 UTC",
-  "total_articles": 683,
+  "last_updated": "2026-10-26 05:52:17 UTC",
+  "total_articles": 703,
   "articles": [
+    {
+      "id": "the-hindu-old-values-new-avenues-on-india-poland-ties",
+      "title": "Old values, new avenues: On India-Poland ties",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "National Affairs",
+      "date": "2026-10-26",
+      "url": "https://www.thehindu.com/opinion/editorial/old-values-new-avenues-on-india-poland-ties/article71623770.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "India and Poland have no conflict, but are pulled apart by other nations.",
+      "takeaways": [
+        "India and Poland have no conflict, but are pulled apart by other nations.",
+        "Emphasizes vital strategic considerations regarding Old values, new avenues: On India-Poland ties.",
+        "Emphasizes vital strategic considerations regarding Old values, new avenues: On India-Poland ties."
+      ],
+      "dimensions": {
+        "economic": "Fiscal federalism considerations and public expenditure priorities necessary to support statutory mandates.",
+        "governance": "Checks and balances between executive action and legislative oversight, ensuring constitutional fidelity in Old values, new avenues.",
+        "social": "Protection of fundamental civil liberties, citizen-centric administrative delivery, and participatory democracy.",
+        "global": "Upholding international democratic norms, human rights treaties, and global governance rankings."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Substantive",
+          "pos": "Adjective",
+          "definition": "Having a firm basis in reality; meaningful, considerable",
+          "synonyms": [
+            "significant",
+            "meaningful",
+            "tangible"
+          ],
+          "antonyms": [
+            "trivial",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate substantive interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equilibrium",
+          "pos": "Noun",
+          "definition": "A state in which opposing forces or influences are balanced",
+          "synonyms": [
+            "balance",
+            "symmetry",
+            "stability"
+          ],
+          "antonyms": [
+            "imbalance",
+            "instability"
+          ],
+          "example": "Policymakers must demonstrate equilibrium interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Old values, new avenues', what is the primary meaning of the term 'Judicious'?",
+        "options": [
+          "Having, showing, or done with good judgment or sense",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Judicious' is defined as: Having, showing, or done with good judgment or sense. Synonyms include prudent, wise, discreet."
+      },
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'Old values, new avenues'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "This editorial analysis examines 'Old values, new avenues: On India-Poland ties', published in The Hindu. The piece delves into key structural challenges and emerging trends within the National Affairs domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "the-hindu-wicked-surprise-on-the-northeast-monsoon",
+      "title": "Wicked surprise: On the northeast monsoon",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "Environment & Climate",
+      "date": "2026-10-26",
+      "url": "https://www.thehindu.com/opinion/editorial/wicked-surprise-on-the-northeast-monsoon/article71623526.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "The northeast monsoon is more unpredictable, and the south must be wary.",
+      "takeaways": [
+        "The northeast monsoon is more unpredictable, and the south must be wary.",
+        "Emphasizes vital strategic considerations regarding Wicked surprise: On the northeast monsoon.",
+        "Emphasizes vital strategic considerations regarding Wicked surprise: On the northeast monsoon."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning Wicked surprise.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Hegemony",
+          "pos": "Noun",
+          "definition": "Leadership or dominance, especially by one state or group over others",
+          "synonyms": [
+            "dominance",
+            "supremacy",
+            "ascendancy"
+          ],
+          "antonyms": [
+            "subordination",
+            "equality"
+          ],
+          "example": "Policymakers must demonstrate hegemony interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Imperative",
+          "pos": "Adjective / Noun",
+          "definition": "Of vital importance; crucial or an essential priority",
+          "synonyms": [
+            "vital",
+            "essential",
+            "crucial"
+          ],
+          "antonyms": [
+            "optional",
+            "negligible"
+          ],
+          "example": "Policymakers must demonstrate imperative interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Wicked surprise', what is the primary meaning of the term 'Hegemony'?",
+        "options": [
+          "Leadership or dominance, especially by one state or group over others",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Hegemony' is defined as: Leadership or dominance, especially by one state or group over others. Synonyms include dominance, supremacy, ascendancy."
+      },
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'Wicked surprise'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "This editorial analysis examines 'Wicked surprise: On the northeast monsoon', published in The Hindu. The piece delves into key structural challenges and emerging trends within the Environment & Climate domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "livemint-former-india-trade-negotiator-abhijit-das-new-delhi-must-be-c",
+      "title": "Former India trade negotiator Abhijit Das: New Delhi must be careful not to sign-off on a lopsided deal with Washington",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-10-26",
+      "url": "https://www.livemint.com/opinion/online-views/former-india-trade-negotiator-india-can-t-afford-an-asymmetric-deal-with-the-us-11792674264093.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "India is focusing on gains for labour-intensive sectors but concessions in agriculture can cause greater losses.",
+      "takeaways": [
+        "India is focusing on gains for labour-intensive sectors but concessions in agriculture can cause greater losses.",
+        "The February framework’s clauses on joint action against third parties also risk compromising India’s sovereignty in policymaking.",
+        "We must be careful not to sign-off on an asymmetric deal."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Former India trade negotiator Abhijit Das.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme authority; self-governing authority of a state",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "The February framework’s clauses on joint action against third parties also risk compromising India’s sovereignty in policymaking."
+        },
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ameliorate",
+          "pos": "Verb",
+          "definition": "To make something bad or unsatisfactory better",
+          "synonyms": [
+            "improve",
+            "enhance",
+            "better"
+          ],
+          "antonyms": [
+            "worsen",
+            "deteriorate"
+          ],
+          "example": "Policymakers must demonstrate ameliorate interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Former India trade negotiator Abhijit Das', what is the primary meaning of the term 'Sovereignty'?",
+        "options": [
+          "Supreme authority; self-governing authority of a state",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Sovereignty' is defined as: Supreme authority; self-governing authority of a state. Synonyms include autonomy, independence, self-governance."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Former India trade negotiator Abhijit Das'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "India is focusing on gains for labour-intensive sectors but concessions in agriculture can cause greater losses. The February framework’s clauses on joint action against third parties also risk compromising India’s sovereignty in policymaking. We must be careful not to sign-off on an asymmetric deal"
+    },
+    {
+      "id": "livemint-special-intensive-revision-what-s-the-road-ahead-for-the-elec",
+      "title": "Special intensive revision: What's the road ahead for the Election Commission of India?",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Polity & Governance",
+      "date": "2026-10-26",
+      "url": "https://www.livemint.com/opinion/online-views/special-intensive-revision-whats-the-road-ahead-for-election-commission-of-india-11792936600523.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The special revision of electoral rolls has seen several issues that left voters out of the draft rolls and raises questions about the process.",
+      "takeaways": [
+        "The special revision of electoral rolls has seen several issues that left voters out of the draft rolls and raises questions about the process.",
+        "Here's why India needs more transparency from the Election Commission.",
+        "Emphasizes vital strategic considerations regarding Special intensive revision: What's the road ahead for the Election Commission of India?."
+      ],
+      "dimensions": {
+        "economic": "Fiscal federalism considerations and public expenditure priorities necessary to support statutory mandates.",
+        "governance": "Checks and balances between executive action and legislative oversight, ensuring constitutional fidelity in Special intensive revision.",
+        "social": "Protection of fundamental civil liberties, citizen-centric administrative delivery, and participatory democracy.",
+        "global": "Upholding international democratic norms, human rights treaties, and global governance rankings."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Equilibrium",
+          "pos": "Noun",
+          "definition": "A state in which opposing forces or influences are balanced",
+          "synonyms": [
+            "balance",
+            "symmetry",
+            "stability"
+          ],
+          "antonyms": [
+            "imbalance",
+            "instability"
+          ],
+          "example": "Policymakers must demonstrate equilibrium interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Special intensive revision', what is the primary meaning of the term 'Equilibrium'?",
+        "options": [
+          "A state in which opposing forces or influences are balanced",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Equilibrium' is defined as: A state in which opposing forces or influences are balanced. Synonyms include balance, symmetry, stability."
+      },
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'Special intensive revision'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "The special revision of electoral rolls has seen several issues that left voters out of the draft rolls and raises questions about the process. Here's why India needs more transparency from the Election Commission."
+    },
+    {
+      "id": "livemint-mint-quick-edit-gig-workers-to-be-counted-in-the-periodic-lab",
+      "title": "Mint Quick Edit | Gig workers to be counted in the Periodic Labour Force Survey—a welcome decision",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Global Affairs",
+      "date": "2026-10-26",
+      "url": "https://www.livemint.com/opinion/online-views/mint-quick-edit-new-job-metrics-gig-workers-to-be-counted-in-the-periodic-labour-force-survey-11792943561410.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "From 2027 onwards, policymakers may have access to official data about gig workers from a nationally representative survey.",
+      "takeaways": [
+        "From 2027 onwards, policymakers may have access to official data about gig workers from a nationally representative survey.",
+        "Here are two tweaks that could help monetary policymakers.",
+        "Emphasizes vital strategic considerations regarding Mint Quick Edit | Gig workers to be counted in the Periodic Labour Force Survey—a welcome decision."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning Mint Quick Edit.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Equilibrium",
+          "pos": "Noun",
+          "definition": "A state in which opposing forces or influences are balanced",
+          "synonyms": [
+            "balance",
+            "symmetry",
+            "stability"
+          ],
+          "antonyms": [
+            "imbalance",
+            "instability"
+          ],
+          "example": "Policymakers must demonstrate equilibrium interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Mint Quick Edit', what is the primary meaning of the term 'Equilibrium'?",
+        "options": [
+          "A state in which opposing forces or influences are balanced",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Equilibrium' is defined as: A state in which opposing forces or influences are balanced. Synonyms include balance, symmetry, stability."
+      },
+      "practice_question": "In light of 'Mint Quick Edit', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "From 2027 onwards, policymakers may have access to official data about gig workers from a nationally representative survey. This is a good move. Here are two tweaks that could help monetary policymakers."
+    },
+    {
+      "id": "livemint-indira-gandhi-the-promise-and-price-of-a-rich-legacy",
+      "title": "Indira Gandhi: The promise and price of a rich legacy",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-10-26",
+      "url": "https://www.livemint.com/opinion/columns/indira-gandhi-the-promise-and-price-of-a-rich-legacy-11792947756766.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "Indira Gandhi’s legacy remains divided between her achievements and the erosion of democracy.",
+      "takeaways": [
+        "Indira Gandhi’s legacy remains divided between her achievements and the erosion of democracy.",
+        "Emphasizes vital strategic considerations regarding Indira Gandhi: The promise and price of a rich legacy.",
+        "Emphasizes vital strategic considerations regarding Indira Gandhi: The promise and price of a rich legacy."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Indira Gandhi.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Tenuous",
+          "pos": "Adjective",
+          "definition": "Very weak or slight; insubstantial",
+          "synonyms": [
+            "flimsy",
+            "fragile",
+            "shaky"
+          ],
+          "antonyms": [
+            "strong",
+            "robust",
+            "firm"
+          ],
+          "example": "Policymakers must demonstrate tenuous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Disparity",
+          "pos": "Noun",
+          "definition": "A great difference or inequality",
+          "synonyms": [
+            "imbalance",
+            "discrepancy",
+            "gap"
+          ],
+          "antonyms": [
+            "parity",
+            "equality",
+            "similarity"
+          ],
+          "example": "Policymakers must demonstrate disparity interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Resilience",
+          "pos": "Noun",
+          "definition": "The capacity to recover quickly from difficulties; systemic toughness",
+          "synonyms": [
+            "toughness",
+            "adaptability",
+            "endurance"
+          ],
+          "antonyms": [
+            "fragility",
+            "vulnerability"
+          ],
+          "example": "Policymakers must demonstrate resilience interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Indira Gandhi', what is the primary meaning of the term 'Tenuous'?",
+        "options": [
+          "Very weak or slight; insubstantial",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Tenuous' is defined as: Very weak or slight; insubstantial. Synonyms include flimsy, fragile, shaky."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Indira Gandhi'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "This editorial analysis examines 'Indira Gandhi: The promise and price of a rich legacy', published in LiveMint. The piece delves into key structural challenges and emerging trends within the Economy & Banking domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "livemint-how-china-s-industrial-strength-is-testing-its-growth-model",
+      "title": "How China’s industrial strength is testing its growth model",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Global Affairs",
+      "date": "2026-10-26",
+      "url": "https://www.livemint.com/opinion/online-views/how-china-s-industrial-strength-is-testing-its-growth-model-11792922179046.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The country's industrial competitiveness has not translated into equally strong domestic demand, while its export competitiveness is provoking resistance from overseas markets like the European Union.",
+      "takeaways": [
+        "The country's industrial competitiveness has not translated into equally strong domestic demand, while its export competitiveness is provoking resistance from overseas markets like the European Union.",
+        "How Beijing manages these competing priorities will matter beyond China.",
+        "Emphasizes vital strategic considerations regarding How China’s industrial strength is testing its growth model."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning How China’s industrial strength is testing its growth model.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or dilemma",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, and exacting",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "Policymakers must demonstrate rigorous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'How China’s industrial strength is testing its growth model', what is the primary meaning of the term 'Paradigm'?",
+        "options": [
+          "A typical example or pattern of something; a framework of ideas",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Paradigm' is defined as: A typical example or pattern of something; a framework of ideas. Synonyms include model, archetype, framework."
+      },
+      "practice_question": "In light of 'How China’s industrial strength is testing its growth model', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The country's industrial competitiveness has not translated into equally strong domestic demand, while its export competitiveness is provoking resistance from overseas markets like the European Union. How Beijing manages these competing priorities will matter beyond China."
+    },
+    {
+      "id": "arxiv-ai-cs-tradeoff-aware-territory-design-a-multi-objective-decision",
+      "title": "Tradeoff-Aware Territory Design: A Multi-Objective Decision System for Enterprise Customer-to-Seller Allocation",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Economy & Banking",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.31701",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "31701v1 Announce Type: new Abstract: Enterprise customer journeys are shaped not only by product experiences and marketing, but also by recurring resource-allocation decisions.",
+      "takeaways": [
+        "31701v1 Announce Type: new Abstract: Enterprise customer journeys are shaped not only by product experiences and marketing, but also by recurring resource-allocation decisions.",
+        "Deployed as a scenario-based decision-support system, the framework enables planners to inspect and compare allocation tradeoffs.",
+        "The key contribution is an integrated, inspectable framework that turns territory carving into a governable decision process."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Tradeoff-Aware Territory Design.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Tradeoff-Aware Territory Design', what is the primary meaning of the term 'Unprecedented'?",
+        "options": [
+          "Never done or known before",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Unprecedented' is defined as: Never done or known before. Synonyms include unparalleled, novel, groundbreaking."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Tradeoff-Aware Territory Design'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "arXiv:2610.31701v1 Announce Type: new Abstract: Enterprise customer journeys are shaped not only by product experiences and marketing, but also by recurring resource-allocation decisions. In B2B go-to-market (GTM) organizations, territory carving determines which accounts receive seller coverage, which seller-account relationships are preserved, and how limited field capacity is distributed. Yet the process often remains manual, making it difficult to compare opportunities, value continuity, and evaluate tradeoffs among growth, balance, capacity, and feasibility. We present a production decision system for tradeoff-aware customer-to-seller allocation in enterprise GTM planning. It integrates three components: a multidimensional account-value layer that combines predictive signals to score opportunity; an observational continuity-valuation layer that estimates the cost of breaking seller-account relationships using a synthetic-control-style counterfactual framework; and a multi-objective optimization layer that allocates coverage to high-value accounts while considering continuity, opportunity balance, and operational constraints. Deployed as a scenario-based decision-support system, the framework enables planners to inspect and compare allocation tradeoffs. Historical backtesting shows that optimizer-generated scenarios substantially improve assignment compliance while maintaining comparable seller-level opportunity distribution. In production planning, adopted scenarios improved both assignment compliance and opportunity balance relative to the previous baseline. Directing scarce seller capacity toward higher-value accounts also offers incremental revenue potential at enterprise scale. The key contribution is an integrated, inspectable framework that turns territory carving into a governable decision process."
+    },
+    {
+      "id": "arxiv-ai-cs-phronix-the-capability-centric-learning-paradigm-for-agent",
+      "title": "Phronix: The Capability-Centric Learning Paradigm for Agents",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.31789",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "31789v1 Announce Type: new Abstract: Scientific computing increasingly relies on large language model-based agents for performance engineering tasks such as instrumentation, analysis, and workflow porting.",
+      "takeaways": [
+        "31789v1 Announce Type: new Abstract: Scientific computing increasingly relies on large language model-based agents for performance engineering tasks such as instrumentation, analysis, and workflow porting.",
+        "First, such learned capabilities solve a recurring task on the first attempt in 93-95% of cases across every model, significantly reducing solution non-determinism and improving reliability.",
+        "On the 1000 Genome Pegasus workflow, instrumenting a production application for I/O performance analysis, Phronix passes all 11 correctness checks against six for the baseline harness, and also lifts the task solving rates of two cheaper models from 29% and 27% of SWE-bench tasks solved to 91% and 87%, respectively, matching the performance of the most expensive evaluated model."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Phronix.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "We introduce Phronix, a capability-centric learning paradigm that enables agentic harnesses to acquire, validate, and refine reusable capabilities from their own executions."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Phronix', what is the primary meaning of the term 'Paradigm'?",
+        "options": [
+          "A typical example or pattern of something; a framework of ideas",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Paradigm' is defined as: A typical example or pattern of something; a framework of ideas. Synonyms include model, archetype, framework."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Phronix' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2610.31789v1 Announce Type: new Abstract: Scientific computing increasingly relies on large language model-based agents for performance engineering tasks such as instrumentation, analysis, and workflow porting. However, agent effectiveness depends heavily on the surrounding harness, which typically relies on manually written skills and curated memory. This limits autonomous learning, forcing agents to repeatedly rediscover solutions rather than retain and reuse knowledge from prior executions. We introduce Phronix, a capability-centric learning paradigm that enables agentic harnesses to acquire, validate, and refine reusable capabilities from their own executions. Phronix operates through a predictor-validator-corrector loop: MCP tools and associated skills propose solutions, tool executions validate them, and observed outcomes refine the stored capabilities. It distills every observed interaction into a capability store and researches a failing task rather than abandoning it. First, such learned capabilities solve a recurring task on the first attempt in 93-95% of cases across every model, significantly reducing solution non-determinism and improving reliability. Second, Phronix turns an agent's own execution into 7.6-30.8 durable capabilities per task without user instruction, and creation falls below two once the needed capability exists. Third, warm-start runs consume only 0.38-0.40 million tokens per task, which is three to four times less than a single baseline attempt, while a cold-start costs no more than the baseline. On the 1000 Genome Pegasus workflow, instrumenting a production application for I/O performance analysis, Phronix passes all 11 correctness checks against six for the baseline harness, and also lifts the task solving rates of two cheaper models from 29% and 27% of SWE-bench tasks solved to 91% and 87%, respectively, matching the performance of the most expensive evaluated model."
+    },
+    {
+      "id": "arxiv-ai-cs-patronizing-and-condescending-language-detection-in-englis",
+      "title": "Patronizing and Condescending Language Detection in English and Mandarin",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.31808",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "31808v1 Announce Type: new Abstract: Patronizing and condescending language (PCL) is a form of harmful language that belittles and assumes pity for vulnerable groups, reinforcing negative societal stereotypes.",
+      "takeaways": [
+        "31808v1 Announce Type: new Abstract: Patronizing and condescending language (PCL) is a form of harmful language that belittles and assumes pity for vulnerable groups, reinforcing negative societal stereotypes.",
+        "This paper proposes a system for the automated detection of PCL.",
+        "Our second approach was considerably more successful, and achieved an F1 score of 0."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Patronizing and Condescending Language Detection in English and Mandarin.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Imperative",
+          "pos": "Adjective / Noun",
+          "definition": "Of vital importance; crucial or an essential priority",
+          "synonyms": [
+            "vital",
+            "essential",
+            "crucial"
+          ],
+          "antonyms": [
+            "optional",
+            "negligible"
+          ],
+          "example": "Policymakers must demonstrate imperative interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme authority; self-governing authority of a state",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Patronizing and Condescending Language Detection in English and Mandarin', what is the primary meaning of the term 'Imperative'?",
+        "options": [
+          "Of vital importance; crucial or an essential priority",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Imperative' is defined as: Of vital importance; crucial or an essential priority. Synonyms include vital, essential, crucial."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Patronizing and Condescending Language Detection in English and Mandarin' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2610.31808v1 Announce Type: new Abstract: Patronizing and condescending language (PCL) is a form of harmful language that belittles and assumes pity for vulnerable groups, reinforcing negative societal stereotypes. However, unlike overt hate speech, it is often difficult to detect, even for human judges. This paper proposes a system for the automated detection of PCL. Our first approach uses static word embeddings and a convolutional neural network for classification, while our second approach uses pre-trained BERT embeddings fine-tuned for the PCL task. Our second approach was considerably more successful, and achieved an F1 score of 0.528 over the development set."
+    },
+    {
+      "id": "arxiv-ai-cs-paperformalizer-author-in-the-loop-autoformalization-of-re",
+      "title": "PaperFormalizer: Author-in-the-Loop Autoformalization of Research Papers in Lean",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.31810",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "31810v1 Announce Type: new Abstract: Even a carefully proofread paper can leave small gaps in its proofs or its stated assumptions.",
+      "takeaways": [
+        "31810v1 Announce Type: new Abstract: Even a carefully proofread paper can leave small gaps in its proofs or its stated assumptions.",
+        "The output is an annotated and revised version of the paper, a report of the changes, and Lean code in which each declaration is linked to the statement it formalizes.",
+        "Papers with Lean code shared by users are available at https://paperformalizer."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around PaperFormalizer.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Ostensible",
+          "pos": "Adjective",
+          "definition": "Stated or appearing to be true, but not necessarily so",
+          "synonyms": [
+            "apparent",
+            "superficial",
+            "professed"
+          ],
+          "antonyms": [
+            "genuine",
+            "actual"
+          ],
+          "example": "Policymakers must demonstrate ostensible interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Tenuous",
+          "pos": "Adjective",
+          "definition": "Very weak or slight; insubstantial",
+          "synonyms": [
+            "flimsy",
+            "fragile",
+            "shaky"
+          ],
+          "antonyms": [
+            "strong",
+            "robust",
+            "firm"
+          ],
+          "example": "Policymakers must demonstrate tenuous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Disparity",
+          "pos": "Noun",
+          "definition": "A great difference or inequality",
+          "synonyms": [
+            "imbalance",
+            "discrepancy",
+            "gap"
+          ],
+          "antonyms": [
+            "parity",
+            "equality",
+            "similarity"
+          ],
+          "example": "Policymakers must demonstrate disparity interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'PaperFormalizer', what is the primary meaning of the term 'Ostensible'?",
+        "options": [
+          "Stated or appearing to be true, but not necessarily so",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Ostensible' is defined as: Stated or appearing to be true, but not necessarily so. Synonyms include apparent, superficial, professed."
+      },
+      "practice_question": "Critically assess how recent advancements in 'PaperFormalizer' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2610.31810v1 Announce Type: new Abstract: Even a carefully proofread paper can leave small gaps in its proofs or its stated assumptions. We introduce PaperFormalizer, a Lean-based agentic pipeline that helps authors find and close such gaps in their own papers and turn each paper into a Lean-verified version. Starting from the LaTeX source, PaperFormalizer transcribes the paper into a dependency graph of statements, audits each statement in natural language for faithfulness, ambiguity and correctness, and then formalizes and proves the statements in Lean against Mathlib, optional domain libraries and the author's personal toolkit. Only the author knows what a statement is meant to say and how a formalization gap in a result is best fixed. The pipeline therefore stops and asks the author whenever a statement admits more than one reading, presents every repair, in natural language and TeX symbols, as a proposal that the author can accept, decline or redirect, and leaves to the author every decision that could potentially change what the paper claims. The output is an annotated and revised version of the paper, a report of the changes, and Lean code in which each declaration is linked to the statement it formalizes. The author's toolkit grows as more papers are formalized, and authors can share their verified papers so that researchers who build on them can reuse their Lean code. By making verified papers practical to produce, PaperFormalizer aims to make research that rests on mathematical proofs more robust. PaperFormalizer runs inside a coding agent (Claude Code or Codex) and is available at https://github.com/Jiyuan-Tan/PaperFormalizer. Papers with Lean code shared by users are available at https://paperformalizer.org."
+    },
+    {
+      "id": "arxiv-ai-cs-don-t-forget-what-you-just-learned-self-directed-repair-tu",
+      "title": "Don't Forget What You Just Learned: Self-Directed Repair Turns Agent Mistakes Into Lasting Lessons",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.31846",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "31846v1 Announce Type: new Abstract: Intelligent agents should learn from their mistakes so that experience leads to continuous improvement.",
+      "takeaways": [
+        "31846v1 Announce Type: new Abstract: Intelligent agents should learn from their mistakes so that experience leads to continuous improvement.",
+        "The agent then saves these adapters in a persistent library of lessons, automatically routing them to solve related problems later.",
+        "Ultimately, this self-directed repair transforms everyday mistakes into lasting lessons."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Don't Forget What You Just Learned.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ameliorate",
+          "pos": "Verb",
+          "definition": "To make something bad or unsatisfactory better",
+          "synonyms": [
+            "improve",
+            "enhance",
+            "better"
+          ],
+          "antonyms": [
+            "worsen",
+            "deteriorate"
+          ],
+          "example": "Policymakers must demonstrate ameliorate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Bipartisan",
+          "pos": "Adjective",
+          "definition": "Involving agreement or cooperation between opposing political parties",
+          "synonyms": [
+            "two-party",
+            "coalition",
+            "non-partisan"
+          ],
+          "antonyms": [
+            "partisan",
+            "sectarian"
+          ],
+          "example": "Policymakers must demonstrate bipartisan interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Don't Forget What You Just Learned', what is the primary meaning of the term 'Institutional'?",
+        "options": [
+          "Relating to an established organization, law, or custom",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Institutional' is defined as: Relating to an established organization, law, or custom. Synonyms include formal, established, systemic."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Don't Forget What You Just Learned' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2610.31846v1 Announce Type: new Abstract: Intelligent agents should learn from their mistakes so that experience leads to continuous improvement. Yet today's agents recover from a mistake only temporarily: in-context reflections are easily forgotten across sessions and compete for limited context, while full-parameter fine-tuning is expensive and can interfere with existing capabilities. We introduce Self-Direction, a mechanism for agents to learn from mistakes that combines the benefits of temporary in-context retries and policy updates. When an agent fails a task, it reflects on its own trajectory in order to extract a lesson and immediately distills it into a lightweight low-rank adapter. By keeping the original weights frozen, Self-Direction prevents adapter training from overwriting base-model parameters while training additional parameters equivalent to ~0.02% of the base model's parameter count for each adapter. The agent then saves these adapters in a persistent library of lessons, automatically routing them to solve related problems later. Experiments with agents based on open-weight models from the Qwen family across open-ended research (GAIA), tool-use workflows (Claw-Eval), and terminal tasks (Terminal-Bench 2.1) show that our method improves overall success rates by 8.9 to 17.0 percentage points and performs competitively with frontier systems. We find that Self-Direction reduces repeated mistakes across future encounters of a task, nearly doubling the reliability of an agent's corrections. Learned lessons also transfer: a handful of adapters generalize to dozens of new tasks without additional training. Ultimately, this self-directed repair transforms everyday mistakes into lasting lessons."
+    },
+    {
+      "id": "arxiv-ai-cs-tacs-rf-tool-driven-agentic-circuit-synthesis-of-rf-and-mm",
+      "title": "TACS-RF: Tool-driven Agentic Circuit Synthesis of RF and mmWave Modules",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.31882",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "31882v1 Announce Type: new Abstract: We present the framework of TACS-RF - a Tool-driven Agentic Circuit Synthesis of RF and mmWave modules.",
+      "takeaways": [
+        "31882v1 Announce Type: new Abstract: We present the framework of TACS-RF - a Tool-driven Agentic Circuit Synthesis of RF and mmWave modules.",
+        "The agent semi-autonomously designed the sub-blocks including a 60 GHz push-push Colpitts VCO with second-harmonic extraction, multistage differential cascode power drivers, a push-push frequency doubler, a differential bowtie antenna, and all the interstage matching networks.",
+        "We describe the agent-driven design flow and the resulting division of labor between human and agent, taking a step toward a \"text-to-ASIC\" future for designing RF/mmWave hardware."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around TACS-RF.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Hegemony",
+          "pos": "Noun",
+          "definition": "Leadership or dominance, especially by one state or group over others",
+          "synonyms": [
+            "dominance",
+            "supremacy",
+            "ascendancy"
+          ],
+          "antonyms": [
+            "subordination",
+            "equality"
+          ],
+          "example": "Policymakers must demonstrate hegemony interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Imperative",
+          "pos": "Adjective / Noun",
+          "definition": "Of vital importance; crucial or an essential priority",
+          "synonyms": [
+            "vital",
+            "essential",
+            "crucial"
+          ],
+          "antonyms": [
+            "optional",
+            "negligible"
+          ],
+          "example": "Policymakers must demonstrate imperative interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'TACS-RF', what is the primary meaning of the term 'Hegemony'?",
+        "options": [
+          "Leadership or dominance, especially by one state or group over others",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Hegemony' is defined as: Leadership or dominance, especially by one state or group over others. Synonyms include dominance, supremacy, ascendancy."
+      },
+      "practice_question": "Critically assess how recent advancements in 'TACS-RF' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2610.31882v1 Announce Type: new Abstract: We present the framework of TACS-RF - a Tool-driven Agentic Circuit Synthesis of RF and mmWave modules. In this framework, a large-language-model (LLM) coding agent (Claude Opus 4.8) directly drives industry-standard electronic-design-automation (EDA) tools such as Cadence Virtuoso/Spectre, Calibre, Cadence EMX, and Ansys HFSS to design RF and mmWave modules. We validate the framework through the agentic design of a 240-251 GHz sub-THz transmitter in a 90 nm SiGe BiCMOS process. The agent semi-autonomously designed the sub-blocks including a 60 GHz push-push Colpitts VCO with second-harmonic extraction, multistage differential cascode power drivers, a push-push frequency doubler, a differential bowtie antenna, and all the interstage matching networks. The transmitter chain with parasitic-extracted devices and EM-verified passives delivers +5.1 to +6.3 dBm across an 11 GHz varactor-only tuning range, phase noise of -80 to -88 dBc/Hz at 1 MHz offset while consuming a DC power of 361 mW. We describe the agent-driven design flow and the resulting division of labor between human and agent, taking a step toward a \"text-to-ASIC\" future for designing RF/mmWave hardware."
+    },
+    {
+      "id": "arxiv-ai-cs-permission-to-retry-a-study-of-authorization-and-recovery-",
+      "title": "Permission to Retry: A Study of Authorization and Recovery in AI Agent Workflows",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.31916",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "31916v1 Announce Type: new Abstract: A durable agent can resume a consequential action while its authority changes and the action's external outcome remains uncertain.",
+      "takeaways": [
+        "31916v1 Announce Type: new Abstract: A durable agent can resume a consequential action while its authority changes and the action's external outcome remains uncertain.",
+        "All 168 paired host cells have identical checked outcomes.",
+        "The results isolate the roles of current authority, provider contracts and retained observations in recovery, with safety, completion and unresolved obligations reported separately for the declared application profile."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Permission to Retry.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Permission to Retry', what is the primary meaning of the term 'Unprecedented'?",
+        "options": [
+          "Never done or known before",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Unprecedented' is defined as: Never done or known before. Synonyms include unparalleled, novel, groundbreaking."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Permission to Retry' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2610.31916v1 Announce Type: new Abstract: A durable agent can resume a consequential action while its authority changes and the action's external outcome remains uncertain. We study execution-time reliability of tool-using AI agents, isolating recovery decisions from language-model behavior. Checkpoint state, permission to dispatch, evidence of an external effect and permission to reconcile are distinct obligations. We present a finite conformance study that checks these obligations through histories scored against a provider effect ledger hidden from the recovering application. A prospectively frozen campaign executes 336 histories on native LangGraph and Temporal hosts, crossing 14 schedules, three provider contracts and four matched application policies. All 168 paired host cells have identical checked outcomes. Per host, retained-ledger reconciliation passes all 42 histories: 21 checked completions, 15 denials and six unknown outcomes with reservations retained. Cached retry, revalidation before retry and stable-key retry pass 30, 36 and 31 histories respectively. A separate 16-case component study of InfinityOS, an enterprise AI platform developed by Arya.ai, exercises exported authority, worker, recovery and settlement code over repository fakes. The results isolate the roles of current authority, provider contracts and retained observations in recovery, with safety, completion and unresolved obligations reported separately for the declared application profile."
+    },
+    {
+      "id": "arxiv-ai-cs-beyond-on-policy-vs-off-policy-at-what-level-should-llm-ag",
+      "title": "Beyond On-Policy vs. Off-Policy: At What Level Should LLM Agent Distillation Follow the Student?",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.31918",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "31918v1 Announce Type: new Abstract: Distilling interactive LLM agents requires choosing between teacher-generated demonstrations and student-generated experience, corresponding broadly to off-policy and on-policy distillation.",
+      "takeaways": [
+        "31918v1 Announce Type: new Abstract: Distilling interactive LLM agents requires choosing between teacher-generated demonstrations and student-generated experience, corresponding broadly to off-policy and on-policy distillation.",
+        "We find that student-induced histories paired with teacher-generated action prefixes generally provide the strongest standalone training signal, whereas following the student at both levels generally performs worst.",
+        "These findings provide practical principles for deciding where, how much, and when agent distillation should follow the student."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Beyond On-Policy vs. Off-Policy.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or dilemma",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Beyond On-Policy vs. Off-Policy', what is the primary meaning of the term 'Pragmatic'?",
+        "options": [
+          "Dealing with things sensibly and realistically based on practical considerations",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Pragmatic' is defined as: Dealing with things sensibly and realistically based on practical considerations. Synonyms include practical, sensible, hardheaded."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Beyond On-Policy vs. Off-Policy' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2610.31918v1 Announce Type: new Abstract: Distilling interactive LLM agents requires choosing between teacher-generated demonstrations and student-generated experience, corresponding broadly to off-policy and on-policy distillation. While both have proven effective, we argue that this distinction is inherently hierarchical: the policy that induces an interaction history need not be the same as the policy that generates the token prefix of the current action. We introduce a hierarchical agent distillation framework that formalizes these two levels of on-policiness and enables explicit control over their pairing, mixture proportions, and training schedule. We study this problem through self-distillation, where a frozen teacher has access to task guidance unavailable to the student, and conduct a three-stage controlled study across three models and four interactive environments. We find that student-induced histories paired with teacher-generated action prefixes generally provide the strongest standalone training signal, whereas following the student at both levels generally performs worst. Nevertheless, fully on-policy data becomes beneficial when incorporated into a mixture with other configurations. Moreover, mixtures with identical teacher/student proportions at each level can yield substantially different performance, showing that how the two levels are paired matters beyond the overall amount of on-policy data. Finally, front-loading fully teacher-generated contexts and delaying fully on-policy contexts improves over a static mixture. These findings provide practical principles for deciding where, how much, and when agent distillation should follow the student."
+    },
+    {
+      "id": "livemint-madan-sabnavis-tax-data-can-tell-us-much-about-india-s-income",
+      "title": "Madan Sabnavis: Tax data can tell us much about India’s income skew—that matters for businesses",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-10-25",
+      "url": "https://www.livemint.com/opinion/online-views/madan-sabnavis-tax-data-can-tell-about-india-s-income-skew-that-matters-for-businesses-11792674423610.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "It paints a fair picture of the overall purchasing power of a major segment of the population—that's valuable information for businesses looking to target the right kind of customer for their needs.",
+      "takeaways": [
+        "It paints a fair picture of the overall purchasing power of a major segment of the population—that's valuable information for businesses looking to target the right kind of customer for their needs.",
+        "Emphasizes vital strategic considerations regarding Madan Sabnavis: Tax data can tell us much about India’s income skew—that matters for businesses.",
+        "Emphasizes vital strategic considerations regarding Madan Sabnavis: Tax data can tell us much about India’s income skew—that matters for businesses."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Madan Sabnavis.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme authority; self-governing authority of a state",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ameliorate",
+          "pos": "Verb",
+          "definition": "To make something bad or unsatisfactory better",
+          "synonyms": [
+            "improve",
+            "enhance",
+            "better"
+          ],
+          "antonyms": [
+            "worsen",
+            "deteriorate"
+          ],
+          "example": "Policymakers must demonstrate ameliorate interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Madan Sabnavis', what is the primary meaning of the term 'Sovereignty'?",
+        "options": [
+          "Supreme authority; self-governing authority of a state",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Sovereignty' is defined as: Supreme authority; self-governing authority of a state. Synonyms include autonomy, independence, self-governance."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Madan Sabnavis'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "It paints a fair picture of the overall purchasing power of a major segment of the population—that's valuable information for businesses looking to target the right kind of customer for their needs. Here's what the data shows."
+    },
+    {
+      "id": "livemint-rogue-chinese-bots-why-ai-doesn-t-have-to-be-evil-to-cause-ch",
+      "title": "Rogue Chinese bots: Why AI doesn't have to be evil to cause chaos—and why that's a global problem",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-10-25",
+      "url": "https://www.livemint.com/opinion/online-views/rogue-chinese-bots-why-ai-doesnt-have-to-be-evil-chaos-why-thats-a-global-problem-11792674313323.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "It turns out artificial intelligence agents going 'off-script' is not just a quirk of bots made by American firms like OpenAI and Anthropic.",
+      "takeaways": [
+        "It turns out artificial intelligence agents going 'off-script' is not just a quirk of bots made by American firms like OpenAI and Anthropic.",
+        "Agents running on China's biggest tech company's cloud server went rogue—that should tell us this is a worldwide issue.",
+        "We need more openness from AI makers."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Rogue Chinese bots.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Fiscal",
+          "pos": "Adjective",
+          "definition": "Relating to government revenue, taxes, and public spending",
+          "synonyms": [
+            "monetary",
+            "financial",
+            "budgetary"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate fiscal interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Mitigate",
+          "pos": "Verb",
+          "definition": "Make less severe, serious, or painful",
+          "synonyms": [
+            "alleviate",
+            "reduce",
+            "diminish"
+          ],
+          "antonyms": [
+            "aggravate",
+            "intensify"
+          ],
+          "example": "Policymakers must demonstrate mitigate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Prolonged period of little or no growth or progress",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Rogue Chinese bots', what is the primary meaning of the term 'Fiscal'?",
+        "options": [
+          "Relating to government revenue, taxes, and public spending",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Fiscal' is defined as: Relating to government revenue, taxes, and public spending. Synonyms include monetary, financial, budgetary."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Rogue Chinese bots' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "It turns out artificial intelligence agents going 'off-script' is not just a quirk of bots made by American firms like OpenAI and Anthropic. Agents running on China's biggest tech company's cloud server went rogue—that should tell us this is a worldwide issue. We need more openness from AI makers."
+    },
+    {
+      "id": "livemint-as-israel-goes-to-the-polls-west-asia-holds-its-breath",
+      "title": "As Israel goes to the polls, West Asia holds its breath",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Global Affairs",
+      "date": "2026-10-25",
+      "url": "https://www.livemint.com/opinion/columns/as-israel-goes-to-the-polls-west-asia-holds-its-breath-11792921468940.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The world is watching Israel’s elections closely, as West Asia’s future hinges on Benjamin Netanyahu’s electoral fortunes.",
+      "takeaways": [
+        "The world is watching Israel’s elections closely, as West Asia’s future hinges on Benjamin Netanyahu’s electoral fortunes.",
+        "Emphasizes vital strategic considerations regarding As Israel goes to the polls, West Asia holds its breath.",
+        "Emphasizes vital strategic considerations regarding As Israel goes to the polls, West Asia holds its breath."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning As Israel goes to the polls, West Asia holds its breath.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Ameliorate",
+          "pos": "Verb",
+          "definition": "To make something bad or unsatisfactory better",
+          "synonyms": [
+            "improve",
+            "enhance",
+            "better"
+          ],
+          "antonyms": [
+            "worsen",
+            "deteriorate"
+          ],
+          "example": "Policymakers must demonstrate ameliorate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Bipartisan",
+          "pos": "Adjective",
+          "definition": "Involving agreement or cooperation between opposing political parties",
+          "synonyms": [
+            "two-party",
+            "coalition",
+            "non-partisan"
+          ],
+          "antonyms": [
+            "partisan",
+            "sectarian"
+          ],
+          "example": "Policymakers must demonstrate bipartisan interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'As Israel goes to the polls, West Asia holds its breath', what is the primary meaning of the term 'Ameliorate'?",
+        "options": [
+          "To make something bad or unsatisfactory better",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Ameliorate' is defined as: To make something bad or unsatisfactory better. Synonyms include improve, enhance, better."
+      },
+      "practice_question": "In light of 'As Israel goes to the polls, West Asia holds its breath', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "This editorial analysis examines 'As Israel goes to the polls, West Asia holds its breath', published in LiveMint. The piece delves into key structural challenges and emerging trends within the Global Affairs domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-adult-education-learning-should-be-f",
+      "title": "The Guardian view on adult education: learning should be for all ages",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-10-25",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/25/the-guardian-view-on-adult-education-learning-should-be-for-all-ages",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "Teenagers and young adults are not the only people in need of new skills and a sense of purpose The neglect of adults was, David Blunkett said in a recent interview , his biggest regret about education policy under New Labour.",
+      "takeaways": [
+        "Teenagers and young adults are not the only people in need of new skills and a sense of purpose The neglect of adults was, David Blunkett said in a recent interview , his biggest regret about education policy under New Labour.",
+        "A timely report from MPs aims to ensure that older learners are included in these reforms.",
+        "Their report makes a persuasive case that an overall vision for adult education has been missing for a long time."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning The Guardian view on adult education.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Prolonged period of little or no growth or progress",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Salient",
+          "pos": "Adjective",
+          "definition": "Most noticeable, prominent, or important",
+          "synonyms": [
+            "striking",
+            "notable",
+            "vital"
+          ],
+          "antonyms": [
+            "minor",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate salient interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Guardian view on adult education', what is the primary meaning of the term 'Stagnation'?",
+        "options": [
+          "Prolonged period of little or no growth or progress",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Stagnation' is defined as: Prolonged period of little or no growth or progress. Synonyms include slump, downturn, inactivity."
+      },
+      "practice_question": "In light of 'The Guardian view on adult education', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "Teenagers and young adults are not the only people in need of new skills and a sense of purpose The neglect of adults was, David Blunkett said in a recent interview , his biggest regret about education policy under New Labour. Spending on classroom-based adult learning in England has fallen steadily, from a high point of more than £5bn in 2003-04, to less than £2bn last year. We should not expect two decades of decline to be reversed quickly. But the upcoming report from Alan Milburn on young people who are not in education, employment or training is widely expected to result in a boost for colleges, as well as apprenticeship changes so that more are offered to new recruits rather than existing staff. A timely report from MPs aims to ensure that older learners are included in these reforms. The all-party group for further education recognises the need to tackle the low level of labour market participation among young adults, which is particularly pronounced in smaller towns and cities . But the MPs take a longer view of the current system’s failings. Their report makes a persuasive case that an overall vision for adult education has been missing for a long time. Continue reading..."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-oxford-street-s-pedestrianisation-ci",
+      "title": "The Guardian view on Oxford Street’s pedestrianisation: cities should be designed around people, not cars",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-10-25",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/25/the-guardian-view-on-oxford-streets-pedestrianisation-cities-should-be-designed-around-people-not-cars",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "The transformation of Europe’s busiest shopping street should be a case study in making cities greener, less congested and more inviting places to live Sadiq Khan has been trying to pedestrianise Oxford Street since he first became the mayor of London in 2016.",
+      "takeaways": [
+        "The transformation of Europe’s busiest shopping street should be a case study in making cities greener, less congested and more inviting places to live Sadiq Khan has been trying to pedestrianise Oxford Street since he first became the mayor of London in 2016.",
+        "The Greater London Authority hopes it will rejuvenate a high street fallen on hard times.",
+        "Given the prime minister’s focus on rejuvenating British high streets, whose dilapidation is correlated with support for Reform UK, he should be watching with interest."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning The Guardian view on Oxford Street’s pedestrianisation.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Guardian view on Oxford Street’s pedestrianisation', what is the primary meaning of the term 'Exacerbate'?",
+        "options": [
+          "To make a problem, bad situation, or negative feeling worse",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Exacerbate' is defined as: To make a problem, bad situation, or negative feeling worse. Synonyms include aggravate, worsen, inflame."
+      },
+      "practice_question": "In light of 'The Guardian view on Oxford Street’s pedestrianisation', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The transformation of Europe’s busiest shopping street should be a case study in making cities greener, less congested and more inviting places to live Sadiq Khan has been trying to pedestrianise Oxford Street since he first became the mayor of London in 2016. On Monday, after numerous setbacks, his plan will finally come to fruition. The busiest stretch of the nation’s famous shopping street will be closed to traffic in a scheme designed to improve the area and make it more attractive to pedestrians. It should be an emblematic case study in making cities greener, less congested, more inviting places to live and visit. The Greater London Authority hopes it will rejuvenate a high street fallen on hard times. Since the pandemic, the number of vacant shops on Oxford Street has more than quadrupled . It estimates that the scheme will generate £82m of value a year in the area by increasing footfall and encouraging visitors to linger. This impact remains to be seen, but research from other cities suggests that shops experience higher sales once an area is pedestrianised. Given the prime minister’s focus on rejuvenating British high streets, whose dilapidation is correlated with support for Reform UK, he should be watching with interest. Continue reading..."
+    },
     {
       "id": "the-hindu-falling-short-on-marco-rubio-s-second-visit-to-india",
       "title": "Falling short: on Marco Rubio’s second visit to India",
