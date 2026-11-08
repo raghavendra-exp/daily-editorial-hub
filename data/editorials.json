@@ -1,7 +1,282 @@
 {
-  "last_updated": "2026-11-07 06:54:45 UTC",
-  "total_articles": 932,
+  "last_updated": "2026-11-08 07:01:54 UTC",
+  "total_articles": 935,
   "articles": [
+    {
+      "id": "livemint-india-s-manufacturing-need-not-stop-at-the-coastline",
+      "title": "India's manufacturing need not stop at the coastline",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-11-08",
+      "url": "https://www.livemint.com/opinion/online-views/indias-manufacturing-migrant-labour-investment-jobs-pli-scheme-11794040462453.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "Five states produce over half of manufacturing output.",
+      "takeaways": [
+        "Five states produce over half of manufacturing output.",
+        "Industrialisation should take capital to labour, not the reverse.",
+        "Emphasizes vital strategic considerations regarding India's manufacturing need not stop at the coastline."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to India's manufacturing need not stop at the coastline.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ostensible",
+          "pos": "Adjective",
+          "definition": "Stated or appearing to be true, but not necessarily so",
+          "synonyms": [
+            "apparent",
+            "superficial",
+            "professed"
+          ],
+          "antonyms": [
+            "genuine",
+            "actual"
+          ],
+          "example": "Policymakers must demonstrate ostensible interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Tenuous",
+          "pos": "Adjective",
+          "definition": "Very weak or slight; insubstantial",
+          "synonyms": [
+            "flimsy",
+            "fragile",
+            "shaky"
+          ],
+          "antonyms": [
+            "strong",
+            "robust",
+            "firm"
+          ],
+          "example": "Policymakers must demonstrate tenuous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'India's manufacturing need not stop at the coastline', what is the primary meaning of the term 'Equitable'?",
+        "options": [
+          "Fair, impartial, and just to all parties",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Equitable' is defined as: Fair, impartial, and just to all parties. Synonyms include fair, just, unbiased."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'India's manufacturing need not stop at the coastline'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "This editorial analysis examines 'India's manufacturing need not stop at the coastline', published in LiveMint. The piece delves into key structural challenges and emerging trends within the Economy & Banking domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "livemint-bharat-ratna-lk-advani-ji-at-100",
+      "title": "Bharat Ratna LK Advani Ji at 100!",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-11-08",
+      "url": "https://www.livemint.com/opinion/online-views/bharat-ratna-lk-advani-pm-modi-bjp-11794038370164.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "There are very few people whose lives have touched so many different chapters of modern India.",
+      "takeaways": [
+        "There are very few people whose lives have touched so many different chapters of modern India.",
+        "Emphasizes vital strategic considerations regarding Bharat Ratna LK Advani Ji at 100!.",
+        "Emphasizes vital strategic considerations regarding Bharat Ratna LK Advani Ji at 100!."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Bharat Ratna LK Advani Ji at 100!.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Bipartisan",
+          "pos": "Adjective",
+          "definition": "Involving agreement or cooperation between opposing political parties",
+          "synonyms": [
+            "two-party",
+            "coalition",
+            "non-partisan"
+          ],
+          "antonyms": [
+            "partisan",
+            "sectarian"
+          ],
+          "example": "Policymakers must demonstrate bipartisan interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Bharat Ratna LK Advani Ji at 100!', what is the primary meaning of the term 'Bipartisan'?",
+        "options": [
+          "Involving agreement or cooperation between opposing political parties",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Bipartisan' is defined as: Involving agreement or cooperation between opposing political parties. Synonyms include two-party, coalition, non-partisan."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Bharat Ratna LK Advani Ji at 100!'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "This editorial analysis examines 'Bharat Ratna LK Advani Ji at 100!', published in LiveMint. The piece delves into key structural challenges and emerging trends within the Economy & Banking domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "livemint-trump-humbled-at-home-but-what-next-abroad",
+      "title": "Trump humbled at home, but what next abroad?",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-11-07",
+      "url": "https://www.livemint.com/opinion/online-views/trump-us-midterm-election-democratic-victory-republican-11794032555831.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "A sweeping Democratic victory in the US midterms has raised questions about public support for Trump’s policies on immigration, the economy and foreign affairs.",
+      "takeaways": [
+        "A sweeping Democratic victory in the US midterms has raised questions about public support for Trump’s policies on immigration, the economy and foreign affairs.",
+        "The consequences of the outcome for foreign policy and India are still uncertain.",
+        "Emphasizes vital strategic considerations regarding Trump humbled at home, but what next abroad?."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to Trump humbled at home, but what next abroad?.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ostensible",
+          "pos": "Adjective",
+          "definition": "Stated or appearing to be true, but not necessarily so",
+          "synonyms": [
+            "apparent",
+            "superficial",
+            "professed"
+          ],
+          "antonyms": [
+            "genuine",
+            "actual"
+          ],
+          "example": "Policymakers must demonstrate ostensible interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Tenuous",
+          "pos": "Adjective",
+          "definition": "Very weak or slight; insubstantial",
+          "synonyms": [
+            "flimsy",
+            "fragile",
+            "shaky"
+          ],
+          "antonyms": [
+            "strong",
+            "robust",
+            "firm"
+          ],
+          "example": "Policymakers must demonstrate tenuous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Trump humbled at home, but what next abroad?', what is the primary meaning of the term 'Equitable'?",
+        "options": [
+          "Fair, impartial, and just to all parties",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Equitable' is defined as: Fair, impartial, and just to all parties. Synonyms include fair, just, unbiased."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'Trump humbled at home, but what next abroad?'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "A sweeping Democratic victory in the US midterms has raised questions about public support for Trump’s policies on immigration, the economy and foreign affairs. The consequences of the outcome for foreign policy and India are still uncertain."
+    },
     {
       "id": "the-hindu-epic-failures-on-electoral-roll-welfare",
       "title": "Epic failures: on electoral roll, welfare",
