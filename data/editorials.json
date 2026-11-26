@@ -1,7 +1,2507 @@
 {
-  "last_updated": "2026-11-25 09:41:05 UTC",
-  "total_articles": 1284,
+  "last_updated": "2026-11-26 09:15:47 UTC",
+  "total_articles": 1312,
   "articles": [
+    {
+      "id": "the-hindu-all-to-play-for-on-the-world-chess-championship-in-geneva",
+      "title": "All to play for: On the World chess championship in Geneva",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "National Affairs",
+      "date": "2026-11-26",
+      "url": "https://www.thehindu.com/opinion/editorial/all-to-play-for-on-the-world-chess-championship-in-geneva/article71742697.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "Chess is one sport where both the young and the old can excel.",
+      "takeaways": [
+        "Chess is one sport where both the young and the old can excel.",
+        "Emphasizes vital strategic considerations regarding All to play for: On the World chess championship in Geneva.",
+        "Emphasizes vital strategic considerations regarding All to play for: On the World chess championship in Geneva."
+      ],
+      "dimensions": {
+        "economic": "Fiscal federalism considerations and public expenditure priorities necessary to support statutory mandates.",
+        "governance": "Checks and balances between executive action and legislative oversight, ensuring constitutional fidelity in All to play for.",
+        "social": "Protection of fundamental civil liberties, citizen-centric administrative delivery, and participatory democracy.",
+        "global": "Upholding international democratic norms, human rights treaties, and global governance rankings."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'All to play for', what is the primary meaning of the term 'Unprecedented'?",
+        "options": [
+          "Never done or known before",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Unprecedented' is defined as: Never done or known before. Synonyms include unparalleled, novel, groundbreaking."
+      },
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'All to play for'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "This editorial analysis examines 'All to play for: On the World chess championship in Geneva', published in The Hindu. The piece delves into key structural challenges and emerging trends within the National Affairs domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "livemint-could-a-humans-only-policy-become-a-competitive-edge-for-comp",
+      "title": "Could a humans-only policy become a competitive edge for companies in the AI age?",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://www.livemint.com/opinion/online-views/could-a-humans-only-policy-become-a-competitive-edge-for-companies-in-the-ai-age-11795600257862.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "With the proliferation of artificial intelligence (AI), the customer service experience has become more impersonal.",
+      "takeaways": [
+        "With the proliferation of artificial intelligence (AI), the customer service experience has become more impersonal.",
+        "A human-attended response system designed for the needs of users and not business efficiency could serve as a differentiator.",
+        "Emphasizes vital strategic considerations regarding Could a humans-only policy become a competitive edge for companies in the AI age?."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Could a humans-only policy become a competitive edge for companies in the AI age?.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Mitigate",
+          "pos": "Verb",
+          "definition": "Make less severe, serious, or painful",
+          "synonyms": [
+            "alleviate",
+            "reduce",
+            "diminish"
+          ],
+          "antonyms": [
+            "aggravate",
+            "intensify"
+          ],
+          "example": "Policymakers must demonstrate mitigate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Prolonged period of little or no growth or progress",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Salient",
+          "pos": "Adjective",
+          "definition": "Most noticeable, prominent, or important",
+          "synonyms": [
+            "striking",
+            "notable",
+            "vital"
+          ],
+          "antonyms": [
+            "minor",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate salient interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Could a humans-only policy become a competitive edge for companies in the AI age?', what is the primary meaning of the term 'Mitigate'?",
+        "options": [
+          "Make less severe, serious, or painful",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Mitigate' is defined as: Make less severe, serious, or painful. Synonyms include alleviate, reduce, diminish."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Could a humans-only policy become a competitive edge for companies in the AI age?' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "With the proliferation of artificial intelligence (AI), the customer service experience has become more impersonal. A human-attended response system designed for the needs of users and not business efficiency could serve as a differentiator. Here's how."
+    },
+    {
+      "id": "livemint-the-owner-who-was-told-to-wait",
+      "title": "The owner who was told to wait",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://www.livemint.com/opinion/online-views/tata-sons-tata-trusts-ownership-control-chandrasekaran-reappointment-11795670693778.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "Tata Sons has an owner on paper.",
+      "takeaways": [
+        "Tata Sons has an owner on paper.",
+        "The test of the coming months is whether it has one in practice.",
+        "Emphasizes vital strategic considerations regarding The owner who was told to wait."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around The owner who was told to wait.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Fiscal",
+          "pos": "Adjective",
+          "definition": "Relating to government revenue, taxes, and public spending",
+          "synonyms": [
+            "monetary",
+            "financial",
+            "budgetary"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate fiscal interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Mitigate",
+          "pos": "Verb",
+          "definition": "Make less severe, serious, or painful",
+          "synonyms": [
+            "alleviate",
+            "reduce",
+            "diminish"
+          ],
+          "antonyms": [
+            "aggravate",
+            "intensify"
+          ],
+          "example": "Policymakers must demonstrate mitigate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Prolonged period of little or no growth or progress",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The owner who was told to wait', what is the primary meaning of the term 'Fiscal'?",
+        "options": [
+          "Relating to government revenue, taxes, and public spending",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Fiscal' is defined as: Relating to government revenue, taxes, and public spending. Synonyms include monetary, financial, budgetary."
+      },
+      "practice_question": "Critically assess how recent advancements in 'The owner who was told to wait' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "This editorial analysis examines 'The owner who was told to wait', published in LiveMint. The piece delves into key structural challenges and emerging trends within the Tech & AI Research domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "livemint-from-fragmentation-to-interoperability-a-climate-finance-fram",
+      "title": "From fragmentation to interoperability: a climate finance framework for Brics",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Environment & Climate",
+      "date": "2026-11-26",
+      "url": "https://www.livemint.com/opinion/online-views/brics-climate-finance-taxonomy-common-green-finance-framework-11795581029908.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "A common framework built on seven flexible principles could help Brics countries align national taxonomies, reduce fragmentation and unlock climate finance without imposing uniform rules.",
+      "takeaways": [
+        "A common framework built on seven flexible principles could help Brics countries align national taxonomies, reduce fragmentation and unlock climate finance without imposing uniform rules.",
+        "Emphasizes vital strategic considerations regarding From fragmentation to interoperability: a climate finance framework for Brics.",
+        "Emphasizes vital strategic considerations regarding From fragmentation to interoperability: a climate finance framework for Brics."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning From fragmentation to interoperability.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Bipartisan",
+          "pos": "Adjective",
+          "definition": "Involving agreement or cooperation between opposing political parties",
+          "synonyms": [
+            "two-party",
+            "coalition",
+            "non-partisan"
+          ],
+          "antonyms": [
+            "partisan",
+            "sectarian"
+          ],
+          "example": "Policymakers must demonstrate bipartisan interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'From fragmentation to interoperability', what is the primary meaning of the term 'Bipartisan'?",
+        "options": [
+          "Involving agreement or cooperation between opposing political parties",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Bipartisan' is defined as: Involving agreement or cooperation between opposing political parties. Synonyms include two-party, coalition, non-partisan."
+      },
+      "practice_question": "Discuss the core constitutional, legal, and administrative dimensions highlighted in 'From fragmentation to interoperability'. What institutional mechanisms are imperative to ensure democratic accountability?",
+      "relevance_tag": "GS Paper 2: Governance, Constitution & Public Policy",
+      "content": "A common framework built on seven flexible principles could help Brics countries align national taxonomies, reduce fragmentation and unlock climate finance without imposing uniform rules."
+    },
+    {
+      "id": "livemint-india-needs-a-new-administrative-compact-to-fix-its-tax-syste",
+      "title": "India needs a new administrative compact to fix its tax systems—not another law",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-11-26",
+      "url": "https://www.livemint.com/opinion/online-views/india-needs-a-new-administrative-compact-to-fix-its-tax-systems-not-another-law-11795596900881.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "A new law has been brought but a redesign of processes is also necessary to upgrade the administration.",
+      "takeaways": [
+        "A new law has been brought but a redesign of processes is also necessary to upgrade the administration.",
+        "Automating a flawed process multiplies mistakes.",
+        "Here are seven moves the government could take to ensure taxpayers needn't be burdened as before."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to India needs a new administrative compact to fix its tax systems—not another law.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Hegemony",
+          "pos": "Noun",
+          "definition": "Leadership or dominance, especially by one state or group over others",
+          "synonyms": [
+            "dominance",
+            "supremacy",
+            "ascendancy"
+          ],
+          "antonyms": [
+            "subordination",
+            "equality"
+          ],
+          "example": "Policymakers must demonstrate hegemony interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Imperative",
+          "pos": "Adjective / Noun",
+          "definition": "Of vital importance; crucial or an essential priority",
+          "synonyms": [
+            "vital",
+            "essential",
+            "crucial"
+          ],
+          "antonyms": [
+            "optional",
+            "negligible"
+          ],
+          "example": "Policymakers must demonstrate imperative interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'India needs a new administrative compact to fix its tax systems—not another law', what is the primary meaning of the term 'Benchmark'?",
+        "options": [
+          "A standard or point of reference against which things may be compared",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Benchmark' is defined as: A standard or point of reference against which things may be compared. Synonyms include standard, criterion, gauge."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'India needs a new administrative compact to fix its tax systems—not another law'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "A new law has been brought but a redesign of processes is also necessary to upgrade the administration. Automating a flawed process multiplies mistakes. Here are seven moves the government could take to ensure taxpayers needn't be burdened as before."
+    },
+    {
+      "id": "livemint-india-s-wage-slump-attributing-blame-won-t-revive-the-economy",
+      "title": "India's wage slump: attributing blame won't revive the economy—here's what might",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Economy & Banking",
+      "date": "2026-11-26",
+      "url": "https://www.livemint.com/opinion/online-views/indias-wage-slump-attributing-blame-wont-revive-the-economy-heres-what-might-11795596829012.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "Wages of regular workers have been declining for almost a decade-and-a-half.",
+      "takeaways": [
+        "Wages of regular workers have been declining for almost a decade-and-a-half.",
+        "It is unfair to blame the corporate sector alone for it although falling incomes are a reason for worry and can hurt demand.",
+        "Emphasizes vital strategic considerations regarding India's wage slump: attributing blame won't revive the economy—here's what might."
+      ],
+      "dimensions": {
+        "economic": "Examines macroeconomic stability, fiscal consolidation, inflationary pressures, and monetary policy transmission related to India's wage slump.",
+        "governance": "Requires institutional agility from financial regulators (RBI, SEBI) and transparent corporate governance frameworks.",
+        "social": "Direct bearing on purchasing power, livelihood security, and financial inclusion for underserved demographics.",
+        "global": "Influenced by global supply chains, cross-border capital flows, currency volatility, and commodity benchmarks."
+      },
+      "way_forward": [
+        "Institutionalize countercyclical fiscal measures and maintain prudent liquidity buffers to safeguard against external market volatility.",
+        "Accelerate structural reforms aimed at enhancing formal credit access and lowering the cost of doing business.",
+        "Strengthen inter-regulatory coordination to ensure early detection of stressed assets and foster financial innovation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Resilience",
+          "pos": "Noun",
+          "definition": "The capacity to recover quickly from difficulties; systemic toughness",
+          "synonyms": [
+            "toughness",
+            "adaptability",
+            "endurance"
+          ],
+          "antonyms": [
+            "fragility",
+            "vulnerability"
+          ],
+          "example": "Policymakers must demonstrate resilience interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Consensus",
+          "pos": "Noun",
+          "definition": "A general agreement among a group of people",
+          "synonyms": [
+            "accord",
+            "harmony",
+            "unity"
+          ],
+          "antonyms": [
+            "discord",
+            "disagreement"
+          ],
+          "example": "Policymakers must demonstrate consensus interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Contentious",
+          "pos": "Adjective",
+          "definition": "Causing or likely to cause an argument; controversial",
+          "synonyms": [
+            "disputed",
+            "controversial",
+            "debated"
+          ],
+          "antonyms": [
+            "uncontroversial",
+            "peaceful"
+          ],
+          "example": "Policymakers must demonstrate contentious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'India's wage slump', what is the primary meaning of the term 'Resilience'?",
+        "options": [
+          "The capacity to recover quickly from difficulties; systemic toughness",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Resilience' is defined as: The capacity to recover quickly from difficulties; systemic toughness. Synonyms include toughness, adaptability, endurance."
+      },
+      "practice_question": "Analyze the macroeconomic and fiscal implications discussed in 'India's wage slump'. Suggest practical policy interventions to foster inclusive and sustainable economic growth.",
+      "relevance_tag": "GS Paper 3: Indian Economy & Macroeconomic Stability",
+      "content": "Wages of regular workers have been declining for almost a decade-and-a-half. It is unfair to blame the corporate sector alone for it although falling incomes are a reason for worry and can hurt demand. Strengthening demand is key."
+    },
+    {
+      "id": "livemint-india-must-defend-its-economic-interests-as-climate-cooperati",
+      "title": "India must defend its economic interests as climate cooperation retreats",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Environment & Climate",
+      "date": "2026-11-26",
+      "url": "https://www.livemint.com/opinion/online-views/india-clean-energy-manufacturing-global-green-energy-race-11795670377372.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The collapse of UN climate talks in Türkiye exposes a fractured world where national interests are eclipsing cooperation.",
+      "takeaways": [
+        "The collapse of UN climate talks in Türkiye exposes a fractured world where national interests are eclipsing cooperation.",
+        "Emphasizes vital strategic considerations regarding India must defend its economic interests as climate cooperation retreats.",
+        "Emphasizes vital strategic considerations regarding India must defend its economic interests as climate cooperation retreats."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning India must defend its economic interests as climate cooperation retreats.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, and exacting",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "Policymakers must demonstrate rigorous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'India must defend its economic interests as climate cooperation retreats', what is the primary meaning of the term 'Rigorous'?",
+        "options": [
+          "Extremely thorough, exhaustive, and exacting",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Rigorous' is defined as: Extremely thorough, exhaustive, and exacting. Synonyms include meticulous, exacting, stringent."
+      },
+      "practice_question": "In light of 'India must defend its economic interests as climate cooperation retreats', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "This editorial analysis examines 'India must defend its economic interests as climate cooperation retreats', published in LiveMint. The piece delves into key structural challenges and emerging trends within the Environment & Climate domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "livemint-india-s-poverty-debate-why-it-refuses-to-die-and-what-could-h",
+      "title": "India's poverty debate: Why it refuses to die and what could help the country track it better",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Global Affairs",
+      "date": "2026-11-26",
+      "url": "https://www.livemint.com/opinion/online-views/indias-poverty-debate-why-it-refuses-to-die-and-what-could-help-the-country-track-it-better-11795617287899.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "The lack of comparable survey data and the absence of official poverty estimates has led to a data vacuum that feeds a polarized debate on the true extent of poverty in the country.",
+      "takeaways": [
+        "The lack of comparable survey data and the absence of official poverty estimates has led to a data vacuum that feeds a polarized debate on the true extent of poverty in the country.",
+        "Emphasizes vital strategic considerations regarding India's poverty debate: Why it refuses to die and what could help the country track it better.",
+        "Emphasizes vital strategic considerations regarding India's poverty debate: Why it refuses to die and what could help the country track it better."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning India's poverty debate.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'India's poverty debate', what is the primary meaning of the term 'Exacerbate'?",
+        "options": [
+          "To make a problem, bad situation, or negative feeling worse",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Exacerbate' is defined as: To make a problem, bad situation, or negative feeling worse. Synonyms include aggravate, worsen, inflame."
+      },
+      "practice_question": "In light of 'India's poverty debate', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The lack of comparable survey data and the absence of official poverty estimates has led to a data vacuum that feeds a polarized debate on the true extent of poverty in the country"
+    },
+    {
+      "id": "livemint-mint-quick-edit-what-does-jensen-huang-s-return-mean-for-the-",
+      "title": "Mint Quick Edit | What does Jensen Huang's return mean for the AI industry—and Indian stocks?",
+      "source": "LiveMint",
+      "source_type": "Newspaper Editorial",
+      "icon": "📊",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://www.livemint.com/opinion/online-views/mint-quick-edit-what-does-jensen-huangs-return-mean-for-the-ai-industry-and-indian-stocks-11795633366348.html",
+      "reading_time": "1 min read",
+      "tone": "Economic / Analytical",
+      "crux": "While the Nvidia founder's reinstatement suggests that some firms are more equal than others, Huang may not be able to influence AI policy the way he did before.",
+      "takeaways": [
+        "While the Nvidia founder's reinstatement suggests that some firms are more equal than others, Huang may not be able to influence AI policy the way he did before.",
+        "That could mean a mixed outlook for the AI industry, and non-AI markets like India too.",
+        "Emphasizes vital strategic considerations regarding Mint Quick Edit | What does Jensen Huang's return mean for the AI industry—and Indian stocks?."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Mint Quick Edit.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, and exacting",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "Policymakers must demonstrate rigorous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Exacerbate",
+          "pos": "Verb",
+          "definition": "To make a problem, bad situation, or negative feeling worse",
+          "synonyms": [
+            "aggravate",
+            "worsen",
+            "inflame"
+          ],
+          "antonyms": [
+            "alleviate",
+            "ameliorate"
+          ],
+          "example": "Policymakers must demonstrate exacerbate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Unprecedented",
+          "pos": "Adjective",
+          "definition": "Never done or known before",
+          "synonyms": [
+            "unparalleled",
+            "novel",
+            "groundbreaking"
+          ],
+          "antonyms": [
+            "common",
+            "customary"
+          ],
+          "example": "Policymakers must demonstrate unprecedented interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Mint Quick Edit', what is the primary meaning of the term 'Rigorous'?",
+        "options": [
+          "Extremely thorough, exhaustive, and exacting",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Rigorous' is defined as: Extremely thorough, exhaustive, and exacting. Synonyms include meticulous, exacting, stringent."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Mint Quick Edit' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "While the Nvidia founder's reinstatement suggests that some firms are more equal than others, Huang may not be able to influence AI policy the way he did before. That could mean a mixed outlook for the AI industry, and non-AI markets like India too."
+    },
+    {
+      "id": "nature-research-the-leading-cities-in-the-world-for-high-quality-resea",
+      "title": "The leading cities in the world for high-quality research in 2025",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-11-26",
+      "url": "https://www.nature.com/articles/d41586-026-03468-3",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 25 November 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 25 November 2026; doi:10.",
+        "1038/d41586-026-03468-3 A decade of data on the top-performing science cities in the Nature Index.",
+        "Emphasizes vital strategic considerations regarding The leading cities in the world for high-quality research in 2025."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around The leading cities in the world for high-quality research in 2025.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme authority; self-governing authority of a state",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The leading cities in the world for high-quality research in 2025', what is the primary meaning of the term 'Complacency'?",
+        "options": [
+          "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Complacency' is defined as: A feeling of smug or uncritical self-satisfaction with current conditions. Synonyms include smugness, self-satisfaction, inertia."
+      },
+      "practice_question": "Critically assess how recent advancements in 'The leading cities in the world for high-quality research in 2025' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "This editorial analysis examines 'The leading cities in the world for high-quality research in 2025', published in Nature Research. The piece delves into key structural challenges and emerging trends within the Science & Tech Digest domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "nature-research-dual-proofs-of-legendary-riemann-hypothesis-stun-mathe",
+      "title": "Dual proofs of legendary Riemann hypothesis stun mathematicians",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Global Affairs",
+      "date": "2026-11-26",
+      "url": "https://www.nature.com/articles/d41586-026-03853-y",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 25 November 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 25 November 2026; doi:10.",
+        "1038/d41586-026-03853-y Experts say the AI and human-written proofs will need careful checking — plus, the fallout from the COP31 climate conference.",
+        "Emphasizes vital strategic considerations regarding Dual proofs of legendary Riemann hypothesis stun mathematicians."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning Dual proofs of legendary Riemann hypothesis stun mathematicians.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Prolonged period of little or no growth or progress",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Salient",
+          "pos": "Adjective",
+          "definition": "Most noticeable, prominent, or important",
+          "synonyms": [
+            "striking",
+            "notable",
+            "vital"
+          ],
+          "antonyms": [
+            "minor",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate salient interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Dual proofs of legendary Riemann hypothesis stun mathematicians', what is the primary meaning of the term 'Stagnation'?",
+        "options": [
+          "Prolonged period of little or no growth or progress",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Stagnation' is defined as: Prolonged period of little or no growth or progress. Synonyms include slump, downturn, inactivity."
+      },
+      "practice_question": "In light of 'Dual proofs of legendary Riemann hypothesis stun mathematicians', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "Nature, Published online: 25 November 2026; doi:10.1038/d41586-026-03853-y Experts say the AI and human-written proofs will need careful checking — plus, the fallout from the COP31 climate conference."
+    },
+    {
+      "id": "nature-research-an-in-situ-redox-converted-molecule-for-all-perovskite",
+      "title": "An in situ redox-converted molecule for all-perovskite tandem solar cells",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-11-26",
+      "url": "https://www.nature.com/articles/s41586-026-11465-9",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 25 November 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 25 November 2026; doi:10.",
+        "1038/s41586-026-11465-9 An in situ redox-converted molecule for all-perovskite tandem solar cells.",
+        "Emphasizes vital strategic considerations regarding An in situ redox-converted molecule for all-perovskite tandem solar cells."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around An in situ redox-converted molecule for all-perovskite tandem solar cells.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Fiscal",
+          "pos": "Adjective",
+          "definition": "Relating to government revenue, taxes, and public spending",
+          "synonyms": [
+            "monetary",
+            "financial",
+            "budgetary"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate fiscal interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Mitigate",
+          "pos": "Verb",
+          "definition": "Make less severe, serious, or painful",
+          "synonyms": [
+            "alleviate",
+            "reduce",
+            "diminish"
+          ],
+          "antonyms": [
+            "aggravate",
+            "intensify"
+          ],
+          "example": "Policymakers must demonstrate mitigate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Prolonged period of little or no growth or progress",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'An in situ redox-converted molecule for all-perovskite tandem solar cells', what is the primary meaning of the term 'Fiscal'?",
+        "options": [
+          "Relating to government revenue, taxes, and public spending",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Fiscal' is defined as: Relating to government revenue, taxes, and public spending. Synonyms include monetary, financial, budgetary."
+      },
+      "practice_question": "Critically assess how recent advancements in 'An in situ redox-converted molecule for all-perovskite tandem solar cells' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "This editorial analysis examines 'An in situ redox-converted molecule for all-perovskite tandem solar cells', published in Nature Research. The piece delves into key structural challenges and emerging trends within the Science & Tech Digest domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "nature-research-how-singapore-has-turned-a-nation-into-a-smart-city-te",
+      "title": "How Singapore has turned a nation into a smart-city testing ground",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Global Affairs",
+      "date": "2026-11-26",
+      "url": "https://www.nature.com/articles/d41586-026-03472-7",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 25 November 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 25 November 2026; doi:10.",
+        "1038/d41586-026-03472-7 The city-state’s compact size and centralized governance allow digital infrastructure to be introduced with unusual speed and consistency.",
+        "Emphasizes vital strategic considerations regarding How Singapore has turned a nation into a smart-city testing ground."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning How Singapore has turned a nation into a smart-city testing ground.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Calamitous",
+          "pos": "Adjective",
+          "definition": "Catastrophic or disastrous",
+          "synonyms": [
+            "disastrous",
+            "ruinous",
+            "dire"
+          ],
+          "antonyms": [
+            "beneficial",
+            "advantageous"
+          ],
+          "example": "Policymakers must demonstrate calamitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate benchmark interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Hegemony",
+          "pos": "Noun",
+          "definition": "Leadership or dominance, especially by one state or group over others",
+          "synonyms": [
+            "dominance",
+            "supremacy",
+            "ascendancy"
+          ],
+          "antonyms": [
+            "subordination",
+            "equality"
+          ],
+          "example": "Policymakers must demonstrate hegemony interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'How Singapore has turned a nation into a smart-city testing ground', what is the primary meaning of the term 'Calamitous'?",
+        "options": [
+          "Catastrophic or disastrous",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Calamitous' is defined as: Catastrophic or disastrous. Synonyms include disastrous, ruinous, dire."
+      },
+      "practice_question": "In light of 'How Singapore has turned a nation into a smart-city testing ground', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "Nature, Published online: 25 November 2026; doi:10.1038/d41586-026-03472-7 The city-state’s compact size and centralized governance allow digital infrastructure to be introduced with unusual speed and consistency."
+    },
+    {
+      "id": "nature-research-how-arteries-keep-their-shape-in-the-face-of-overgrowt",
+      "title": "How arteries keep their shape in the face of overgrowth-inducing mutations",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-11-26",
+      "url": "https://www.nature.com/articles/d41586-026-03491-4",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 25 November 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 25 November 2026; doi:10.",
+        "1038/d41586-026-03491-4 Why do cancer-associated mutations cause some blood vessels to develop abnormally, but not arteries.",
+        "The answer lies in the identity and maturity of the affected cells."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around How arteries keep their shape in the face of overgrowth-inducing mutations.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or dilemma",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Rigorous",
+          "pos": "Adjective",
+          "definition": "Extremely thorough, exhaustive, and exacting",
+          "synonyms": [
+            "meticulous",
+            "exacting",
+            "stringent"
+          ],
+          "antonyms": [
+            "lax",
+            "careless",
+            "superficial"
+          ],
+          "example": "Policymakers must demonstrate rigorous interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'How arteries keep their shape in the face of overgrowth-inducing mutations', what is the primary meaning of the term 'Paradigm'?",
+        "options": [
+          "A typical example or pattern of something; a framework of ideas",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Paradigm' is defined as: A typical example or pattern of something; a framework of ideas. Synonyms include model, archetype, framework."
+      },
+      "practice_question": "Critically assess how recent advancements in 'How arteries keep their shape in the face of overgrowth-inducing mutations' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 25 November 2026; doi:10.1038/d41586-026-03491-4 Why do cancer-associated mutations cause some blood vessels to develop abnormally, but not arteries? The answer lies in the identity and maturity of the affected cells."
+    },
+    {
+      "id": "nature-research-what-is-the-riemann-hypothesis-a-guide-to-the-famed-co",
+      "title": "What is the Riemann hypothesis? A guide to the famed conjecture that rules prime numbers",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-11-26",
+      "url": "https://www.nature.com/articles/d41586-026-03854-x",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 25 November 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 25 November 2026; doi:10.",
+        "1038/d41586-026-03854-x The biggest problem in mathematics has to do with a statistical test familiar to scientists.",
+        "Emphasizes vital strategic considerations regarding What is the Riemann hypothesis? A guide to the famed conjecture that rules prime numbers."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around What is the Riemann hypothesis? A guide to the famed conjecture that rules prime numbers.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Equilibrium",
+          "pos": "Noun",
+          "definition": "A state in which opposing forces or influences are balanced",
+          "synonyms": [
+            "balance",
+            "symmetry",
+            "stability"
+          ],
+          "antonyms": [
+            "imbalance",
+            "instability"
+          ],
+          "example": "Policymakers must demonstrate equilibrium interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'What is the Riemann hypothesis? A guide to the famed conjecture that rules prime numbers', what is the primary meaning of the term 'Equilibrium'?",
+        "options": [
+          "A state in which opposing forces or influences are balanced",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Equilibrium' is defined as: A state in which opposing forces or influences are balanced. Synonyms include balance, symmetry, stability."
+      },
+      "practice_question": "Critically assess how recent advancements in 'What is the Riemann hypothesis? A guide to the famed conjecture that rules prime numbers' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 25 November 2026; doi:10.1038/d41586-026-03854-x The biggest problem in mathematics has to do with a statistical test familiar to scientists."
+    },
+    {
+      "id": "nature-research-saving-nepal-s-wild-orchids-in-photos",
+      "title": "Saving Nepal’s wild orchids — in photos",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Science & Tech Digest",
+      "date": "2026-11-26",
+      "url": "https://www.nature.com/articles/d41586-026-03475-4",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 25 November 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 25 November 2026; doi:10.",
+        "1038/d41586-026-03475-4 Prized for their ornamental and medicinal value, hundreds of orchids are illegally harvested and sold each year.",
+        "Now, conservationist Reshu Bashyal is leading an effort to protect them."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Saving Nepal’s wild orchids — in photos.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Salient",
+          "pos": "Adjective",
+          "definition": "Most noticeable, prominent, or important",
+          "synonyms": [
+            "striking",
+            "notable",
+            "vital"
+          ],
+          "antonyms": [
+            "minor",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate salient interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Saving Nepal’s wild orchids — in photos', what is the primary meaning of the term 'Salient'?",
+        "options": [
+          "Most noticeable, prominent, or important",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Salient' is defined as: Most noticeable, prominent, or important. Synonyms include striking, notable, vital."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Saving Nepal’s wild orchids — in photos' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 25 November 2026; doi:10.1038/d41586-026-03475-4 Prized for their ornamental and medicinal value, hundreds of orchids are illegally harvested and sold each year. Now, conservationist Reshu Bashyal is leading an effort to protect them."
+    },
+    {
+      "id": "nature-research-a-fine-grained-reconstruction-of-barley-s-evolutionary",
+      "title": "A fine-grained reconstruction of barley’s evolutionary history",
+      "source": "Nature Research",
+      "source_type": "Research Journal",
+      "icon": "🔬",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://www.nature.com/articles/d41586-026-03494-1",
+      "reading_time": "1 min read",
+      "tone": "Scientific / Peer-Reviewed",
+      "crux": "Nature, Published online: 25 November 2026; doi:10.",
+      "takeaways": [
+        "Nature, Published online: 25 November 2026; doi:10.",
+        "1038/d41586-026-03494-1 Chromosome-scale genome sequences from across the barley genus Hordeum reveal large structural variation, evidence of ancient genetic exchange and extensive divergence of regulatory sequences.",
+        "These evolutionary processes have generated diversity that could be used to improve cultivated barley."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around A fine-grained reconstruction of barley’s evolutionary history.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Contentious",
+          "pos": "Adjective",
+          "definition": "Causing or likely to cause an argument; controversial",
+          "synonyms": [
+            "disputed",
+            "controversial",
+            "debated"
+          ],
+          "antonyms": [
+            "uncontroversial",
+            "peaceful"
+          ],
+          "example": "Policymakers must demonstrate contentious interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Fiscal",
+          "pos": "Adjective",
+          "definition": "Relating to government revenue, taxes, and public spending",
+          "synonyms": [
+            "monetary",
+            "financial",
+            "budgetary"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate fiscal interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Mitigate",
+          "pos": "Verb",
+          "definition": "Make less severe, serious, or painful",
+          "synonyms": [
+            "alleviate",
+            "reduce",
+            "diminish"
+          ],
+          "antonyms": [
+            "aggravate",
+            "intensify"
+          ],
+          "example": "Policymakers must demonstrate mitigate interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'A fine-grained reconstruction of barley’s evolutionary history', what is the primary meaning of the term 'Contentious'?",
+        "options": [
+          "Causing or likely to cause an argument; controversial",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Contentious' is defined as: Causing or likely to cause an argument; controversial. Synonyms include disputed, controversial, debated."
+      },
+      "practice_question": "Critically assess how recent advancements in 'A fine-grained reconstruction of barley’s evolutionary history' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "Nature, Published online: 25 November 2026; doi:10.1038/d41586-026-03494-1 Chromosome-scale genome sequences from across the barley genus Hordeum reveal large structural variation, evidence of ancient genetic exchange and extensive divergence of regulatory sequences. These evolutionary processes have generated diversity that could be used to improve cultivated barley."
+    },
+    {
+      "id": "arxiv-ai-cs-context-scaling-a-new-frontier-of-ai-scaling",
+      "title": "Context Scaling: A New Frontier of AI Scaling",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://arxiv.org/abs/2611.33160",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "33160v1 Announce Type: new Abstract: Many failures of deployed AI arise not from weak inference but from a mismatch between the state a task depends on and the context available when the system acts.",
+      "takeaways": [
+        "33160v1 Announce Type: new Abstract: Many failures of deployed AI arise not from weak inference but from a mismatch between the state a task depends on and the context available when the system acts.",
+        "The three programs interact, but only $B_c$ targets what the system can make available before a decision.",
+        "The resulting agenda centers on grounded reporting, interaction-data and full-cost infrastructure, and safety and governance for persistent, adaptive systems."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Context Scaling.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Complacency",
+          "pos": "Noun",
+          "definition": "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "synonyms": [
+            "smugness",
+            "self-satisfaction",
+            "inertia"
+          ],
+          "antonyms": [
+            "vigilance",
+            "alertness"
+          ],
+          "example": "Policymakers must demonstrate complacency interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Sovereignty",
+          "pos": "Noun",
+          "definition": "Supreme authority; self-governing authority of a state",
+          "synonyms": [
+            "autonomy",
+            "independence",
+            "self-governance"
+          ],
+          "antonyms": [
+            "dependence",
+            "subjugation"
+          ],
+          "example": "Policymakers must demonstrate sovereignty interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Context Scaling', what is the primary meaning of the term 'Complacency'?",
+        "options": [
+          "A feeling of smug or uncritical self-satisfaction with current conditions",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Complacency' is defined as: A feeling of smug or uncritical self-satisfaction with current conditions. Synonyms include smugness, self-satisfaction, inertia."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Context Scaling' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2611.33160v1 Announce Type: new Abstract: Many failures of deployed AI arise not from weak inference but from a mismatch between the state a task depends on and the context available when the system acts. Relevant user state, repository revisions, tool traces, sensor readings, or environment changes may be unavailable, distorted, or poorly selected. We call the effort to reduce this bottleneck context scaling. We frame a model as $P_\\theta(d\\mid c)$ within a system governed by three budgets: training $B_\\theta$, decision-time $B_d$, and context-infrastructure $B_c$. Pretraining scaling invests in $\\theta$; decision-time scaling searches, refines, or verifies decisions under supplied context; context scaling improves the system's capacity to acquire, represent, deliver, evaluate, and persist deployment state for model use. The three programs interact, but only $B_c$ targets what the system can make available before a decision. This view makes the model-infrastructure pair the unit of analysis. We define effective-context value as a task- and intervention-dependent attribution, separate deployment state from model-visible context, and identify availability, fidelity, selection, and utilization failures. We then organize current mechanisms through a five-operation context lifecycle and propose controlled budget interventions and utility-cost curves for evaluation. The resulting agenda centers on grounded reporting, interaction-data and full-cost infrastructure, and safety and governance for persistent, adaptive systems."
+    },
+    {
+      "id": "arxiv-ai-cs-constraint-aware-test-time-scoring-for-llm-and-vlm-candida",
+      "title": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Polity & Governance",
+      "date": "2026-11-26",
+      "url": "https://arxiv.org/abs/2611.33161",
+      "reading_time": "2 min read",
+      "tone": "Academic / Technical",
+      "crux": "33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check.",
+      "takeaways": [
+        "33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check.",
+        "An ablation study isolates the contribution of each component and finds that the largest gains come from combining hard checks with candidate comparison: on tasks where the first sampled answer is often broken or unsafe, this pairing lifts joint correctness-and-safety by up to +0.",
+        "This builds a unified scoring framework, together with an ablation that identifies the grounded hard checks, not the soft-factor configuration, as the source of the gain."
+      ],
+      "dimensions": {
+        "economic": "Fiscal federalism considerations and public expenditure priorities necessary to support statutory mandates.",
+        "governance": "Checks and balances between executive action and legislative oversight, ensuring constitutional fidelity in Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection.",
+        "social": "Protection of fundamental civil liberties, citizen-centric administrative delivery, and participatory democracy.",
+        "global": "Upholding international democratic norms, human rights treaties, and global governance rankings."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ameliorate",
+          "pos": "Verb",
+          "definition": "To make something bad or unsatisfactory better",
+          "synonyms": [
+            "improve",
+            "enhance",
+            "better"
+          ],
+          "antonyms": [
+            "worsen",
+            "deteriorate"
+          ],
+          "example": "Policymakers must demonstrate ameliorate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Bipartisan",
+          "pos": "Adjective",
+          "definition": "Involving agreement or cooperation between opposing political parties",
+          "synonyms": [
+            "two-party",
+            "coalition",
+            "non-partisan"
+          ],
+          "antonyms": [
+            "partisan",
+            "sectarian"
+          ],
+          "example": "Policymakers must demonstrate bipartisan interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection', what is the primary meaning of the term 'Institutional'?",
+        "options": [
+          "Relating to an established organization, law, or custom",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Institutional' is defined as: Relating to an established organization, law, or custom. Synonyms include formal, established, systemic."
+      },
+      "practice_question": "In light of 'Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "arXiv:2611.33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check. Each has a known weakness: an answer can be fluent but insecure, mathematically plausible but physically infeasible, or rated highly by a judge while quietly breaking a task requirement. We propose a scoring framework that combines a small set of hard checks every answer must pass with a wider set of softer checks whose scores are blended into one number per candidate. This adaptive scoring framework consists of three components: a drafting model that produces the candidates, a configuring model that selects and weights the checks for each task, and scoring models that rate properties no grounded tool can compute. We apply our proposed method to four tasks: writing code that is both correct and secure (CWEval), generating robot manipulation plans (LIBERO with added safety variants), passing competitive-programming hidden tests (LiveCodeBench), and answering questions from retrieved documents (HotpotQA). An ablation study isolates the contribution of each component and finds that the largest gains come from combining hard checks with candidate comparison: on tasks where the first sampled answer is often broken or unsafe, this pairing lifts joint correctness-and-safety by up to +0.21 (retrieval-augmented QA) and code-generation safety by up to +0.28 (CWEval), with the size of the gain tracking how weak the first sample is, falling to near zero or slightly negative where it is already strong. The per-task layer that selects and weights the softer checks adds no measurable value over simpler alternatives. This builds a unified scoring framework, together with an ablation that identifies the grounded hard checks, not the soft-factor configuration, as the source of the gain."
+    },
+    {
+      "id": "arxiv-ai-cs-autoformbench-a-lean-formalization-benchmark-for-advanced-",
+      "title": "AutoformBench: A Lean Formalization Benchmark for Advanced Mathematics",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://arxiv.org/abs/2611.33165",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "33165v1 Announce Type: new Abstract: AI systems are increasingly capable of producing machine-checked Lean proofs of advanced mathematical results.",
+      "takeaways": [
+        "33165v1 Announce Type: new Abstract: AI systems are increasingly capable of producing machine-checked Lean proofs of advanced mathematical results.",
+        "Each problem is embedded in a broader mathematical development: agents receive the informal proof but must translate it into Lean while constructing the missing definitions, intermediate lemmas, and supporting infrastructure.",
+        "com/facebookresearch/autoformbench."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around AutoformBench.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "We introduce AutoformBench, a benchmark of 341 Lean 4 formalization tasks drawn from 24 advanced mathematical sources."
+        },
+        {
+          "word": "Hegemony",
+          "pos": "Noun",
+          "definition": "Leadership or dominance, especially by one state or group over others",
+          "synonyms": [
+            "dominance",
+            "supremacy",
+            "ascendancy"
+          ],
+          "antonyms": [
+            "subordination",
+            "equality"
+          ],
+          "example": "Policymakers must demonstrate hegemony interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Imperative",
+          "pos": "Adjective / Noun",
+          "definition": "Of vital importance; crucial or an essential priority",
+          "synonyms": [
+            "vital",
+            "essential",
+            "crucial"
+          ],
+          "antonyms": [
+            "optional",
+            "negligible"
+          ],
+          "example": "Policymakers must demonstrate imperative interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'AutoformBench', what is the primary meaning of the term 'Benchmark'?",
+        "options": [
+          "A standard or point of reference against which things may be compared",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Benchmark' is defined as: A standard or point of reference against which things may be compared. Synonyms include standard, criterion, gauge."
+      },
+      "practice_question": "Critically assess how recent advancements in 'AutoformBench' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2611.33165v1 Announce Type: new Abstract: AI systems are increasingly capable of producing machine-checked Lean proofs of advanced mathematical results. Real mathematical formalization, however, is not isolated theorem proving: it requires building the definitions and intermediate lemmas that connect a result to a formal library. Existing evaluations often provide isolated theorem statements in settings where much of this supporting theory is already available in Mathlib. We introduce AutoformBench, a benchmark of 341 Lean 4 formalization tasks drawn from 24 advanced mathematical sources. Lean-experienced mathematicians formalized and audited each target statement, leaving the corresponding Lean proof to the evaluated agent. Each problem is embedded in a broader mathematical development: agents receive the informal proof but must translate it into Lean while constructing the missing definitions, intermediate lemmas, and supporting infrastructure. We compare the performance of frontier models on these problems. We find a largely shared difficulty frontier: success depends less on mathematical domain than on models' ability to construct missing formal infrastructure. Data and code at https://github.com/facebookresearch/autoformbench"
+    },
+    {
+      "id": "arxiv-ai-cs-general-purpose-decision-models-for-ai-configuration-tunin",
+      "title": "General-Purpose Decision Models for AI Configuration Tuning",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://arxiv.org/abs/2611.33190",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "33190v1 Announce Type: new Abstract: AI configuration tuning searches for settings that improve the performance of AI systems under a limited budget.",
+      "takeaways": [
+        "33190v1 Announce Type: new Abstract: AI configuration tuning searches for settings that improve the performance of AI systems under a limited budget.",
+        "Conventional optimizers attain rank 1 in six of eight comparisons.",
+        "These findings yield actionable recommendations on selecting the decision role, retaining conventional predictors, and balancing tuning quality against cost."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around General-Purpose Decision Models for AI Configuration Tuning.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ostensible",
+          "pos": "Adjective",
+          "definition": "Stated or appearing to be true, but not necessarily so",
+          "synonyms": [
+            "apparent",
+            "superficial",
+            "professed"
+          ],
+          "antonyms": [
+            "genuine",
+            "actual"
+          ],
+          "example": "Policymakers must demonstrate ostensible interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'General-Purpose Decision Models for AI Configuration Tuning', what is the primary meaning of the term 'Ubiquitous'?",
+        "options": [
+          "Present, appearing, or found everywhere",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Ubiquitous' is defined as: Present, appearing, or found everywhere. Synonyms include omnipresent, pervasive, everywhere."
+      },
+      "practice_question": "Critically assess how recent advancements in 'General-Purpose Decision Models for AI Configuration Tuning' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2611.33190v1 Announce Type: new Abstract: AI configuration tuning searches for settings that improve the performance of AI systems under a limited budget. Existing tuners use different sampling and search policies, making the choice of decision strategy central to both tuning quality and cost. We investigate whether general-purpose decision models can guide tuning, using Jev as a deployed representative that returns structured choices and numeric scores across diverse tasks. To assess where it helps, we compare its use as an optimizer, performance predictor, and region guider against conventional methods and a large language model (LLM) on eight AI tuning tasks. Conventional optimizers attain rank 1 in six of eight comparisons. Similarly, established predictors outperform Jev in seven. Through region guidance, however, it finds configurations with lower perplexity than those selected by the native tuner, offering a quality gain when additional decision time and API fees are acceptable. These findings yield actionable recommendations on selecting the decision role, retaining conventional predictors, and balancing tuning quality against cost."
+    },
+    {
+      "id": "arxiv-ai-cs-what-who-and-when-structured-harm-assessment-for-mental-he",
+      "title": "What, Who, and When: Structured Harm Assessment for Mental Health Safety via Short Reasoning",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://arxiv.org/abs/2611.33263",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "33263v1 Announce Type: new Abstract: The growing use of large language models (LLMs) for mental health support raises important safety concerns.",
+      "takeaways": [
+        "33263v1 Announce Type: new Abstract: The growing use of large language models (LLMs) for mental health support raises important safety concerns.",
+        "Relabeling public benchmarks in this taxonomy shows that they rarely contain harm directed at the user, which accounts for nearly half of the harm in real conversations.",
+        "We release a safety guardrail model with SOTA performance trained on synthetic data, together with synthetic conversations and annotations of public benchmarks in our taxonomy."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around What, Who, and When.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Benchmark",
+          "pos": "Noun / Verb",
+          "definition": "A standard or point of reference against which things may be compared",
+          "synonyms": [
+            "standard",
+            "criterion",
+            "gauge"
+          ],
+          "antonyms": [],
+          "example": "Relabeling public benchmarks in this taxonomy shows that they rarely contain harm directed at the user, which accounts for nearly half of the harm in real conversations."
+        },
+        {
+          "word": "Mitigate",
+          "pos": "Verb",
+          "definition": "Make less severe, serious, or painful",
+          "synonyms": [
+            "alleviate",
+            "reduce",
+            "diminish"
+          ],
+          "antonyms": [
+            "aggravate",
+            "intensify"
+          ],
+          "example": "Policymakers must demonstrate mitigate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Stagnation",
+          "pos": "Noun",
+          "definition": "Prolonged period of little or no growth or progress",
+          "synonyms": [
+            "slump",
+            "downturn",
+            "inactivity"
+          ],
+          "antonyms": [
+            "growth",
+            "boom",
+            "vitality"
+          ],
+          "example": "Policymakers must demonstrate stagnation interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'What, Who, and When', what is the primary meaning of the term 'Benchmark'?",
+        "options": [
+          "A standard or point of reference against which things may be compared",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Benchmark' is defined as: A standard or point of reference against which things may be compared. Synonyms include standard, criterion, gauge."
+      },
+      "practice_question": "Critically assess how recent advancements in 'What, Who, and When' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2611.33263v1 Announce Type: new Abstract: The growing use of large language models (LLMs) for mental health support raises important safety concerns. Existing guard models primarily identify categories of harmful content, often overlooking the context needed to determine an appropriate response. We introduce a clinically grounded taxonomy that characterizes harm along three dimensions: what the harm is, who is involved, and when it occurs. It further separates harm characterization from intervention decisions, thus enabling safety policies to be specified outside the model weights through explicit, clinician-curated instructions that can be updated and audited. We validate the taxonomy with expert clinicians and validate a panel of LLM judges to scale annotation. Relabeling public benchmarks in this taxonomy shows that they rarely contain harm directed at the user, which accounts for nearly half of the harm in real conversations. We then train MindGuard2, a 35B-A3B reasoning-based guard model using supervised fine-tuning on short reasoning traces followed by reinforcement learning with a reasoning-length penalty, to minimize inference overhead while preserving the benefits of reasoning. On two public benchmarks and real-world conversations, MindGuard2 achieves balanced accuracy comparable to the substantially larger GLM-5.3 at approximately 10x lower median latency, advancing the accuracy-latency Pareto frontier. Furthermore, it achieves low false-positive rates at high recall, helping balance the need to detect unsafe situations against the risk of unnecessary interventions that may disrupt support and undermine user trust. We release a safety guardrail model with SOTA performance trained on synthetic data, together with synthetic conversations and annotations of public benchmarks in our taxonomy."
+    },
+    {
+      "id": "arxiv-ai-cs-certify-what-you-plant-shortcut-free-proof-depth-in-logica",
+      "title": "Certify What You Plant: Shortcut-Free Proof Depth in Logical Reasoning Data",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://arxiv.org/abs/2611.33303",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "33303v1 Announce Type: new Abstract: Procedurally generated logic problems are used to both evaluate and train reasoning in language models.",
+      "takeaways": [
+        "33303v1 Announce Type: new Abstract: Procedurally generated logic problems are used to both evaluate and train reasoning in language models.",
+        "For each problem, we compute the steps every proof must make, the shortest proof, the number of minimal proofs and the indispensable premises, and export certificates that an independent checker verifies.",
+        "At equal size, such mixtures of certified problem types, including model-checking problems that forward generation does not produce, transfer better than FLDx2-style derivation data for Qwen3 models from 0."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Certify What You Plant.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "Policymakers must demonstrate pragmatic interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Paradigm",
+          "pos": "Noun",
+          "definition": "A typical example or pattern of something; a framework of ideas",
+          "synonyms": [
+            "model",
+            "archetype",
+            "framework"
+          ],
+          "antonyms": [],
+          "example": "Policymakers must demonstrate paradigm interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Conundrum",
+          "pos": "Noun",
+          "definition": "A confusing and difficult problem or dilemma",
+          "synonyms": [
+            "dilemma",
+            "puzzle",
+            "quandary"
+          ],
+          "antonyms": [
+            "solution",
+            "clarity"
+          ],
+          "example": "Policymakers must demonstrate conundrum interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Certify What You Plant', what is the primary meaning of the term 'Pragmatic'?",
+        "options": [
+          "Dealing with things sensibly and realistically based on practical considerations",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Pragmatic' is defined as: Dealing with things sensibly and realistically based on practical considerations. Synonyms include practical, sensible, hardheaded."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Certify What You Plant' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2611.33303v1 Announce Type: new Abstract: Procedurally generated logic problems are used to both evaluate and train reasoning in language models. Their difficulty is usually set by planting a proof, that is, by sampling a proof of the desired depth and stating its premises as the problem. However, a planted proof is only one possible proof. A problem can also have shorter proofs, or several unrelated ones, and its stated depth then overstates what solving it requires. We measure what a problem actually requires, relative to a stated set of inference rules. For each problem, we compute the steps every proof must make, the shortest proof, the number of minimal proofs and the indispensable premises, and export certificates that an independent checker verifies. Audits of eight datasets find depth that is forced (ProofWriter, Blocksworld), problems labelled depth 5 that require about two specific rule applications (FLDx2), and answers that need no particular step (ZebraLogic). We then construct problems whose every proof has a requested structure, using a catalog of shortcuts proved once per rule set. Every constructed problem is checked in full and comes with its own certificate. In training, the best data mixes depths and problem types. At equal size, such mixtures of certified problem types, including model-checking problems that forward generation does not produce, transfer better than FLDx2-style derivation data for Qwen3 models from 0.6B to 8B."
+    },
+    {
+      "id": "arxiv-ai-cs-the-platonic-representation-hypothesis-in-jacobian-space-l",
+      "title": "The Platonic Representation Hypothesis in Jacobian-Space: Language and Vision Models Agree Approximately Up to a Rotation",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://arxiv.org/abs/2611.33304",
+      "reading_time": "2 min read",
+      "tone": "Academic / Technical",
+      "crux": "33304v1 Announce Type: new Abstract: The Platonic Representation Hypothesis (PRH) posits that AI models converge toward a shared representation of the world, even when trained on different data modalities.",
+      "takeaways": [
+        "33304v1 Announce Type: new Abstract: The Platonic Representation Hypothesis (PRH) posits that AI models converge toward a shared representation of the world, even when trained on different data modalities.",
+        "We find evidence of the PRH in J-space across vision and language models, and furthermore, we find that J-spaces mostly converge up to a rotation.",
+        "This suggests that models converge not only in how they represent the world, but also in how they act on it."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around The Platonic Representation Hypothesis in Jacobian-Space.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Salient",
+          "pos": "Adjective",
+          "definition": "Most noticeable, prominent, or important",
+          "synonyms": [
+            "striking",
+            "notable",
+            "vital"
+          ],
+          "antonyms": [
+            "minor",
+            "inconsequential"
+          ],
+          "example": "Policymakers must demonstrate salient interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Scrutiny",
+          "pos": "Noun",
+          "definition": "Critical observation or thorough examination",
+          "synonyms": [
+            "inspection",
+            "examination",
+            "audit"
+          ],
+          "antonyms": [
+            "neglect",
+            "glance"
+          ],
+          "example": "Policymakers must demonstrate scrutiny interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Judicious",
+          "pos": "Adjective",
+          "definition": "Having, showing, or done with good judgment or sense",
+          "synonyms": [
+            "prudent",
+            "wise",
+            "discreet"
+          ],
+          "antonyms": [
+            "foolish",
+            "imprudent",
+            "rash"
+          ],
+          "example": "Policymakers must demonstrate judicious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Platonic Representation Hypothesis in Jacobian-Space', what is the primary meaning of the term 'Salient'?",
+        "options": [
+          "Most noticeable, prominent, or important",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Salient' is defined as: Most noticeable, prominent, or important. Synonyms include striking, notable, vital."
+      },
+      "practice_question": "Critically assess how recent advancements in 'The Platonic Representation Hypothesis in Jacobian-Space' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2611.33304v1 Announce Type: new Abstract: The Platonic Representation Hypothesis (PRH) posits that AI models converge toward a shared representation of the world, even when trained on different data modalities. Previous work has found evidence for the PRH in the activations of vision and language models. In this work, we ask whether vision and language models also converge in how they act on these representations: precisely, in how these internal representations affect the models' output. At a chosen layer of a transformer, the Jacobian lens gives every word in the vocabulary (or class in an image classifier) a vector in the hidden state: the vector that most increases the model's tendency to generate that word, at that position or later, or to predict that class. Collectively, these vectors make up what is referred to as the model's J-space. We find evidence of the PRH in J-space across vision and language models, and furthermore, we find that J-spaces mostly converge up to a rotation. That is, a single rotation, fitted on a subset of words, approximately maps one model's J-space onto another's, and so applies to words and classes it was not fitted on. A word's vector, rotated from a text-only language model's J-space into the visual patch tokens of a vision-language model, changes the object the vision-language model says is in the image (and only in the image region where it is added). Rotated into an image generator's text conditioning, a word's vector changes the object in the generated image. Rotated into an ImageNet classifier (trained without text), it raises that object's class score above almost all others, and vice versa. This suggests that models converge not only in how they represent the world, but also in how they act on it."
+    },
+    {
+      "id": "arxiv-ai-cs-brand-recall-and-category-accuracy-in-language-models-an-a",
+      "title": "Brand Recall and Category Accuracy in Language Models: An Audit of 1,000 B2B SaaS Brands",
+      "source": "arXiv AI & CS",
+      "source_type": "Research Paper Digest",
+      "icon": "🤖",
+      "category": "Tech & AI Research",
+      "date": "2026-11-26",
+      "url": "https://arxiv.org/abs/2611.33322",
+      "reading_time": "1 min read",
+      "tone": "Academic / Technical",
+      "crux": "33322v1 Announce Type: new Abstract: A language model can name a brand without classifying it correctly.",
+      "takeaways": [
+        "33322v1 Announce Type: new Abstract: A language model can name a brand without classifying it correctly.",
+        "These are within-cohort measurements, not calibrated confidence estimates.",
+        "Failure to elicit a brand does not establish its absence from model parameters or training data."
+      ],
+      "dimensions": {
+        "economic": "Productivity multipliers, technological capital investments, intellectual property rights, and potential labor displacement.",
+        "governance": "Regulatory sandbox models, algorithmic accountability, data privacy laws, and ethical guardrails around Brand Recall and Category Accuracy in Language Models.",
+        "social": "Bridging digital divides, democratizing access to innovations, and safeguarding societal trust.",
+        "global": "Strategic tech diplomacy, international standards consensus, and mitigating cross-border cyber/algorithmic vulnerabilities."
+      },
+      "way_forward": [
+        "Establish agile, multi-stakeholder advisory bodies to regularly update regulatory codes as technology evolves.",
+        "Incentivize domestic R&D public-private partnerships while enforcing stringent data sovereignty and algorithmic safety.",
+        "Invest proactively in workforce reskilling programs to address technological transitions and mitigate societal frictions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Ubiquitous",
+          "pos": "Adjective",
+          "definition": "Present, appearing, or found everywhere",
+          "synonyms": [
+            "omnipresent",
+            "pervasive",
+            "everywhere"
+          ],
+          "antonyms": [
+            "rare",
+            "scarce"
+          ],
+          "example": "Policymakers must demonstrate ubiquitous interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Equitable",
+          "pos": "Adjective",
+          "definition": "Fair, impartial, and just to all parties",
+          "synonyms": [
+            "fair",
+            "just",
+            "unbiased"
+          ],
+          "antonyms": [
+            "unfair",
+            "inequitable",
+            "biased"
+          ],
+          "example": "Policymakers must demonstrate equitable interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ostensible",
+          "pos": "Adjective",
+          "definition": "Stated or appearing to be true, but not necessarily so",
+          "synonyms": [
+            "apparent",
+            "superficial",
+            "professed"
+          ],
+          "antonyms": [
+            "genuine",
+            "actual"
+          ],
+          "example": "Policymakers must demonstrate ostensible interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Brand Recall and Category Accuracy in Language Models', what is the primary meaning of the term 'Ubiquitous'?",
+        "options": [
+          "Present, appearing, or found everywhere",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Ubiquitous' is defined as: Present, appearing, or found everywhere. Synonyms include omnipresent, pervasive, everywhere."
+      },
+      "practice_question": "Critically assess how recent advancements in 'Brand Recall and Category Accuracy in Language Models' transform current computational paradigms. What technical, ethical, and societal challenges warrant proactive regulatory guardrails?",
+      "relevance_tag": "GS Paper 3: Science & Technology, AI Ethics",
+      "content": "arXiv:2611.33322v1 Announce Type: new Abstract: A language model can name a brand without classifying it correctly. This study measures these outcomes separately for 1,000 B2B SaaS brands across 333 product categories. On Gemma 4 12B, with no external retrieval, category prompts elicit 510 brands (51.0%). A separate five-candidate category probe ranks the reference label first for 787 brands, a distractor first for 194, and yields little separation for 19. Among the 981 separated rankings, the error rate is 19.8%. It falls to 3.5% for the 547 brands with a winner-to-runner-up log-probability margin above 0.6. These are within-cohort measurements, not calibrated confidence estimates. Exploratory regressions associate technical coverage with recall and an owned-properties composite with category accuracy, but the composites use different adjustment sets and do not establish causal effects. Across four Gemma generations, measured recall is 39.8%, 44.3%, 51.1% and 51.0%. A separate representation-based sentiment measure has little linear association with customer ratings (r=0.03, n=921). The findings support reporting recall and category accuracy separately. Failure to elicit a brand does not establish its absence from model parameters or training data."
+    },
+    {
+      "id": "the-hindu-transfer-assumption-on-the-sad-b-bjp-alliance-in-punjab",
+      "title": "Transfer assumption: On the SAD(B)-BJP alliance in Punjab",
+      "source": "The Hindu",
+      "source_type": "Newspaper Editorial",
+      "icon": "🇮🇳",
+      "category": "Global Affairs",
+      "date": "2026-11-25",
+      "url": "https://www.thehindu.com/opinion/editorial/transfer-assumption-on-the-sadb-bjp-alliance-in-punjab/article71743322.ece",
+      "reading_time": "1 min read",
+      "tone": "Balanced / Formal",
+      "crux": "BJP and SAD(B) cannot count on their support bases adding up.",
+      "takeaways": [
+        "BJP and SAD(B) cannot count on their support bases adding up.",
+        "Emphasizes vital strategic considerations regarding Transfer assumption: On the SAD(B)-BJP alliance in Punjab.",
+        "Emphasizes vital strategic considerations regarding Transfer assumption: On the SAD(B)-BJP alliance in Punjab."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning Transfer assumption.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Institutional",
+          "pos": "Adjective",
+          "definition": "Relating to an established organization, law, or custom",
+          "synonyms": [
+            "formal",
+            "established",
+            "systemic"
+          ],
+          "antonyms": [
+            "individual",
+            "informal"
+          ],
+          "example": "Policymakers must demonstrate institutional interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Ameliorate",
+          "pos": "Verb",
+          "definition": "To make something bad or unsatisfactory better",
+          "synonyms": [
+            "improve",
+            "enhance",
+            "better"
+          ],
+          "antonyms": [
+            "worsen",
+            "deteriorate"
+          ],
+          "example": "Policymakers must demonstrate ameliorate interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Bipartisan",
+          "pos": "Adjective",
+          "definition": "Involving agreement or cooperation between opposing political parties",
+          "synonyms": [
+            "two-party",
+            "coalition",
+            "non-partisan"
+          ],
+          "antonyms": [
+            "partisan",
+            "sectarian"
+          ],
+          "example": "Policymakers must demonstrate bipartisan interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'Transfer assumption', what is the primary meaning of the term 'Institutional'?",
+        "options": [
+          "Relating to an established organization, law, or custom",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Institutional' is defined as: Relating to an established organization, law, or custom. Synonyms include formal, established, systemic."
+      },
+      "practice_question": "In light of 'Transfer assumption', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "This editorial analysis examines 'Transfer assumption: On the SAD(B)-BJP alliance in Punjab', published in The Hindu. The piece delves into key structural challenges and emerging trends within the Global Affairs domain. Readers are advised to study the critical takeaways, 360-degree analytical dimensions, and vocabulary definitions highlighted in this digest to enrich analytical comprehension and essay writing skills."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-rising-energy-prices-only-bold-actio",
+      "title": "The Guardian view on rising energy prices: only bold action can win public confidence",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-11-25",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/25/the-guardian-view-on-rising-energy-prices-only-bold-action-can-win-public-confidence",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "Andy Burnham needs a radical vision of economic change to move on from policies aimed at giving voters ‘breathing space’ Ask Andy Burnham a question and it won’t be long before he mentions the cost of living.",
+      "takeaways": [
+        "Andy Burnham needs a radical vision of economic change to move on from policies aimed at giving voters ‘breathing space’ Ask Andy Burnham a question and it won’t be long before he mentions the cost of living.",
+        "The Republicans lost control of Congress in large part because Donald Trump failed to address concerns about the cost of basic goods – a failing aggravated by the US president’s disastrous war against Iran, which caused a spike in commodity prices, exacerbating the affordability problem.",
+        "If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning The Guardian view on rising energy prices.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Resilience",
+          "pos": "Noun",
+          "definition": "The capacity to recover quickly from difficulties; systemic toughness",
+          "synonyms": [
+            "toughness",
+            "adaptability",
+            "endurance"
+          ],
+          "antonyms": [
+            "fragility",
+            "vulnerability"
+          ],
+          "example": "Policymakers must demonstrate resilience interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Consensus",
+          "pos": "Noun",
+          "definition": "A general agreement among a group of people",
+          "synonyms": [
+            "accord",
+            "harmony",
+            "unity"
+          ],
+          "antonyms": [
+            "discord",
+            "disagreement"
+          ],
+          "example": "Policymakers must demonstrate consensus interventions in dealing with complex structural shifts."
+        },
+        {
+          "word": "Contentious",
+          "pos": "Adjective",
+          "definition": "Causing or likely to cause an argument; controversial",
+          "synonyms": [
+            "disputed",
+            "controversial",
+            "debated"
+          ],
+          "antonyms": [
+            "uncontroversial",
+            "peaceful"
+          ],
+          "example": "Policymakers must demonstrate contentious interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Guardian view on rising energy prices', what is the primary meaning of the term 'Resilience'?",
+        "options": [
+          "The capacity to recover quickly from difficulties; systemic toughness",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Resilience' is defined as: The capacity to recover quickly from difficulties; systemic toughness. Synonyms include toughness, adaptability, endurance."
+      },
+      "practice_question": "In light of 'The Guardian view on rising energy prices', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "Andy Burnham needs a radical vision of economic change to move on from policies aimed at giving voters ‘breathing space’ Ask Andy Burnham a question and it won’t be long before he mentions the cost of living. Responding to the results of midterm elections in the US earlier this month, he said that the Democratic party’s triumph meant that there was “an opportunity now to unite around the issue that is affecting us all, and that’s the cost of living”. This wasn’t a non sequitur. The Republicans lost control of Congress in large part because Donald Trump failed to address concerns about the cost of basic goods – a failing aggravated by the US president’s disastrous war against Iran, which caused a spike in commodity prices, exacerbating the affordability problem. Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here . Continue reading..."
+    },
+    {
+      "id": "the-guardian-the-guardian-view-on-the-next-un-secretary-general-sacrif",
+      "title": "The Guardian view on the next UN secretary general: sacrificing principles will damn the institution, not save it",
+      "source": "The Guardian",
+      "source_type": "Newspaper Editorial",
+      "icon": "🌍",
+      "category": "Global Affairs",
+      "date": "2026-11-25",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/25/the-guardian-view-on-the-next-un-secretary-general-sacrificing-principles-will-damn-the-institution-not-save-it",
+      "reading_time": "1 min read",
+      "tone": "Progressive / Critical",
+      "crux": "The UK must continue to oppose the UAE’s tainted nominee, Lana Nusseibeh.",
+      "takeaways": [
+        "The UK must continue to oppose the UAE’s tainted nominee, Lana Nusseibeh.",
+        "A “discourage” vote from one of the five permanent members is diplomacy-speak for a veto.",
+        "If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here."
+      ],
+      "dimensions": {
+        "economic": "Resource mobilization and equitable burden-sharing between public and private stakeholders.",
+        "governance": "Institutional reforms, policy predictability, and transparent coordination across federal machinery concerning The Guardian view on the next UN secretary general.",
+        "social": "Human development index impact, inclusivity, and sustainable intergenerational outcomes.",
+        "global": "Multilateral engagement, strategic autonomy, and compliance with rules-based international frameworks."
+      },
+      "way_forward": [
+        "Adopt an evidence-based consultative process with civil society and sub-national authorities prior to policy rollouts.",
+        "Deploy digital monitoring and transparent audit mechanisms to eliminate administrative leakages and bolster accountability.",
+        "Balance short-term crisis mitigation with long-term institutional capacity building to ensure lasting systemic resilience."
+      ],
+      "vocabulary": [
+        {
+          "word": "Pragmatic",
+          "pos": "Adjective",
+          "definition": "Dealing with things sensibly and realistically based on practical considerations",
+          "synonyms": [
+            "practical",
+            "sensible",
+            "hardheaded"
+          ],
+          "antonyms": [
+            "idealistic",
+            "impractical"
+          ],
+          "example": "The ethical course is also the pragmatic one The future of the United Nations has rarely looked more perilous in an age of impunity for atrocities, raging wars, open US hostility, a funding crisis and security council deadlock."
+        },
+        {
+          "word": "Consensus",
+          "pos": "Noun",
+          "definition": "A general agreement among a group of people",
+          "synonyms": [
+            "accord",
+            "harmony",
+            "unity"
+          ],
+          "antonyms": [
+            "discord",
+            "disagreement"
+          ],
+          "example": "Only when a consensus emerges does the general assembly get a say on the candidate."
+        },
+        {
+          "word": "Ameliorate",
+          "pos": "Verb",
+          "definition": "To make something bad or unsatisfactory better",
+          "synonyms": [
+            "improve",
+            "enhance",
+            "better"
+          ],
+          "antonyms": [
+            "worsen",
+            "deteriorate"
+          ],
+          "example": "Policymakers must demonstrate ameliorate interventions in dealing with complex structural shifts."
+        }
+      ],
+      "quiz": {
+        "question": "In the context of the discussion on 'The Guardian view on the next UN secretary general', what is the primary meaning of the term 'Pragmatic'?",
+        "options": [
+          "Dealing with things sensibly and realistically based on practical considerations",
+          "A state of total indifference or neglect",
+          "An informal verbal agreement without legal force",
+          "A short-term tactical concession"
+        ],
+        "answer": 0,
+        "explanation": "'Pragmatic' is defined as: Dealing with things sensibly and realistically based on practical considerations. Synonyms include practical, sensible, hardheaded."
+      },
+      "practice_question": "In light of 'The Guardian view on the next UN secretary general', evaluate the shifting geopolitical equilibrium. How should modern democracies balance strategic autonomy with multilateral commitments?",
+      "relevance_tag": "GS Paper 2: International Relations & Geopolitics",
+      "content": "The UK must continue to oppose the UAE’s tainted nominee, Lana Nusseibeh. The ethical course is also the pragmatic one The future of the United Nations has rarely looked more perilous in an age of impunity for atrocities, raging wars, open US hostility, a funding crisis and security council deadlock. It is widely agreed that the choice of its next secretary general is critical – perhaps even existential. Unfortunately, that’s where agreement ends. Under the opaque selection system, security council members are privately polled on their views of each candidate. A “discourage” vote from one of the five permanent members is diplomacy-speak for a veto. Only when a consensus emerges does the general assembly get a say on the candidate. The next straw poll is due on Monday, with no deal yet in sight . With António Guterres completing his term on 31 December, the seat could fall empty for the first time. Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our letters section, please click here . Continue reading..."
+    },
     {
       "id": "the-hindu-beyond-generosity-on-india-nepal-ties",
       "title": "Beyond generosity: on India-Nepal ties",
